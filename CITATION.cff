@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Lesion-Anchored Prototypes: Reducing Artifact Shortcuts in Interpretable Melanoma Classification"
+authors:
+  - family-names: "Azizi Movahed"
+    given-names: "Yousef"
+    affiliation: "University of Tehran"
+  - family-names: "Ziaeetabar"
+    given-names: "Fatemeh"
+    affiliation: "University of Tehran"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Lesion-Anchored Prototypes: Reducing Artifact Shortcuts in Interpretable Melanoma Classification"
+  authors:
+    - family-names: "Azizi Movahed"
+      given-names: "Yousef"
+    - family-names: "Ziaeetabar"
+      given-names: "Fatemeh"
+  collection-title: "Proc. 30th International Computer Conference, Computer Society of Iran (CSICC)"
+  year: 2026

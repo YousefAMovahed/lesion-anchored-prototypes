@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.npy
+*.pt
+eval/
+runs/
+prep/
+kaggle.json
+.env
+paper/*.aux
+paper/*.log
+paper/*.out
