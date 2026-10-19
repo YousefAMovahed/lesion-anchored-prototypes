@@ -5,20 +5,20 @@
 Yousef Azizi Movahed, Fatemeh Ziaeetabar
 Department of Computer Science, School of Mathematics, Statistics, and Computer Science, College of Science, University of Tehran
 
-This repository contains the complete code, the executed notebooks and the logs behind the paper (CSICC 2026 submission). All results in the paper can be traced to the files in `results/`.
+This repository contains the complete code, the executed notebooks and the logs behind the paper (CSICC 2026 submission). All results in the paper can be traced to the files in `results/` (see [Traceability](#traceability)).
 
 <p align="center">
   <img src="assets/explanations_3rows.png" width="720"><br>
-  <em>ISIC 2019 test images with artifacts. The black-box CNN and an annotation-supervised ProtoPNet (PPN-FA) respond to dark corners and borders; the most active prototype of our model stays on the lesion.</em>
+  <em>ISIC 2019 test images with artifacts. The black-box CNN and a mask-supervised ProtoPNet (PPN-FA, IAIA-BL loss) respond to dark corners and image borders; the most active prototype of our model stays on the lesion.</em>
 </p>
 
 ## Summary
 
 Melanoma classifiers trained on dermoscopic archives pick up acquisition artifacts such as dark vignetting corners, rulers and ink. In a prototypical part network (ProtoPNet) the explanation itself can then point at the artifact. We
 
-1. **audit the bias** on ISIC 2019 with automatically detected artifact masks, a leakage-free split and source-stratified statistics (dark corners: Mantel–Haenszel OR 1.56 [1.43, 1.69]; bright structures: 1.75 [1.59, 1.92]);
-2. **anchor prototypes to the lesion** with two components: a lesion-attraction loss on the spatial attention of each prototype and a projection ("push") restricted to artifact-free lesion patches, both using masks generated without any manual annotation (an additional artifact-suppression loss turned out to be redundant and is reported as a negative result);
-3. **test decisions and explanations with counterfactuals**: rulers, hair, dark corners and ink are inserted (and real hair/ruler marks removed) while every lesion pixel stays bit-identical, with an inpainting-only null control;
+1. **audit the bias** on ISIC 2019 with automatically detected artifact masks, a leakage-free split and source-stratified statistics (dark corners: Mantel–Haenszel OR 1.555 [1.43, 1.69]; bright structures: 1.751 [1.59, 1.92]);
+2. **anchor prototypes to the lesion** with two components: a lesion-attraction loss on the normalized spatial attention of each prototype and a projection ("push") restricted to artifact-free lesion patches. No new annotation is needed: lesion masks are the public HAM10000 segmentations or are predicted by a segmentation network trained on them, and artifact masks come from fixed image operations. An additional artifact-suppression loss brought no significant gain in accuracy or counterfactual robustness and is reported as a largely negative result;
+3. **test decisions and explanations with counterfactuals**: rulers, hair, dark corners and ink are inserted (and real hair/ruler marks removed) while every lesion pixel stays bit-identical, with an inpainting-only null control, complemented by a shortcut test on unedited images;
 4. **audit the masks and the split**: the conclusions are re-checked on test images with expert masks only, under ±5 px mask erosion/dilation and per acquisition source, and a leakage audit confirms that no group, lesion or near-duplicate pair is shared between train, validation and test (`results/mask_reliability/`).
 
 All eight configurations use the same DenseNet-121 backbone, data split and training budget, and are trained with three seeds.
@@ -44,7 +44,11 @@ Where the models look and how they react to inserted artifacts (ISIC test):
 | ProtoPNet + IAIA-BL | 10.2% | 0.68 | 10.0 | 10.6% | 6.5% | 0.71 |
 | **Ours** | **4.8%** | **0.37** | **20.0** | **5.2%** | **3.6%** | **0.92** |
 
-Ablations: removing lesion attraction lowers the test AUC to .830 (DeLong p = 8e-8) and doubles artifact use; removing the artifact-suppression term changes no metric significantly (negative result); the standard projection keeps the AUC but leaves only 7.7 of 20 prototypes on the lesion. Full tables: `paper/main.pdf` and `results/executed_notebooks/03_evaluate_executed.ipynb`.
+Every Ours seed is more accurate than every seed of the three ProtoPNet baselines (ISIC test and Derm7pt-dermoscopic); against them the AUC gain is significant on ISIC test after Holm correction (DeLong p ≤ 9.0e-4), and all attribution and flip-rate differences are significant (paired Wilcoxon, p ≤ 1.3e-9 and p ≤ 3.9e-13).
+
+On **unedited** test images, dark corners raise the false-positive rate on benign lesions of the IAIA-BL-loss model from 16% to 33%, but that of Ours only from 17% to 20%.
+
+Ablations: removing lesion attraction lowers the test AUC to .830 (DeLong p = 8e-8) and doubles artifact use; removing the artifact-suppression term changes neither the accuracy nor the counterfactual robustness significantly (largely negative result); the standard projection keeps the AUC but leaves only 7.7 of 20 prototypes on the lesion. Full tables: `paper/main.pdf`, `results/executed_notebooks/03_evaluate_executed.ipynb` and `results/statistics/nb04-statistics.log`.
 
 <p align="center">
   <img src="assets/counterfactual_example_0.png" width="560"><br>
@@ -66,11 +70,14 @@ notebooks/
                                8 configurations x 3 seeds on two GPUs (resumable, deadline-aware)
   03_evaluate.ipynb            all results of the paper: classification, statistics, attribution,
                                counterfactuals, figures and LaTeX tables
+  04_statistics.ipynb          additional statistics: Holm-corrected DeLong tests, seed pairs, shortcut
+                               test on unedited images, Wilcoxon tests for attribution and flip rates
 results/
   executed_notebooks/          the notebooks exactly as they were run, with all outputs
   logs/                        full training and evaluation logs (24 runs, every epoch)
   mask_reliability/            data distribution, leakage audit, results by mask provenance,
                                under mask perturbation and per source (cell + full log)
+  statistics/                  full log of 04_statistics.ipynb
 tests/
   test_core.py                 CPU-only sanity tests of the core claims (see below)
 paper/                         LaTeX source and PDF of the paper
@@ -88,8 +95,21 @@ The experiments were run on Kaggle (2 x NVIDIA T4, PyTorch 2.11). Total compute:
    - PH2 (segmentation validation only): <https://www.kaggle.com/datasets/athina123/ph2dataset>
 2. Run `notebooks/02_train_all_models.ipynb` with *Save & Run All* (GPU T4 x2, Internet on). It prepares the data and trains all models; finished runs are reused if the notebook is restarted with its previous output attached.
 3. Attach the output of step 2 to `notebooks/03_evaluate.ipynb` (set `TRAIN_NOTEBOOK_SLUG`) and run it. All tables and figures are written to `/kaggle/working/eval`.
+4. Optionally, attach the same output to `notebooks/04_statistics.ipynb` (one T4, about 35 min) for the additional statistics; it writes to `/kaggle/working/nb04`.
 
 `01_prepare_data.ipynb` is only needed to inspect the data preparation separately; notebook 02 contains the same code.
+
+### Traceability
+
+| Paper content | Source in this repository |
+|---|---|
+| Data preparation used for all models: split, groups, segmentation Dice (0.9445 held-out, 0.918 PH2), artifact prevalence, Table III | `results/logs/02_train_all_models.log` (the self-contained training notebook prepares the data itself) |
+| Training of the 24 runs | `results/logs/02_train_all_models.log` |
+| Tables IV–VII, Fig. 2–4 (Fig. 2 and 3 show parts of the notebook figures) | `results/executed_notebooks/03_evaluate_executed.ipynb`, `results/logs/03_evaluate.log` |
+| Table II, Table IX and the leakage audit | `results/mask_reliability/` (analysis cell and full log) |
+| Table VIII (unedited images), Holm-corrected DeLong tests, seed-pair consistency, Wilcoxon tests for attribution and flip rates | `notebooks/04_statistics.ipynb` and its full log `results/statistics/nb04-statistics.log` (the notebook also re-checks Table IV and the flip rates of Table VII) |
+
+`results/executed_notebooks/01_prepare_data_executed.ipynb` is a separate, standalone run of the same data-preparation code. Because the segmentation network is retrained on the GPU (non-deterministic), its predicted masks, and therefore the artifact masks that exclude the lesion, differ slightly from those of the run used for the paper (e.g., held-out Dice 0.9451 instead of 0.9445). The split itself is identical.
 
 ### Determinism
 

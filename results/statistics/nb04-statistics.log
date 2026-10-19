@@ -1,0 +1,411 @@
+8.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s 3 0.00s - to python to disable frozen modules.
+8.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.6s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.6s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.6s 7 0.00s - to python to disable frozen modules.
+8.6s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.8s 9 Writing artproto.py
+9.8s 10 Writing evalkit.py
+21.5s 11 data: /kaggle/input/notebooks/yousefamovahed/nb01-selfcontained/prep | masks/split: /kaggle/input/notebooks/yousefamovahed/nb01-selfcontained/prep | 24 runs | external sets: ['Derm7pt-derm', 'Derm7pt-clinic', 'PAD-UFES-20'] | device: cuda
+137.0s 12 CNN_s0           test AUC 0.9077 | threshold 0.381 | 115s
+158.6s 13 CNN_s1           test AUC 0.8970 | threshold 0.463 | 22s
+181.1s 14 CNN_s2           test AUC 0.9000 | threshold 0.310 | 22s
+305.8s 15 Ours-noArt_s0    test AUC 0.8521 | threshold 0.607 | 125s
+366.7s 16 Ours-noArt_s1    test AUC 0.8517 | threshold 0.561 | 61s
+428.5s 17 Ours-noArt_s2    test AUC 0.8717 | threshold 0.685 | 62s
+489.6s 18 Ours-noLes_s0    test AUC 0.8391 | threshold 0.619 | 61s
+550.8s 19 Ours-noLes_s1    test AUC 0.8386 | threshold 0.598 | 61s
+611.9s 20 Ours-noLes_s2    test AUC 0.8131 | threshold 0.596 | 61s
+673.0s 21 Ours-stdPush_s0  test AUC 0.8571 | threshold 0.590 | 61s
+734.0s 22 Ours-stdPush_s1  test AUC 0.8665 | threshold 0.491 | 61s
+795.1s 23 Ours-stdPush_s2  test AUC 0.8656 | threshold 0.615 | 61s
+855.9s 24 Ours_s0          test AUC 0.8592 | threshold 0.614 | 61s
+917.0s 25 Ours_s1          test AUC 0.8714 | threshold 0.688 | 61s
+978.6s 26 Ours_s2          test AUC 0.8650 | threshold 0.631 | 62s
+1039.6s 27 PPN-FA_s0        test AUC 0.8376 | threshold 0.586 | 61s
+1100.7s 28 PPN-FA_s1        test AUC 0.8430 | threshold 0.633 | 61s
+1161.9s 29 PPN-FA_s2        test AUC 0.8526 | threshold 0.627 | 61s
+1223.1s 30 PPN-std_s0       test AUC 0.8211 | threshold 0.633 | 61s
+1284.2s 31 PPN-std_s1       test AUC 0.8371 | threshold 0.596 | 61s
+1345.2s 32 PPN-std_s2       test AUC 0.8474 | threshold 0.596 | 61s
+1406.7s 33 PPN_s0           test AUC 0.7781 | threshold 0.587 | 61s
+1467.5s 34 PPN_s1           test AUC 0.8450 | threshold 0.621 | 61s
+1529.0s 35 PPN_s2           test AUC 0.8506 | threshold 0.602 | 61s
+1529.2s 36 mean     std  paper    diff
+1529.2s 37 config
+1529.2s 38 CNN           0.9016  0.0055  0.902 -0.0004
+1529.2s 39 PPN-std       0.8352  0.0132  0.835  0.0002
+1529.2s 40 PPN           0.8246  0.0403  0.825 -0.0004
+1529.2s 41 PPN-FA        0.8444  0.0076  0.844  0.0004
+1529.2s 42 Ours          0.8652  0.0061  0.865  0.0002
+1529.2s 43 Ours-noLes    0.8303  0.0149  0.830  0.0003
+1529.2s 44 Ours-noArt    0.8585  0.0114  0.859 -0.0005
+1529.2s 45 Ours-stdPush  0.8631  0.0052  0.863  0.0001
+1529.2s 46 REPRODUCES TABLE V (|diff| <= 0.002 for every configuration): True
+1592.9s 47 set      model       versus  ens_auc_model  ens_auc_versus   delta p_DeLong p_Holm_3_baselines
+1592.9s 48 ISIC test       Ours          CNN         0.8836          0.9121 -0.0285 3.30e-05
+1592.9s 49 ISIC test       Ours      PPN-std         0.8836          0.8613  0.0224 6.41e-06           1.92e-05
+1592.9s 50 ISIC test       Ours          PPN         0.8836          0.8657  0.0180 7.25e-04           8.98e-04
+1592.9s 51 ISIC test       Ours       PPN-FA         0.8836          0.8663  0.0173 4.49e-04           8.98e-04
+1592.9s 52 ISIC test       Ours   Ours-noLes         0.8836          0.8561  0.0275 8.44e-08
+1592.9s 53 ISIC test       Ours   Ours-noArt         0.8836          0.8768  0.0069 8.48e-02
+1592.9s 54 ISIC test       Ours Ours-stdPush         0.8836          0.8841 -0.0004 8.46e-01
+1592.9s 55 ISIC test Ours-noArt          CNN         0.8768          0.9121 -0.0353 7.19e-07
+1592.9s 56 ISIC test Ours-noArt      PPN-std         0.8768          0.8613  0.0155 4.76e-03           1.43e-02
+1592.9s 57 ISIC test Ours-noArt          PPN         0.8768          0.8657  0.0111 3.96e-02           7.92e-02
+1592.9s 58 ISIC test Ours-noArt       PPN-FA         0.8768          0.8663  0.0105 5.48e-02           7.92e-02
+1592.9s 59 ISIC test Ours-noArt         Ours         0.8768          0.8836 -0.0069 8.48e-02
+1592.9s 60 ISIC test Ours-noArt   Ours-noLes         0.8768          0.8561  0.0207 1.99e-04
+1592.9s 61 ISIC test Ours-noArt Ours-stdPush         0.8768          0.8841 -0.0073 6.74e-02
+1592.9s 62 Derm7pt-derm       Ours          CNN         0.7690          0.8155 -0.0465 7.56e-04
+1592.9s 63 Derm7pt-derm       Ours      PPN-std         0.7690          0.7123  0.0567 2.80e-06           8.40e-06
+1592.9s 64 Derm7pt-derm       Ours          PPN         0.7690          0.7540  0.0150 1.99e-01           1.99e-01
+1592.9s 65 Derm7pt-derm       Ours       PPN-FA         0.7690          0.7259  0.0430 1.69e-05           3.37e-05
+1592.9s 66 Derm7pt-derm       Ours   Ours-noLes         0.7690          0.7505  0.0185 9.82e-02
+1592.9s 67 Derm7pt-derm       Ours   Ours-noArt         0.7690          0.7709 -0.0019 8.14e-01
+1592.9s 68 Derm7pt-derm       Ours Ours-stdPush         0.7690          0.7710 -0.0020 6.88e-01
+1592.9s 69 Derm7pt-derm Ours-noArt          CNN         0.7709          0.8155 -0.0446 2.10e-03
+1592.9s 70 Derm7pt-derm Ours-noArt      PPN-std         0.7709          0.7123  0.0586 4.76e-06           1.43e-05
+1592.9s 71 Derm7pt-derm Ours-noArt          PPN         0.7709          0.7540  0.0169 1.15e-01           1.15e-01
+1592.9s 72 Derm7pt-derm Ours-noArt       PPN-FA         0.7709          0.7259  0.0449 3.06e-05           6.12e-05
+1592.9s 73 Derm7pt-derm Ours-noArt         Ours         0.7709          0.7690  0.0019 8.14e-01
+1592.9s 74 Derm7pt-derm Ours-noArt   Ours-noLes         0.7709          0.7505  0.0203 7.84e-02
+1592.9s 75 Derm7pt-derm Ours-noArt Ours-stdPush         0.7709          0.7710 -0.0001 9.89e-01
+1592.9s 76 Derm7pt-clinic       Ours          CNN         0.6765          0.7183 -0.0417 2.72e-02
+1592.9s 77 Derm7pt-clinic       Ours      PPN-std         0.6765          0.6439  0.0327 2.30e-02           6.89e-02
+1592.9s 78 Derm7pt-clinic       Ours          PPN         0.6765          0.6451  0.0314 4.62e-02           9.25e-02
+1592.9s 79 Derm7pt-clinic       Ours       PPN-FA         0.6765          0.6623  0.0142 3.00e-01           3.00e-01
+1592.9s 80 Derm7pt-clinic       Ours   Ours-noLes         0.6765          0.6602  0.0163 2.30e-01
+1592.9s 81 Derm7pt-clinic       Ours   Ours-noArt         0.6765          0.6540  0.0225 5.77e-02
+1592.9s 82 Derm7pt-clinic       Ours Ours-stdPush         0.6765          0.6901 -0.0136 5.94e-02
+1592.9s 83 Derm7pt-clinic Ours-noArt          CNN         0.6540          0.7183 -0.0643 3.23e-04
+1592.9s 84 Derm7pt-clinic Ours-noArt      PPN-std         0.6540          0.6439  0.0102 4.30e-01           1.00e+00
+1592.9s 85 Derm7pt-clinic Ours-noArt          PPN         0.6540          0.6451  0.0089 5.12e-01           1.00e+00
+1592.9s 86 Derm7pt-clinic Ours-noArt       PPN-FA         0.6540          0.6623 -0.0083 5.29e-01           1.00e+00
+1592.9s 87 Derm7pt-clinic Ours-noArt         Ours         0.6540          0.6765 -0.0225 5.77e-02
+1592.9s 88 Derm7pt-clinic Ours-noArt   Ours-noLes         0.6540          0.6602 -0.0062 6.65e-01
+1592.9s 89 Derm7pt-clinic Ours-noArt Ours-stdPush         0.6540          0.6901 -0.0361 4.16e-03
+1592.9s 90 PAD-UFES-20       Ours          CNN         0.6810          0.7376 -0.0566 1.17e-01
+1592.9s 91 PAD-UFES-20       Ours      PPN-std         0.6810          0.6200  0.0610 1.33e-03           4.00e-03
+1592.9s 92 PAD-UFES-20       Ours          PPN         0.6810          0.7161 -0.0350 2.21e-01           4.42e-01
+1592.9s 93 PAD-UFES-20       Ours       PPN-FA         0.6810          0.6813 -0.0003 9.92e-01           9.92e-01
+1592.9s 94 PAD-UFES-20       Ours   Ours-noLes         0.6810          0.6617  0.0194 4.80e-01
+1592.9s 95 PAD-UFES-20       Ours   Ours-noArt         0.6810          0.7156 -0.0345 6.87e-02
+1592.9s 96 PAD-UFES-20       Ours Ours-stdPush         0.6810          0.6996 -0.0186 2.14e-01
+1592.9s 97 PAD-UFES-20 Ours-noArt          CNN         0.7156          0.7376 -0.0220 4.49e-01
+1592.9s 98 PAD-UFES-20 Ours-noArt      PPN-std         0.7156          0.6200  0.0956 5.42e-05           1.63e-04
+1592.9s 99 PAD-UFES-20 Ours-noArt          PPN         0.7156          0.7161 -0.0005 9.82e-01           9.82e-01
+1592.9s 100 PAD-UFES-20 Ours-noArt       PPN-FA         0.7156          0.6813  0.0343 1.23e-01           2.46e-01
+1592.9s 101 PAD-UFES-20 Ours-noArt         Ours         0.7156          0.6810  0.0345 6.87e-02
+1592.9s 102 PAD-UFES-20 Ours-noArt   Ours-noLes         0.7156          0.6617  0.0539 5.20e-02
+1592.9s 103 PAD-UFES-20 Ours-noArt Ours-stdPush         0.7156          0.6996  0.0160 4.70e-01
+1592.9s 104 
+1592.9s 105 seed-ensemble AUC [95% bootstrap CI]:
+1592.9s 106 set                 Derm7pt-clinic          Derm7pt-derm             ISIC test           PAD-UFES-20
+1592.9s 107 config
+1592.9s 108 CNN           0.718 [0.678, 0.756]  0.816 [0.785, 0.849]  0.912 [0.884, 0.935]  0.738 [0.669, 0.798]
+1592.9s 109 PPN-std       0.644 [0.603, 0.689]  0.712 [0.673, 0.749]  0.861 [0.827, 0.888]   0.62 [0.556, 0.685]
+1592.9s 110 PPN           0.645 [0.602, 0.688]  0.754 [0.714, 0.790]  0.866 [0.830, 0.894]  0.716 [0.660, 0.771]
+1592.9s 111 PPN-FA        0.662 [0.622, 0.703]  0.726 [0.688, 0.763]  0.866 [0.830, 0.895]  0.681 [0.620, 0.744]
+1592.9s 112 Ours          0.677 [0.637, 0.716]  0.769 [0.732, 0.805]  0.884 [0.850, 0.910]  0.681 [0.604, 0.751]
+1592.9s 113 Ours-noLes     0.66 [0.619, 0.701]  0.751 [0.712, 0.785]  0.856 [0.821, 0.885]  0.662 [0.598, 0.724]
+1592.9s 114 Ours-noArt    0.654 [0.613, 0.695]  0.771 [0.735, 0.806]  0.877 [0.845, 0.904]  0.716 [0.649, 0.778]
+1592.9s 115 Ours-stdPush   0.69 [0.655, 0.727]  0.771 [0.735, 0.805]  0.884 [0.852, 0.911]    0.7 [0.620, 0.776]
+1593.4s 116 
+1593.4s 117 pairwise DeLong p-values on ISIC test (seed ensembles):
+1593.4s 118 CNN  PPN-std      PPN   PPN-FA     Ours Ours-noLes Ours-noArt Ours-stdPush
+1593.4s 119 CNN                    3.8e-10  5.0e-09  1.8e-09  3.3e-05    9.7e-13    7.2e-07      5.1e-05
+1593.4s 120 PPN-std       3.8e-10           4.1e-01  3.0e-01  6.4e-06    3.2e-01    4.8e-03      4.3e-06
+1593.4s 121 PPN           5.0e-09  4.1e-01           9.0e-01  7.3e-04    8.7e-02    4.0e-02      4.0e-04
+1593.4s 122 PPN-FA        1.8e-09  3.0e-01  9.0e-01           4.5e-04    3.1e-02    5.5e-02      2.4e-04
+1593.4s 123 Ours          3.3e-05  6.4e-06  7.3e-04  4.5e-04             8.4e-08    8.5e-02      8.5e-01
+1593.4s 124 Ours-noLes    9.7e-13  3.2e-01  8.7e-02  3.1e-02  8.4e-08               2.0e-04      3.0e-08
+1593.4s 125 Ours-noArt    7.2e-07  4.8e-03  4.0e-02  5.5e-02  8.5e-02    2.0e-04                 6.7e-02
+1593.4s 126 Ours-stdPush  5.1e-05  4.3e-06  4.0e-04  2.4e-04  8.5e-01    3.0e-08    6.7e-02
+1593.6s 127 set      model       versus seed_pairs_won  worst_seed_model  best_seed_versus
+1593.6s 128 ISIC test       Ours          CNN            0/9            0.8592            0.9077
+1593.6s 129 ISIC test       Ours      PPN-std            9/9            0.8592            0.8474
+1593.6s 130 ISIC test       Ours          PPN            9/9            0.8592            0.8506
+1593.6s 131 ISIC test       Ours       PPN-FA            9/9            0.8592            0.8526
+1593.6s 132 ISIC test       Ours   Ours-noLes            9/9            0.8592            0.8391
+1593.6s 133 ISIC test       Ours   Ours-noArt            6/9            0.8592            0.8717
+1593.6s 134 ISIC test       Ours Ours-stdPush            5/9            0.8592            0.8665
+1593.6s 135 ISIC test Ours-noArt          CNN            0/9            0.8517            0.9077
+1593.6s 136 ISIC test Ours-noArt      PPN-std            9/9            0.8517            0.8474
+1593.6s 137 ISIC test Ours-noArt          PPN            9/9            0.8517            0.8506
+1593.6s 138 ISIC test Ours-noArt       PPN-FA            7/9            0.8517            0.8526
+1593.6s 139 ISIC test Ours-noArt         Ours            3/9            0.8517            0.8714
+1593.6s 140 ISIC test Ours-noArt   Ours-noLes            9/9            0.8517            0.8391
+1593.6s 141 ISIC test Ours-noArt Ours-stdPush            3/9            0.8517            0.8665
+1593.6s 142 Derm7pt-derm       Ours          CNN            0/9            0.7405            0.8224
+1593.6s 143 Derm7pt-derm       Ours      PPN-std            9/9            0.7405            0.7081
+1593.6s 144 Derm7pt-derm       Ours          PPN            9/9            0.7405            0.7343
+1593.6s 145 Derm7pt-derm       Ours       PPN-FA            9/9            0.7405            0.7146
+1593.6s 146 Derm7pt-derm       Ours   Ours-noLes            9/9            0.7405            0.7307
+1593.6s 147 Derm7pt-derm       Ours   Ours-noArt            4/9            0.7405            0.7674
+1593.6s 148 Derm7pt-derm       Ours Ours-stdPush            5/9            0.7405            0.7513
+1593.6s 149 Derm7pt-derm Ours-noArt          CNN            0/9            0.7409            0.8224
+1593.6s 150 Derm7pt-derm Ours-noArt      PPN-std            9/9            0.7409            0.7081
+1593.6s 151 Derm7pt-derm Ours-noArt          PPN            9/9            0.7409            0.7343
+1593.6s 152 Derm7pt-derm Ours-noArt       PPN-FA            9/9            0.7409            0.7146
+1593.6s 153 Derm7pt-derm Ours-noArt         Ours            5/9            0.7409            0.7574
+1593.6s 154 Derm7pt-derm Ours-noArt   Ours-noLes            9/9            0.7409            0.7307
+1593.6s 155 Derm7pt-derm Ours-noArt Ours-stdPush            4/9            0.7409            0.7513
+1593.6s 156 Derm7pt-clinic       Ours          CNN            0/9            0.6411            0.7228
+1593.6s 157 Derm7pt-clinic       Ours      PPN-std            8/9            0.6411            0.6426
+1593.6s 158 Derm7pt-clinic       Ours          PPN            8/9            0.6411            0.6455
+1593.6s 159 Derm7pt-clinic       Ours       PPN-FA            7/9            0.6411            0.6548
+1593.6s 160 Derm7pt-clinic       Ours   Ours-noLes            6/9            0.6411            0.6643
+1593.6s 161 Derm7pt-clinic       Ours   Ours-noArt            7/9            0.6411            0.6673
+1593.6s 162 Derm7pt-clinic       Ours Ours-stdPush            2/9            0.6411            0.6822
+1593.6s 163 Derm7pt-clinic Ours-noArt          CNN            0/9            0.6080            0.7228
+1593.6s 164 Derm7pt-clinic Ours-noArt      PPN-std            6/9            0.6080            0.6426
+1593.6s 165 Derm7pt-clinic Ours-noArt          PPN            6/9            0.6080            0.6455
+1593.6s 166 Derm7pt-clinic Ours-noArt       PPN-FA            5/9            0.6080            0.6548
+1593.6s 167 Derm7pt-clinic Ours-noArt         Ours            2/9            0.6080            0.6778
+1593.6s 168 Derm7pt-clinic Ours-noArt   Ours-noLes            5/9            0.6080            0.6643
+1593.6s 169 Derm7pt-clinic Ours-noArt Ours-stdPush            1/9            0.6080            0.6822
+1593.6s 170 PAD-UFES-20       Ours          CNN            2/9            0.5252            0.7457
+1593.6s 171 PAD-UFES-20       Ours      PPN-std            6/9            0.5252            0.6070
+1593.6s 172 PAD-UFES-20       Ours          PPN            6/9            0.5252            0.6759
+1593.6s 173 PAD-UFES-20       Ours       PPN-FA            5/9            0.5252            0.6978
+1593.6s 174 PAD-UFES-20       Ours   Ours-noLes            6/9            0.5252            0.6717
+1593.6s 175 PAD-UFES-20       Ours   Ours-noArt            5/9            0.5252            0.6990
+1593.6s 176 PAD-UFES-20       Ours Ours-stdPush            4/9            0.5252            0.7508
+1593.6s 177 PAD-UFES-20 Ours-noArt          CNN            0/9            0.6666            0.7457
+1593.6s 178 PAD-UFES-20 Ours-noArt      PPN-std            9/9            0.6666            0.6070
+1593.6s 179 PAD-UFES-20 Ours-noArt          PPN            5/9            0.6666            0.6759
+1593.6s 180 PAD-UFES-20 Ours-noArt       PPN-FA            7/9            0.6666            0.6978
+1593.6s 181 PAD-UFES-20 Ours-noArt         Ours            4/9            0.6666            0.7291
+1593.6s 182 PAD-UFES-20 Ours-noArt   Ours-noLes            7/9            0.6666            0.6717
+1593.6s 183 PAD-UFES-20 Ours-noArt Ours-stdPush            4/9            0.6666            0.7508
+1612.9s 184 set artifact       config  n_ben_with  n_ben_without  artifact_auc_benign p_artAUC_vs_Ours p_artAUC_vs_Ours-noArt  FPR_with  FPR_without  FPR_gap p_FPRgap_vs_Ours p_FPRgap_vs_Ours-noArt  n_mel_with  n_mel_without  artifact_auc_melanoma  FNR_with  FNR_without  AUC_with  AUC_without
+1612.9s 185 ISIC test       DC          CNN         447           1483               0.5705         7.58e-01               5.77e-01    0.2163       0.1695   0.0468         3.01e-01               3.90e-02         135            255                 0.5981    0.1407       0.2196    0.9087       0.9115
+1612.9s 186 ISIC test       DC      PPN-std         447           1483               0.5762         7.50e-01               9.84e-01    0.3110       0.2529   0.0581         3.70e-02               0.00e+00         135            255                 0.6498    0.1556       0.2706    0.8665       0.8535
+1612.9s 187 ISIC test       DC          PPN         447           1483               0.6119         1.56e-08               2.59e-08    0.2983       0.2619   0.0364         5.73e-01               8.30e-02         135            255                 0.6497    0.1259       0.2601    0.8856       0.8513
+1612.9s 188 ISIC test       DC       PPN-FA         447           1483               0.6585         9.64e-33               5.57e-33    0.3341       0.1598   0.1743         0.00e+00               0.00e+00         135            255                 0.7267    0.1432       0.4000    0.8796       0.8588
+1612.9s 189 ISIC test       DC         Ours         447           1483               0.5736                                6.74e-01    0.1976       0.1684   0.0293                                1.37e-01         135            255                 0.5829    0.2296       0.2850    0.8941       0.8774
+1612.9s 190 ISIC test       DC   Ours-noLes         447           1483               0.6556         5.16e-28               4.01e-28    0.3654       0.2468   0.1186         0.00e+00               0.00e+00         135            255                 0.7145    0.1630       0.2719    0.8724       0.8468
+1612.9s 191 ISIC test       DC   Ours-noArt         447           1483               0.5763         6.74e-01                           0.1984       0.1868   0.0116         1.14e-01                                135            255                 0.5568    0.2395       0.2810    0.8916       0.8692
+1612.9s 192 ISIC test       DC Ours-stdPush         447           1483               0.5728         8.43e-01               6.07e-01    0.2767       0.2463   0.0303         9.17e-01               1.77e-01         135            255                 0.5872    0.1259       0.2039    0.9002       0.8753
+1612.9s 193 ISIC test       SP          CNN         251           1679               0.5818         7.01e-01               3.58e-03    0.1873       0.1793   0.0080         5.42e-01               4.00e-03          57            333                 0.5846    0.1345       0.2022    0.9124       0.9115
+1612.9s 194 ISIC test       SP      PPN-std         251           1679               0.6070         2.71e-02               1.35e-01    0.3227       0.2579   0.0648         1.70e-02               6.85e-01          57            333                 0.6259    0.1287       0.2482    0.8928       0.8576
+1612.9s 195 ISIC test       SP          PPN         251           1679               0.6010         1.10e-01               2.11e-02    0.3320       0.2611   0.0709         1.00e-02               9.51e-01          57            333                 0.5502    0.1988       0.2162    0.8671       0.8656
+1612.9s 196 ISIC test       SP       PPN-FA         251           1679               0.6219         2.94e-05               9.75e-01    0.2590       0.1914   0.0676         6.00e-03               7.86e-01          57            333                 0.6100    0.1696       0.3353    0.8933       0.8635
+1612.9s 197 ISIC test       SP         Ours         251           1679               0.5868                                1.65e-05    0.1939       0.1723   0.0216                                0.00e+00          57            333                 0.5920    0.1930       0.2783    0.9022       0.8810
+1612.9s 198 ISIC test       SP   Ours-noLes         251           1679               0.6325         2.06e-07               3.06e-01    0.3705       0.2599   0.1106         0.00e+00               4.70e-02          57            333                 0.5942    0.1228       0.2533    0.8773       0.8546
+1612.9s 199 ISIC test       SP   Ours-noArt         251           1679               0.6221         1.65e-05                           0.2523       0.1801   0.0723         2.00e-03                                 57            333                 0.5512    0.1988       0.2783    0.8798       0.8769
+1612.9s 200 ISIC test       SP Ours-stdPush         251           1679               0.5893         6.01e-01               2.01e-05    0.2935       0.2474   0.0461         3.90e-02               1.22e-01          57            333                 0.5949    0.1228       0.1862    0.9149       0.8801
+1612.9s 201 ISIC test, BCN only       DC          CNN         407            496               0.4597         1.10e-01               1.98e-02    0.2080       0.2177  -0.0097         2.40e-02               0.00e+00         127            121                 0.5707    0.1470       0.2176    0.9088       0.8805
+1612.9s 202 ISIC test, BCN only       DC      PPN-std         407            496               0.4811         5.08e-05               4.72e-07    0.2989       0.3078  -0.0089         3.00e-03               0.00e+00         127            121                 0.5991    0.1601       0.2397    0.8704       0.8315
+1612.9s 203 ISIC test, BCN only       DC          PPN         407            496               0.4737         3.38e-04               1.59e-06    0.2867       0.3616  -0.0749         3.66e-01               2.35e-01         127            121                 0.5498    0.1260       0.1928    0.8885       0.8349
+1612.9s 204 ISIC test, BCN only       DC       PPN-FA         407            496               0.5293         2.09e-18               5.17e-24    0.3260       0.2345   0.0914         0.00e+00               0.00e+00         127            121                 0.6438    0.1444       0.3113    0.8812       0.8350
+1612.9s 205 ISIC test, BCN only       DC         Ours         407            496               0.4370                                2.54e-01    0.1884       0.2466  -0.0583                                9.00e-03         127            121                 0.5225    0.2283       0.2314    0.8997       0.8471
+1612.9s 206 ISIC test, BCN only       DC   Ours-noLes         407            496               0.5342         6.25e-19               7.48e-24    0.3595       0.3333   0.0262         0.00e+00               0.00e+00         127            121                 0.6591    0.1627       0.2314    0.8767       0.8135
+1612.9s 207 ISIC test, BCN only       DC   Ours-noArt         407            496               0.4268         2.54e-01                           0.1859       0.2836  -0.0977         1.00e-02                                127            121                 0.4771    0.2362       0.2231    0.8981       0.8502
+1612.9s 208 ISIC test, BCN only       DC Ours-stdPush         407            496               0.4338         5.68e-01               4.58e-01    0.2654       0.3508  -0.0855         2.40e-02               4.35e-01         127            121                 0.5230    0.1207       0.1625    0.9055       0.8441
+1612.9s 209 ISIC test, BCN only       SP          CNN         123            780               0.5197         4.89e-01               2.68e-01    0.2249       0.2115   0.0134         5.36e-01               1.86e-01          35            213                 0.6146    0.1238       0.1909    0.9041       0.8925
+1612.9s 210 ISIC test, BCN only       SP      PPN-std         123            780               0.5126         6.14e-01               5.01e-02    0.2981       0.3047  -0.0066         9.66e-01               1.70e-02          35            213                 0.6232    0.1429       0.2081    0.8869       0.8482
+1612.9s 211 ISIC test, BCN only       SP          PPN         123            780               0.5199         3.64e-01               1.65e-01    0.3469       0.3248   0.0221         2.68e-01               1.69e-01          35            213                 0.5097    0.2000       0.1518    0.8300       0.8686
+1612.9s 212 ISIC test, BCN only       SP       PPN-FA         123            780               0.5657         1.73e-05               1.19e-01    0.3198       0.2688   0.0510         2.90e-02               8.07e-01          35            213                 0.6196    0.1238       0.2426    0.8873       0.8562
+1612.9s 213 ISIC test, BCN only       SP         Ours         123            780               0.5051                                1.02e-02    0.2141       0.2214  -0.0073                                1.20e-02          35            213                 0.5567    0.2000       0.2347    0.8834       0.8703
+1612.9s 214 ISIC test, BCN only       SP   Ours-noLes         123            780               0.5560         1.58e-03               4.53e-01    0.3794       0.3397   0.0397         1.00e-01               5.08e-01          35            213                 0.5830    0.1143       0.2097    0.8753       0.8413
+1612.9s 215 ISIC test, BCN only       SP   Ours-noArt         123            780               0.5422         1.02e-02                           0.2900       0.2316   0.0583         6.00e-03                                 35            213                 0.5069    0.2000       0.2347    0.8606       0.8719
+1612.9s 216 ISIC test, BCN only       SP Ours-stdPush         123            780               0.5082         7.00e-01               1.03e-02    0.3144       0.3120   0.0024         6.12e-01               2.50e-02          35            213                 0.5721    0.1238       0.1440    0.9024       0.8679
+1612.9s 217 Derm7pt-derm       DC          CNN         457            302               0.5364         8.22e-02               4.84e-03    0.2538       0.2185   0.0353         4.47e-01               1.50e-02         154             98                 0.5736    0.2511       0.3333    0.8282       0.7960
+1612.9s 218 Derm7pt-derm       DC      PPN-std         457            302               0.6316         2.26e-06               2.03e-03    0.7316       0.5751   0.1565         0.00e+00               3.50e-02         154             98                 0.6679    0.0866       0.2279    0.7362       0.6823
+1612.9s 219 Derm7pt-derm       DC          PPN         457            302               0.5777         5.55e-01               2.86e-01    0.5551       0.4415   0.1136         1.50e-02               8.09e-01         154             98                 0.6266    0.1623       0.2891    0.7990       0.6895
+1612.9s 220 Derm7pt-derm       DC       PPN-FA         457            302               0.5517         1.20e-01               9.65e-04    0.5047       0.4294   0.0754         4.72e-01               1.34e-01         154             98                 0.5979    0.1710       0.3605    0.7621       0.6746
+1612.9s 221 Derm7pt-derm       DC         Ours         457            302               0.5700                                3.05e-02    0.4216       0.3642   0.0574                                1.40e-02         154             98                 0.5940    0.1948       0.3333    0.7918       0.7355
+1612.9s 222 Derm7pt-derm       DC   Ours-noLes         457            302               0.5782         5.23e-01               3.37e-01    0.6112       0.5453   0.0660         7.42e-01               4.70e-02         154             98                 0.6317    0.1169       0.1973    0.7764       0.7142
+1612.9s 223 Derm7pt-derm       DC   Ours-noArt         457            302               0.5909         3.05e-02                           0.5208       0.4117   0.1091         8.00e-03                                154             98                 0.6208    0.1190       0.2823    0.8020       0.7291
+1612.9s 224 Derm7pt-derm       DC Ours-stdPush         457            302               0.5705         9.34e-01               4.19e-02    0.5660       0.4923   0.0737         2.99e-01               6.10e-02         154             98                 0.5892    0.1190       0.2551    0.7949       0.7375
+1612.9s 225 Derm7pt-derm       SP          CNN         680             79               0.7654         1.33e-08               5.43e-10    0.2578       0.0844   0.1735         0.00e+00               0.00e+00         225             27                 0.7240    0.2519       0.5432    0.8338       0.7492
+1612.9s 226 Derm7pt-derm       SP      PPN-std         680             79               0.9208         8.14e-02               9.58e-01    0.7324       0.1266   0.6058         0.00e+00               0.00e+00         225             27                 0.8561    0.0904       0.5679    0.7332       0.7290
+1612.9s 227 Derm7pt-derm       SP          PPN         680             79               0.9012         7.39e-01               9.24e-03    0.5564       0.1097   0.4467         5.00e-03               3.91e-01         225             27                 0.8446    0.1630       0.6173    0.7822       0.6329
+1612.9s 228 Derm7pt-derm       SP       PPN-FA         680             79               0.9092         6.55e-01               1.62e-01    0.5201       0.0844   0.4357         1.90e-02               1.03e-01         225             27                 0.8280    0.1867       0.7284    0.7498       0.6920
+1612.9s 229 Derm7pt-derm       SP         Ours         680             79               0.9045                                6.95e-02    0.4392       0.0506   0.3886                                0.00e+00         225             27                 0.8334    0.1985       0.6667    0.7970       0.7178
+1612.9s 230 Derm7pt-derm       SP   Ours-noLes         680             79               0.9146         4.57e-01               6.02e-01    0.6407       0.1055   0.5352         0.00e+00               0.00e+00         225             27                 0.8003    0.1037       0.5185    0.7696       0.7000
+1612.9s 231 Derm7pt-derm       SP   Ours-noArt         680             79               0.9204         6.95e-02                           0.5255       0.0633   0.4622         0.00e+00                                225             27                 0.8392    0.1185       0.7160    0.8039       0.7431
+1612.9s 232 Derm7pt-derm       SP Ours-stdPush         680             79               0.9027         6.68e-01               6.46e-02    0.5892       0.0844   0.5048         0.00e+00               3.50e-02         225             27                 0.8364    0.1156       0.6420    0.7998       0.7225
+1612.9s 233 Derm7pt-clinic       DC          CNN         515            244               0.5949         7.64e-05               4.71e-14    0.1806       0.0943   0.0863         1.42e-01               0.00e+00         173             79                 0.6915    0.5106       0.7722    0.7464       0.6679
+1612.9s 234 Derm7pt-clinic       DC      PPN-std         515            244               0.8155         2.63e-14               1.49e-06    0.5994       0.2104   0.3890         0.00e+00               0.00e+00         173             79                 0.8424    0.2177       0.6498    0.6858       0.6268
+1612.9s 235 Derm7pt-clinic       DC          PPN         515            244               0.7801         1.39e-06               3.82e-02    0.3489       0.1066   0.2423         0.00e+00               9.33e-01         173             79                 0.7424    0.5067       0.7806    0.6639       0.6573
+1612.9s 236 Derm7pt-clinic       DC       PPN-FA         515            244               0.7952         8.12e-10               2.15e-03    0.4628       0.1462   0.3166         0.00e+00               0.00e+00         173             79                 0.7882    0.3276       0.6878    0.6886       0.6736
+1612.9s 237 Derm7pt-clinic       DC         Ours         515            244               0.6890                                3.24e-05    0.2408       0.1216   0.1192                                0.00e+00         173             79                 0.7436    0.4682       0.7679    0.7098       0.6507
+1612.9s 238 Derm7pt-clinic       DC   Ours-noLes         515            244               0.7660         8.38e-07               2.52e-01    0.4977       0.2377   0.2600         0.00e+00               4.69e-01         173             79                 0.7777    0.2813       0.5907    0.6916       0.6429
+1612.9s 239 Derm7pt-clinic       DC   Ours-noArt         515            244               0.7497         3.24e-05                           0.3663       0.1230   0.2434         0.00e+00                                173             79                 0.8249    0.4085       0.8101    0.6997       0.6080
+1612.9s 240 Derm7pt-clinic       DC Ours-stdPush         515            244               0.6536         8.45e-06               1.12e-09    0.3346       0.1872   0.1475         2.80e-02               0.00e+00         173             79                 0.7184    0.3757       0.6667    0.7191       0.6597
+1612.9s 241 Derm7pt-clinic       SP          CNN         669             90               0.6065         1.26e-01               3.26e-04    0.1570       0.1222   0.0347         5.50e-02               0.00e+00         219             33                 0.5150    0.5936       0.5859    0.7168       0.7370
+1612.9s 242 Derm7pt-clinic       SP      PPN-std         669             90               0.7238         4.63e-03               6.25e-01    0.5082       0.2222   0.2860         0.00e+00               0.00e+00         219             33                 0.6430    0.3196       0.5758    0.6481       0.6761
+1612.9s 243 Derm7pt-clinic       SP          PPN         669             90               0.7463         1.52e-04               1.02e-01    0.2910       0.1222   0.1688         3.50e-02               5.57e-01         219             33                 0.6330    0.5753       0.7071    0.6443       0.7178
+1612.9s 244 Derm7pt-clinic       SP       PPN-FA         669             90               0.6880         2.37e-01               1.29e-01    0.3817       0.2074   0.1743         4.60e-02               7.13e-01         219             33                 0.6462    0.4110       0.6364    0.6673       0.6949
+1612.9s 245 Derm7pt-clinic       SP         Ours         669             90               0.6606                                8.53e-03    0.2147       0.1111   0.1036                                5.00e-03         219             33                 0.5933    0.5495       0.6465    0.6751       0.7040
+1612.9s 246 Derm7pt-clinic       SP   Ours-noLes         669             90               0.6907         1.67e-01               2.14e-01    0.4385       0.2333   0.2051         1.00e-03               4.62e-01         219             33                 0.6153    0.3592       0.5051    0.6616       0.6953
+1612.9s 247 Derm7pt-clinic       SP   Ours-noArt         669             90               0.7149         8.53e-03                           0.3099       0.1259   0.1840         2.00e-03                                219             33                 0.6570    0.5175       0.6465    0.6579       0.6673
+1612.9s 248 Derm7pt-clinic       SP Ours-stdPush         669             90               0.6424         9.80e-02               1.49e-03    0.3034       0.1667   0.1368         5.90e-02               9.80e-02         219             33                 0.5857    0.4505       0.5758    0.6900       0.7108
+1612.9s 249 PAD-UFES-20       DC          CNN          55           2191               0.6943         3.33e-01               9.48e-01    0.4545       0.2457   0.2088         7.02e-01               2.81e-01           0             52                    NaN       NaN       0.4295       NaN       0.7421
+1612.9s 250 PAD-UFES-20       DC      PPN-std          55           2191               0.6553         9.40e-01               1.22e-01    0.5515       0.3563   0.1952         8.29e-01               1.55e-01           0             52                    NaN       NaN       0.5000       NaN       0.6242
+1612.9s 251 PAD-UFES-20       DC          PPN          55           2191               0.6495         7.78e-01               7.60e-02    0.4909       0.3168   0.1742         7.24e-01               2.90e-02           0             52                    NaN       NaN       0.4359       NaN       0.7209
+1612.9s 252 PAD-UFES-20       DC       PPN-FA          55           2191               0.6257         2.93e-01               3.50e-03    0.4545       0.3279   0.1267         1.18e-01               0.00e+00           0             52                    NaN       NaN       0.5128       NaN       0.6849
+1612.9s 253 PAD-UFES-20       DC         Ours          55           2191               0.6571                                1.02e-01    0.4727       0.2842   0.1885                                8.20e-02           0             52                    NaN       NaN       0.5064       NaN       0.6850
+1612.9s 254 PAD-UFES-20       DC   Ours-noLes          55           2191               0.6639         7.79e-01               1.80e-01    0.6727       0.4712   0.2016         7.37e-01               2.00e-01           0             52                    NaN       NaN       0.3077       NaN       0.6663
+1612.9s 255 PAD-UFES-20       DC   Ours-noArt          55           2191               0.6963         1.02e-01                           0.5455       0.2862   0.2593         9.40e-02                                  0             52                    NaN       NaN       0.4872       NaN       0.7209
+1612.9s 256 PAD-UFES-20       DC Ours-stdPush          55           2191               0.6782         1.35e-01               4.49e-01    0.5455       0.3496   0.1958         7.39e-01               1.37e-01           0             52                    NaN       NaN       0.3654       NaN       0.7043
+1612.9s 257 PAD-UFES-20       SP          CNN         965           1281               0.5496         2.22e-02               4.75e-01    0.2829       0.2266   0.0563         4.00e-03               1.88e-01          18             34                 0.7059    0.2407       0.5294    0.8124       0.7087
+1612.9s 258 PAD-UFES-20       SP      PPN-std         965           1281               0.5864         1.44e-14               6.58e-08    0.4242       0.3136   0.1106         0.00e+00               0.00e+00          18             34                 0.8203    0.2963       0.6078    0.7435       0.5761
+1612.9s 259 PAD-UFES-20       SP          PPN         965           1281               0.5202         7.22e-01               2.58e-03    0.3409       0.3060   0.0349         9.00e-02               7.63e-01          18             34                 0.6552    0.3148       0.5000    0.7273       0.7147
+1612.9s 260 PAD-UFES-20       SP       PPN-FA         965           1281               0.5933         4.76e-15               1.96e-09    0.3900       0.2865   0.1035         0.00e+00               0.00e+00          18             34                 0.8039    0.3148       0.6176    0.7994       0.6431
+1612.9s 261 PAD-UFES-20       SP         Ours         965           1281               0.5232                                1.51e-02    0.2960       0.2834   0.0127                                3.00e-02          18             34                 0.8023    0.3148       0.6078    0.8433       0.5975
+1612.9s 262 PAD-UFES-20       SP   Ours-noLes         965           1281               0.5415         2.54e-02               9.38e-01    0.5002       0.4580   0.0422         3.30e-02               7.79e-01          18             34                 0.7026    0.1481       0.3922    0.7360       0.6308
+1612.9s 263 PAD-UFES-20       SP   Ours-noArt         965           1281               0.5422         1.51e-02                           0.3143       0.2761   0.0382         2.90e-02                                 18             34                 0.7647    0.2407       0.6176    0.8098       0.6753
+1612.9s 264 PAD-UFES-20       SP Ours-stdPush         965           1281               0.5087         3.76e-04               1.64e-05    0.3547       0.3542   0.0006         1.21e-01               3.00e-03          18             34                 0.7386    0.1852       0.4608    0.8303       0.6330
+1646.1s 265 set                                 metric       config    n   mean p_vs_Ours p_vs_Ours-noArt
+1646.1s 266 ISIC test                           lesion share          CNN 2320 0.4659  4.22e-91        8.48e-94
+1646.1s 267 ISIC test                           lesion share      PPN-std 2320 0.5175  4.12e-50        9.63e-57
+1646.1s 268 ISIC test                           lesion share          PPN 2320 0.5617  2.67e-11        9.60e-14
+1646.1s 269 ISIC test                           lesion share       PPN-FA 2320 0.5305  3.39e-33        5.25e-37
+1646.1s 270 ISIC test                           lesion share         Ours 2320 0.5892                  1.18e-01
+1646.1s 271 ISIC test                           lesion share   Ours-noLes 2320 0.5646  7.13e-14        7.52e-16
+1646.1s 272 ISIC test                           lesion share   Ours-noArt 2320 0.5938  1.18e-01
+1646.1s 273 ISIC test                           lesion share Ours-stdPush 2320 0.5146 6.49e-262       3.36e-160
+1646.1s 274 ISIC test artifact share (images with artifacts)          CNN 1044 0.2307  7.20e-86        7.98e-80
+1646.1s 275 ISIC test artifact share (images with artifacts)      PPN-std 1044 0.0817  4.16e-23        1.27e-22
+1646.1s 276 ISIC test artifact share (images with artifacts)          PPN 1044 0.0660  9.76e-15        1.31e-10
+1646.1s 277 ISIC test artifact share (images with artifacts)       PPN-FA 1044 0.1025  4.35e-37        2.68e-36
+1646.1s 278 ISIC test artifact share (images with artifacts)         Ours 1044 0.0478                  4.01e-01
+1646.1s 279 ISIC test artifact share (images with artifacts)   Ours-noLes 1044 0.1056  2.46e-63        7.12e-56
+1646.1s 280 ISIC test artifact share (images with artifacts)   Ours-noArt 1044 0.0423  4.01e-01
+1646.1s 281 ISIC test artifact share (images with artifacts) Ours-stdPush 1044 0.0862  1.02e-68        6.04e-48
+1646.1s 282 ISIC test                    artifact enrichment          CNN 1044 1.5215  1.65e-88        1.26e-80
+1646.1s 283 ISIC test                    artifact enrichment      PPN-std 1044 0.5404  4.99e-13        4.00e-12
+1646.1s 284 ISIC test                    artifact enrichment          PPN 1044 0.4555  1.28e-09        6.24e-07
+1646.1s 285 ISIC test                    artifact enrichment       PPN-FA 1044 0.6758  2.53e-22        7.57e-19
+1646.1s 286 ISIC test                    artifact enrichment         Ours 1044 0.3701                  5.54e-01
+1646.1s 287 ISIC test                    artifact enrichment   Ours-noLes 1044 0.6743  2.18e-40        3.04e-34
+1646.1s 288 ISIC test                    artifact enrichment   Ours-noArt 1044 0.3995  5.54e-01
+1646.1s 289 ISIC test                    artifact enrichment Ours-stdPush 1044 0.5827  1.44e-50        9.58e-29
+1646.1s 290 ISIC test                      artifact pointing          CNN 2320 0.1172  9.24e-67        8.14e-65
+1646.1s 291 ISIC test                      artifact pointing      PPN-std 2320 0.0499  1.82e-48        2.79e-38
+1646.1s 292 ISIC test                      artifact pointing          PPN 2320 0.0420  3.65e-38        1.54e-28
+1646.1s 293 ISIC test                      artifact pointing       PPN-FA 2320 0.0505  7.89e-43        1.25e-34
+1646.1s 294 ISIC test                      artifact pointing         Ours 2320 0.0134                  2.20e-04
+1646.1s 295 ISIC test                      artifact pointing   Ours-noLes 2320 0.0529  8.83e-60        1.36e-49
+1646.1s 296 ISIC test                      artifact pointing   Ours-noArt 2320 0.0184  2.20e-04
+1646.1s 297 ISIC test                      artifact pointing Ours-stdPush 2320 0.0344  1.04e-40        1.11e-24
+1646.1s 298 Derm7pt-derm                           lesion share          CNN 1011 0.6049  4.89e-32        1.49e-23
+1646.1s 299 Derm7pt-derm                           lesion share      PPN-std 1011 0.7490  1.19e-04        2.45e-15
+1646.1s 300 Derm7pt-derm                           lesion share          PPN 1011 0.7888  1.31e-26        7.54e-45
+1646.1s 301 Derm7pt-derm                           lesion share       PPN-FA 1011 0.7597  8.89e-05        1.47e-17
+1646.1s 302 Derm7pt-derm                           lesion share         Ours 1011 0.7340                  4.95e-08
+1646.1s 303 Derm7pt-derm                           lesion share   Ours-noLes 1011 0.7723  1.11e-08        4.56e-25
+1646.1s 304 Derm7pt-derm                           lesion share   Ours-noArt 1011 0.7134  4.95e-08
+1646.1s 305 Derm7pt-derm                           lesion share Ours-stdPush 1011 0.6328 3.62e-145        3.13e-65
+1646.1s 306 Derm7pt-derm artifact share (images with artifacts)          CNN  901 0.0453  5.40e-53        6.13e-43
+1646.1s 307 Derm7pt-derm artifact share (images with artifacts)      PPN-std  901 0.0172  5.99e-04        5.37e-01
+1646.1s 308 Derm7pt-derm artifact share (images with artifacts)          PPN  901 0.0166  5.97e-03        3.29e-01
+1646.1s 309 Derm7pt-derm artifact share (images with artifacts)       PPN-FA  901 0.0187  1.82e-15        6.92e-05
+1646.1s 310 Derm7pt-derm artifact share (images with artifacts)         Ours  901 0.0125                  3.60e-04
+1646.1s 311 Derm7pt-derm artifact share (images with artifacts)   Ours-noLes  901 0.0198  2.19e-12        8.00e-05
+1646.1s 312 Derm7pt-derm artifact share (images with artifacts)   Ours-noArt  901 0.0151  3.60e-04
+1646.1s 313 Derm7pt-derm artifact share (images with artifacts) Ours-stdPush  901 0.0242  1.22e-83        1.95e-28
+1646.1s 314 Derm7pt-derm                    artifact enrichment          CNN  901 0.6255  1.54e-55        4.71e-43
+1646.1s 315 Derm7pt-derm                    artifact enrichment      PPN-std  901 0.2535  1.58e-04        5.93e-01
+1646.1s 316 Derm7pt-derm                    artifact enrichment          PPN  901 0.2346  8.57e-03        1.80e-01
+1646.1s 317 Derm7pt-derm                    artifact enrichment       PPN-FA  901 0.2811  6.51e-15        1.03e-04
+1646.1s 318 Derm7pt-derm                    artifact enrichment         Ours  901 0.1773                  4.67e-05
+1646.1s 319 Derm7pt-derm                    artifact enrichment   Ours-noLes  901 0.3018  4.36e-14        1.29e-05
+1646.1s 320 Derm7pt-derm                    artifact enrichment   Ours-noArt  901 0.2260  4.67e-05
+1646.1s 321 Derm7pt-derm                    artifact enrichment Ours-stdPush  901 0.3509  9.37e-84        1.04e-26
+1646.1s 322 Derm7pt-derm                      artifact pointing          CNN 1011 0.1527  5.50e-52        1.15e-49
+1646.1s 323 Derm7pt-derm                      artifact pointing      PPN-std 1011 0.0746  1.67e-30        1.93e-28
+1646.1s 324 Derm7pt-derm                      artifact pointing          PPN 1011 0.0441  2.80e-18        3.26e-16
+1646.1s 325 Derm7pt-derm                      artifact pointing       PPN-FA 1011 0.0774  8.66e-31        8.53e-27
+1646.1s 326 Derm7pt-derm                      artifact pointing         Ours 1011 0.0153                  4.68e-01
+1646.1s 327 Derm7pt-derm                      artifact pointing   Ours-noLes 1011 0.0570  1.26e-27        1.04e-23
+1646.1s 328 Derm7pt-derm                      artifact pointing   Ours-noArt 1011 0.0174  4.68e-01
+1646.1s 329 Derm7pt-derm                      artifact pointing Ours-stdPush 1011 0.0329  1.68e-17        8.26e-10
+1646.1s 330 
+1646.1s 331 (check: on ISIC test the means reproduce Table VII, e.g. Ours lesion share .589, artifact share .048, enrichment .37, pointing .013)
+1749.6s 332 add_dark_corners: 2318 images | 98s
+1834.1s 333 add_ruler: 2063 images | 85s
+1930.1s 334 add_hair: 2316 images | 96s
+2021.4s 335 add_ink: 2301 images | 91s
+2021.5s 336 flip rates (%), check against Table IX:
+2021.5s 337 intervention  add_dark_corners  add_hair  add_ink  add_ruler
+2021.5s 338 config
+2021.5s 339 CNN                        6.1      12.5      9.7        5.6
+2021.5s 340 PPN-std                   10.9      14.9      9.9        8.3
+2021.5s 341 PPN                       10.9      13.9      9.5        7.5
+2021.5s 342 PPN-FA                    10.6      15.1      9.1        6.5
+2021.5s 343 Ours                       5.2       9.2      5.6        3.6
+2021.5s 344 Ours-noArt                 5.4       8.7      6.1        3.5
+2021.5s 345 intervention    n      model     versus  flip_pct_model  flip_pct_versus   p_flip  absdp_model  absdp_versus   p_absdp
+2021.5s 346 add_dark_corners 2318       Ours        CNN          5.2344           6.1404 2.20e-02       0.0352        0.0490  2.54e-03
+2021.5s 347 add_dark_corners 2318       Ours    PPN-std          5.2344          10.8571 2.45e-35       0.0352        0.0600  2.49e-95
+2021.5s 348 add_dark_corners 2318       Ours        PPN          5.2344          10.9290 3.68e-36       0.0352        0.0671 3.70e-178
+2021.5s 349 add_dark_corners 2318       Ours     PPN-FA          5.2344          10.5551 3.67e-29       0.0352        0.0490  7.16e-56
+2021.5s 350 add_dark_corners 2318       Ours Ours-noArt          5.2344           5.3926 6.93e-01       0.0352        0.0363  1.55e-01
+2021.5s 351 add_dark_corners 2318 Ours-noArt        CNN          5.3926           6.1404 4.28e-02       0.0363        0.0490  1.88e-02
+2021.5s 352 add_dark_corners 2318 Ours-noArt    PPN-std          5.3926          10.8571 1.98e-32       0.0363        0.0600  8.58e-85
+2021.5s 353 add_dark_corners 2318 Ours-noArt        PPN          5.3926          10.9290 3.05e-34       0.0363        0.0671 2.39e-158
+2021.5s 354 add_dark_corners 2318 Ours-noArt     PPN-FA          5.3926          10.5551 1.91e-30       0.0363        0.0490  4.33e-48
+2021.5s 355 add_dark_corners 2318 Ours-noArt       Ours          5.3926           5.2344 6.93e-01       0.0363        0.0352  1.55e-01
+2021.5s 356 add_ruler 2063       Ours        CNN          3.5870           5.5744 4.67e-07       0.0254        0.0486  1.44e-30
+2021.5s 357 add_ruler 2063       Ours    PPN-std          3.5870           8.2566 9.89e-26       0.0254        0.0411  5.48e-40
+2021.5s 358 add_ruler 2063       Ours        PPN          3.5870           7.4810 7.20e-21       0.0254        0.0454 1.33e-113
+2021.5s 359 add_ruler 2063       Ours     PPN-FA          3.5870           6.4792 3.92e-13       0.0254        0.0284  7.99e-04
+2021.5s 360 add_ruler 2063       Ours Ours-noArt          3.5870           3.4577 6.44e-01       0.0254        0.0234  1.25e-07
+2021.5s 361 add_ruler 2063 Ours-noArt        CNN          3.4577           5.5744 5.21e-08       0.0234        0.0486  8.77e-44
+2021.5s 362 add_ruler 2063 Ours-noArt    PPN-std          3.4577           8.2566 7.39e-29       0.0234        0.0411  1.76e-53
+2021.5s 363 add_ruler 2063 Ours-noArt        PPN          3.4577           7.4810 6.01e-23       0.0234        0.0454 2.26e-135
+2021.5s 364 add_ruler 2063 Ours-noArt     PPN-FA          3.4577           6.4792 5.71e-14       0.0234        0.0284  1.50e-11
+2021.5s 365 add_ruler 2063 Ours-noArt       Ours          3.4577           3.5870 6.44e-01       0.0234        0.0254  1.25e-07
+2021.5s 366 add_hair 2316       Ours        CNN          9.2401          12.4784 2.70e-10       0.0805        0.1039  1.75e-02
+2021.5s 367 add_hair 2316       Ours    PPN-std          9.2401          14.9108 3.51e-25       0.0805        0.0923  3.67e-03
+2021.5s 368 add_hair 2316       Ours        PPN          9.2401          13.9465 9.25e-18       0.0805        0.0964  4.07e-40
+2021.5s 369 add_hair 2316       Ours     PPN-FA          9.2401          15.1410 2.11e-27       0.0805        0.0839  1.19e-06
+2021.5s 370 add_hair 2316       Ours Ours-noArt          9.2401           8.7363 2.14e-01       0.0805        0.0611  2.40e-40
+2021.5s 371 add_hair 2316 Ours-noArt        CNN          8.7363          12.4784 8.47e-12       0.0611        0.1039  9.62e-18
+2021.5s 372 add_hair 2316 Ours-noArt    PPN-std          8.7363          14.9108 7.58e-31       0.0611        0.0923  7.19e-38
+2021.5s 373 add_hair 2316 Ours-noArt        PPN          8.7363          13.9465 7.54e-22       0.0611        0.0964 6.69e-125
+2021.5s 374 add_hair 2316 Ours-noArt     PPN-FA          8.7363          15.1410 2.44e-30       0.0611        0.0839  1.97e-61
+2021.5s 375 add_hair 2316 Ours-noArt       Ours          8.7363           9.2401 2.14e-01       0.0611        0.0805  2.40e-40
+2021.5s 376 add_ink 2301       Ours        CNN          5.5628           9.7494 9.71e-19       0.0454        0.0797  4.00e-29
+2021.5s 377 add_ink 2301       Ours    PPN-std          5.5628           9.9087 2.07e-22       0.0454        0.0578  3.02e-05
+2021.5s 378 add_ink 2301       Ours        PPN          5.5628           9.4886 1.25e-20       0.0454        0.0619  8.31e-48
+2021.5s 379 add_ink 2301       Ours     PPN-FA          5.5628           9.1120 2.42e-16       0.0454        0.0457  6.36e-01
+2021.5s 380 add_ink 2301       Ours Ours-noArt          5.5628           6.1423 1.33e-01       0.0454        0.0405  8.92e-09
+2021.5s 381 add_ink 2301 Ours-noArt        CNN          6.1423           9.7494 2.93e-13       0.0405        0.0797  1.23e-42
+2021.5s 382 add_ink 2301 Ours-noArt    PPN-std          6.1423           9.9087 8.29e-17       0.0405        0.0578  8.78e-14
+2021.5s 383 add_ink 2301 Ours-noArt        PPN          6.1423           9.4886 2.92e-14       0.0405        0.0619  2.62e-78
+2021.5s 384 add_ink 2301 Ours-noArt     PPN-FA          6.1423           9.1120 1.80e-10       0.0405        0.0457  9.91e-05
+2021.5s 385 add_ink 2301 Ours-noArt       Ours          6.1423           5.5628 1.33e-01       0.0405        0.0454  8.92e-09
+2021.6s 386 total 912
+2021.6s 387 drwxr-xr-x 2 root root   4096 Oct 19 12:49 .
+2021.6s 388 drwxr-xr-x 4 root root   4096 Oct 19 12:49 ..
+2021.6s 389 -rw-r--r-- 1 root root   6581 Oct 19 12:41 A_delong_targets_vs_all.csv
+2021.6s 390 -rw-r--r-- 1 root root   1823 Oct 19 12:41 A_ensemble_auc_ci.csv
+2021.6s 391 -rw-r--r-- 1 root root    583 Oct 19 12:41 A_pairwise_delong_isic_test.csv
+2021.6s 392 -rw-r--r-- 1 root root   2652 Oct 19 12:41 B_seed_pairs.csv
+2021.6s 393 -rw-r--r-- 1 root root  20560 Oct 19 12:42 C_real_artifact_shortcut.csv
+2021.6s 394 -rw-r--r-- 1 root root   6784 Oct 19 12:42 D_attribution_tests.csv
+2021.6s 395 -rw-r--r-- 1 root root   5423 Oct 19 12:49 E_counterfactual_tests.csv
+2021.6s 396 -rw-r--r-- 1 root root 808152 Oct 19 12:40 probabilities.npz
+2021.6s 397 -rw-r--r-- 1 root root  49321 Oct 19 12:49 summary_for_paper.txt
+2021.6s 398 804K	nb04.zip
+2021.6s 399 
+2021.6s 400 NB04 finished in 33.4 min
+2021.6s 401 
+2021.6s 402 REPRODUCES TABLE V: True
+2021.6s 403 NB04 FINISHED - please send the complete log (or nb04/summary_for_paper.txt).
+2027.2s 404 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+2027.2s 405 cells[i][c] = re.sub('\\\\\|', '|', cell)
+2027.3s 406 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+2027.3s 407 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+2028.1s 408 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2028.2s 409 [NbConvertApp] Writing 150988 bytes to __notebook__.ipynb
+2030.6s 410 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+2031.4s 411 [NbConvertApp] Writing 803097 bytes to __results__.html
