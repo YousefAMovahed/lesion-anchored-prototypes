@@ -1,0 +1,219 @@
+7.6s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.6s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.6s 3 0.00s - to python to disable frozen modules.
+7.6s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.2s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.2s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.2s 7 0.00s - to python to disable frozen modules.
+8.2s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.3s 9 Writing artproto.py
+9.3s 10 Writing evalkit.py
+26.1s 11 ============================== 1. DATA DISTRIBUTION ==============================
+26.1s 12 dx      MEL     NV   BCC   AK   BKL   DF  VASC  SCC    All
+26.1s 13 split
+26.1s 14 train  3657  10523  2671  693  2095  193   201  519  20552
+26.1s 15 val     475   1208   322   80   278   16    27   53   2459
+26.1s 16 test    390   1144   330   94   251   30    25   56   2320
+26.1s 17 All    4522  12875  3323  867  2624  239   253  628  25331
+26.1s 18 
+26.1s 19 label             0     1    All
+26.1s 20 source split
+26.1s 21 BCN    test     903   248   1151
+26.1s 22 train   7738  2299  10037
+26.1s 23 val      915   310   1225
+26.1s 24 HAM    test     807    93    900
+26.1s 25 train   7246   917   8163
+26.1s 26 val      849   103    952
+26.1s 27 MSK    test     220    49    269
+26.1s 28 train   1911   441   2352
+26.1s 29 val      220    62    282
+26.1s 30 All           20809  4522  25331
+26.1s 31 
+26.1s 32 lesion-mask provenance per split (gt = expert HAM10000 mask, pred = DeepLabV3 prediction):
+26.1s 33 lesion_src     gt   pred    All
+26.1s 34 split
+26.1s 35 test          900   1420   2320
+26.1s 36 train        8163  12389  20552
+26.1s 37 val           952   1507   2459
+26.1s 38 All         10015  15316  25331
+26.1s 39 train: lesion_valid 0.9991 | artifact prevalence {'DC': 0.255, 'TS': 0.242, 'SP': 0.138, 'INK': 0.016}
+26.1s 40 val: lesion_valid 0.9996 | artifact prevalence {'DC': 0.257, 'TS': 0.257, 'SP': 0.144, 'INK': 0.019}
+26.1s 41 test: lesion_valid 1.0000 | artifact prevalence {'DC': 0.251, 'TS': 0.234, 'SP': 0.133, 'INK': 0.02}
+26.1s 42 
+26.1s 43 ============================== 2. LEAKAGE AUDIT ==============================
+26.4s 44 shared groups train/val: 0
+26.4s 45 shared lesion_id train/val: 0
+26.4s 46 shared image ids train/val: 0
+26.4s 47 shared groups test/train: 0
+26.4s 48 shared lesion_id test/train: 0
+26.4s 49 shared image ids test/train: 0
+26.4s 50 shared groups test/val: 0
+26.4s 51 shared lesion_id test/val: 0
+26.4s 52 shared image ids test/val: 0
+26.4s 53 verified near-duplicate pairs split across sets: 0
+26.4s 54 near-identical pairs (corr>=0.97) total: 342
+26.4s 55 near-identical pairs split across sets: 0
+26.4s 56 GT masks in train (segmentation training set): 8163
+26.4s 57 GT masks in val+test (held out from segmentation training): 1852
+26.4s 58 Derm7pt-derm: images 1011, flagged possible ISIC-train near-duplicates 8
+26.4s 59 Derm7pt-clinic: images 1011, flagged possible ISIC-train near-duplicates 6
+26.4s 60 PAD-UFES-20: images 2298, flagged possible ISIC-train near-duplicates 7
+35.3s 61 
+35.3s 62 ============================== 3. RESULTS BY MASK PROVENANCE / MASK PERTURBATION ==============================
+59.3s 63 CNN_s0           done 24s
+69.6s 64 CNN_s1           done 10s
+79.6s 65 CNN_s2           done 10s
+177.1s 66 Ours-noArt_s0    done 98s
+224.3s 67 Ours-noArt_s1    done 47s
+271.5s 68 Ours-noArt_s2    done 47s
+318.7s 69 Ours-noLes_s0    done 47s
+365.8s 70 Ours-noLes_s1    done 47s
+413.0s 71 Ours-noLes_s2    done 47s
+460.1s 72 Ours-stdPush_s0  done 47s
+507.5s 73 Ours-stdPush_s1  done 47s
+554.7s 74 Ours-stdPush_s2  done 47s
+602.0s 75 Ours_s0          done 47s
+649.4s 76 Ours_s1          done 47s
+696.7s 77 Ours_s2          done 47s
+744.2s 78 PPN-FA_s0        done 47s
+791.3s 79 PPN-FA_s1        done 47s
+838.5s 80 PPN-FA_s2        done 47s
+885.7s 81 PPN-std_s0       done 47s
+932.9s 82 PPN-std_s1       done 47s
+980.0s 83 PPN-std_s2       done 47s
+1027.2s 84 PPN_s0           done 47s
+1074.1s 85 PPN_s1           done 47s
+1121.7s 86 PPN_s2           done 48s
+1121.8s 87 
+1121.8s 88 --- attribution by lesion-mask provenance (original masks) ---
+1121.8s 89 subset       config    hit_lesion  hit_artifact    enrichment point_artifact
+1121.8s 90 all          CNN  0.466 ± 0.04 0.231 ± 0.024 1.521 ± 0.459  0.117 ± 0.007
+1121.8s 91 all      PPN-std 0.518 ± 0.036 0.082 ± 0.049  0.54 ± 0.313   0.05 ± 0.029
+1121.8s 92 all          PPN 0.562 ± 0.012 0.066 ± 0.045  0.455 ± 0.04   0.042 ± 0.04
+1121.8s 93 all       PPN-FA  0.53 ± 0.051 0.102 ± 0.024 0.676 ± 0.046   0.05 ± 0.006
+1121.8s 94 all         Ours  0.589 ± 0.04 0.048 ± 0.015  0.37 ± 0.132  0.013 ± 0.005
+1121.8s 95 all   Ours-noLes 0.565 ± 0.051 0.106 ± 0.056 0.674 ± 0.107  0.053 ± 0.029
+1121.8s 96 all   Ours-noArt 0.594 ± 0.028 0.042 ± 0.008 0.399 ± 0.034  0.018 ± 0.007
+1121.8s 97 all Ours-stdPush 0.515 ± 0.063 0.086 ± 0.052 0.583 ± 0.297  0.034 ± 0.024
+1121.8s 98 expert (HAM10000)          CNN 0.444 ± 0.044 0.043 ± 0.014  1.491 ± 0.29  0.015 ± 0.006
+1121.8s 99 expert (HAM10000)      PPN-std 0.416 ± 0.085 0.016 ± 0.005  0.64 ± 0.179  0.004 ± 0.002
+1121.8s 100 expert (HAM10000)          PPN 0.446 ± 0.053 0.014 ± 0.001 0.613 ± 0.084  0.005 ± 0.005
+1121.8s 101 expert (HAM10000)       PPN-FA 0.423 ± 0.045 0.019 ± 0.003 0.817 ± 0.108  0.004 ± 0.002
+1121.8s 102 expert (HAM10000)         Ours 0.534 ± 0.062 0.013 ± 0.005 0.596 ± 0.279  0.002 ± 0.001
+1121.8s 103 expert (HAM10000)   Ours-noLes 0.503 ± 0.089 0.023 ± 0.013 0.837 ± 0.198  0.007 ± 0.006
+1121.8s 104 expert (HAM10000)   Ours-noArt  0.543 ± 0.03 0.013 ± 0.003 0.584 ± 0.087  0.003 ± 0.001
+1121.8s 105 expert (HAM10000) Ours-stdPush 0.459 ± 0.043 0.018 ± 0.007 0.759 ± 0.293  0.003 ± 0.001
+1121.8s 106 predicted (BCN+MSK)          CNN  0.48 ± 0.038 0.277 ± 0.026 1.529 ± 0.516   0.182 ± 0.01
+1121.8s 107 predicted (BCN+MSK)      PPN-std 0.582 ± 0.046 0.098 ± 0.059 0.516 ± 0.346  0.079 ± 0.047
+1121.8s 108 predicted (BCN+MSK)          PPN 0.635 ± 0.015 0.079 ± 0.056 0.417 ± 0.067  0.065 ± 0.062
+1121.8s 109 predicted (BCN+MSK)       PPN-FA  0.599 ± 0.06  0.123 ± 0.03 0.641 ± 0.036   0.08 ± 0.011
+1121.8s 110 predicted (BCN+MSK)         Ours 0.624 ± 0.026 0.056 ± 0.018 0.315 ± 0.099  0.021 ± 0.008
+1121.8s 111 predicted (BCN+MSK)   Ours-noLes 0.603 ± 0.064 0.126 ± 0.071 0.634 ± 0.092  0.082 ± 0.049
+1121.8s 112 predicted (BCN+MSK)   Ours-noArt 0.626 ± 0.043   0.05 ± 0.01 0.354 ± 0.021   0.028 ± 0.01
+1121.8s 113 predicted (BCN+MSK) Ours-stdPush  0.55 ± 0.075 0.103 ± 0.063 0.539 ± 0.303  0.054 ± 0.039
+1121.8s 114 
+1121.8s 115 --- attribution under lesion-mask perturbation (all test images): -5 px eroded / 0 / +5 px dilated ---
+1121.8s 116 mask_change_px       config    hit_lesion  hit_artifact    enrichment point_artifact
+1121.8s 117 -5          CNN 0.434 ± 0.038 0.231 ± 0.024 1.521 ± 0.459  0.117 ± 0.007
+1121.8s 118 -5      PPN-std  0.48 ± 0.036 0.082 ± 0.049  0.54 ± 0.313   0.05 ± 0.029
+1121.8s 119 -5          PPN 0.525 ± 0.013 0.066 ± 0.045  0.455 ± 0.04   0.042 ± 0.04
+1121.8s 120 -5       PPN-FA 0.491 ± 0.055 0.102 ± 0.024 0.676 ± 0.046   0.05 ± 0.006
+1121.8s 121 -5         Ours 0.534 ± 0.039 0.048 ± 0.015  0.37 ± 0.132  0.013 ± 0.005
+1121.8s 122 -5   Ours-noLes 0.525 ± 0.055 0.106 ± 0.056 0.674 ± 0.107  0.053 ± 0.029
+1121.8s 123 -5   Ours-noArt 0.541 ± 0.041 0.042 ± 0.008 0.399 ± 0.034  0.018 ± 0.007
+1121.8s 124 -5 Ours-stdPush  0.466 ± 0.06 0.086 ± 0.052 0.583 ± 0.297  0.034 ± 0.024
+1121.8s 125 0          CNN  0.466 ± 0.04 0.231 ± 0.024 1.521 ± 0.459  0.117 ± 0.007
+1121.8s 126 0      PPN-std 0.518 ± 0.036 0.082 ± 0.049  0.54 ± 0.313   0.05 ± 0.029
+1121.8s 127 0          PPN 0.562 ± 0.012 0.066 ± 0.045  0.455 ± 0.04   0.042 ± 0.04
+1121.8s 128 0       PPN-FA  0.53 ± 0.051 0.102 ± 0.024 0.676 ± 0.046   0.05 ± 0.006
+1121.8s 129 0         Ours  0.589 ± 0.04 0.048 ± 0.015  0.37 ± 0.132  0.013 ± 0.005
+1121.8s 130 0   Ours-noLes 0.565 ± 0.051 0.106 ± 0.056 0.674 ± 0.107  0.053 ± 0.029
+1121.8s 131 0   Ours-noArt 0.594 ± 0.028 0.042 ± 0.008 0.399 ± 0.034  0.018 ± 0.007
+1121.8s 132 0 Ours-stdPush 0.515 ± 0.063 0.086 ± 0.052 0.583 ± 0.297  0.034 ± 0.024
+1121.8s 133 5          CNN  0.496 ± 0.04 0.232 ± 0.024 1.528 ± 0.463  0.117 ± 0.008
+1121.8s 134 5      PPN-std 0.552 ± 0.035 0.082 ± 0.049 0.541 ± 0.316   0.05 ± 0.029
+1121.8s 135 5          PPN 0.595 ± 0.012 0.066 ± 0.045 0.455 ± 0.041   0.042 ± 0.04
+1121.8s 136 5       PPN-FA 0.567 ± 0.047 0.103 ± 0.024 0.673 ± 0.049   0.05 ± 0.007
+1121.8s 137 5         Ours  0.64 ± 0.041 0.048 ± 0.015 0.359 ± 0.132  0.013 ± 0.005
+1121.8s 138 5   Ours-noLes 0.601 ± 0.047 0.106 ± 0.056 0.672 ± 0.112  0.053 ± 0.029
+1121.8s 139 5   Ours-noArt 0.644 ± 0.023 0.042 ± 0.008 0.393 ± 0.029  0.018 ± 0.007
+1121.8s 140 5 Ours-stdPush 0.561 ± 0.065 0.086 ± 0.052 0.576 ± 0.301  0.034 ± 0.025
+1121.8s 141 
+1121.8s 142 --- test AUC by acquisition source (classification does not use masks at inference) ---
+1121.8s 143 subset       config           AUC
+1121.8s 144 BCN          CNN 0.883 ± 0.012
+1121.8s 145 BCN      PPN-std 0.825 ± 0.018
+1121.8s 146 BCN          PPN 0.819 ± 0.051
+1121.8s 147 BCN       PPN-FA 0.834 ± 0.009
+1121.8s 148 BCN         Ours 0.852 ± 0.008
+1121.8s 149 BCN   Ours-noLes 0.815 ± 0.017
+1121.8s 150 BCN   Ours-noArt 0.853 ± 0.013
+1121.8s 151 BCN Ours-stdPush 0.852 ± 0.009
+1121.8s 152 HAM          CNN 0.934 ± 0.003
+1121.8s 153 HAM      PPN-std  0.88 ± 0.016
+1121.8s 154 HAM          PPN  0.86 ± 0.034
+1121.8s 155 HAM       PPN-FA 0.896 ± 0.004
+1121.8s 156 HAM         Ours 0.906 ± 0.006
+1121.8s 157 HAM   Ours-noLes 0.879 ± 0.013
+1121.8s 158 HAM   Ours-noArt 0.893 ± 0.008
+1121.8s 159 HAM Ours-stdPush 0.904 ± 0.004
+1121.8s 160 MSK          CNN 0.861 ± 0.002
+1121.8s 161 MSK      PPN-std 0.711 ± 0.022
+1121.8s 162 MSK          PPN 0.692 ± 0.016
+1121.8s 163 MSK       PPN-FA 0.699 ± 0.014
+1121.8s 164 MSK         Ours 0.761 ± 0.018
+1121.8s 165 MSK   Ours-noLes 0.704 ± 0.032
+1121.8s 166 MSK   Ours-noArt 0.737 ± 0.023
+1121.8s 167 MSK Ours-stdPush 0.749 ± 0.005
+1121.8s 168 all          CNN 0.902 ± 0.005
+1121.8s 169 all      PPN-std 0.835 ± 0.013
+1121.8s 170 all          PPN  0.825 ± 0.04
+1121.8s 171 all       PPN-FA 0.844 ± 0.008
+1121.8s 172 all         Ours 0.865 ± 0.006
+1121.8s 173 all   Ours-noLes  0.83 ± 0.015
+1121.8s 174 all   Ours-noArt 0.859 ± 0.011
+1121.8s 175 all Ours-stdPush 0.863 ± 0.005
+1121.8s 176 subset sizes: {'all': {'n': 2320, 'mel': 390}, 'BCN': {'n': 1151, 'mel': 248}, 'HAM': {'n': 900, 'mel': 93}, 'MSK': {'n': 269, 'mel': 49}}
+1121.8s 177 
+1121.8s 178 ============================== 4. COUNTERFACTUAL FLIPS BY MASK PROVENANCE ==============================
+1347.9s 179 intervention              subset  config          flip        abs_dp
+1347.9s 180 add_dark_corners                 all     CNN 0.061 ± 0.018 0.049 ± 0.009
+1347.9s 181 add_dark_corners                 all PPN-std 0.109 ± 0.014  0.06 ± 0.018
+1347.9s 182 add_dark_corners                 all     PPN  0.109 ± 0.04 0.067 ± 0.018
+1347.9s 183 add_dark_corners                 all  PPN-FA 0.106 ± 0.022  0.049 ± 0.01
+1347.9s 184 add_dark_corners                 all    Ours 0.052 ± 0.021 0.035 ± 0.008
+1347.9s 185 add_dark_corners   expert (HAM10000)     CNN 0.071 ± 0.031 0.059 ± 0.013
+1347.9s 186 add_dark_corners   expert (HAM10000) PPN-std  0.101 ± 0.02   0.06 ± 0.02
+1347.9s 187 add_dark_corners   expert (HAM10000)     PPN    0.1 ± 0.04 0.068 ± 0.025
+1347.9s 188 add_dark_corners   expert (HAM10000)  PPN-FA 0.103 ± 0.017 0.055 ± 0.013
+1347.9s 189 add_dark_corners   expert (HAM10000)    Ours 0.044 ± 0.019 0.036 ± 0.009
+1347.9s 190 add_dark_corners predicted (BCN+MSK)     CNN  0.055 ± 0.01 0.043 ± 0.007
+1347.9s 191 add_dark_corners predicted (BCN+MSK) PPN-std 0.113 ± 0.011  0.06 ± 0.018
+1347.9s 192 add_dark_corners predicted (BCN+MSK)     PPN 0.115 ± 0.041 0.067 ± 0.013
+1347.9s 193 add_dark_corners predicted (BCN+MSK)  PPN-FA 0.107 ± 0.026 0.045 ± 0.008
+1347.9s 194 add_dark_corners predicted (BCN+MSK)    Ours 0.057 ± 0.022 0.035 ± 0.007
+1347.9s 195 add_ruler                 all     CNN 0.056 ± 0.005 0.049 ± 0.004
+1347.9s 196 add_ruler                 all PPN-std 0.083 ± 0.007 0.041 ± 0.015
+1347.9s 197 add_ruler                 all     PPN 0.075 ± 0.013 0.045 ± 0.005
+1347.9s 198 add_ruler                 all  PPN-FA 0.065 ± 0.016 0.028 ± 0.005
+1347.9s 199 add_ruler                 all    Ours  0.036 ± 0.02  0.025 ± 0.01
+1347.9s 200 add_ruler   expert (HAM10000)     CNN 0.039 ± 0.003 0.039 ± 0.003
+1347.9s 201 add_ruler   expert (HAM10000) PPN-std 0.061 ± 0.021 0.029 ± 0.008
+1347.9s 202 add_ruler   expert (HAM10000)     PPN 0.059 ± 0.006 0.039 ± 0.007
+1347.9s 203 add_ruler   expert (HAM10000)  PPN-FA 0.047 ± 0.018 0.023 ± 0.007
+1347.9s 204 add_ruler   expert (HAM10000)    Ours 0.023 ± 0.017 0.019 ± 0.009
+1347.9s 205 add_ruler predicted (BCN+MSK)     CNN 0.067 ± 0.007 0.055 ± 0.005
+1347.9s 206 add_ruler predicted (BCN+MSK) PPN-std 0.097 ± 0.004  0.049 ± 0.02
+1347.9s 207 add_ruler predicted (BCN+MSK)     PPN 0.085 ± 0.018  0.05 ± 0.006
+1347.9s 208 add_ruler predicted (BCN+MSK)  PPN-FA 0.077 ± 0.015 0.032 ± 0.004
+1347.9s 209 add_ruler predicted (BCN+MSK)    Ours 0.044 ± 0.022 0.029 ± 0.011
+1347.9s 210 
+1347.9s 211 EXTRA ANALYSIS FINISHED in 22.0 min; files in /kaggle/working/extra
+1353.5s 212 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+1353.5s 213 cells[i][c] = re.sub('\\\\\|', '|', cell)
+1353.7s 214 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+1353.7s 215 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+1354.4s 216 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+1354.5s 217 [NbConvertApp] Writing 89856 bytes to __notebook__.ipynb
+1356.9s 218 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+1357.8s 219 [NbConvertApp] Writing 703402 bytes to __results__.html

@@ -17,8 +17,9 @@ This repository contains the complete code, the executed notebooks and the logs 
 Melanoma classifiers trained on dermoscopic archives pick up acquisition artifacts such as dark vignetting corners, rulers and ink. In a prototypical part network (ProtoPNet) the explanation itself can then point at the artifact. We
 
 1. **audit the bias** on ISIC 2019 with automatically detected artifact masks, a leakage-free split and source-stratified statistics (dark corners: Mantel–Haenszel OR 1.56 [1.43, 1.69]; bright structures: 1.75 [1.59, 1.92]);
-2. **anchor prototypes to the lesion** with a lesion-attraction loss on the spatial attention of each prototype, an artifact-suppression loss and a projection ("push") restricted to artifact-free lesion patches, using masks generated without any manual annotation;
-3. **test decisions and explanations with counterfactuals**: rulers, hair, dark corners and ink are inserted (and real hair/ruler marks removed) while every lesion pixel stays bit-identical, with an inpainting-only null control.
+2. **anchor prototypes to the lesion** with two components: a lesion-attraction loss on the spatial attention of each prototype and a projection ("push") restricted to artifact-free lesion patches, both using masks generated without any manual annotation (an additional artifact-suppression loss turned out to be redundant and is reported as a negative result);
+3. **test decisions and explanations with counterfactuals**: rulers, hair, dark corners and ink are inserted (and real hair/ruler marks removed) while every lesion pixel stays bit-identical, with an inpainting-only null control;
+4. **audit the masks and the split**: the conclusions are re-checked on test images with expert masks only, under ±5 px mask erosion/dilation and per acquisition source, and a leakage audit confirms that no group, lesion or near-duplicate pair is shared between train, validation and test (`results/mask_reliability/`).
 
 All eight configurations use the same DenseNet-121 backbone, data split and training budget, and are trained with three seeds.
 
@@ -43,7 +44,7 @@ Where the models look and how they react to inserted artifacts (ISIC test):
 | ProtoPNet + IAIA-BL | 10.2% | 0.68 | 10.0 | 10.6% | 6.5% | 0.71 |
 | **Ours** | **4.8%** | **0.37** | **20.0** | **5.2%** | **3.6%** | **0.92** |
 
-Ablations: removing lesion attraction lowers the test AUC to .830 (DeLong p = 8e-8) and doubles artifact use; removing the artifact-suppression term changes no metric significantly; the standard projection keeps the AUC but leaves only 7.7 of 20 prototypes on the lesion. Full tables: `paper/main.pdf` and `results/executed_notebooks/03_evaluate_executed.ipynb`.
+Ablations: removing lesion attraction lowers the test AUC to .830 (DeLong p = 8e-8) and doubles artifact use; removing the artifact-suppression term changes no metric significantly (negative result); the standard projection keeps the AUC but leaves only 7.7 of 20 prototypes on the lesion. Full tables: `paper/main.pdf` and `results/executed_notebooks/03_evaluate_executed.ipynb`.
 
 <p align="center">
   <img src="assets/counterfactual_example_0.png" width="560"><br>
@@ -68,6 +69,8 @@ notebooks/
 results/
   executed_notebooks/          the notebooks exactly as they were run, with all outputs
   logs/                        full training and evaluation logs (24 runs, every epoch)
+  mask_reliability/            data distribution, leakage audit, results by mask provenance,
+                               under mask perturbation and per source (cell + full log)
 tests/
   test_core.py                 CPU-only sanity tests of the core claims (see below)
 paper/                         LaTeX source and PDF of the paper
