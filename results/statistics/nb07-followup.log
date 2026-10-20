@@ -1,0 +1,50 @@
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+Writing artproto.py
+Writing evalkit.py
+data: /kaggle/input/notebooks/yousefamovahed/nb01-selfcontained/prep | NB05: /kaggle/input/notebooks/yousefamovahed/nb05-reviewer/nb05 | device: cuda
+ERF of the projected prototypes in context (mean over prototypes, then mean ± std over seeds):
+                 erf_lesion    lesion_area lesion_enrichment erf_on_lesion_above_area   erf_artifact  artifact_area    erf_in_cell     erf50_area
+config                                                                                                                                           
+PPN-std       0.533 ± 0.027  0.407 ± 0.054     1.458 ± 0.266            0.783 ± 0.029  0.043 ± 0.009  0.072 ± 0.005  0.099 ± 0.002  0.088 ± 0.013
+PPN           0.482 ± 0.118  0.404 ± 0.156     1.514 ± 0.485            0.717 ± 0.076  0.027 ± 0.009  0.049 ± 0.007  0.087 ± 0.011   0.109 ± 0.01
+PPN-FA        0.517 ± 0.114  0.397 ± 0.072        1.48 ± 0.3            0.783 ± 0.161   0.073 ± 0.04  0.096 ± 0.031   0.08 ± 0.005  0.095 ± 0.005
+Ours          0.686 ± 0.031  0.544 ± 0.076     1.448 ± 0.276            0.867 ± 0.076   0.025 ± 0.02  0.043 ± 0.025    0.1 ± 0.003  0.091 ± 0.003
+Ours-noLes    0.718 ± 0.033   0.535 ± 0.06     1.743 ± 0.404            0.883 ± 0.126  0.034 ± 0.015  0.091 ± 0.026  0.104 ± 0.005  0.099 ± 0.011
+Ours-noArt    0.712 ± 0.064   0.49 ± 0.083     1.729 ± 0.099            0.933 ± 0.029   0.03 ± 0.021  0.121 ± 0.069  0.115 ± 0.035  0.081 ± 0.012
+Ours-stdPush  0.465 ± 0.023  0.385 ± 0.065     1.461 ± 0.308                0.7 ± 0.1   0.039 ± 0.02  0.081 ± 0.021  0.102 ± 0.013  0.091 ± 0.007
+
+median lesion enrichment over all prototypes: {'PPN-std': 1.24, 'PPN': 1.27, 'PPN-FA': 1.31, 'Ours': 1.29, 'Ours-noLes': 1.42, 'Ours-noArt': 1.48, 'Ours-stdPush': 1.18}
+prototypes whose ERF lesion share is below the lesion area of their image (%): {'PPN-std': 21.7, 'PPN': 28.3, 'PPN-FA': 21.7, 'Ours': 13.3, 'Ours-noLes': 11.7, 'Ours-noArt': 6.7, 'Ours-stdPush': 30.0}
+                mean     std
+config                      
+CNN           0.9016  0.0055
+PPN-std       0.7966  0.0266
+PPN           0.7704  0.0266
+PPN-FA        0.7651  0.0229
+Ours          0.8461  0.0069
+Ours-noLes    0.7874  0.0451
+Ours-noArt    0.8341  0.0290
+Ours-stdPush  0.8405  0.0024
+REPRODUCES the five-epoch results of the paper (|diff| <= 0.002): True
+      versus  ens_auc_Ours  ens_auc_versus       delta_CI95  p_group_bootstrap  p_DeLong
+         CNN         0.869          0.9121 [-0.068, -0.020]              0.000    0.0000
+     PPN-std         0.869          0.8431   [0.010, 0.042]              0.001    0.0003
+         PPN         0.869          0.8284   [0.019, 0.060]              0.000    0.0000
+      PPN-FA         0.869          0.7937   [0.049, 0.100]              0.000    0.0000
+  Ours-noLes         0.869          0.8524   [0.001, 0.033]              0.037    0.0133
+  Ours-noArt         0.869          0.8604  [-0.006, 0.024]              0.272    0.1630
+Ours-stdPush         0.869          0.8627  [-0.001, 0.015]              0.119    0.0862
+BEGIN_B64 erf_PPN_s0.png size=(3000, 330) chars=333864
+END_B64 erf_PPN_s0.png  -> wrote erf_PPN_s0.jpg (250396 bytes)
+BEGIN_B64 erf_Ours_s0.png size=(3000, 330) chars=343976
+END_B64 erf_Ours_s0.png  -> wrote erf_Ours_s0.jpg (257980 bytes)
+NB07 FINISHED in 2.9 min
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 755626 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 1339047 bytes to __results__.html

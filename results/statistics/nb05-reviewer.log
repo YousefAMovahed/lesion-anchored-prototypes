@@ -1,0 +1,364 @@
+5.5s 1 /usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+5.5s 2 _validate(nbdict, ref, version, version_minor, relax_add_props)
+6.2s 3 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.2s 4 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.2s 5 0.00s - to python to disable frozen modules.
+6.2s 6 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.8s 7 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.8s 8 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.8s 9 0.00s - to python to disable frozen modules.
+6.8s 10 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+7.9s 11 Writing artproto.py
+7.9s 12 Writing evalkit.py
+16.2s 13 data: /kaggle/input/notebooks/yousefamovahed/nb01-selfcontained/prep | 24 runs | device: cuda
+16.2s 14 ISIC test: 2320 images in 1234 lesion groups; images per group: max 103, 471 groups with more than one image (1557 images)
+91.6s 15 CNN_s0           test AUC 0.9077 | 75s
+103.7s 16 CNN_s1           test AUC 0.8970 | 12s
+115.9s 17 CNN_s2           test AUC 0.9000 | 12s
+248.6s 18 Ours-noArt_s0    test AUC 0.8521 | 133s
+295.4s 19 Ours-noArt_s1    test AUC 0.8517 | 47s
+342.1s 20 Ours-noArt_s2    test AUC 0.8717 | 47s
+388.9s 21 Ours-noLes_s0    test AUC 0.8391 | 47s
+435.6s 22 Ours-noLes_s1    test AUC 0.8386 | 47s
+481.9s 23 Ours-noLes_s2    test AUC 0.8131 | 46s
+528.2s 24 Ours-stdPush_s0  test AUC 0.8571 | 46s
+574.2s 25 Ours-stdPush_s1  test AUC 0.8665 | 46s
+620.2s 26 Ours-stdPush_s2  test AUC 0.8656 | 46s
+666.1s 27 Ours_s0          test AUC 0.8592 | 46s
+712.1s 28 Ours_s1          test AUC 0.8714 | 46s
+758.1s 29 Ours_s2          test AUC 0.8650 | 46s
+804.1s 30 PPN-FA_s0        test AUC 0.8376 | 46s
+850.6s 31 PPN-FA_s1        test AUC 0.8430 | 46s
+897.1s 32 PPN-FA_s2        test AUC 0.8526 | 47s
+943.6s 33 PPN-std_s0       test AUC 0.8211 | 46s
+990.1s 34 PPN-std_s1       test AUC 0.8371 | 46s
+1036.5s 35 PPN-std_s2       test AUC 0.8474 | 46s
+1082.6s 36 PPN_s0           test AUC 0.7781 | 46s
+1128.6s 37 PPN_s1           test AUC 0.8450 | 46s
+1174.6s 38 PPN_s2           test AUC 0.8506 | 46s
+1174.6s 39 REPRODUCES TABLE IV (|diff| <= 0.002 for every configuration): True
+1178.7s 40 Ours-noArt_s0    ERF done 4s
+1182.5s 41 Ours-noArt_s1    ERF done 4s
+1186.2s 42 Ours-noArt_s2    ERF done 4s
+1189.9s 43 Ours-noLes_s0    ERF done 4s
+1193.7s 44 Ours-noLes_s1    ERF done 4s
+1197.4s 45 Ours-noLes_s2    ERF done 4s
+1201.2s 46 Ours-stdPush_s0  ERF done 4s
+1204.9s 47 Ours-stdPush_s1  ERF done 4s
+1208.7s 48 Ours-stdPush_s2  ERF done 4s
+1212.7s 49 Ours_s0          ERF done 4s
+1216.5s 50 Ours_s1          ERF done 4s
+1220.3s 51 Ours_s2          ERF done 4s
+1224.2s 52 PPN-FA_s0        ERF done 4s
+1227.9s 53 PPN-FA_s1        ERF done 4s
+1231.7s 54 PPN-FA_s2        ERF done 4s
+1235.6s 55 PPN-std_s0       ERF done 4s
+1239.3s 56 PPN-std_s1       ERF done 4s
+1243.1s 57 PPN-std_s2       ERF done 4s
+1246.9s 58 PPN_s0           ERF done 4s
+1250.7s 59 PPN_s1           ERF done 4s
+1254.5s 60 PPN_s2           ERF done 4s
+1254.7s 61 
+1254.7s 62 ERF of the projected prototypes (mean over prototypes, then mean ± std over seeds):
+1254.7s 63 cell_lesion     erf_lesion   erf50_lesion  cell_artifact   erf_artifact erf50_artifact    erf_in_cell     erf50_area
+1254.7s 64 config
+1254.7s 65 PPN-std        0.62 ± 0.117  0.533 ± 0.027  0.564 ± 0.017  0.033 ± 0.044  0.043 ± 0.009  0.037 ± 0.015  0.099 ± 0.002  0.088 ± 0.013
+1254.7s 66 PPN           0.705 ± 0.027  0.482 ± 0.118  0.512 ± 0.096  0.004 ± 0.005  0.027 ± 0.009  0.018 ± 0.009  0.087 ± 0.011   0.109 ± 0.01
+1254.7s 67 PPN-FA        0.531 ± 0.113  0.517 ± 0.114  0.544 ± 0.146   0.112 ± 0.08   0.073 ± 0.04   0.07 ± 0.045   0.08 ± 0.005  0.095 ± 0.005
+1254.7s 68 Ours          0.867 ± 0.024  0.686 ± 0.031    0.71 ± 0.02      0.0 ± 0.0   0.025 ± 0.02  0.025 ± 0.026    0.1 ± 0.003  0.091 ± 0.003
+1254.7s 69 Ours-noLes    0.941 ± 0.033  0.718 ± 0.033  0.792 ± 0.029  0.001 ± 0.001  0.034 ± 0.015  0.018 ± 0.015  0.104 ± 0.005  0.099 ± 0.011
+1254.7s 70 Ours-noArt    0.859 ± 0.038  0.712 ± 0.064  0.774 ± 0.048  0.002 ± 0.003   0.03 ± 0.021  0.009 ± 0.006  0.115 ± 0.035  0.081 ± 0.012
+1254.7s 71 Ours-stdPush   0.39 ± 0.033  0.465 ± 0.023   0.46 ± 0.009  0.057 ± 0.039   0.039 ± 0.02  0.035 ± 0.026  0.102 ± 0.013  0.091 ± 0.007
+1254.7s 72 10th percentile of erf_lesion over all prototypes: {'PPN-std': 0.112, 'PPN': 0.136, 'PPN-FA': 0.212, 'Ours': 0.417, 'Ours-noLes': 0.513, 'Ours-noArt': 0.39, 'Ours-stdPush': 0.179}
+1254.7s 73 10th percentile of erf_artifact over all prototypes: {'PPN-std': 0.0, 'PPN': 0.0, 'PPN-FA': 0.0, 'Ours': 0.0, 'Ours-noLes': 0.0, 'Ours-noArt': 0.0, 'Ours-stdPush': 0.0}
+1292.8s 74 AUC differences with a paired cluster bootstrap over lesion groups (B=2000; p=0 means p < 0.0005):
+1292.8s 75 model       versus  ens_auc_model  ens_auc_versus       delta_CI95  p_cluster_bootstrap  p_DeLong_image_level
+1292.8s 76 Ours          CNN         0.8836          0.9121 [-0.050, -0.007]                0.009                0.0000
+1292.8s 77 Ours      PPN-std         0.8836          0.8613   [0.009, 0.036]                0.002                0.0000
+1292.8s 78 Ours          PPN         0.8836          0.8657   [0.004, 0.032]                0.014                0.0007
+1292.8s 79 Ours       PPN-FA         0.8836          0.8663   [0.005, 0.031]                0.007                0.0004
+1292.8s 80 Ours   Ours-noLes         0.8836          0.8561   [0.016, 0.040]                0.000                0.0000
+1292.8s 81 Ours   Ours-noArt         0.8836          0.8768  [-0.004, 0.018]                0.215                0.0848
+1292.8s 82 Ours Ours-stdPush         0.8836          0.8841  [-0.006, 0.005]                0.861                0.8462
+1292.8s 83 Ours-noArt          CNN         0.8768          0.9121 [-0.057, -0.015]                0.002                0.0000
+1292.8s 84 Ours-noArt      PPN-std         0.8768          0.8613  [-0.001, 0.033]                0.073                0.0048
+1292.8s 85 Ours-noArt          PPN         0.8768          0.8657  [-0.004, 0.027]                0.145                0.0396
+1292.8s 86 Ours-noArt       PPN-FA         0.8768          0.8663  [-0.004, 0.026]                0.170                0.0548
+1292.8s 87 Ours-noArt         Ours         0.8768          0.8836  [-0.018, 0.004]                0.215                0.0848
+1292.8s 88 Ours-noArt   Ours-noLes         0.8768          0.8561   [0.006, 0.036]                0.008                0.0002
+1292.8s 89 Ours-noArt Ours-stdPush         0.8768          0.8841  [-0.019, 0.003]                0.194                0.0674
+1315.6s 90 metric      model       versus  mean_model  mean_versus  p_image_level  p_group_level  n_groups
+1315.6s 91 lesion share       Ours          CNN       0.589        0.466       4.22e-91       5.53e-64      1234
+1315.6s 92 lesion share       Ours      PPN-std       0.589        0.518       4.12e-50       6.21e-51      1234
+1315.6s 93 lesion share       Ours          PPN       0.589        0.562       2.67e-11       2.86e-23      1234
+1315.6s 94 lesion share       Ours       PPN-FA       0.589         0.53       3.39e-33       1.66e-34      1234
+1315.6s 95 lesion share       Ours   Ours-noLes       0.589        0.565       7.13e-14       2.59e-08      1234
+1315.6s 96 lesion share       Ours   Ours-noArt       0.589        0.594          0.118          0.123      1234
+1315.6s 97 lesion share       Ours Ours-stdPush       0.589        0.515      6.49e-262      4.01e-160      1234
+1315.6s 98 lesion share Ours-noArt          CNN       0.594        0.466       8.48e-94       7.67e-70      1234
+1315.6s 99 lesion share Ours-noArt      PPN-std       0.594        0.518       9.63e-57       1.01e-54      1234
+1315.6s 100 lesion share Ours-noArt          PPN       0.594        0.562        9.6e-14       9.16e-26      1234
+1315.6s 101 lesion share Ours-noArt       PPN-FA       0.594         0.53       5.25e-37       8.82e-37      1234
+1315.6s 102 lesion share Ours-noArt         Ours       0.594        0.589          0.118          0.123      1234
+1315.6s 103 lesion share Ours-noArt   Ours-noLes       0.594        0.565       7.52e-16       2.08e-09      1234
+1315.6s 104 lesion share Ours-noArt Ours-stdPush       0.594        0.515      3.36e-160      2.02e-107      1234
+1315.6s 105 artifact share       Ours          CNN      0.0478        0.231        7.2e-86       7.39e-50       574
+1315.6s 106 artifact share       Ours      PPN-std      0.0478       0.0817       4.16e-23       1.63e-11       574
+1315.6s 107 artifact share       Ours          PPN      0.0478        0.066       9.76e-15       3.12e-06       574
+1315.6s 108 artifact share       Ours       PPN-FA      0.0478        0.102       4.35e-37       1.07e-13       574
+1315.6s 109 artifact share       Ours   Ours-noLes      0.0478        0.106       2.46e-63       7.16e-26       574
+1315.6s 110 artifact share       Ours   Ours-noArt      0.0478       0.0423          0.401          0.356       574
+1315.6s 111 artifact share       Ours Ours-stdPush      0.0478       0.0862       1.02e-68       1.08e-35       574
+1315.6s 112 artifact share Ours-noArt          CNN      0.0423        0.231       7.98e-80       1.83e-44       574
+1315.6s 113 artifact share Ours-noArt      PPN-std      0.0423       0.0817       1.27e-22        7.9e-10       574
+1315.6s 114 artifact share Ours-noArt          PPN      0.0423        0.066       1.31e-10       0.000515       574
+1315.6s 115 artifact share Ours-noArt       PPN-FA      0.0423        0.102       2.68e-36        1.9e-11       574
+1315.6s 116 artifact share Ours-noArt         Ours      0.0423       0.0478          0.401          0.356       574
+1315.6s 117 artifact share Ours-noArt   Ours-noLes      0.0423        0.106       7.12e-56       5.52e-21       574
+1315.6s 118 artifact share Ours-noArt Ours-stdPush      0.0423       0.0862       6.04e-48       1.75e-19       574
+1315.6s 119 artifact enrichment       Ours          CNN        0.37         1.52       1.65e-88       2.31e-48       574
+1315.6s 120 artifact enrichment       Ours      PPN-std        0.37         0.54       4.99e-13       6.06e-05       574
+1315.6s 121 artifact enrichment       Ours          PPN        0.37        0.455       1.28e-09       0.000552       574
+1315.6s 122 artifact enrichment       Ours       PPN-FA        0.37        0.676       2.53e-22       5.99e-08       574
+1315.6s 123 artifact enrichment       Ours   Ours-noLes        0.37        0.674       2.18e-40       1.59e-14       574
+1315.6s 124 artifact enrichment       Ours   Ours-noArt        0.37        0.399          0.554          0.148       574
+1315.6s 125 artifact enrichment       Ours Ours-stdPush        0.37        0.583       1.44e-50       7.02e-26       574
+1315.6s 126 artifact enrichment Ours-noArt          CNN       0.399         1.52       1.26e-80       1.07e-41       574
+1315.6s 127 artifact enrichment Ours-noArt      PPN-std       0.399         0.54          4e-12       0.000433       574
+1315.6s 128 artifact enrichment Ours-noArt          PPN       0.399        0.455       6.24e-07          0.045       574
+1315.6s 129 artifact enrichment Ours-noArt       PPN-FA       0.399        0.676       7.57e-19       2.12e-05       574
+1315.6s 130 artifact enrichment Ours-noArt         Ours       0.399         0.37          0.554          0.148       574
+1315.6s 131 artifact enrichment Ours-noArt   Ours-noLes       0.399        0.674       3.04e-34       1.26e-10       574
+1315.6s 132 artifact enrichment Ours-noArt Ours-stdPush       0.399        0.583       9.58e-29       1.23e-11       574
+1315.6s 133 artifact pointing       Ours          CNN      0.0134        0.117       9.24e-67       6.67e-33      1234
+1315.6s 134 artifact pointing       Ours      PPN-std      0.0134       0.0499       1.82e-48       7.08e-20      1234
+1315.6s 135 artifact pointing       Ours          PPN      0.0134        0.042       3.65e-38       1.59e-16      1234
+1315.6s 136 artifact pointing       Ours       PPN-FA      0.0134       0.0505       7.89e-43        1.1e-15      1234
+1315.6s 137 artifact pointing       Ours   Ours-noLes      0.0134       0.0529       8.83e-60        4.2e-25      1234
+1315.6s 138 artifact pointing       Ours   Ours-noArt      0.0134       0.0184        0.00022       5.65e-05      1234
+1315.6s 139 artifact pointing       Ours Ours-stdPush      0.0134       0.0344       1.04e-40       2.19e-18      1234
+1315.6s 140 artifact pointing Ours-noArt          CNN      0.0184        0.117       8.14e-65       7.18e-28      1234
+1315.6s 141 artifact pointing Ours-noArt      PPN-std      0.0184       0.0499       2.79e-38       2.35e-12      1234
+1315.6s 142 artifact pointing Ours-noArt          PPN      0.0184        0.042       1.54e-28       6.63e-08      1234
+1315.6s 143 artifact pointing Ours-noArt       PPN-FA      0.0184       0.0505       1.25e-34       7.06e-10      1234
+1315.6s 144 artifact pointing Ours-noArt         Ours      0.0184       0.0134        0.00022       5.65e-05      1234
+1315.6s 145 artifact pointing Ours-noArt   Ours-noLes      0.0184       0.0529       1.36e-49       1.39e-17      1234
+1315.6s 146 artifact pointing Ours-noArt Ours-stdPush      0.0184       0.0344       1.11e-24       1.92e-07      1234
+1461.2s 147 add_dark_corners: 2318 images in 1234 groups | 139s
+1581.0s 148 add_ruler: 2063 images in 1176 groups | 120s
+1690.4s 149 add_hair: 2316 images in 1233 groups | 109s
+1794.7s 150 add_ink: 2301 images in 1230 groups | 104s
+1794.8s 151 intervention  metric      model       versus  mean_model  mean_versus  p_image_level  p_group_level  n_groups
+1794.8s 152 add_dark_corners    flip       Ours          CNN      0.0523       0.0614          0.022        0.00766      1234
+1794.8s 153 add_dark_corners    flip       Ours      PPN-std      0.0523        0.109       2.45e-35       3.68e-27      1234
+1794.8s 154 add_dark_corners    flip       Ours          PPN      0.0523        0.109       3.68e-36       7.41e-31      1234
+1794.8s 155 add_dark_corners    flip       Ours       PPN-FA      0.0523        0.106       3.67e-29       1.69e-21      1234
+1794.8s 156 add_dark_corners    flip       Ours   Ours-noLes      0.0523        0.102       1.28e-29       9.02e-21      1234
+1794.8s 157 add_dark_corners    flip       Ours   Ours-noArt      0.0523       0.0539          0.693          0.433      1234
+1794.8s 158 add_dark_corners    flip       Ours Ours-stdPush      0.0523       0.0449        0.00494          0.244      1234
+1794.8s 159 add_dark_corners    flip Ours-noArt          CNN      0.0539       0.0614         0.0428         0.0263      1234
+1794.8s 160 add_dark_corners    flip Ours-noArt      PPN-std      0.0539        0.109       1.98e-32       5.93e-26      1234
+1794.8s 161 add_dark_corners    flip Ours-noArt          PPN      0.0539        0.109       3.05e-34       2.35e-26      1234
+1794.8s 162 add_dark_corners    flip Ours-noArt       PPN-FA      0.0539        0.106       1.91e-30       3.82e-21      1234
+1794.8s 163 add_dark_corners    flip Ours-noArt         Ours      0.0539       0.0523          0.693          0.433      1234
+1794.8s 164 add_dark_corners    flip Ours-noArt   Ours-noLes      0.0539        0.102       4.98e-27       4.18e-18      1234
+1794.8s 165 add_dark_corners    flip Ours-noArt Ours-stdPush      0.0539       0.0449        0.00898         0.0511      1234
+1794.8s 166 add_dark_corners   absdp       Ours          CNN      0.0352        0.049        0.00254       0.000223      1234
+1794.8s 167 add_dark_corners   absdp       Ours      PPN-std      0.0352         0.06       2.49e-95       8.94e-73      1234
+1794.8s 168 add_dark_corners   absdp       Ours          PPN      0.0352       0.0671       3.7e-178      8.28e-117      1234
+1794.8s 169 add_dark_corners   absdp       Ours       PPN-FA      0.0352        0.049       7.16e-56       9.65e-53      1234
+1794.8s 170 add_dark_corners   absdp       Ours   Ours-noLes      0.0352       0.0533      7.44e-101       5.53e-77      1234
+1794.8s 171 add_dark_corners   absdp       Ours   Ours-noArt      0.0352       0.0363          0.155         0.0442      1234
+1794.8s 172 add_dark_corners   absdp       Ours Ours-stdPush      0.0352       0.0337        0.00243          0.637      1234
+1794.8s 173 add_dark_corners   absdp Ours-noArt          CNN      0.0363        0.049         0.0188        0.00191      1234
+1794.8s 174 add_dark_corners   absdp Ours-noArt      PPN-std      0.0363         0.06       8.58e-85       8.53e-61      1234
+1794.8s 175 add_dark_corners   absdp Ours-noArt          PPN      0.0363       0.0671      2.39e-158      8.39e-100      1234
+1794.8s 176 add_dark_corners   absdp Ours-noArt       PPN-FA      0.0363        0.049       4.33e-48       6.29e-44      1234
+1794.8s 177 add_dark_corners   absdp Ours-noArt         Ours      0.0363       0.0352          0.155         0.0442      1234
+1794.8s 178 add_dark_corners   absdp Ours-noArt   Ours-noLes      0.0363       0.0533       1.49e-88       5.64e-68      1234
+1794.8s 179 add_dark_corners   absdp Ours-noArt Ours-stdPush      0.0363       0.0337        0.00397           0.16      1234
+1794.8s 180 add_dark_corners capture       Ours      PPN-std      0.0335       0.0714       3.7e-127       1.68e-93      1234
+1794.8s 181 add_dark_corners capture       Ours          PPN      0.0335       0.0611      8.11e-110       5.29e-85      1234
+1794.8s 182 add_dark_corners capture       Ours       PPN-FA      0.0335        0.114      9.34e-148      3.89e-111      1234
+1794.8s 183 add_dark_corners capture       Ours   Ours-noLes      0.0335       0.0862      4.54e-166      8.85e-118      1234
+1794.8s 184 add_dark_corners capture       Ours   Ours-noArt      0.0335        0.034          0.262         0.0463      1234
+1794.8s 185 add_dark_corners capture       Ours Ours-stdPush      0.0335       0.0754      1.72e-221      1.52e-149      1234
+1794.8s 186 add_dark_corners capture Ours-noArt      PPN-std       0.034       0.0714      3.46e-126       8.88e-93      1234
+1794.8s 187 add_dark_corners capture Ours-noArt          PPN       0.034       0.0611      1.55e-120       1.59e-93      1234
+1794.8s 188 add_dark_corners capture Ours-noArt       PPN-FA       0.034        0.114      2.03e-157      2.54e-118      1234
+1794.8s 189 add_dark_corners capture Ours-noArt         Ours       0.034       0.0335          0.262         0.0463      1234
+1794.8s 190 add_dark_corners capture Ours-noArt   Ours-noLes       0.034       0.0862      1.09e-176      1.09e-127      1234
+1794.8s 191 add_dark_corners capture Ours-noArt Ours-stdPush       0.034       0.0754       3.9e-179      7.77e-127      1234
+1794.8s 192 add_ruler    flip       Ours          CNN      0.0359       0.0557       4.67e-07       0.000131      1176
+1794.8s 193 add_ruler    flip       Ours      PPN-std      0.0359       0.0826       9.89e-26       1.63e-16      1176
+1794.8s 194 add_ruler    flip       Ours          PPN      0.0359       0.0748        7.2e-21       7.88e-17      1176
+1794.8s 195 add_ruler    flip       Ours       PPN-FA      0.0359       0.0648       3.92e-13       4.87e-08      1176
+1794.8s 196 add_ruler    flip       Ours   Ours-noLes      0.0359       0.0866       3.28e-29       4.62e-18      1176
+1794.8s 197 add_ruler    flip       Ours   Ours-noArt      0.0359       0.0346          0.644          0.336      1176
+1794.8s 198 add_ruler    flip       Ours Ours-stdPush      0.0359       0.0406          0.113          0.126      1176
+1794.8s 199 add_ruler    flip Ours-noArt          CNN      0.0346       0.0557       5.21e-08       3.16e-06      1176
+1794.8s 200 add_ruler    flip Ours-noArt      PPN-std      0.0346       0.0826       7.39e-29        2.2e-20      1176
+1794.8s 201 add_ruler    flip Ours-noArt          PPN      0.0346       0.0748       6.01e-23       1.21e-21      1176
+1794.8s 202 add_ruler    flip Ours-noArt       PPN-FA      0.0346       0.0648       5.71e-14       3.93e-10      1176
+1794.8s 203 add_ruler    flip Ours-noArt         Ours      0.0346       0.0359          0.644          0.336      1176
+1794.8s 204 add_ruler    flip Ours-noArt   Ours-noLes      0.0346       0.0866       1.17e-31       2.65e-21      1176
+1794.8s 205 add_ruler    flip Ours-noArt Ours-stdPush      0.0346       0.0406         0.0638         0.0277      1176
+1794.8s 206 add_ruler   absdp       Ours          CNN      0.0254       0.0486       1.44e-30       1.83e-20      1176
+1794.8s 207 add_ruler   absdp       Ours      PPN-std      0.0254       0.0411       5.48e-40       1.92e-26      1176
+1794.8s 208 add_ruler   absdp       Ours          PPN      0.0254       0.0454      1.33e-113       8.39e-89      1176
+1794.8s 209 add_ruler   absdp       Ours       PPN-FA      0.0254       0.0284       0.000799       7.83e-06      1176
+1794.8s 210 add_ruler   absdp       Ours   Ours-noLes      0.0254       0.0398       2.13e-74       4.81e-61      1176
+1794.8s 211 add_ruler   absdp       Ours   Ours-noArt      0.0254       0.0234       1.25e-07       2.14e-06      1176
+1794.8s 212 add_ruler   absdp       Ours Ours-stdPush      0.0254       0.0284          2e-12       4.26e-10      1176
+1794.8s 213 add_ruler   absdp Ours-noArt          CNN      0.0234       0.0486       8.77e-44       9.58e-29      1176
+1794.8s 214 add_ruler   absdp Ours-noArt      PPN-std      0.0234       0.0411       1.76e-53       8.57e-37      1176
+1794.8s 215 add_ruler   absdp Ours-noArt          PPN      0.0234       0.0454      2.26e-135       1.08e-99      1176
+1794.8s 216 add_ruler   absdp Ours-noArt       PPN-FA      0.0234       0.0284        1.5e-11       6.01e-15      1176
+1794.8s 217 add_ruler   absdp Ours-noArt         Ours      0.0234       0.0254       1.25e-07       2.14e-06      1176
+1794.8s 218 add_ruler   absdp Ours-noArt   Ours-noLes      0.0234       0.0398      6.71e-100       2.54e-78      1176
+1794.8s 219 add_ruler   absdp Ours-noArt Ours-stdPush      0.0234       0.0284       3.62e-18       7.49e-15      1176
+1794.8s 220 add_ruler capture       Ours      PPN-std     0.00698       0.0148       4.36e-60       5.36e-49      1176
+1794.8s 221 add_ruler capture       Ours          PPN     0.00698       0.0112       4.59e-34       2.05e-28      1176
+1794.8s 222 add_ruler capture       Ours       PPN-FA     0.00698       0.0105       1.08e-12       3.66e-07      1176
+1794.8s 223 add_ruler capture       Ours   Ours-noLes     0.00698       0.0169        6.4e-90       2.06e-73      1176
+1794.8s 224 add_ruler capture       Ours   Ours-noArt     0.00698       0.0102        3.6e-12       2.18e-07      1176
+1794.8s 225 add_ruler capture       Ours Ours-stdPush     0.00698       0.0138       3.88e-89       4.78e-69      1176
+1794.8s 226 add_ruler capture Ours-noArt      PPN-std      0.0102       0.0148       1.61e-23       2.11e-21      1176
+1794.8s 227 add_ruler capture Ours-noArt          PPN      0.0102       0.0112       0.000123       2.48e-07      1176
+1794.8s 228 add_ruler capture Ours-noArt       PPN-FA      0.0102       0.0105          0.118          0.133      1176
+1794.8s 229 add_ruler capture Ours-noArt         Ours      0.0102      0.00698        3.6e-12       2.18e-07      1176
+1794.8s 230 add_ruler capture Ours-noArt   Ours-noLes      0.0102       0.0169       1.52e-46       1.43e-49      1176
+1794.8s 231 add_ruler capture Ours-noArt Ours-stdPush      0.0102       0.0138       1.36e-23       6.71e-26      1176
+1794.8s 232 add_hair    flip       Ours          CNN      0.0924        0.125        2.7e-10        0.00515      1233
+1794.8s 233 add_hair    flip       Ours      PPN-std      0.0924        0.149       3.51e-25       4.59e-13      1233
+1794.8s 234 add_hair    flip       Ours          PPN      0.0924        0.139       9.25e-18       5.01e-12      1233
+1794.8s 235 add_hair    flip       Ours       PPN-FA      0.0924        0.151       2.11e-27       2.15e-11      1233
+1794.8s 236 add_hair    flip       Ours   Ours-noLes      0.0924        0.143       1.13e-21       2.04e-11      1233
+1794.8s 237 add_hair    flip       Ours   Ours-noArt      0.0924       0.0874          0.214         0.0444      1233
+1794.8s 238 add_hair    flip       Ours Ours-stdPush      0.0924       0.0957          0.264          0.352      1233
+1794.8s 239 add_hair    flip Ours-noArt          CNN      0.0874        0.125       8.47e-12       1.16e-05      1233
+1794.8s 240 add_hair    flip Ours-noArt      PPN-std      0.0874        0.149       7.58e-31       1.49e-18      1233
+1794.8s 241 add_hair    flip Ours-noArt          PPN      0.0874        0.139       7.54e-22       2.47e-17      1233
+1794.8s 242 add_hair    flip Ours-noArt       PPN-FA      0.0874        0.151       2.44e-30       5.44e-17      1233
+1794.8s 243 add_hair    flip Ours-noArt         Ours      0.0874       0.0924          0.214         0.0444      1233
+1794.8s 244 add_hair    flip Ours-noArt   Ours-noLes      0.0874        0.143       3.31e-24       2.37e-16      1233
+1794.8s 245 add_hair    flip Ours-noArt Ours-stdPush      0.0874       0.0957         0.0682        0.00535      1233
+1794.8s 246 add_hair   absdp       Ours          CNN      0.0805        0.104         0.0175         0.0917      1233
+1794.8s 247 add_hair   absdp       Ours      PPN-std      0.0805       0.0923        0.00367         0.0611      1233
+1794.8s 248 add_hair   absdp       Ours          PPN      0.0805       0.0964       4.07e-40       1.97e-28      1233
+1794.8s 249 add_hair   absdp       Ours       PPN-FA      0.0805       0.0839       1.19e-06       6.33e-05      1233
+1794.8s 250 add_hair   absdp       Ours   Ours-noLes      0.0805       0.0831       8.21e-06          0.108      1233
+1794.8s 251 add_hair   absdp       Ours   Ours-noArt      0.0805       0.0611        2.4e-40       1.98e-41      1233
+1794.8s 252 add_hair   absdp       Ours Ours-stdPush      0.0805       0.0773        0.00365       0.000167      1233
+1794.8s 253 add_hair   absdp Ours-noArt          CNN      0.0611        0.104       9.62e-18       2.52e-06      1233
+1794.8s 254 add_hair   absdp Ours-noArt      PPN-std      0.0611       0.0923       7.19e-38       3.61e-17      1233
+1794.8s 255 add_hair   absdp Ours-noArt          PPN      0.0611       0.0964      6.69e-125       8.96e-97      1233
+1794.8s 256 add_hair   absdp Ours-noArt       PPN-FA      0.0611       0.0839       1.97e-61       4.22e-55      1233
+1794.8s 257 add_hair   absdp Ours-noArt         Ours      0.0611       0.0805        2.4e-40       1.98e-41      1233
+1794.8s 258 add_hair   absdp Ours-noArt   Ours-noLes      0.0611       0.0831       2.24e-62       1.86e-45      1233
+1794.8s 259 add_hair   absdp Ours-noArt Ours-stdPush      0.0611       0.0773       1.46e-35       2.54e-35      1233
+1794.8s 260 add_ink    flip       Ours          CNN      0.0556       0.0975       9.71e-19       3.28e-09      1230
+1794.8s 261 add_ink    flip       Ours      PPN-std      0.0556       0.0991       2.07e-22       1.03e-14      1230
+1794.8s 262 add_ink    flip       Ours          PPN      0.0556       0.0949       1.25e-20       1.79e-14      1230
+1794.8s 263 add_ink    flip       Ours       PPN-FA      0.0556       0.0911       2.42e-16       2.22e-08      1230
+1794.8s 264 add_ink    flip       Ours   Ours-noLes      0.0556        0.101       1.84e-23       2.72e-13      1230
+1794.8s 265 add_ink    flip       Ours   Ours-noArt      0.0556       0.0614          0.133          0.585      1230
+1794.8s 266 add_ink    flip       Ours Ours-stdPush      0.0556       0.0578          0.526          0.138      1230
+1794.8s 267 add_ink    flip Ours-noArt          CNN      0.0614       0.0975       2.93e-13       1.31e-07      1230
+1794.8s 268 add_ink    flip Ours-noArt      PPN-std      0.0614       0.0991       8.29e-17       4.97e-13      1230
+1794.8s 269 add_ink    flip Ours-noArt          PPN      0.0614       0.0949       2.92e-14       6.62e-12      1230
+1794.8s 270 add_ink    flip Ours-noArt       PPN-FA      0.0614       0.0911        1.8e-10       4.31e-07      1230
+1794.8s 271 add_ink    flip Ours-noArt         Ours      0.0614       0.0556          0.133          0.585      1230
+1794.8s 272 add_ink    flip Ours-noArt   Ours-noLes      0.0614        0.101        1.4e-17       7.85e-12      1230
+1794.8s 273 add_ink    flip Ours-noArt Ours-stdPush      0.0614       0.0578          0.334          0.389      1230
+1794.8s 274 add_ink   absdp       Ours          CNN      0.0454       0.0797          4e-29       2.81e-09      1230
+1794.8s 275 add_ink   absdp       Ours      PPN-std      0.0454       0.0578       3.02e-05         0.0215      1230
+1794.8s 276 add_ink   absdp       Ours          PPN      0.0454       0.0619       8.31e-48       1.87e-34      1230
+1794.8s 277 add_ink   absdp       Ours       PPN-FA      0.0454       0.0457          0.636          0.457      1230
+1794.8s 278 add_ink   absdp       Ours   Ours-noLes      0.0454       0.0491        0.00318         0.0751      1230
+1794.8s 279 add_ink   absdp       Ours   Ours-noArt      0.0454       0.0405       8.92e-09       6.13e-07      1230
+1794.8s 280 add_ink   absdp       Ours Ours-stdPush      0.0454       0.0446          0.307          0.766      1230
+1794.8s 281 add_ink   absdp Ours-noArt          CNN      0.0405       0.0797       1.23e-42       4.95e-17      1230
+1794.8s 282 add_ink   absdp Ours-noArt      PPN-std      0.0405       0.0578       8.78e-14        1.7e-07      1230
+1794.8s 283 add_ink   absdp Ours-noArt          PPN      0.0405       0.0619       2.62e-78       2.68e-61      1230
+1794.8s 284 add_ink   absdp Ours-noArt       PPN-FA      0.0405       0.0457       9.91e-05       6.78e-06      1230
+1794.8s 285 add_ink   absdp Ours-noArt         Ours      0.0405       0.0454       8.92e-09       6.13e-07      1230
+1794.8s 286 add_ink   absdp Ours-noArt   Ours-noLes      0.0405       0.0491       4.93e-16       8.27e-10      1230
+1794.8s 287 add_ink   absdp Ours-noArt Ours-stdPush      0.0405       0.0446        4.5e-08       3.78e-07      1230
+1858.4s 288 artifact      model       versus  A_model  A_versus       delta_CI95  p_cluster_bootstrap  p_DeLong_image_level
+1858.4s 289 DC       Ours          CNN   0.5736    0.5705  [-0.020, 0.029]                0.775                0.7575
+1858.4s 290 DC       Ours      PPN-std   0.5736    0.5762  [-0.028, 0.020]                0.782                0.7499
+1858.4s 291 DC       Ours          PPN   0.5736    0.6119 [-0.053, -0.022]                0.000                0.0000
+1858.4s 292 DC       Ours       PPN-FA   0.5736    0.6585 [-0.100, -0.068]                0.000                0.0000
+1858.4s 293 DC       Ours   Ours-noLes   0.5736    0.6556 [-0.105, -0.055]                0.000                0.0000
+1858.4s 294 DC       Ours   Ours-noArt   0.5736    0.5763  [-0.016, 0.013]                0.794                0.6743
+1858.4s 295 DC       Ours Ours-stdPush   0.5736    0.5728  [-0.008, 0.010]                0.835                0.8432
+1858.4s 296 DC Ours-noArt          CNN   0.5763    0.5705  [-0.018, 0.031]                0.655                0.5769
+1858.4s 297 DC Ours-noArt      PPN-std   0.5763    0.5762  [-0.026, 0.024]                0.907                0.9838
+1858.4s 298 DC Ours-noArt          PPN   0.5763    0.6119 [-0.050, -0.023]                0.000                0.0000
+1858.4s 299 DC Ours-noArt       PPN-FA   0.5763    0.6585 [-0.098, -0.067]                0.000                0.0000
+1858.4s 300 DC Ours-noArt         Ours   0.5763    0.5736  [-0.013, 0.016]                0.794                0.6743
+1858.4s 301 DC Ours-noArt   Ours-noLes   0.5763    0.6556 [-0.101, -0.056]                0.000                0.0000
+1858.4s 302 DC Ours-noArt Ours-stdPush   0.5763    0.5728  [-0.014, 0.019]                0.716                0.6066
+1858.4s 303 SP       Ours          CNN   0.5868    0.5818  [-0.024, 0.034]                0.741                0.7007
+1858.4s 304 SP       Ours      PPN-std   0.5868    0.6070 [-0.041, -0.001]                0.038                0.0271
+1858.4s 305 SP       Ours          PPN   0.5868    0.6010  [-0.034, 0.006]                0.175                0.1103
+1858.4s 306 SP       Ours       PPN-FA   0.5868    0.6219 [-0.053, -0.017]                0.000                0.0000
+1858.4s 307 SP       Ours   Ours-noLes   0.5868    0.6325 [-0.068, -0.022]                0.000                0.0000
+1858.4s 308 SP       Ours   Ours-noArt   0.5868    0.6221 [-0.054, -0.018]                0.000                0.0000
+1858.4s 309 SP       Ours Ours-stdPush   0.5868    0.5893  [-0.013, 0.008]                0.686                0.6008
+1858.4s 310 SP Ours-noArt          CNN   0.6221    0.5818   [0.007, 0.074]                0.018                0.0036
+1858.4s 311 SP Ours-noArt      PPN-std   0.6221    0.6070  [-0.008, 0.037]                0.199                0.1347
+1858.4s 312 SP Ours-noArt          PPN   0.6221    0.6010   [0.001, 0.044]                0.037                0.0211
+1858.4s 313 SP Ours-noArt       PPN-FA   0.6221    0.6219  [-0.018, 0.021]                1.000                0.9752
+1858.4s 314 SP Ours-noArt         Ours   0.6221    0.5868   [0.018, 0.054]                0.000                0.0000
+1858.4s 315 SP Ours-noArt   Ours-noLes   0.6221    0.6325  [-0.036, 0.017]                0.452                0.3059
+1858.4s 316 SP Ours-noArt Ours-stdPush   0.6221    0.5893   [0.017, 0.050]                0.000                0.0000
+1858.4s 317 primary family (12 tests): all significant after Holm at 0.05: True
+1858.4s 318 test  versus  p_group_aware   p_Holm
+1858.4s 319 AUC PPN-std          0.002    0.006
+1858.4s 320 artifact share PPN-std       1.63e-11 9.75e-11
+1858.4s 321 flip add_dark_corners PPN-std       3.68e-27 4.04e-26
+1858.4s 322 flip add_ruler PPN-std       1.63e-16  1.3e-15
+1858.4s 323 AUC     PPN          0.014    0.014
+1858.4s 324 artifact share     PPN       3.12e-06 1.25e-05
+1858.4s 325 flip add_dark_corners     PPN       7.41e-31 8.89e-30
+1858.4s 326 flip add_ruler     PPN       7.88e-17 7.09e-16
+1858.4s 327 AUC  PPN-FA          0.007    0.014
+1858.4s 328 artifact share  PPN-FA       1.07e-13 7.46e-13
+1858.4s 329 flip add_dark_corners  PPN-FA       1.69e-21 1.69e-20
+1858.4s 330 flip add_ruler  PPN-FA       4.87e-08 2.44e-07
+1858.7s 331 manual labels: 2594 images; found in ISIC 2019: 2593 (by source: {'MSK': 2593}, by split: {'train': 2092, 'val': 256, 'test': 245})
+1858.7s 332 detector             manual_label    n  manual_prev  detector_prev  precision precision_CI  recall    recall_CI  specificity    F1
+1858.7s 333 DC              dark_corner 2593        0.370          0.040      0.922 [0.85, 0.96]   0.099 [0.08, 0.12]        0.995 0.179
+1858.7s 334 TS            hair or ruler 2593        0.838          0.543      0.957 [0.95, 0.97]   0.620 [0.60, 0.64]        0.857 0.753
+1858.7s 335 TS                     hair 2593        0.585          0.543      0.615 [0.59, 0.64]   0.571 [0.55, 0.60]        0.497 0.592
+1858.7s 336 TS                    ruler 2593        0.495          0.543      0.713 [0.69, 0.74]   0.782 [0.76, 0.80]        0.692 0.746
+1858.7s 337 SP               gel_bubble 2593        0.489          0.273      0.654 [0.62, 0.69]   0.365 [0.34, 0.39]        0.815 0.469
+1858.7s 338 SP gel_bubble or gel_border 2593        0.674          0.273      0.860 [0.83, 0.88]   0.348 [0.33, 0.37]        0.883 0.496
+1858.7s 339 INK           ink or patches 2593        0.242          0.080      0.744 [0.68, 0.80]   0.246 [0.21, 0.28]        0.973 0.369
+1858.7s 340 INK                      ink 2593        0.170          0.080      0.300 [0.24, 0.37]   0.141 [0.11, 0.18]        0.933 0.191
+1858.8s 341 total 2248
+1858.8s 342 drwxr-xr-x 2 root root    4096 Oct 20 07:13 .
+1858.8s 343 drwxr-xr-x 4 root root    4096 Oct 20 07:13 ..
+1858.8s 344 -rw-r--r-- 1 root root    5866 Oct 20 07:04 attribution_group_tests.csv
+1858.8s 345 -rw-r--r-- 1 root root    1471 Oct 20 07:04 auc_cluster_bootstrap.csv
+1858.8s 346 -rw-r--r-- 1 root root  117260 Oct 20 07:13 bissoto_isic_bias.csv
+1858.8s 347 -rw-r--r-- 1 root root   16727 Oct 20 07:12 counterfactual_group_tests.csv
+1858.8s 348 -rw-r--r-- 1 root root     782 Oct 20 07:13 detector_vs_manual_labels.csv
+1858.8s 349 -rw-r--r-- 1 root root 1035274 Oct 20 07:03 erf_Ours_s0.png
+1858.8s 350 -rw-r--r-- 1 root root   60606 Oct 20 07:03 erf_per_prototype.csv
+1858.8s 351 -rw-r--r-- 1 root root  999278 Oct 20 07:03 erf_PPN_s0.png
+1858.8s 352 -rw-r--r-- 1 root root     716 Oct 20 07:13 primary_family_holm.csv
+1858.8s 353 -rw-r--r-- 1 root root    2913 Oct 20 07:13 real_artifact_cluster_bootstrap.csv
+1858.8s 354 -rw-r--r-- 1 root root   30377 Oct 20 07:13 summary_nb05.txt
+1858.8s 355 
+1858.8s 356 NB05 FINISHED - please send the complete log (or nb05/summary_nb05.txt).
+1864.0s 357 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+1864.0s 358 cells[i][c] = re.sub('\\\\\|', '|', cell)
+1864.2s 359 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+1864.2s 360 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+1864.9s 361 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+1865.0s 362 [NbConvertApp] Writing 133623 bytes to __notebook__.ipynb
+1867.3s 363 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+1868.2s 364 [NbConvertApp] Writing 803277 bytes to __results__.html

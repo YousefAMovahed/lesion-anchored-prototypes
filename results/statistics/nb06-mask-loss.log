@@ -1,0 +1,495 @@
+7.6s 1 /usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+7.6s 2 _validate(nbdict, ref, version, version_minor, relax_add_props)
+8.7s 3 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.7s 4 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.7s 5 0.00s - to python to disable frozen modules.
+8.7s 6 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.3s 7 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.3s 8 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.3s 9 0.00s - to python to disable frozen modules.
+9.3s 10 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.6s 11 Writing artproto.py
+10.6s 12 Writing evalkit.py
+10.6s 13 Writing fa_ext.py
+10.6s 14 Writing train6.py
+18.3s 15 GPUs: 2 | priority queue: ['PPN-FA-Correia:0', 'PPN-FA-IAIABL:0', 'PPN-FA-Correia:1', 'PPN-FA-IAIABL:1', 'PPN-FA-Correia:2', 'PPN-FA-IAIABL:2', 'PPN-FA-1e-1:0', 'PPN-FA-1e-1:1', 'PPN-FA-1e-1:2', 'PPN-FA-1e-2:0', 'PPN-FA-1e-2:1', 'PPN-FA-1e-2:2']
+618.3s 16 --- 10 min ---
+618.3s 17 [GPU0]
+618.3s 18 [PPN-FA-IAIABL s0] {'epoch': 3, 'stage': 'warm', 'val_auc': 0.6657, 'sec': 105.8, 'ce': 0.6946, 'clst': 4.2172, 'sep': 42.9048, 'fa': 1795.5397}
+618.3s 19 [PPN-FA-IAIABL s0] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.7327, 'sec': 105.3, 'ce': 0.6991, 'clst': 4.5562, 'sep': 50.8333, 'fa': 1649.13}
+618.3s 20 [GPU1]
+618.3s 21 [PPN-FA-Correia s0] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.7462, 'sec': 49.5, 'ce': 0.6674, 'clst': 3.0769, 'sep': 39.9571, 'fa': 1082.8249}
+618.3s 22 [PPN-FA-Correia s0] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.775, 'sec': 108.6, 'ce': 0.6868, 'clst': 3.1174, 'sep': 39.9291, 'fa': 858.0414}
+1218.3s 23 --- 20 min ---
+1218.3s 24 [GPU0]
+1218.3s 25 [PPN-FA-IAIABL s0] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.7875, 'sec': 156.5, 'ce': 0.7108, 'clst': 4.7701, 'sep': 59.8605, 'fa': 1181.575}
+1218.3s 26 [PPN-FA-IAIABL s0] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.7884, 'sec': 156.5, 'ce': 0.7112, 'clst': 4.3475, 'sep': 51.2162, 'fa': 1187.486}
+1218.3s 27 [GPU1]
+1218.3s 28 [PPN-FA-Correia s0] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.832, 'sec': 102.5, 'ce': 0.6347, 'clst': 2.6372, 'sep': 44.3337, 'fa': 376.7794}
+1218.3s 29 [PPN-FA-Correia s0] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8381, 'sec': 102.8, 'ce': 0.6321, 'clst': 2.0602, 'sep': 42.3474, 'fa': 356.8918}
+1818.3s 30 --- 30 min ---
+1818.3s 31 [GPU0]
+1818.3s 32 [PPN-FA-IAIABL s0] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.7891, 'sec': 156.5, 'ce': 0.7257, 'clst': 4.3092, 'sep': 60.1377, 'fa': 999.6427}
+1818.3s 33 [PPN-FA-IAIABL s0] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8075, 'sec': 156.9, 'ce': 0.715, 'clst': 4.6181, 'sep': 68.5247, 'fa': 942.5832}
+1818.3s 34 [GPU1]
+1818.3s 35 [PPN-FA-Correia s0] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8544, 'sec': 102.9, 'ce': 0.6764, 'clst': 2.1668, 'sep': 48.5796, 'fa': 314.3836}
+1818.3s 36 [PPN-FA-Correia s0] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8548, 'sec': 103.0, 'ce': 0.6827, 'clst': 2.3706, 'sep': 49.6571, 'fa': 313.4845}
+2418.3s 37 --- 40 min ---
+2418.3s 38 [GPU0]
+2418.3s 39 [PPN-FA-IAIABL s0] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8129, 'sec': 157.2, 'ce': 0.7022, 'clst': 4.7707, 'sep': 76.3965, 'fa': 855.9159}
+2418.3s 40 [PPN-FA-IAIABL s0] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.82, 'sec': 157.2, 'ce': 0.6972, 'clst': 4.8898, 'sep': 78.0169, 'fa': 844.435}
+2418.3s 41 [GPU1]
+2418.3s 42 [PPN-FA-Correia s1] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7162, 'sec': 49.8, 'ce': 0.6276, 'clst': 2.2008, 'sep': 14.6861, 'fa': 1806.6834}
+2418.3s 43 [PPN-FA-Correia s1] {'epoch': 3, 'stage': 'warm', 'val_auc': 0.7681, 'sec': 49.7, 'ce': 0.6356, 'clst': 2.7046, 'sep': 28.8076, 'fa': 1363.7855}
+3018.3s 44 --- 50 min ---
+3018.3s 45 [GPU0]
+3018.3s 46 /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+3018.3s 47 return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),
+3018.3s 48 [GPU1]
+3018.3s 49 [PPN-FA-Correia s1] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.8008, 'sec': 102.7, 'ce': 0.6289, 'clst': 2.9213, 'sep': 43.4249, 'fa': 455.1136}
+3018.3s 50 [PPN-FA-Correia s1] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8191, 'sec': 102.5, 'ce': 0.6029, 'clst': 1.6814, 'sep': 32.2074, 'fa': 415.6896}
+3618.3s 51 --- 60 min ---
+3618.3s 52 [GPU0]
+3618.3s 53 [PPN-FA-IAIABL s1] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7126, 'sec': 105.4, 'ce': 0.6674, 'clst': 3.412, 'sep': 26.8016, 'fa': 2045.9148}
+3618.3s 54 [PPN-FA-IAIABL s1] {'epoch': 3, 'stage': 'warm', 'val_auc': 0.6857, 'sec': 105.2, 'ce': 0.6911, 'clst': 4.6393, 'sep': 47.742, 'fa': 1803.4414}
+3618.3s 55 [GPU1]
+3618.3s 56 [PPN-FA-Correia s1] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8564, 'sec': 103.0, 'ce': 0.5696, 'clst': 1.7377, 'sep': 40.5518, 'fa': 340.1273}
+3618.3s 57 [PPN-FA-Correia s1] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8558, 'sec': 103.0, 'ce': 0.5851, 'clst': 1.716, 'sep': 39.8013, 'fa': 340.0451}
+4218.3s 58 --- 70 min ---
+4218.3s 59 [GPU0]
+4218.3s 60 [PPN-FA-IAIABL s1] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.7885, 'sec': 155.9, 'ce': 0.7003, 'clst': 5.5685, 'sep': 63.0749, 'fa': 1418.2632}
+4218.3s 61 [PPN-FA-IAIABL s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.7768, 'sec': 157.1, 'ce': 0.7185, 'clst': 4.7769, 'sep': 57.9969, 'fa': 1207.6179}
+4218.3s 62 [GPU1]
+4218.3s 63 [PPN-FA-Correia s1] {'epoch': 22, 'stage': 'last', 'val_auc': 0.7464, 'sec': 43.2, 'ce': 1.303, 'clst': 0.5796, 'sep': 22.1647}
+4218.3s 64 [PPN-FA-Correia s1] {'epoch': 23, 'stage': 'last', 'val_auc': 0.7674, 'sec': 42.9, 'ce': 1.0607, 'clst': 0.5963, 'sep': 22.2221}
+4818.3s 65 --- 80 min ---
+4818.3s 66 [GPU0]
+4818.3s 67 [PPN-FA-IAIABL s1] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.7999, 'sec': 156.7, 'ce': 0.7286, 'clst': 3.8316, 'sep': 56.6922, 'fa': 948.3825}
+4818.3s 68 [PPN-FA-IAIABL s1] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8111, 'sec': 156.5, 'ce': 0.7258, 'clst': 4.0877, 'sep': 63.2354, 'fa': 843.8026}
+4818.3s 69 [GPU1]
+4818.3s 70 [PPN-FA-Correia s2] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.7881, 'sec': 102.6, 'ce': 0.7115, 'clst': 3.5942, 'sep': 41.7924, 'fa': 928.5789}
+4818.3s 71 [PPN-FA-Correia s2] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.795, 'sec': 102.6, 'ce': 0.6984, 'clst': 2.3579, 'sep': 34.4309, 'fa': 722.9864}
+5418.3s 72 --- 90 min ---
+5418.3s 73 [GPU0]
+5418.3s 74 [PPN-FA-IAIABL s1] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8301, 'sec': 157.0, 'ce': 0.7134, 'clst': 4.82, 'sep': 78.4566, 'fa': 784.9461}
+5418.3s 75 [PPN-FA-IAIABL s1] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.834, 'sec': 156.9, 'ce': 0.7132, 'clst': 4.5498, 'sep': 75.6344, 'fa': 777.6711}
+5418.3s 76 [GPU1]
+5418.3s 77 [PPN-FA-Correia s2] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8301, 'sec': 103.1, 'ce': 0.5853, 'clst': 1.0935, 'sep': 29.3776, 'fa': 423.3822}
+5418.3s 78 [PPN-FA-Correia s2] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8396, 'sec': 103.0, 'ce': 0.5805, 'clst': 1.2502, 'sep': 34.1775, 'fa': 399.6477}
+6018.3s 79 --- 100 min ---
+6018.3s 80 [GPU0]
+6018.3s 81 [PPN-FA-IAIABL s1] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8373, 'sec': 156.8, 'ce': 0.7068, 'clst': 4.5661, 'sep': 80.6875, 'fa': 755.5724}
+6018.3s 82 [PPN-FA-IAIABL s1] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.838, 'sec': 156.6, 'ce': 0.7045, 'clst': 4.7701, 'sep': 80.4482, 'fa': 754.2179}
+6018.3s 83 [GPU1]
+6018.3s 84 [PPN-FA-Correia s2] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8537, 'sec': 102.6, 'ce': 0.628, 'clst': 1.9814, 'sep': 46.5026, 'fa': 370.2675}
+6018.3s 85 [PPN-FA-Correia s2] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.8534, 'sec': 102.7, 'ce': 0.626, 'clst': 1.9233, 'sep': 46.2191, 'fa': 371.778}
+6618.3s 86 --- 110 min ---
+6618.3s 87 [GPU0]
+6618.3s 88 [PPN-FA-1e-1 s0] {'epoch': 3, 'stage': 'warm', 'val_auc': 0.8007, 'sec': 44.5, 'ce': 0.6419, 'clst': 1.816, 'sep': 27.5404, 'fa': 4.0958}
+6618.3s 89 [PPN-FA-1e-1 s0] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.8061, 'sec': 44.6, 'ce': 0.6476, 'clst': 1.988, 'sep': 31.9969, 'fa': 3.9321}
+6618.3s 90 [GPU1]
+6618.3s 91 [PPN-FA-IAIABL s2] {'epoch': 1, 'stage': 'warm', 'val_auc': 0.687, 'sec': 107.3, 'ce': 0.6782, 'clst': 2.7454, 'sep': 9.1442, 'fa': 2671.934}
+6618.3s 92 [PPN-FA-IAIABL s2] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7284, 'sec': 107.0, 'ce': 0.6663, 'clst': 3.4938, 'sep': 25.6855, 'fa': 2050.8492}
+7218.3s 93 --- 120 min ---
+7218.3s 94 [GPU0]
+7218.3s 95 [PPN-FA-1e-1 s0] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.7915, 'sec': 99.9, 'ce': 0.6373, 'clst': 2.7028, 'sep': 47.1468, 'fa': 3.6825}
+7218.3s 96 [PPN-FA-1e-1 s0] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.7876, 'sec': 99.5, 'ce': 0.6237, 'clst': 3.6471, 'sep': 63.5202, 'fa': 3.2617}
+7218.3s 97 [GPU1]
+7218.3s 98 [PPN-FA-IAIABL s2] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.7913, 'sec': 158.5, 'ce': 0.7034, 'clst': 5.4667, 'sep': 60.5081, 'fa': 1528.6945}
+7218.3s 99 [PPN-FA-IAIABL s2] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.755, 'sec': 158.7, 'ce': 0.6979, 'clst': 5.1978, 'sep': 62.3398, 'fa': 1347.8215}
+7818.3s 100 --- 130 min ---
+7818.3s 101 [GPU0]
+7818.3s 102 [PPN-FA-1e-1 s0] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8448, 'sec': 99.2, 'ce': 0.5932, 'clst': 3.7566, 'sep': 73.263, 'fa': 2.8101}
+7818.3s 103 [PPN-FA-1e-1 s0] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8395, 'sec': 99.2, 'ce': 0.599, 'clst': 3.1973, 'sep': 69.5273, 'fa': 2.8743}
+7818.3s 104 [GPU1]
+7818.3s 105 [PPN-FA-IAIABL s2] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.7283, 'sec': 158.7, 'ce': 0.6987, 'clst': 4.9908, 'sep': 64.6945, 'fa': 1176.8693}
+7818.3s 106 [PPN-FA-IAIABL s2] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.7314, 'sec': 158.6, 'ce': 0.714, 'clst': 4.762, 'sep': 60.1099, 'fa': 1102.3053}
+8418.3s 107 --- 140 min ---
+8418.3s 108 [GPU0]
+8418.3s 109 /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+8418.3s 110 return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),
+8418.3s 111 [GPU1]
+8418.3s 112 [PPN-FA-IAIABL s2] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.7665, 'sec': 158.7, 'ce': 0.7026, 'clst': 4.0099, 'sep': 61.7139, 'fa': 1010.3409}
+8418.3s 113 [PPN-FA-IAIABL s2] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.7907, 'sec': 158.8, 'ce': 0.7037, 'clst': 4.0524, 'sep': 66.7396, 'fa': 963.1468}
+9018.3s 114 --- 150 min ---
+9018.3s 115 [GPU0]
+9018.3s 116 [PPN-FA-1e-1 s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.7434, 'sec': 99.5, 'ce': 0.6464, 'clst': 2.7025, 'sep': 44.4463, 'fa': 3.8602}
+9018.3s 117 [PPN-FA-1e-1 s1] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.7713, 'sec': 99.2, 'ce': 0.6285, 'clst': 3.2281, 'sep': 49.8031, 'fa': 3.9568}
+9018.3s 118 [GPU1]
+9018.3s 119 [PPN-FA-IAIABL s2] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8073, 'sec': 158.6, 'ce': 0.6913, 'clst': 4.2012, 'sep': 70.3614, 'fa': 920.7602}
+9018.3s 120 [PPN-FA-IAIABL s2] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8083, 'sec': 158.7, 'ce': 0.6911, 'clst': 4.1768, 'sep': 71.8424, 'fa': 898.1862}
+9618.3s 121 --- 160 min ---
+9618.3s 122 [GPU0]
+9618.3s 123 [PPN-FA-1e-1 s1] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.834, 'sec': 98.4, 'ce': 0.6103, 'clst': 3.1646, 'sep': 65.9564, 'fa': 3.0505}
+9618.3s 124 [PPN-FA-1e-1 s1] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8307, 'sec': 98.6, 'ce': 0.61, 'clst': 3.2421, 'sep': 67.4462, 'fa': 2.9756}
+9618.3s 125 [GPU1]
+9618.3s 126 [PPN-FA-1e-1 s2] {'epoch': 1, 'stage': 'warm', 'val_auc': 0.7343, 'sec': 43.8, 'ce': 0.6766, 'clst': 0.8577, 'sep': 3.5372, 'fa': 5.9579}
+9618.3s 127 [PPN-FA-1e-1 s2] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7905, 'sec': 43.7, 'ce': 0.6514, 'clst': 0.934, 'sep': 10.324, 'fa': 4.6241}
+10218.3s 128 --- 170 min ---
+10218.3s 129 [GPU0]
+10218.3s 130 [PPN-FA-1e-1 s1] after push val_auc=0.7617 | protos on artifact cells(>0.5): 1/20 | on lesion cells(>=0.5): 5/20
+10218.3s 131 [PPN-FA-1e-1 s1] {'epoch': 21, 'stage': 'last', 'val_auc': 0.7968, 'sec': 43.8, 'ce': 5.1094, 'clst': 1.1999, 'sep': 39.5797}
+10218.3s 132 [GPU1]
+10218.3s 133 [PPN-FA-1e-1 s2] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.7846, 'sec': 97.2, 'ce': 0.6771, 'clst': 2.3342, 'sep': 40.9998, 'fa': 3.4804}
+10218.3s 134 [PPN-FA-1e-1 s2] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.7995, 'sec': 97.5, 'ce': 0.6709, 'clst': 1.9587, 'sep': 37.5104, 'fa': 3.2423}
+10818.3s 135 --- 180 min ---
+10818.3s 136 [GPU0]
+10818.3s 137 [PPN-FA-1e-2 s0] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.7564, 'sec': 97.3, 'ce': 0.6295, 'clst': 3.2933, 'sep': 55.9093, 'fa': 10.2148}
+10818.3s 138 [PPN-FA-1e-2 s0] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.7856, 'sec': 97.3, 'ce': 0.6243, 'clst': 3.0027, 'sep': 53.098, 'fa': 11.349}
+10818.3s 139 [GPU1]
+10818.3s 140 [PPN-FA-1e-1 s2] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8135, 'sec': 97.0, 'ce': 0.6913, 'clst': 2.7484, 'sep': 56.8081, 'fa': 2.2515}
+10818.3s 141 [PPN-FA-1e-1 s2] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8154, 'sec': 97.4, 'ce': 0.6877, 'clst': 2.6123, 'sep': 54.4982, 'fa': 2.1715}
+11418.3s 142 --- 190 min ---
+11418.3s 143 [GPU0]
+11418.3s 144 [PPN-FA-1e-2 s0] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8035, 'sec': 98.1, 'ce': 0.5788, 'clst': 2.8576, 'sep': 64.9076, 'fa': 9.8852}
+11418.3s 145 [PPN-FA-1e-2 s0] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8308, 'sec': 97.9, 'ce': 0.5815, 'clst': 3.1802, 'sep': 69.7582, 'fa': 9.5702}
+11418.3s 146 [GPU1]
+11418.3s 147 [PPN-FA-1e-1 s2] {'epoch': 23, 'stage': 'last', 'val_auc': 0.7849, 'sec': 43.3, 'ce': 0.8696, 'clst': 1.4, 'sep': 37.5155}
+11418.3s 148 [PPN-FA-1e-1 s2] {'epoch': 24, 'stage': 'last', 'val_auc': 0.789, 'sec': 43.4, 'ce': 0.7628, 'clst': 1.3422, 'sep': 37.6655}
+12018.3s 149 --- 200 min ---
+12018.3s 150 [GPU0]
+12018.3s 151 [PPN-FA-1e-2 s0] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8419, 'sec': 96.9, 'ce': 0.5605, 'clst': 2.9592, 'sep': 71.1422, 'fa': 9.1265}
+12018.3s 152 [PPN-FA-1e-2 s0] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.8402, 'sec': 96.9, 'ce': 0.5668, 'clst': 3.1359, 'sep': 72.0201, 'fa': 9.0922}
+12018.4s 153 [GPU1]
+12018.4s 154 [PPN-FA-1e-2 s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.7984, 'sec': 96.9, 'ce': 0.5911, 'clst': 2.3586, 'sep': 52.0528, 'fa': 10.8195}
+12018.4s 155 [PPN-FA-1e-2 s1] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.783, 'sec': 96.8, 'ce': 0.6044, 'clst': 3.089, 'sep': 58.0435, 'fa': 9.9051}
+12618.4s 156 --- 210 min ---
+12618.4s 157 [GPU0]
+12618.4s 158 [PPN-FA-1e-2 s2] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.8114, 'sec': 43.6, 'ce': 0.6264, 'clst': 1.8632, 'sep': 33.1415, 'fa': 8.0972}
+12618.4s 159 [PPN-FA-1e-2 s2] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.7792, 'sec': 43.8, 'ce': 0.6235, 'clst': 2.2799, 'sep': 42.9127, 'fa': 9.1739}
+12618.4s 160 [GPU1]
+12618.4s 161 [PPN-FA-1e-2 s1] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8321, 'sec': 98.1, 'ce': 0.5779, 'clst': 2.5133, 'sep': 60.6089, 'fa': 6.9049}
+12618.4s 162 [PPN-FA-1e-2 s1] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8316, 'sec': 97.7, 'ce': 0.5708, 'clst': 2.8004, 'sep': 65.4706, 'fa': 6.5854}
+13218.4s 163 --- 220 min ---
+13218.4s 164 [GPU0]
+13218.4s 165 [PPN-FA-1e-2 s2] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.7878, 'sec': 97.1, 'ce': 0.6088, 'clst': 1.677, 'sep': 45.3265, 'fa': 10.3601}
+13218.4s 166 [PPN-FA-1e-2 s2] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8133, 'sec': 97.9, 'ce': 0.5846, 'clst': 2.0695, 'sep': 55.6974, 'fa': 10.2111}
+13218.4s 167 [GPU1]
+13218.4s 168 [PPN-FA-1e-2 s1] after push val_auc=0.7672 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 15/20
+13218.4s 169 [PPN-FA-1e-2 s1] {'epoch': 21, 'stage': 'last', 'val_auc': 0.7863, 'sec': 43.2, 'ce': 10.2898, 'clst': 1.4488, 'sep': 47.4845}
+13818.4s 170 --- 230 min ---
+13818.4s 171 [GPU0]
+13818.4s 172 [PPN-FA-1e-2 s2] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8301, 'sec': 99.3, 'ce': 0.5614, 'clst': 3.0979, 'sep': 72.6192, 'fa': 9.5879}
+13818.4s 173 [PPN-FA-1e-2 s2] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8299, 'sec': 99.3, 'ce': 0.5595, 'clst': 2.9343, 'sep': 71.7427, 'fa': 9.5317}
+13818.4s 174 [GPU1]
+13818.4s 175 [PPN-FA-1e-2 s1] DONE best_val_auc=0.8141 at epoch 22 (32.3 min)
+13818.4s 176 QUEUE FINISHED for this GPU
+14418.4s 177 --- 240 min ---
+14418.4s 178 [GPU0]
+14418.4s 179 [PPN-FA-1e-2 s2] DONE best_val_auc=0.7374 at epoch 21 (32.7 min)
+14418.4s 180 QUEUE FINISHED for this GPU
+14418.4s 181 [GPU1]
+14418.4s 182 [PPN-FA-1e-2 s1] DONE best_val_auc=0.8141 at epoch 22 (32.3 min)
+14418.4s 183 QUEUE FINISHED for this GPU
+14418.4s 184 TRAINING DONE in 240.0 min
+14418.4s 185 ===== GPU0 log (START/DONE/push lines) =====
+14418.4s 186 === START PPN-FA-IAIABL:0 | lam_fa=0.001 fa_mode=iaiabl ===
+14418.4s 187 [PPN-FA-IAIABL s0] after push val_auc=0.7352 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 16/20
+14418.4s 188 [PPN-FA-IAIABL s0] DONE best_val_auc=0.7610 at epoch 25 (54.1 min)
+14418.4s 189 === START PPN-FA-IAIABL:1 | lam_fa=0.001 fa_mode=iaiabl ===
+14418.4s 190 [PPN-FA-IAIABL s1] after push val_auc=0.8206 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 19/20
+14418.4s 191 [PPN-FA-IAIABL s1] DONE best_val_auc=0.8296 at epoch 22 (52.3 min)
+14418.4s 192 === START PPN-FA-1e-1:0 | lam_fa=0.1 fa_mode=None ===
+14418.4s 193 [PPN-FA-1e-1 s0] after push val_auc=0.7935 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 14/20
+14418.4s 194 [PPN-FA-1e-1 s0] DONE best_val_auc=0.7935 at epoch 20 (33.1 min)
+14418.4s 195 === START PPN-FA-1e-1:1 | lam_fa=0.1 fa_mode=None ===
+14418.4s 196 [PPN-FA-1e-1 s1] after push val_auc=0.7617 | protos on artifact cells(>0.5): 1/20 | on lesion cells(>=0.5): 5/20
+14418.4s 197 [PPN-FA-1e-1 s1] DONE best_val_auc=0.7968 at epoch 21 (32.7 min)
+14418.4s 198 === START PPN-FA-1e-2:0 | lam_fa=0.01 fa_mode=None ===
+14418.4s 199 [PPN-FA-1e-2 s0] after push val_auc=0.7593 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 18/20
+14418.4s 200 [PPN-FA-1e-2 s0] DONE best_val_auc=0.8132 at epoch 22 (32.4 min)
+14418.4s 201 === START PPN-FA-1e-2:2 | lam_fa=0.01 fa_mode=None ===
+14418.4s 202 [PPN-FA-1e-2 s2] after push val_auc=0.7288 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 15/20
+14418.4s 203 [PPN-FA-1e-2 s2] DONE best_val_auc=0.7374 at epoch 21 (32.7 min)
+14418.4s 204 ===== GPU1 log (START/DONE/push lines) =====
+14418.4s 205 === START PPN-FA-Correia:0 | lam_fa=0.001 fa_mode=correia ===
+14418.4s 206 [PPN-FA-Correia s0] after push val_auc=0.7847 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 12/20
+14418.4s 207 [PPN-FA-Correia s0] DONE best_val_auc=0.8093 at epoch 25 (36.7 min)
+14418.4s 208 === START PPN-FA-Correia:1 | lam_fa=0.001 fa_mode=correia ===
+14418.4s 209 [PPN-FA-Correia s1] after push val_auc=0.7612 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 14/20
+14418.4s 210 [PPN-FA-Correia s1] DONE best_val_auc=0.8072 at epoch 25 (34.2 min)
+14418.4s 211 === START PPN-FA-Correia:2 | lam_fa=0.001 fa_mode=correia ===
+14418.4s 212 [PPN-FA-Correia s2] after push val_auc=0.8095 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 13/20
+14418.4s 213 [PPN-FA-Correia s2] DONE best_val_auc=0.8330 at epoch 25 (34.2 min)
+14418.4s 214 === START PPN-FA-IAIABL:2 | lam_fa=0.001 fa_mode=iaiabl ===
+14418.4s 215 [PPN-FA-IAIABL s2] after push val_auc=0.8200 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 19/20
+14418.4s 216 [PPN-FA-IAIABL s2] DONE best_val_auc=0.8204 at epoch 21 (52.9 min)
+14418.4s 217 === START PPN-FA-1e-1:2 | lam_fa=0.1 fa_mode=None ===
+14418.4s 218 [PPN-FA-1e-1 s2] after push val_auc=0.7460 | protos on artifact cells(>0.5): 4/20 | on lesion cells(>=0.5): 9/20
+14418.4s 219 [PPN-FA-1e-1 s2] DONE best_val_auc=0.7907 at epoch 25 (32.3 min)
+14418.4s 220 === START PPN-FA-1e-2:1 | lam_fa=0.01 fa_mode=None ===
+14418.4s 221 [PPN-FA-1e-2 s1] after push val_auc=0.7672 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 15/20
+14418.4s 222 [PPN-FA-1e-2 s1] DONE best_val_auc=0.8141 at epoch 22 (32.3 min)
+14419.9s 223 runs per configuration: {'CNN': 3, 'PPN-std': 3, 'PPN': 3, 'PPN-FA': 3, 'Ours': 3, 'Ours-noLes': 3, 'Ours-noArt': 3, 'Ours-stdPush': 3, 'PPN-FA-1e-2': 3, 'PPN-FA-1e-1': 3, 'PPN-FA-Correia': 3, 'PPN-FA-IAIABL': 3}
+14420.3s 224 PAD-UFES-20: 2298 images in 1891 lesions (361 lesions with several images, max 6); melanoma images 52 in 36 lesions
+14420.3s 225 data: /kaggle/input/notebooks/yousefamovahed/nb01-selfcontained/prep | runs: 36 | new configurations: ['PPN-FA-1e-2', 'PPN-FA-1e-1', 'PPN-FA-Correia', 'PPN-FA-IAIABL'] | device: cuda
+14473.0s 226 CNN_s0               test AUC 0.9077 | 53s
+14489.7s 227 CNN_s1               test AUC 0.8970 | 17s
+14507.1s 228 CNN_s2               test AUC 0.9000 | 17s
+14570.5s 229 Ours-noArt_s0        test AUC 0.8521 | 63s
+14632.8s 230 Ours-noArt_s1        test AUC 0.8517 | 62s
+14694.9s 231 Ours-noArt_s2        test AUC 0.8717 | 62s
+14757.4s 232 Ours-noLes_s0        test AUC 0.8391 | 62s
+14819.8s 233 Ours-noLes_s1        test AUC 0.8386 | 62s
+14881.9s 234 Ours-noLes_s2        test AUC 0.8131 | 62s
+14944.4s 235 Ours-stdPush_s0      test AUC 0.8571 | 63s
+15006.5s 236 Ours-stdPush_s1      test AUC 0.8665 | 62s
+15068.8s 237 Ours-stdPush_s2      test AUC 0.8656 | 62s
+15131.0s 238 Ours_s0              test AUC 0.8592 | 62s
+15193.3s 239 Ours_s1              test AUC 0.8714 | 62s
+15255.2s 240 Ours_s2              test AUC 0.8650 | 62s
+15317.1s 241 PPN-FA-1e-1_s0       test AUC 0.8553 | 62s
+15378.7s 242 PPN-FA-1e-1_s1       test AUC 0.8442 | 62s
+15440.2s 243 PPN-FA-1e-1_s2       test AUC 0.8472 | 62s
+15501.8s 244 PPN-FA-1e-2_s0       test AUC 0.8203 | 62s
+15563.4s 245 PPN-FA-1e-2_s1       test AUC 0.8541 | 62s
+15625.2s 246 PPN-FA-1e-2_s2       test AUC 0.8258 | 62s
+15687.0s 247 PPN-FA-Correia_s0    test AUC 0.8685 | 62s
+15748.7s 248 PPN-FA-Correia_s1    test AUC 0.8783 | 62s
+15810.2s 249 PPN-FA-Correia_s2    test AUC 0.8554 | 62s
+15871.8s 250 PPN-FA-IAIABL_s0     test AUC 0.8486 | 62s
+15933.5s 251 PPN-FA-IAIABL_s1     test AUC 0.8525 | 62s
+15995.1s 252 PPN-FA-IAIABL_s2     test AUC 0.8324 | 62s
+16057.5s 253 PPN-FA_s0            test AUC 0.8376 | 62s
+16119.5s 254 PPN-FA_s1            test AUC 0.8430 | 62s
+16181.4s 255 PPN-FA_s2            test AUC 0.8526 | 62s
+16243.5s 256 PPN-std_s0           test AUC 0.8211 | 62s
+16305.5s 257 PPN-std_s1           test AUC 0.8371 | 62s
+16367.4s 258 PPN-std_s2           test AUC 0.8474 | 62s
+16429.5s 259 PPN_s0               test AUC 0.7781 | 62s
+16491.4s 260 PPN_s1               test AUC 0.8450 | 62s
+16553.4s 261 PPN_s2               test AUC 0.8506 | 62s
+16553.6s 262 REPRODUCES TABLE IV incl. external AUCs (max |diff| = 0.0005 <= 0.002): True
+16554.2s 263 config  seeds      AUC test AUC Derm7pt-derm AUC Derm7pt-clinic AUC PAD-UFES-20          BAcc          Sens          Spec  ens AUC test
+16554.2s 264 CNN      3 0.902 ± 0.005    0.799 ± 0.023      0.704 ± 0.022   0.721 ± 0.022 0.814 ± 0.011 0.808 ± 0.044 0.820 ± 0.039        0.9121
+16554.2s 265 PPN-std      3 0.835 ± 0.013    0.677 ± 0.027      0.624 ± 0.023   0.587 ± 0.019 0.751 ± 0.014 0.769 ± 0.063 0.734 ± 0.040        0.8613
+16554.2s 266 PPN      3 0.825 ± 0.040    0.688 ± 0.072      0.618 ± 0.038   0.665 ± 0.016 0.758 ± 0.010 0.786 ± 0.068 0.730 ± 0.087        0.8657
+16554.2s 267 PPN-FA      3 0.844 ± 0.008    0.696 ± 0.024      0.640 ± 0.013   0.630 ± 0.059 0.744 ± 0.021 0.689 ± 0.045 0.800 ± 0.005        0.8663
+16554.2s 268 Ours      3 0.865 ± 0.006    0.749 ± 0.008      0.657 ± 0.019   0.647 ± 0.108 0.780 ± 0.014 0.734 ± 0.075 0.825 ± 0.046        0.8836
+16554.2s 269 Ours-noLes      3 0.830 ± 0.015    0.717 ± 0.016      0.636 ± 0.033   0.628 ± 0.047 0.746 ± 0.030 0.766 ± 0.091 0.726 ± 0.032        0.8561
+16554.2s 270 Ours-noArt      3 0.859 ± 0.011    0.752 ± 0.014      0.637 ± 0.030   0.678 ± 0.018 0.772 ± 0.003 0.733 ± 0.056 0.811 ± 0.054        0.8768
+16554.2s 271 Ours-stdPush      3 0.863 ± 0.005    0.747 ± 0.005      0.670 ± 0.019   0.658 ± 0.108 0.785 ± 0.002 0.823 ± 0.043 0.747 ± 0.047        0.8841
+16554.2s 272 PPN-FA-1e-2      3 0.833 ± 0.018    0.695 ± 0.016      0.625 ± 0.027   0.631 ± 0.034 0.748 ± 0.026 0.710 ± 0.073 0.786 ± 0.044        0.8603
+16554.2s 273 PPN-FA-1e-1      3 0.849 ± 0.006    0.711 ± 0.003      0.652 ± 0.014   0.717 ± 0.069 0.765 ± 0.004 0.801 ± 0.080 0.729 ± 0.080        0.8723
+16554.2s 274 PPN-FA-Correia      3 0.867 ± 0.011    0.771 ± 0.016      0.702 ± 0.014   0.699 ± 0.068 0.784 ± 0.019 0.770 ± 0.022 0.798 ± 0.041        0.8847
+16554.2s 275 PPN-FA-IAIABL      3 0.845 ± 0.011    0.715 ± 0.034      0.670 ± 0.016   0.719 ± 0.033 0.773 ± 0.005 0.781 ± 0.057 0.765 ± 0.049        0.8719
+16625.1s 276 
+16625.1s 277 Seed ensembles: Ours versus every configuration (ISIC test: bootstrap over the lesion groups of the split; PAD-UFES-20: bootstrap over lesions; Derm7pt: one image per case and modality, DeLong):
+16625.1s 278 set         versus  ens_auc_Ours  ens_auc_versus       delta_CI95  p_group_bootstrap  p_DeLong
+16625.1s 279 test            CNN        0.8836          0.9121 [-0.050, -0.007]              0.009    0.0000
+16625.1s 280 Derm7pt-derm            CNN        0.7690          0.8155       [nan, nan]                NaN    0.0008
+16625.1s 281 Derm7pt-clinic            CNN        0.6765          0.7183       [nan, nan]                NaN    0.0272
+16625.1s 282 PAD-UFES-20            CNN        0.6810          0.7376  [-0.127, 0.012]              0.103    0.1174
+16625.1s 283 test        PPN-std        0.8836          0.8613   [0.009, 0.036]              0.002    0.0000
+16625.1s 284 Derm7pt-derm        PPN-std        0.7690          0.7123       [nan, nan]                NaN    0.0000
+16625.1s 285 Derm7pt-clinic        PPN-std        0.6765          0.6439       [nan, nan]                NaN    0.0230
+16625.1s 286 PAD-UFES-20        PPN-std        0.6810          0.6200   [0.022, 0.098]              0.001    0.0013
+16625.1s 287 test            PPN        0.8836          0.8657   [0.004, 0.032]              0.014    0.0007
+16625.1s 288 Derm7pt-derm            PPN        0.7690          0.7540       [nan, nan]                NaN    0.1987
+16625.1s 289 Derm7pt-clinic            PPN        0.6765          0.6451       [nan, nan]                NaN    0.0462
+16625.1s 290 PAD-UFES-20            PPN        0.6810          0.7161  [-0.093, 0.019]              0.232    0.2211
+16625.1s 291 test         PPN-FA        0.8836          0.8663   [0.005, 0.031]              0.007    0.0004
+16625.1s 292 Derm7pt-derm         PPN-FA        0.7690          0.7259       [nan, nan]                NaN    0.0000
+16625.1s 293 Derm7pt-clinic         PPN-FA        0.6765          0.6623       [nan, nan]                NaN    0.2997
+16625.1s 294 PAD-UFES-20         PPN-FA        0.6810          0.6813  [-0.042, 0.042]              0.986    0.9915
+16625.1s 295 test     Ours-noLes        0.8836          0.8561   [0.016, 0.040]              0.000    0.0000
+16625.1s 296 Derm7pt-derm     Ours-noLes        0.7690          0.7505       [nan, nan]                NaN    0.0982
+16625.1s 297 Derm7pt-clinic     Ours-noLes        0.6765          0.6602       [nan, nan]                NaN    0.2299
+16625.1s 298 PAD-UFES-20     Ours-noLes        0.6810          0.6617  [-0.038, 0.074]              0.504    0.4798
+16625.1s 299 test     Ours-noArt        0.8836          0.8768  [-0.004, 0.018]              0.215    0.0848
+16625.1s 300 Derm7pt-derm     Ours-noArt        0.7690          0.7709       [nan, nan]                NaN    0.8141
+16625.1s 301 Derm7pt-clinic     Ours-noArt        0.6765          0.6540       [nan, nan]                NaN    0.0577
+16625.1s 302 PAD-UFES-20     Ours-noArt        0.6810          0.7156  [-0.073, 0.002]              0.059    0.0687
+16625.1s 303 test   Ours-stdPush        0.8836          0.8841  [-0.006, 0.005]              0.861    0.8462
+16625.1s 304 Derm7pt-derm   Ours-stdPush        0.7690          0.7710       [nan, nan]                NaN    0.6879
+16625.1s 305 Derm7pt-clinic   Ours-stdPush        0.6765          0.6901       [nan, nan]                NaN    0.0594
+16625.1s 306 PAD-UFES-20   Ours-stdPush        0.6810          0.6996  [-0.049, 0.015]              0.272    0.2137
+16625.1s 307 test    PPN-FA-1e-2        0.8836          0.8603   [0.009, 0.039]              0.003    0.0000
+16625.1s 308 Derm7pt-derm    PPN-FA-1e-2        0.7690          0.7259       [nan, nan]                NaN    0.0002
+16625.1s 309 Derm7pt-clinic    PPN-FA-1e-2        0.6765          0.6539       [nan, nan]                NaN    0.1360
+16625.1s 310 PAD-UFES-20    PPN-FA-1e-2        0.6810          0.6571  [-0.021, 0.071]              0.272    0.3089
+16625.1s 311 test    PPN-FA-1e-1        0.8836          0.8723  [-0.002, 0.025]              0.095    0.0264
+16625.1s 312 Derm7pt-derm    PPN-FA-1e-1        0.7690          0.7394       [nan, nan]                NaN    0.0027
+16625.1s 313 Derm7pt-clinic    PPN-FA-1e-1        0.6765          0.6690       [nan, nan]                NaN    0.5739
+16625.1s 314 PAD-UFES-20    PPN-FA-1e-1        0.6810          0.7619 [-0.118, -0.041]              0.000    0.0008
+16625.1s 315 test PPN-FA-Correia        0.8836          0.8847  [-0.012, 0.011]              0.851    0.8140
+16625.1s 316 Derm7pt-derm PPN-FA-Correia        0.7690          0.7970       [nan, nan]                NaN    0.0016
+16625.1s 317 Derm7pt-clinic PPN-FA-Correia        0.6765          0.7291       [nan, nan]                NaN    0.0002
+16625.1s 318 PAD-UFES-20 PPN-FA-Correia        0.6810          0.7227 [-0.085, -0.005]              0.028    0.0480
+16625.1s 319 test  PPN-FA-IAIABL        0.8836          0.8719  [-0.000, 0.024]              0.057    0.0182
+16625.1s 320 Derm7pt-derm  PPN-FA-IAIABL        0.7690          0.7544       [nan, nan]                NaN    0.1309
+16625.1s 321 Derm7pt-clinic  PPN-FA-IAIABL        0.6765          0.6959       [nan, nan]                NaN    0.1678
+16625.1s 322 PAD-UFES-20  PPN-FA-IAIABL        0.6810          0.7498 [-0.105, -0.032]              0.000    0.0009
+16625.3s 323 config                      weight  protos_on_lesion  protos_on_artifact  protos_lesion_lt_025 per_seed_lesion      train_minutes
+16625.3s 324 PPN                           0         14.333333            0.000000              4.000000    [14, 15, 14] [29.9, 29.8, 33.1]
+16625.3s 325 PPN-FA          1e-3 (cells, mean)         10.000000            2.000000              7.333333     [7, 12, 11] [30.2, 33.4, 30.2]
+16625.3s 326 PPN-FA-1e-2          1e-2 (cells, mean)         16.000000            0.000000              2.666667    [18, 15, 15] [32.4, 32.3, 32.7]
+16625.3s 327 PPN-FA-1e-1          1e-1 (cells, mean)          9.333333            1.666667              6.666667      [14, 5, 9] [33.1, 32.7, 32.3]
+16625.3s 328 PPN-FA-Correia 1e-3 (Correia, pixels, sum)         13.000000            0.000000              5.666667    [12, 14, 13] [36.7, 34.2, 34.2]
+16625.3s 329 PPN-FA-IAIABL 1e-3 (IAIA-BL, pixels, sum)         18.000000            0.000000              1.666667    [16, 19, 19] [54.1, 52.3, 52.9]
+16625.3s 330 Ours                          --         20.000000            0.000000              0.000000    [20, 20, 20] [33.1, 33.5, 30.2]
+16646.4s 331 metric         versus  mean_Ours  mean_versus  p_group_level  n_groups
+16646.4s 332 lesion share            PPN      0.589        0.562       2.86e-23      1234
+16646.4s 333 lesion share         PPN-FA      0.589         0.53       1.66e-34      1234
+16646.4s 334 lesion share    PPN-FA-1e-2      0.589        0.521       1.92e-39      1234
+16646.4s 335 lesion share    PPN-FA-1e-1      0.589        0.641       1.92e-48      1234
+16646.4s 336 lesion share PPN-FA-Correia      0.589        0.603       1.56e-36      1234
+16646.4s 337 lesion share  PPN-FA-IAIABL      0.589        0.827      6.86e-180      1234
+16646.4s 338 artifact share            PPN     0.0478        0.066       3.12e-06       574
+16646.4s 339 artifact share         PPN-FA     0.0478        0.102       1.07e-13       574
+16646.4s 340 artifact share    PPN-FA-1e-2     0.0478        0.121       2.86e-32       574
+16646.4s 341 artifact share    PPN-FA-1e-1     0.0478       0.0609          0.371       574
+16646.4s 342 artifact share PPN-FA-Correia     0.0478        0.141       2.97e-30       574
+16646.4s 343 artifact share  PPN-FA-IAIABL     0.0478       0.0389        0.00102       574
+16646.4s 344 artifact enrichment            PPN       0.37        0.455       0.000552       574
+16646.4s 345 artifact enrichment         PPN-FA       0.37        0.676       5.99e-08       574
+16646.4s 346 artifact enrichment    PPN-FA-1e-2       0.37        0.712       3.53e-18       574
+16646.4s 347 artifact enrichment    PPN-FA-1e-1       0.37        0.412          0.435       574
+16646.4s 348 artifact enrichment PPN-FA-Correia       0.37        0.705       2.91e-16       574
+16646.4s 349 artifact enrichment  PPN-FA-IAIABL       0.37        0.305       1.42e-07       574
+16646.4s 350 artifact pointing            PPN     0.0134        0.042       1.59e-16      1234
+16646.4s 351 artifact pointing         PPN-FA     0.0134       0.0505        1.1e-15      1234
+16646.4s 352 artifact pointing    PPN-FA-1e-2     0.0134       0.0694       2.07e-26      1234
+16646.4s 353 artifact pointing    PPN-FA-1e-1     0.0134       0.0279       1.11e-07      1234
+16646.4s 354 artifact pointing PPN-FA-Correia     0.0134       0.0656       2.35e-27      1234
+16646.4s 355 artifact pointing  PPN-FA-IAIABL     0.0134        0.008       0.000871      1234
+16646.4s 356 DC share            PPN     0.0666       0.0977       1.83e-10       284
+16646.4s 357 DC share         PPN-FA     0.0666        0.158       1.17e-21       284
+16646.4s 358 DC share    PPN-FA-1e-2     0.0666        0.188       3.54e-35       284
+16646.4s 359 DC share    PPN-FA-1e-1     0.0666       0.0904       8.05e-05       284
+16646.4s 360 DC share PPN-FA-Correia     0.0666        0.223        9.6e-39       284
+16646.4s 361 DC share  PPN-FA-IAIABL     0.0666       0.0586          0.056       284
+16796.4s 362 add_dark_corners: 2318 images in 1234 groups | 150s
+16925.8s 363 add_ruler: 2063 images in 1176 groups | 129s
+17045.7s 364 add_hair: 2316 images in 1233 groups | 120s
+17159.7s 365 add_ink: 2301 images in 1230 groups | 114s
+17159.9s 366 intervention   metric         versus  mean_Ours  mean_versus  p_group_level  n_groups
+17159.9s 367 add_dark_corners     flip            PPN     0.0523        0.109       7.41e-31      1234
+17159.9s 368 add_dark_corners     flip         PPN-FA     0.0523        0.106       1.69e-21      1234
+17159.9s 369 add_dark_corners     flip    PPN-FA-1e-2     0.0523        0.122        2.3e-31      1234
+17159.9s 370 add_dark_corners     flip    PPN-FA-1e-1     0.0523       0.0718        3.5e-05      1234
+17159.9s 371 add_dark_corners     flip PPN-FA-Correia     0.0523       0.0646        0.00588      1234
+17159.9s 372 add_dark_corners     flip  PPN-FA-IAIABL     0.0523       0.0615        0.00577      1234
+17159.9s 373 add_dark_corners    absdp            PPN     0.0352       0.0671      8.28e-117      1234
+17159.9s 374 add_dark_corners    absdp         PPN-FA     0.0352        0.049       9.65e-53      1234
+17159.9s 375 add_dark_corners    absdp    PPN-FA-1e-2     0.0352       0.0888      5.46e-177      1234
+17159.9s 376 add_dark_corners    absdp    PPN-FA-1e-1     0.0352       0.0598      7.79e-106      1234
+17159.9s 377 add_dark_corners    absdp PPN-FA-Correia     0.0352       0.0468       4.03e-27      1234
+17159.9s 378 add_dark_corners    absdp  PPN-FA-IAIABL     0.0352       0.0444       3.23e-17      1234
+17159.9s 379 add_dark_corners  capture            PPN     0.0335       0.0611       5.29e-85      1234
+17159.9s 380 add_dark_corners  capture         PPN-FA     0.0335        0.114      3.89e-111      1234
+17159.9s 381 add_dark_corners  capture    PPN-FA-1e-2     0.0335        0.132      4.18e-148      1234
+17159.9s 382 add_dark_corners  capture    PPN-FA-1e-1     0.0335        0.021       2.66e-57      1234
+17159.9s 383 add_dark_corners  capture PPN-FA-Correia     0.0335       0.0583       1.37e-38      1234
+17159.9s 384 add_dark_corners  capture  PPN-FA-IAIABL     0.0335       0.0229        1.3e-36      1234
+17159.9s 385 add_dark_corners spearman            PPN      0.918         0.68      3.38e-202      1234
+17159.9s 386 add_dark_corners spearman         PPN-FA      0.918        0.714      8.24e-191      1234
+17159.9s 387 add_dark_corners spearman    PPN-FA-1e-2      0.918          0.8      2.86e-176      1234
+17159.9s 388 add_dark_corners spearman    PPN-FA-1e-1      0.918        0.842      9.51e-184      1234
+17159.9s 389 add_dark_corners spearman PPN-FA-Correia      0.918        0.868      1.77e-113      1234
+17159.9s 390 add_dark_corners spearman  PPN-FA-IAIABL      0.918         0.88      5.93e-118      1234
+17159.9s 391 add_ruler     flip            PPN     0.0359       0.0748       7.88e-17      1176
+17159.9s 392 add_ruler     flip         PPN-FA     0.0359       0.0648       4.87e-08      1176
+17159.9s 393 add_ruler     flip    PPN-FA-1e-2     0.0359       0.0898       7.01e-21      1176
+17159.9s 394 add_ruler     flip    PPN-FA-1e-1     0.0359       0.0675       5.44e-08      1176
+17159.9s 395 add_ruler     flip PPN-FA-Correia     0.0359       0.0364           0.55      1176
+17159.9s 396 add_ruler     flip  PPN-FA-IAIABL     0.0359       0.0428         0.0519      1176
+17159.9s 397 add_ruler    absdp            PPN     0.0254       0.0454       8.39e-89      1176
+17159.9s 398 add_ruler    absdp         PPN-FA     0.0254       0.0284       7.83e-06      1176
+17159.9s 399 add_ruler    absdp    PPN-FA-1e-2     0.0254        0.061      2.35e-152      1176
+17159.9s 400 add_ruler    absdp    PPN-FA-1e-1     0.0254       0.0558      1.67e-131      1176
+17159.9s 401 add_ruler    absdp PPN-FA-Correia     0.0254       0.0255          0.252      1176
+17159.9s 402 add_ruler    absdp  PPN-FA-IAIABL     0.0254       0.0313       1.57e-12      1176
+17159.9s 403 add_ruler  capture            PPN    0.00698       0.0112       2.05e-28      1176
+17159.9s 404 add_ruler  capture         PPN-FA    0.00698       0.0105       3.66e-07      1176
+17159.9s 405 add_ruler  capture    PPN-FA-1e-2    0.00698       0.0107       1.95e-15      1176
+17159.9s 406 add_ruler  capture    PPN-FA-1e-1    0.00698      0.00585       4.95e-16      1176
+17159.9s 407 add_ruler  capture PPN-FA-Correia    0.00698      0.00907          0.109      1176
+17159.9s 408 add_ruler  capture  PPN-FA-IAIABL    0.00698       0.0019       4.91e-76      1176
+17159.9s 409 add_ruler spearman            PPN      0.952        0.804      4.21e-191      1176
+17159.9s 410 add_ruler spearman         PPN-FA      0.952        0.874      3.66e-147      1176
+17159.9s 411 add_ruler spearman    PPN-FA-1e-2      0.952         0.86      3.92e-169      1176
+17159.9s 412 add_ruler spearman    PPN-FA-1e-1      0.952        0.899      1.22e-157      1176
+17159.9s 413 add_ruler spearman PPN-FA-Correia      0.952         0.94       1.62e-30      1176
+17159.9s 414 add_ruler spearman  PPN-FA-IAIABL      0.952        0.911      3.02e-119      1176
+17159.9s 415 add_hair     flip            PPN     0.0924        0.139       5.01e-12      1233
+17159.9s 416 add_hair     flip         PPN-FA     0.0924        0.151       2.15e-11      1233
+17159.9s 417 add_hair     flip    PPN-FA-1e-2     0.0924        0.171        2.5e-22      1233
+17159.9s 418 add_hair     flip    PPN-FA-1e-1     0.0924        0.148       2.18e-13      1233
+17159.9s 419 add_hair     flip PPN-FA-Correia     0.0924       0.0892          0.365      1233
+17159.9s 420 add_hair     flip  PPN-FA-IAIABL     0.0924        0.113        0.00107      1233
+17159.9s 421 add_hair    absdp            PPN     0.0805       0.0964       1.97e-28      1233
+17159.9s 422 add_hair    absdp         PPN-FA     0.0805       0.0839       6.33e-05      1233
+17159.9s 423 add_hair    absdp    PPN-FA-1e-2     0.0805        0.125       1.45e-91      1233
+17159.9s 424 add_hair    absdp    PPN-FA-1e-1     0.0805        0.108       2.98e-45      1233
+17159.9s 425 add_hair    absdp PPN-FA-Correia     0.0805       0.0727       4.92e-07      1233
+17159.9s 426 add_hair    absdp  PPN-FA-IAIABL     0.0805       0.0904       4.66e-08      1233
+17159.9s 427 add_ink     flip            PPN     0.0556       0.0949       1.79e-14      1230
+17159.9s 428 add_ink     flip         PPN-FA     0.0556       0.0911       2.22e-08      1230
+17159.9s 429 add_ink     flip    PPN-FA-1e-2     0.0556        0.107        9.2e-18      1230
+17159.9s 430 add_ink     flip    PPN-FA-1e-1     0.0556       0.0779       0.000269      1230
+17159.9s 431 add_ink     flip PPN-FA-Correia     0.0556       0.0658         0.0192      1230
+17159.9s 432 add_ink     flip  PPN-FA-IAIABL     0.0556       0.0797       4.65e-08      1230
+17159.9s 433 add_ink    absdp            PPN     0.0454       0.0619       1.87e-34      1230
+17159.9s 434 add_ink    absdp         PPN-FA     0.0454       0.0457          0.457      1230
+17159.9s 435 add_ink    absdp    PPN-FA-1e-2     0.0454       0.0783      4.85e-108      1230
+17159.9s 436 add_ink    absdp    PPN-FA-1e-1     0.0454        0.067       3.96e-68      1230
+17159.9s 437 add_ink    absdp PPN-FA-Correia     0.0454       0.0483          0.014      1230
+17159.9s 438 add_ink    absdp  PPN-FA-IAIABL     0.0454        0.059       6.33e-29      1230
+17191.5s 439 artifact         config      A  FPR_with  FPR_without delta_A_Ours_minus_c  p_group_bootstrap
+17191.5s 440 DC            PPN 0.6119    0.2983       0.2619     [-0.053, -0.022]              0.000
+17191.5s 441 DC         PPN-FA 0.6585    0.3341       0.1598     [-0.100, -0.068]              0.000
+17191.5s 442 DC    PPN-FA-1e-2 0.6574    0.2960       0.1890     [-0.104, -0.061]              0.000
+17191.5s 443 DC    PPN-FA-1e-1 0.5973    0.2923       0.2648     [-0.039, -0.007]              0.004
+17191.5s 444 DC PPN-FA-Correia 0.5653    0.2260       0.1953      [-0.015, 0.029]              0.492
+17191.5s 445 DC  PPN-FA-IAIABL 0.5826    0.2655       0.2254      [-0.024, 0.007]              0.256
+17191.5s 446 DC           Ours 0.5736    0.1976       0.1684                  NaN                NaN
+17191.5s 447 SP            PPN 0.6010    0.3320       0.2611      [-0.034, 0.006]              0.175
+17191.5s 448 SP         PPN-FA 0.6219    0.2590       0.1914     [-0.053, -0.017]              0.000
+17191.5s 449 SP    PPN-FA-1e-2 0.6040    0.2815       0.2037      [-0.039, 0.005]              0.140
+17191.5s 450 SP    PPN-FA-1e-1 0.6174    0.3546       0.2587     [-0.051, -0.011]              0.001
+17191.5s 451 SP PPN-FA-Correia 0.5793    0.2178       0.2001      [-0.015, 0.031]              0.574
+17191.5s 452 SP  PPN-FA-IAIABL 0.5995    0.2629       0.2305      [-0.031, 0.007]              0.196
+17191.5s 453 SP           Ours 0.5868    0.1939       0.1723                  NaN                NaN
+17191.7s 454 0                   1                   2                   3                            4                            5              6
+17191.7s 455 config                               PPN              PPN-FA         PPN-FA-1e-2         PPN-FA-1e-1               PPN-FA-Correia                PPN-FA-IAIABL           Ours
+17191.7s 456 weight                                 0  1e-3 (cells, mean)  1e-2 (cells, mean)  1e-1 (cells, mean)  1e-3 (Correia, pixels, sum)  1e-3 (IAIA-BL, pixels, sum)             --
+17191.7s 457 seeds                                  3                   3                   3                   3                            3                            3              3
+17191.7s 458 AUC                        0.825 ± 0.040       0.844 ± 0.008       0.833 ± 0.018       0.849 ± 0.006                0.867 ± 0.011                0.845 ± 0.011  0.865 ± 0.006
+17191.7s 459 ens AUC                            0.866               0.866                0.86               0.872                        0.885                        0.872          0.884
+17191.7s 460 p vs Ours (lesion groups)          0.014               0.007               0.003               0.095                        0.851                        0.057             --
+17191.7s 461 Derm7pt-derm               0.688 ± 0.072       0.696 ± 0.024       0.695 ± 0.016       0.711 ± 0.003                0.771 ± 0.016                0.715 ± 0.034  0.749 ± 0.008
+17191.7s 462 protos on lesion                    14.3                10.0                16.0                 9.3                         13.0                         18.0           20.0
+17191.7s 463 protos on artifact                   0.0                 2.0                 0.0                 1.7                          0.0                          0.0            0.0
+17191.7s 464 lesion share                       0.562                0.53               0.521               0.641                        0.603                        0.827          0.589
+17191.7s 465 artifact share                     0.066               0.102               0.121               0.061                        0.141                        0.039          0.048
+17191.7s 466 pointing                           0.042                0.05               0.069               0.028                        0.066                        0.008          0.013
+17191.7s 467 flip DC %                           10.9                10.6                12.2                 7.2                          6.5                          6.2            5.2
+17191.7s 468 flip ruler %                         7.5                 6.5                 9.0                 6.8                          3.6                          4.3            3.6
+17191.7s 469 flip hair %                         13.9                15.1                17.1                14.8                          8.9                         11.3            9.2
+17191.7s 470 flip ink %                           9.5                 9.1                10.7                 7.8                          6.6                          8.0            5.6
+17191.7s 471 capture DC %                         6.1                11.4                13.2                 2.1                          5.8                          2.3            3.4
+17191.7s 472 rho DC                              0.68               0.714                 0.8               0.842                        0.868                         0.88          0.918
+17191.7s 473 A real DC                          0.612               0.659               0.657               0.597                        0.565                        0.583          0.574
+17191.7s 474 FPR DC with/without %              30/26               33/16               30/19               29/26                        23/20                        27/23          20/17
+17191.7s 475 total 68
+17191.7s 476 drwxr-xr-x 2 root root  4096 Oct 20 13:05 .
+17191.7s 477 drwxr-xr-x 5 root root  4096 Oct 20 13:05 ..
+17191.7s 478 -rw-r--r-- 1 root root  2306 Oct 20 12:56 attribution_vs_Ours.csv
+17191.7s 479 -rw-r--r-- 1 root root  1586 Oct 20 12:55 classification.csv
+17191.7s 480 -rw-r--r-- 1 root root  7000 Oct 20 13:05 counterfactuals_vs_Ours.csv
+17191.7s 481 -rw-r--r-- 1 root root  4411 Oct 20 12:56 ensemble_comparisons_vs_Ours.csv
+17191.7s 482 -rw-r--r-- 1 root root   752 Oct 20 12:56 prototype_placement.csv
+17191.7s 483 -rw-r--r-- 1 root root  1363 Oct 20 13:05 real_artifacts.csv
+17191.7s 484 -rw-r--r-- 1 root root  1202 Oct 20 13:05 summary_mask_loss.csv
+17191.7s 485 -rw-r--r-- 1 root root 22394 Oct 20 13:05 summary_nb06.txt
+17191.7s 486 
+17191.7s 487 NB06 FINISHED - please send the complete log (or nb06/summary_nb06.txt).
+17195.8s 488 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+17195.8s 489 cells[i][c] = re.sub('\\\\\|', '|', cell)
+17196.0s 490 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+17196.0s 491 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+17196.9s 492 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+17197.0s 493 [NbConvertApp] Writing 147539 bytes to __notebook__.ipynb
+17199.7s 494 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+17200.6s 495 [NbConvertApp] Writing 835090 bytes to __results__.html
