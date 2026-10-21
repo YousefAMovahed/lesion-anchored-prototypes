@@ -1,0 +1,89 @@
+files: ['/kaggle/input/notebooks/yousefamovahed/nb08b-eval/nb08/prototype_cells_per_run.csv', '/kaggle/input/notebooks/yousefamovahed/nb08b-eval/nb08/threshold_sweep.csv', '/kaggle/input/notebooks/yousefamovahed/nb08b-eval/nb08/threshold_sweep_per_run.csv']
+
+===== prototype_cells_per_run.csv (36, 11)
+        config               run  off_lesion  border_cells  interior_cells  mean_cell_lesion  protos_in_labelled_images  undetected_DC  undetected_TS  undetected_SP  undetected_INK
+  Ours+Correia   Ours+Correia_s0           0            12               8          0.760033                          0              0              0              0               0
+  Ours+Correia   Ours+Correia_s1           0            10              10          0.866530                          1              0              1              0               0
+  Ours+Correia   Ours+Correia_s2           0             8              12          0.885363                          4              0              2              0               1
+    Ours-noArt     Ours-noArt_s0           0             9              11          0.872620                          3              0              0              1               0
+    Ours-noArt     Ours-noArt_s1           0             6              14          0.887833                          2              0              2              1               0
+    Ours-noArt     Ours-noArt_s2           0            14               6          0.815069                          2              0              2              1               0
+    Ours-noLes     Ours-noLes_s0           0             5              15          0.914702                          2              0              2              0               0
+    Ours-noLes     Ours-noLes_s1           0             2              18          0.977144                          7              0              4              5               0
+    Ours-noLes     Ours-noLes_s2           0             6              14          0.929703                          0              0              0              0               0
+  Ours-stdPush   Ours-stdPush_s0          13             2               5          0.359818                          1              0              0              0               1
+  Ours-stdPush   Ours-stdPush_s1          12             2               6          0.425673                          2              0              0              1               0
+  Ours-stdPush   Ours-stdPush_s2          12             2               6          0.383180                          4              1              0              3               0
+          Ours           Ours_s0           0            11               9          0.840229                          0              0              0              0               0
+          Ours           Ours_s1           0             8              12          0.878794                          5              0              2              2               0
+          Ours           Ours_s2           0             9              11          0.882949                          0              0              0              0               0
+   PPN-FA-1e-1    PPN-FA-1e-1_s0           6             5               9          0.714692                          4              0              3              0               1
+   PPN-FA-1e-1    PPN-FA-1e-1_s1          15             1               4          0.352228                          4              1              2              2               1
+   PPN-FA-1e-1    PPN-FA-1e-1_s2          11             3               6          0.493039                          2              0              1              1               0
+   PPN-FA-1e-2    PPN-FA-1e-2_s0           2             3              15          0.896127                          8              0              5              0               0
+   PPN-FA-1e-2    PPN-FA-1e-2_s1           5             1              14          0.768614                         11              0              6              4               0
+   PPN-FA-1e-2    PPN-FA-1e-2_s2           5             3              12          0.739621                          7              0              6              4               2
+PPN-FA-Correia PPN-FA-Correia_s0           8             3               9          0.623604                          2              0              1              0               0
+PPN-FA-Correia PPN-FA-Correia_s1           6             6               8          0.642667                          4              0              0              2               0
+PPN-FA-Correia PPN-FA-Correia_s2           7             6               7          0.552762                          0              0              0              0               0
+ PPN-FA-IAIABL  PPN-FA-IAIABL_s0           4             1              15          0.798976                          7              0              4              3               2
+ PPN-FA-IAIABL  PPN-FA-IAIABL_s1           1             3              16          0.890542                          3              0              2              1               0
+ PPN-FA-IAIABL  PPN-FA-IAIABL_s2           1             4              15          0.894143                          3              0              0              1               1
+        PPN-FA         PPN-FA_s0          13             3               4          0.400618                          5              0              2              0               0
+        PPN-FA         PPN-FA_s1           8             2              10          0.593436                          2              0              1              2               0
+        PPN-FA         PPN-FA_s2           9             3               8          0.598203                         10              1              5              2               0
+       PPN-std        PPN-std_s0           6             2              12          0.699047                          5              3              3              1               0
+       PPN-std        PPN-std_s1           6             2              12          0.675414                          4              0              2              2               0
+       PPN-std        PPN-std_s2          12             1               7          0.486082                          6              0              4              1               0
+           PPN            PPN_s0           6             3              11          0.694139                          9              1              4              3               0
+           PPN            PPN_s1           5             4              11          0.735075                          4              0              4              0               0
+           PPN            PPN_s2           6             3              11          0.684428                          8              1              1              5               0
+
+===== threshold_sweep.csv (9, 15)
+                                    tag           auc  lesion_protos  mean_cell_lesion  artifact_protos  lesion_share  artifact_share  pointing  flip dark_corners  flip ruler  capture dark_corners  capture ruler  rho dark_corners  ens_auc  p_vs_paper_thresholds
+         no constraint (= Ours-stdPush) 0.863 ± 0.005         7.6667            0.3876           4.6667        0.5145          0.0862    0.0344             0.0450      0.0412                0.0754         0.0138            0.9235   0.8841                  0.362
+        lesion >= 0.3, artifact <= 0.05 0.863 ± 0.005        15.6667            0.7464           1.0000        0.5124          0.0862    0.0342             0.0460      0.0383                0.0733         0.0136            0.9234   0.8837                  0.801
+lesion >= 0.5, artifact <= 0.05 (paper) 0.863 ± 0.005        20.0000            0.8363           1.0000        0.5115          0.0876    0.0344             0.0498      0.0425                0.0723         0.0137            0.9234   0.8838                    NaN
+        lesion >= 0.7, artifact <= 0.05 0.863 ± 0.005        20.0000            0.9065           0.6667        0.5115          0.0876    0.0343             0.0509      0.0402                0.0723         0.0137            0.9234   0.8839                  0.617
+        lesion >= 0.9, artifact <= 0.05 0.863 ± 0.005        20.0000            0.9865           0.6667        0.5198          0.0873    0.0345             0.0510      0.0444                0.0679         0.0126            0.9233   0.8842                  0.414
+            lesion >= 0.5, artifact = 0 0.863 ± 0.005        20.0000            0.8505           0.0000        0.5118          0.0876    0.0345             0.0522      0.0436                0.0723         0.0137            0.9234   0.8837                  0.860
+         lesion >= 0.5, artifact <= 0.2 0.863 ± 0.005        20.0000            0.8341           1.0000        0.5115          0.0876    0.0344             0.0495      0.0428                0.0723         0.0137            0.9234   0.8839                  0.656
+       lesion >= 0.5, no artifact limit 0.863 ± 0.005        20.0000            0.8341           1.0000        0.5115          0.0876    0.0344             0.0495      0.0428                0.0723         0.0137            0.9234   0.8839                  0.656
+     trained with the constraint (Ours) 0.865 ± 0.006        20.0000            0.8673           0.6667        0.5892          0.0478    0.0134             0.0523      0.0359                0.0335         0.0070            0.9179   0.8836                  0.931
+
+===== threshold_sweep_per_run.csv (27, 16)
+                                    tag      auc  lesion_share  artifact_share  pointing  flip dark_corners  capture dark_corners  rho dark_corners  flip ruler  capture ruler  rho ruler             run  lesion_protos  mean_cell_lesion  artifact_protos  missing
+         no constraint (= Ours-stdPush) 0.857132      0.562694        0.028764  0.009339           0.056946              0.001478          0.910279    0.057683       0.007495   0.928804 Ours-stdPush_s0              7          0.354032                3        0
+        lesion >= 0.3, artifact <= 0.05 0.856975      0.562506        0.028806  0.009483           0.053926              0.001433          0.910263    0.047019       0.007037   0.928821 Ours-stdPush_s0             17          0.727955                1        0
+lesion >= 0.5, artifact <= 0.05 (paper) 0.856714      0.562423        0.028856  0.009626           0.059965              0.001432          0.910191    0.054290       0.006985   0.928833 Ours-stdPush_s0             20          0.795104                1        0
+        lesion >= 0.7, artifact <= 0.05 0.856596      0.562241        0.028815  0.009626           0.057377              0.001434          0.910233    0.048958       0.007041   0.928893 Ours-stdPush_s0             20          0.890762                1        0
+        lesion >= 0.9, artifact <= 0.05 0.857625      0.560913        0.029466  0.009770           0.057808              0.001556          0.910061    0.057683       0.007065   0.929037 Ours-stdPush_s0             20          0.983041                2        0
+            lesion >= 0.5, artifact = 0 0.856608      0.562462        0.029128  0.009914           0.060828              0.001434          0.910191    0.057683       0.006958   0.928833 Ours-stdPush_s0             20          0.810104                0        0
+         lesion >= 0.5, artifact <= 0.2 0.857149      0.562503        0.028855  0.009626           0.059103              0.001409          0.910191    0.055259       0.006966   0.928833 Ours-stdPush_s0             20          0.788380                1        0
+       lesion >= 0.5, no artifact limit 0.857149      0.562503        0.028855  0.009626           0.059103              0.001409          0.910191    0.055259       0.006966   0.928833 Ours-stdPush_s0             20          0.788380                1        0
+         no constraint (= Ours-stdPush) 0.866506      0.443749        0.130433  0.057902           0.027610              0.108282          0.946986    0.034416       0.024166   0.944389 Ours-stdPush_s1              8          0.425673                6        0
+        lesion >= 0.3, artifact <= 0.05 0.866804      0.439105        0.133269  0.059770           0.029336              0.118298          0.946741    0.033446       0.023780   0.943849 Ours-stdPush_s1             14          0.693658                2        0
+lesion >= 0.5, artifact <= 0.05 (paper) 0.866523      0.437955        0.134920  0.059770           0.030630              0.123654          0.946768    0.034901       0.023839   0.943129 Ours-stdPush_s1             20          0.820869                2        0
+        lesion >= 0.7, artifact <= 0.05 0.867079      0.437904        0.135037  0.059626           0.034081              0.123382          0.946710    0.034901       0.023856   0.943162 Ours-stdPush_s1             20          0.881141                1        0
+        lesion >= 0.9, artifact <= 0.05 0.867999      0.464460        0.133774  0.060201           0.038395              0.110859          0.946669    0.040233       0.020407   0.942866 Ours-stdPush_s1             20          0.982613                0        0
+            lesion >= 0.5, artifact = 0 0.866711      0.438685        0.134869  0.059914           0.037101              0.123466          0.946782    0.034901       0.023780   0.943085 Ours-stdPush_s1             20          0.848371                0        0
+         lesion >= 0.5, artifact <= 0.2 0.866523      0.437955        0.134920  0.059770           0.030630              0.123654          0.946768    0.034901       0.023839   0.943129 Ours-stdPush_s1             20          0.820869                2        0
+       lesion >= 0.5, no artifact limit 0.866523      0.437955        0.134920  0.059770           0.030630              0.123654          0.946768    0.034901       0.023839   0.943129 Ours-stdPush_s1             20          0.820869                2        0
+         no constraint (= Ours-stdPush) 0.865725      0.537041        0.099332  0.035920           0.050475              0.116492          0.913156    0.031508       0.009658   0.959593 Ours-stdPush_s2              8          0.383180                5        0
+        lesion >= 0.3, artifact <= 0.05 0.864119      0.535524        0.096562  0.033333           0.054789              0.100225          0.913207    0.034416       0.010017   0.959688 Ours-stdPush_s2             16          0.817477                0        0
+lesion >= 0.5, artifact <= 0.05 (paper) 0.864661      0.534183        0.098877  0.033764           0.058671              0.091894          0.913215    0.038294       0.010295   0.959316 Ours-stdPush_s2             20          0.893000                0        0
+        lesion >= 0.7, artifact <= 0.05 0.864643      0.534263        0.098841  0.033764           0.061260              0.091956          0.913251    0.036840       0.010286   0.959324 Ours-stdPush_s2             20          0.947478                0        0
+        lesion >= 0.9, artifact <= 0.05 0.864505      0.534107        0.098519  0.033621           0.056946              0.091363          0.913225    0.035385       0.010269   0.959053 Ours-stdPush_s2             20          0.993770                0        0
+            lesion >= 0.5, artifact = 0 0.864661      0.534183        0.098877  0.033764           0.058671              0.091894          0.913215    0.038294       0.010295   0.959316 Ours-stdPush_s2             20          0.893000                0        0
+         lesion >= 0.5, artifact <= 0.2 0.864661      0.534183        0.098877  0.033764           0.058671              0.091894          0.913215    0.038294       0.010295   0.959316 Ours-stdPush_s2             20          0.893000                0        0
+       lesion >= 0.5, no artifact limit 0.864661      0.534183        0.098877  0.033764           0.058671              0.091894          0.913215    0.038294       0.010295   0.959316 Ours-stdPush_s2             20          0.893000                0        0
+     trained with the constraint (Ours) 0.859225      0.562003        0.030451  0.010345           0.074633              0.001527          0.910037    0.056229       0.007506   0.928932         Ours_s0             20          0.840229                0        0
+     trained with the constraint (Ours) 0.871443      0.634945        0.055632  0.018534           0.032787              0.022245          0.930597    0.016966       0.009152   0.967538         Ours_s1             20          0.878794                1        0
+     trained with the constraint (Ours) 0.865023      0.570619        0.057178  0.011207           0.049612              0.076826          0.913167    0.034416       0.004294   0.959749         Ours_s2             20          0.882949                1        0
+PRINT FINISHED
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __script__.ipynb to html
+[NbConvertApp] Writing 275392 bytes to __results__.html

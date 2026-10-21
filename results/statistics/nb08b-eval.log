@@ -1,0 +1,322 @@
+/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  _validate(nbdict, ref, version, version_minor, relax_add_props)
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Writing artproto.py
+Writing evalkit.py
+Writing fa_ext.py
+Writing train6.py
+trained Ours+Correia runs in the inputs:
+  0
+GPUs: 2 | jobs: ['Ours+Correia:0', 'Ours+Correia:1', 'Ours+Correia:2']
+--- 5 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.7628, 'sec': 47.3, 'ce': 0.6743, 'clst': 1.4088, 'sep': 12.1224, 'art': 0.0276, 'les': 0.648, 'fa': 1180.4574}
+  [Ours+Correia s0] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.7787, 'sec': 47.2, 'ce': 0.6729, 'clst': 1.5772, 'sep': 16.1353, 'art': 0.0273, 'les': 0.6278, 'fa': 1099.4796}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.7611, 'sec': 49.8, 'ce': 0.6777, 'clst': 2.1878, 'sep': 25.2328, 'art': 0.0284, 'les': 0.6525, 'fa': 1197.4454}
+  [Ours+Correia s1] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.7813, 'sec': 49.5, 'ce': 0.6759, 'clst': 2.3668, 'sep': 31.9681, 'art': 0.0278, 'les': 0.6369, 'fa': 1117.3625}
+--- 10 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8293, 'sec': 97.1, 'ce': 0.6492, 'clst': 0.9637, 'sep': 19.3886, 'art': 0.0171, 'les': 0.3349, 'fa': 596.3246}
+  [Ours+Correia s0] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8251, 'sec': 97.2, 'ce': 0.6331, 'clst': 1.05, 'sep': 22.7018, 'art': 0.0141, 'les': 0.2936, 'fa': 550.4548}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.798, 'sec': 101.9, 'ce': 0.6604, 'clst': 1.4045, 'sep': 30.0922, 'art': 0.0173, 'les': 0.3457, 'fa': 634.0187}
+  [Ours+Correia s1] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8215, 'sec': 101.8, 'ce': 0.6457, 'clst': 1.4297, 'sep': 31.1424, 'art': 0.0151, 'les': 0.2944, 'fa': 550.5163}
+--- 15 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8287, 'sec': 96.9, 'ce': 0.6196, 'clst': 0.8197, 'sep': 21.8106, 'art': 0.0127, 'les': 0.2483, 'fa': 504.2129}
+  [Ours+Correia s0] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.844, 'sec': 96.9, 'ce': 0.5861, 'clst': 0.6815, 'sep': 22.1053, 'art': 0.0122, 'les': 0.2133, 'fa': 470.9113}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8239, 'sec': 101.6, 'ce': 0.6236, 'clst': 1.1646, 'sep': 28.1699, 'art': 0.0123, 'les': 0.2567, 'fa': 504.8929}
+  [Ours+Correia s1] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8473, 'sec': 101.5, 'ce': 0.5906, 'clst': 1.065, 'sep': 30.0568, 'art': 0.0111, 'les': 0.2217, 'fa': 455.943}
+--- 20 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8563, 'sec': 96.8, 'ce': 0.5554, 'clst': 0.745, 'sep': 25.451, 'art': 0.0109, 'les': 0.2001, 'fa': 424.4125}
+  [Ours+Correia s0] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8569, 'sec': 96.8, 'ce': 0.5475, 'clst': 0.6187, 'sep': 23.595, 'art': 0.0101, 'les': 0.1841, 'fa': 431.9836}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8537, 'sec': 101.6, 'ce': 0.549, 'clst': 0.91, 'sep': 31.6942, 'art': 0.0104, 'les': 0.2067, 'fa': 432.4308}
+  [Ours+Correia s1] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8605, 'sec': 101.5, 'ce': 0.5511, 'clst': 0.9189, 'sep': 32.32, 'art': 0.0103, 'les': 0.2061, 'fa': 426.9598}
+--- 25 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8532, 'sec': 96.9, 'ce': 0.5349, 'clst': 0.7434, 'sep': 27.1482, 'art': 0.0096, 'les': 0.1895, 'fa': 402.805}
+  [Ours+Correia s0] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8539, 'sec': 97.0, 'ce': 0.5323, 'clst': 0.7215, 'sep': 27.4101, 'art': 0.0096, 'les': 0.1902, 'fa': 402.5577}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8662, 'sec': 101.7, 'ce': 0.5462, 'clst': 1.061, 'sep': 35.0366, 'art': 0.0111, 'les': 0.2108, 'fa': 413.501}
+  [Ours+Correia s1] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.867, 'sec': 101.5, 'ce': 0.5492, 'clst': 1.1042, 'sep': 35.4208, 'art': 0.011, 'les': 0.2074, 'fa': 408.0895}
+--- 30 min ---
+[GPU0]
+  [Ours+Correia s0] after push val_auc=0.8288 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 20/20
+  [Ours+Correia s0] {'epoch': 21, 'stage': 'last', 'val_auc': 0.8369, 'sec': 38.7, 'ce': 1.0105, 'clst': 0.5685, 'sep': 25.3015}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8682, 'sec': 101.5, 'ce': 0.544, 'clst': 1.0451, 'sep': 35.7281, 'art': 0.0111, 'les': 0.209, 'fa': 417.8746}
+  [Ours+Correia s1] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.8676, 'sec': 101.4, 'ce': 0.5449, 'clst': 1.0817, 'sep': 35.7842, 'art': 0.0111, 'les': 0.2093, 'fa': 408.7183}
+--- 35 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7797, 'sec': 47.2, 'ce': 0.6614, 'clst': 1.6477, 'sep': 11.4247, 'art': 0.0328, 'les': 0.8027, 'fa': 1722.2734}
+  [Ours+Correia s2] {'epoch': 3, 'stage': 'warm', 'val_auc': 0.7653, 'sec': 47.6, 'ce': 0.6714, 'clst': 1.9424, 'sep': 20.2501, 'art': 0.0297, 'les': 0.6978, 'fa': 1369.6459}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8548 at epoch 25 (34.0 min)
+  QUEUE FINISHED for this GPU
+--- 40 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.7879, 'sec': 97.8, 'ce': 0.6744, 'clst': 2.0943, 'sep': 33.103, 'art': 0.0252, 'les': 0.5134, 'fa': 917.4395}
+  [Ours+Correia s2] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8065, 'sec': 97.9, 'ce': 0.6491, 'clst': 1.6352, 'sep': 33.3513, 'art': 0.0193, 'les': 0.3733, 'fa': 673.883}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8548 at epoch 25 (34.0 min)
+  QUEUE FINISHED for this GPU
+--- 45 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.8092, 'sec': 97.9, 'ce': 0.6488, 'clst': 1.796, 'sep': 37.2808, 'art': 0.0161, 'les': 0.307, 'fa': 564.4601}
+  [Ours+Correia s2] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8025, 'sec': 98.0, 'ce': 0.6409, 'clst': 1.6745, 'sep': 35.8771, 'art': 0.0153, 'les': 0.3, 'fa': 560.5979}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8548 at epoch 25 (34.0 min)
+  QUEUE FINISHED for this GPU
+--- 50 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.836, 'sec': 97.9, 'ce': 0.601, 'clst': 1.6052, 'sep': 38.7862, 'art': 0.0128, 'les': 0.2507, 'fa': 495.7104}
+  [Ours+Correia s2] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8381, 'sec': 97.9, 'ce': 0.5813, 'clst': 1.4759, 'sep': 39.8677, 'art': 0.0122, 'les': 0.2388, 'fa': 471.5868}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8548 at epoch 25 (34.0 min)
+  QUEUE FINISHED for this GPU
+--- 55 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8455, 'sec': 97.8, 'ce': 0.572, 'clst': 1.3838, 'sep': 40.195, 'art': 0.0117, 'les': 0.2295, 'fa': 458.5962}
+  [Ours+Correia s2] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8452, 'sec': 98.0, 'ce': 0.5843, 'clst': 1.6713, 'sep': 43.814, 'art': 0.0114, 'les': 0.23, 'fa': 445.5526}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8548 at epoch 25 (34.0 min)
+  QUEUE FINISHED for this GPU
+--- 60 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8439, 'sec': 97.7, 'ce': 0.5676, 'clst': 1.47, 'sep': 43.0691, 'art': 0.0114, 'les': 0.225, 'fa': 449.7479}
+  [Ours+Correia s2] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.8467, 'sec': 97.8, 'ce': 0.5765, 'clst': 1.5917, 'sep': 43.0057, 'art': 0.0118, 'les': 0.229, 'fa': 445.3988}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8548 at epoch 25 (34.0 min)
+  QUEUE FINISHED for this GPU
+--- 65 min ---
+[GPU0]
+  [Ours+Correia s2] DONE best_val_auc=0.8094 at epoch 25 (32.4 min)
+  QUEUE FINISHED for this GPU
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8548 at epoch 25 (34.0 min)
+  QUEUE FINISHED for this GPU
+TRAINING DONE in 65.0 min
+[GPU0] === START Ours+Correia:0 | lam_les=1.0 lam_art=1.0 push=constrained lam_fa=0.001 fa_mode=correia ===
+[GPU0] [Ours+Correia s0] after push val_auc=0.8288 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 20/20
+[GPU0] [Ours+Correia s0] DONE best_val_auc=0.8420 at epoch 23 (32.4 min)
+[GPU0] === START Ours+Correia:2 | lam_les=1.0 lam_art=1.0 push=constrained lam_fa=0.001 fa_mode=correia ===
+[GPU0] [Ours+Correia s2] after push val_auc=0.7474 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 20/20
+[GPU0] [Ours+Correia s2] DONE best_val_auc=0.8094 at epoch 25 (32.4 min)
+[GPU1] === START Ours+Correia:1 | lam_les=1.0 lam_art=1.0 push=constrained lam_fa=0.001 fa_mode=correia ===
+[GPU1] [Ours+Correia s1] after push val_auc=0.5794 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 20/20
+[GPU1] [Ours+Correia s1] DONE best_val_auc=0.8548 at epoch 25 (34.0 min)
+runs per configuration: {'CNN': 3, 'Ours+Correia': 3, 'Ours-noArt': 3, 'Ours-noLes': 3, 'Ours-stdPush': 3, 'Ours': 3, 'PPN-FA-1e-1': 3, 'PPN-FA-1e-2': 3, 'PPN-FA-Correia': 3, 'PPN-FA-IAIABL': 3, 'PPN-FA': 3, 'PPN-std': 3, 'PPN': 3}
+data: /kaggle/input/notebooks/yousefamovahed/nb01-selfcontained/prep | device: cuda | new runs: 3 | manual labels: 2594
+counterfactual sets: {'add_dark_corners': 2318, 'add_ruler': 2063} | helpers ready
+Ours-stdPush_s0: cached vs. model activations: max |diff| 0.00e+00, mean 0.00e+00 (activations 0.01..9.14)
+Ours-stdPush_s0: 8 variants | 110s
+Ours-stdPush_s1: cached vs. model activations: max |diff| 0.00e+00, mean 0.00e+00 (activations 0.01..7.89)
+Ours-stdPush_s1: 8 variants | 107s
+Ours-stdPush_s2: cached vs. model activations: max |diff| 0.00e+00, mean 0.00e+00 (activations 0.01..9.21)
+Ours-stdPush_s2: 8 variants | 107s
+Ours_s0: cached vs. model activations: max |diff| 0.00e+00, mean 0.00e+00 (activations 0.01..9.14)
+Ours_s0: 1 variants | 59s
+Ours_s1: cached vs. model activations: max |diff| 0.00e+00, mean 0.00e+00 (activations 0.01..9.21)
+Ours_s1: 1 variants | 59s
+Ours_s2: cached vs. model activations: max |diff| 0.00e+00, mean 0.00e+00 (activations 0.01..9.21)
+Ours_s2: 1 variants | 59s
+
+Projection-threshold sweep (mean over 3 seeds; re-projection of Ours-stdPush unless noted):
+                                                   auc  lesion_protos  mean_cell_lesion  artifact_protos  lesion_share  artifact_share  pointing  flip dark_corners  flip ruler  capture dark_corners  capture ruler  rho dark_corners  ens_auc  p_vs_paper_thresholds
+tag                                                                                                                                                                                                                                                                   
+no constraint (= Ours-stdPush)           0.863 ± 0.005         7.6667            0.3876           4.6667        0.5145          0.0862    0.0344             0.0450      0.0412                0.0754         0.0138            0.9235   0.8841                  0.362
+lesion >= 0.3, artifact <= 0.05          0.863 ± 0.005        15.6667            0.7464           1.0000        0.5124          0.0862    0.0342             0.0460      0.0383                0.0733         0.0136            0.9234   0.8837                  0.801
+lesion >= 0.5, artifact <= 0.05 (paper)  0.863 ± 0.005        20.0000            0.8363           1.0000        0.5115          0.0876    0.0344             0.0498      0.0425                0.0723         0.0137            0.9234   0.8838                    NaN
+lesion >= 0.7, artifact <= 0.05          0.863 ± 0.005        20.0000            0.9065           0.6667        0.5115          0.0876    0.0343             0.0509      0.0402                0.0723         0.0137            0.9234   0.8839                  0.617
+lesion >= 0.9, artifact <= 0.05          0.863 ± 0.005        20.0000            0.9865           0.6667        0.5198          0.0873    0.0345             0.0510      0.0444                0.0679         0.0126            0.9233   0.8842                  0.414
+lesion >= 0.5, artifact = 0              0.863 ± 0.005        20.0000            0.8505           0.0000        0.5118          0.0876    0.0345             0.0522      0.0436                0.0723         0.0137            0.9234   0.8837                  0.860
+lesion >= 0.5, artifact <= 0.2           0.863 ± 0.005        20.0000            0.8341           1.0000        0.5115          0.0876    0.0344             0.0495      0.0428                0.0723         0.0137            0.9234   0.8839                  0.656
+lesion >= 0.5, no artifact limit         0.863 ± 0.005        20.0000            0.8341           1.0000        0.5115          0.0876    0.0344             0.0495      0.0428                0.0723         0.0137            0.9234   0.8839                  0.656
+trained with the constraint (Ours)       0.865 ± 0.006        20.0000            0.8673           0.6667        0.5892          0.0478    0.0134             0.0523      0.0359                0.0335         0.0070            0.9179   0.8836                  0.931
+paper (Tables IV, V, VII): Ours-stdPush AUC .863 +- .005, 7.7 lesion prototypes, artifact share .086, flip DC 4.5%, capture DC 7.5%, rho DC .923; Ours AUC .865 +- .006, 20.0, .048, 5.2%, 3.4%, .918
+Ours+Correia_s0      test AUC 0.8730 | 117s
+Ours+Correia_s1      test AUC 0.8731 | 54s
+Ours+Correia_s2      test AUC 0.8658 | 54s
+Ours_s0              test AUC 0.8592 | 54s
+Ours_s1              test AUC 0.8714 | 54s
+Ours_s2              test AUC 0.8650 | 54s
+PPN-FA-Correia_s0    test AUC 0.8685 | 54s
+PPN-FA-Correia_s1    test AUC 0.8783 | 54s
+PPN-FA-Correia_s2    test AUC 0.8554 | 54s
+        config  seeds  protos_on_lesion      train_minutes      AUC test AUC Derm7pt-derm AUC Derm7pt-clinic AUC PAD-UFES-20  ens AUC test
+          Ours      3              20.0 [33.1, 33.5, 30.2] 0.865 ± 0.006    0.749 ± 0.008      0.657 ± 0.019   0.647 ± 0.108        0.8836
+PPN-FA-Correia      3              13.0 [36.7, 34.2, 34.2] 0.867 ± 0.011    0.771 ± 0.016      0.702 ± 0.014   0.699 ± 0.068        0.8847
+  Ours+Correia      3              20.0 [32.4, 34.0, 32.4] 0.871 ± 0.004    0.736 ± 0.007      0.675 ± 0.036   0.737 ± 0.027        0.8895
+
+Ours+Correia versus Ours and Correia (seed ensembles):
+           set         versus  ens_auc_new  ens_auc_versus      delta_CI95  p_group_bootstrap  p_DeLong
+          test           Ours       0.8895          0.8836 [-0.006, 0.017]              0.322    0.1935
+  Derm7pt-derm           Ours       0.7698          0.7690      [nan, nan]                NaN    0.9370
+Derm7pt-clinic           Ours       0.6989          0.6765      [nan, nan]                NaN    0.1161
+   PAD-UFES-20           Ours       0.7670          0.6810  [0.047, 0.131]              0.000    0.0002
+          test PPN-FA-Correia       0.8895          0.8847 [-0.005, 0.016]              0.372    0.2574
+  Derm7pt-derm PPN-FA-Correia       0.7698          0.7970      [nan, nan]                NaN    0.0038
+Derm7pt-clinic PPN-FA-Correia       0.6989          0.7291      [nan, nan]                NaN    0.0164
+   PAD-UFES-20 PPN-FA-Correia       0.7670          0.7227  [0.015, 0.072]              0.001    0.0035
+        metric         versus  mean_new  mean_versus   p_group
+  lesion share           Ours      0.73        0.589 6.21e-177
+  lesion share PPN-FA-Correia      0.73        0.603 1.66e-155
+artifact share           Ours    0.0431       0.0478  7.97e-08
+artifact share PPN-FA-Correia    0.0431        0.141  1.21e-50
+      pointing           Ours    0.0197       0.0134   0.00708
+      pointing PPN-FA-Correia    0.0197       0.0656  2.66e-26
+      DC share           Ours    0.0634       0.0666    0.0413
+      DC share PPN-FA-Correia    0.0634        0.223  1.82e-40
+add_dark_corners done
+add_ruler done
+add_hair done
+add_ink done
+    intervention  metric         versus  mean_new  mean_versus   p_group
+add_dark_corners    flip           Ours    0.0499       0.0523     0.633
+add_dark_corners    flip PPN-FA-Correia    0.0499       0.0646   0.00383
+add_dark_corners   absdp           Ours    0.0352       0.0352   0.00205
+add_dark_corners   absdp PPN-FA-Correia    0.0352       0.0468   2.6e-34
+add_dark_corners capture           Ours    0.0219       0.0335  2.17e-63
+add_dark_corners capture PPN-FA-Correia    0.0219       0.0583 1.14e-128
+add_dark_corners     rho           Ours     0.873        0.918  6.99e-85
+add_dark_corners     rho PPN-FA-Correia     0.873        0.868   0.00419
+       add_ruler    flip           Ours    0.0299       0.0359     0.265
+       add_ruler    flip PPN-FA-Correia    0.0299       0.0364     0.495
+       add_ruler   absdp           Ours    0.0245       0.0254  6.73e-06
+       add_ruler   absdp PPN-FA-Correia    0.0245       0.0255  0.000285
+       add_ruler capture           Ours   0.00722      0.00698     0.776
+       add_ruler capture PPN-FA-Correia   0.00722      0.00907   0.00721
+       add_ruler     rho           Ours      0.92        0.952 8.13e-103
+       add_ruler     rho PPN-FA-Correia      0.92         0.94  3.81e-42
+        add_hair    flip           Ours    0.0793       0.0924    0.0215
+        add_hair    flip PPN-FA-Correia    0.0793       0.0892     0.145
+        add_hair   absdp           Ours    0.0656       0.0805  4.13e-26
+        add_hair   absdp PPN-FA-Correia    0.0656       0.0727  1.32e-08
+         add_ink    flip           Ours    0.0594       0.0556     0.664
+         add_ink    flip PPN-FA-Correia    0.0594       0.0658    0.0593
+         add_ink   absdp           Ours    0.0458       0.0454     0.024
+         add_ink   absdp PPN-FA-Correia    0.0458       0.0483  0.000202
+artifact         config      A  FPR_with  FPR_without delta_new_minus_c  p_group
+      DC           Ours 0.5736    0.1976       0.1684  [-0.059, -0.021]    0.000
+      DC PPN-FA-Correia 0.5653    0.2260       0.1953  [-0.048, -0.018]    0.000
+      DC   Ours+Correia 0.5327    0.2438       0.2367               NaN      NaN
+      SP           Ours 0.5868    0.1939       0.1723   [-0.020, 0.018]    0.880
+      SP PPN-FA-Correia 0.5793    0.2178       0.2001   [-0.012, 0.023]    0.508
+      SP   Ours+Correia 0.5855    0.2895       0.2307               NaN      NaN
+
+Summary (Ours+Correia vs Ours vs Correia):
+                              0               1              2
+config                     Ours  PPN-FA-Correia   Ours+Correia
+AUC               0.865 ± 0.006   0.867 ± 0.011  0.871 ± 0.004
+Derm7pt-derm      0.749 ± 0.008   0.771 ± 0.016  0.736 ± 0.007
+Derm7pt-clin      0.657 ± 0.019   0.702 ± 0.014  0.675 ± 0.036
+PAD               0.647 ± 0.108   0.699 ± 0.068  0.737 ± 0.027
+protos on lesion           20.0            13.0           20.0
+artifact share           0.0478          0.1413         0.0431
+lesion share             0.5892          0.6031         0.7296
+flip DC %                  5.23            6.46           4.99
+flip ruler %               3.59            3.64           2.99
+flip hair %                9.24            8.92           7.93
+flip ink %                 5.56            6.58           5.94
+rho DC                   0.9179          0.8681         0.8732
+capture DC %               3.35            5.83           2.19
+A real DC                0.5736          0.5653         0.5327
+training images with manual labels: 2092 of 20552; admissible cells in them: 21723 (of 290576 admissible cells overall)
+
+Admissible cells (lesion >= 0.5, detected artifact <= 0.05) in images with a manual but undetected artifact:
+type             manual_label  images_manual  images_undetected  admissible_cells_in_labelled_images  share_in_undetected_images  share_on_border_of_undetected_images
+  DC              dark_corner            773                688                                21723                      0.2284                                0.0193
+  TS            hair or ruler           1759                676                                21723                      0.3972                                0.0565
+  SP gel_bubble or gel_border           1413                923                                21723                      0.4287                                0.0601
+ INK           ink or patches            500                376                                21723                      0.0824                                0.0054
+
+Prototype cells per run (mean over seeds; undetected_DC counts border cells only):
+                off_lesion  border_cells  interior_cells  mean_cell_lesion  protos_in_labelled_images  undetected_DC  undetected_TS  undetected_SP  undetected_INK
+config                                                                                                                                                            
+Ours                  0.00          9.33           10.67              0.87                       1.67           0.00           0.67           0.67            0.00
+Ours+Correia          0.00         10.00           10.00              0.84                       1.67           0.00           1.00           0.00            0.33
+Ours-noArt            0.00          9.67           10.33              0.86                       2.33           0.00           1.33           1.00            0.00
+Ours-noLes            0.00          4.33           15.67              0.94                       3.00           0.00           2.00           1.67            0.00
+Ours-stdPush         12.33          2.00            5.67              0.39                       2.33           0.33           0.00           1.33            0.33
+PPN                   5.67          3.33           11.00              0.70                       7.00           0.67           3.00           2.67            0.00
+PPN-FA               10.00          2.67            7.33              0.53                       5.67           0.33           2.67           1.33            0.00
+PPN-FA-1e-1          10.67          3.00            6.33              0.52                       3.33           0.33           2.00           1.00            0.67
+PPN-FA-1e-2           4.00          2.33           13.67              0.80                       8.67           0.00           5.67           2.67            0.67
+PPN-FA-Correia        7.00          5.00            8.00              0.61                       2.00           0.00           0.33           0.67            0.00
+PPN-FA-IAIABL         2.00          2.67           15.33              0.86                       4.33           0.00           2.00           1.67            1.00
+PPN-std               8.00          1.67           10.33              0.62                       5.00           1.00           3.00           1.33            0.00
+
+Provenance guarantee under lesion-mask errors (mean over seeds, of 20 prototypes):
+                       protos_lesion_ge_05  mean_cell_lesion  min_cell_lesion
+config       delta_px                                                        
+Ours         -5                     17.000             0.788            0.357
+              0                     20.000             0.867            0.512
+              5                     20.000             0.928            0.665
+Ours+Correia -5                     15.000             0.745            0.376
+              0                     20.000             0.837            0.542
+              5                     20.000             0.912            0.706
+Ours-noArt   -5                     15.333             0.781            0.348
+              0                     20.000             0.859            0.515
+              5                     20.000             0.922            0.684
+Ours-noLes   -5                     19.000             0.897            0.446
+              0                     20.000             0.941            0.632
+              5                     20.000             0.972            0.807
+NB08 evaluation finished in 22.1 min
+
+=== threshold sweep ===
+                                                   auc  lesion_protos  mean_cell_lesion  artifact_protos  lesion_share  artifact_share  pointing  flip dark_corners  flip ruler  capture dark_corners  capture ruler  rho dark_corners  ens_auc  p_vs_paper_thresholds
+tag                                                                                                                                                                                                                                                                   
+no constraint (= Ours-stdPush)           0.863 ± 0.005         7.6667            0.3876           4.6667        0.5145          0.0862    0.0344             0.0450      0.0412                0.0754         0.0138            0.9235   0.8841                  0.362
+lesion >= 0.3, artifact <= 0.05          0.863 ± 0.005        15.6667            0.7464           1.0000        0.5124          0.0862    0.0342             0.0460      0.0383                0.0733         0.0136            0.9234   0.8837                  0.801
+lesion >= 0.5, artifact <= 0.05 (paper)  0.863 ± 0.005        20.0000            0.8363           1.0000        0.5115          0.0876    0.0344             0.0498      0.0425                0.0723         0.0137            0.9234   0.8838                    NaN
+lesion >= 0.7, artifact <= 0.05          0.863 ± 0.005        20.0000            0.9065           0.6667        0.5115          0.0876    0.0343             0.0509      0.0402                0.0723         0.0137            0.9234   0.8839                  0.617
+lesion >= 0.9, artifact <= 0.05          0.863 ± 0.005        20.0000            0.9865           0.6667        0.5198          0.0873    0.0345             0.0510      0.0444                0.0679         0.0126            0.9233   0.8842                  0.414
+lesion >= 0.5, artifact = 0              0.863 ± 0.005        20.0000            0.8505           0.0000        0.5118          0.0876    0.0345             0.0522      0.0436                0.0723         0.0137            0.9234   0.8837                  0.860
+lesion >= 0.5, artifact <= 0.2           0.863 ± 0.005        20.0000            0.8341           1.0000        0.5115          0.0876    0.0344             0.0495      0.0428                0.0723         0.0137            0.9234   0.8839                  0.656
+lesion >= 0.5, no artifact limit         0.863 ± 0.005        20.0000            0.8341           1.0000        0.5115          0.0876    0.0344             0.0495      0.0428                0.0723         0.0137            0.9234   0.8839                  0.656
+trained with the constraint (Ours)       0.865 ± 0.006        20.0000            0.8673           0.6667        0.5892          0.0478    0.0134             0.0523      0.0359                0.0335         0.0070            0.9179   0.8836                  0.931
+
+=== Ours+Correia ===
+                              0               1              2
+config                     Ours  PPN-FA-Correia   Ours+Correia
+AUC               0.865 ± 0.006   0.867 ± 0.011  0.871 ± 0.004
+Derm7pt-derm      0.749 ± 0.008   0.771 ± 0.016  0.736 ± 0.007
+Derm7pt-clin      0.657 ± 0.019   0.702 ± 0.014  0.675 ± 0.036
+PAD               0.647 ± 0.108   0.699 ± 0.068  0.737 ± 0.027
+protos on lesion           20.0            13.0           20.0
+artifact share           0.0478          0.1413         0.0431
+lesion share             0.5892          0.6031         0.7296
+flip DC %                  5.23            6.46           4.99
+flip ruler %               3.59            3.64           2.99
+flip hair %                9.24            8.92           7.93
+flip ink %                 5.56            6.58           5.94
+rho DC                   0.9179          0.8681         0.8732
+capture DC %               3.35            5.83           2.19
+A real DC                0.5736          0.5653         0.5327
+total 24
+drwxr-xr-x 2 root root 4096 Oct 20 22:06 .
+drwxr-xr-x 5 root root 4096 Oct 20 22:06 ..
+-rw-r--r-- 1 root root 2301 Oct 20 22:06 prototype_cells_per_run.csv
+-rw-r--r-- 1 root root 1418 Oct 20 21:53 threshold_sweep.csv
+-rw-r--r-- 1 root root 6864 Oct 20 21:53 threshold_sweep_per_run.csv
+
+NB08 FINISHED
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 138566 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 879158 bytes to __results__.html

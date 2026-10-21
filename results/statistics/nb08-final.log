@@ -1,0 +1,157 @@
+/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  _validate(nbdict, ref, version, version_minor, relax_add_props)
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Writing artproto.py
+Writing evalkit.py
+Writing fa_ext.py
+Writing train6.py
+GPUs: 2 | jobs: ['Ours+Correia:0', 'Ours+Correia:1', 'Ours+Correia:2']
+--- 5 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.7788, 'sec': 48.4, 'ce': 0.6622, 'clst': 1.3666, 'sep': 12.2036, 'art': 0.0272, 'les': 0.6261, 'fa': 1186.6191}
+  [Ours+Correia s0] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.7862, 'sec': 48.4, 'ce': 0.6606, 'clst': 1.4947, 'sep': 15.3108, 'art': 0.0265, 'les': 0.618, 'fa': 1104.2134}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.7781, 'sec': 50.3, 'ce': 0.6795, 'clst': 2.3132, 'sep': 27.3996, 'art': 0.0286, 'les': 0.651, 'fa': 1196.9477}
+  [Ours+Correia s1] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.7865, 'sec': 50.0, 'ce': 0.6677, 'clst': 2.2688, 'sep': 31.3942, 'art': 0.0268, 'les': 0.6273, 'fa': 1108.1118}
+--- 10 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8198, 'sec': 99.6, 'ce': 0.6277, 'clst': 0.7117, 'sep': 15.9701, 'art': 0.016, 'les': 0.3017, 'fa': 590.3094}
+  [Ours+Correia s0] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.819, 'sec': 99.5, 'ce': 0.6185, 'clst': 0.6432, 'sep': 15.4986, 'art': 0.0144, 'les': 0.2776, 'fa': 528.5734}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8129, 'sec': 103.1, 'ce': 0.655, 'clst': 1.4198, 'sep': 29.3344, 'art': 0.0174, 'les': 0.3342, 'fa': 634.8837}
+  [Ours+Correia s1] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8128, 'sec': 102.7, 'ce': 0.623, 'clst': 1.1917, 'sep': 28.7005, 'art': 0.0141, 'les': 0.2825, 'fa': 556.6509}
+--- 15 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8422, 'sec': 99.4, 'ce': 0.6093, 'clst': 0.9469, 'sep': 21.5635, 'art': 0.0135, 'les': 0.2721, 'fa': 465.0037}
+  [Ours+Correia s0] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8475, 'sec': 99.6, 'ce': 0.5819, 'clst': 0.9331, 'sep': 23.5273, 'art': 0.013, 'les': 0.2436, 'fa': 427.5635}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8147, 'sec': 102.9, 'ce': 0.6356, 'clst': 1.29, 'sep': 28.5932, 'art': 0.0134, 'les': 0.2596, 'fa': 507.1469}
+  [Ours+Correia s1] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8403, 'sec': 102.9, 'ce': 0.6204, 'clst': 1.0038, 'sep': 24.6022, 'art': 0.0113, 'les': 0.2276, 'fa': 458.2512}
+--- 20 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8625, 'sec': 99.5, 'ce': 0.5511, 'clst': 0.8361, 'sep': 24.8249, 'art': 0.0119, 'les': 0.2171, 'fa': 398.4574}
+  [Ours+Correia s0] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8673, 'sec': 99.4, 'ce': 0.5398, 'clst': 0.8491, 'sep': 25.7177, 'art': 0.0114, 'les': 0.2136, 'fa': 391.2774}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8461, 'sec': 102.9, 'ce': 0.5648, 'clst': 0.8945, 'sep': 27.9391, 'art': 0.0101, 'les': 0.2021, 'fa': 433.8635}
+  [Ours+Correia s1] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8491, 'sec': 103.0, 'ce': 0.5559, 'clst': 0.882, 'sep': 27.8957, 'art': 0.0095, 'les': 0.1932, 'fa': 425.7652}
+--- 25 min ---
+[GPU0]
+  [Ours+Correia s0] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.867, 'sec': 99.5, 'ce': 0.536, 'clst': 0.9382, 'sep': 28.0517, 'art': 0.0108, 'les': 0.2179, 'fa': 382.6113}
+  [Ours+Correia s0] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8677, 'sec': 99.5, 'ce': 0.5226, 'clst': 0.8572, 'sep': 27.5556, 'art': 0.0107, 'les': 0.2134, 'fa': 381.284}
+[GPU1]
+  [Ours+Correia s1] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8527, 'sec': 103.0, 'ce': 0.5512, 'clst': 0.9762, 'sep': 30.2727, 'art': 0.0102, 'les': 0.2028, 'fa': 416.173}
+  [Ours+Correia s1] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8519, 'sec': 102.9, 'ce': 0.5476, 'clst': 0.9381, 'sep': 30.0387, 'art': 0.0102, 'les': 0.2027, 'fa': 419.7532}
+--- 30 min ---
+[GPU0]
+    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),
+  [Ours+Correia s0] after push val_auc=0.8317 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 20/20
+[GPU1]
+  [Ours+Correia s1] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8525, 'sec': 102.9, 'ce': 0.5323, 'clst': 0.8087, 'sep': 30.324, 'art': 0.0102, 'les': 0.1983, 'fa': 414.9901}
+  [Ours+Correia s1] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.8551, 'sec': 102.9, 'ce': 0.5438, 'clst': 0.9282, 'sep': 30.6475, 'art': 0.01, 'les': 0.1984, 'fa': 403.553}
+--- 35 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 1, 'stage': 'warm', 'val_auc': 0.7283, 'sec': 48.7, 'ce': 0.6566, 'clst': 2.3347, 'sep': 6.652, 'art': 0.0434, 'les': 1.1715, 'fa': 2928.5545}
+  [Ours+Correia s2] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7846, 'sec': 48.4, 'ce': 0.6621, 'clst': 1.6513, 'sep': 11.6718, 'art': 0.0328, 'les': 0.8093, 'fa': 1698.1728}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8391 at epoch 25 (34.4 min)
+  QUEUE FINISHED for this GPU
+--- 40 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.7797, 'sec': 48.1, 'ce': 0.6771, 'clst': 2.6793, 'sep': 36.7205, 'art': 0.0282, 'les': 0.6635, 'fa': 1138.4475}
+  [Ours+Correia s2] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.8064, 'sec': 98.7, 'ce': 0.6844, 'clst': 2.2055, 'sep': 34.0484, 'art': 0.0242, 'les': 0.507, 'fa': 900.3716}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8391 at epoch 25 (34.4 min)
+  QUEUE FINISHED for this GPU
+--- 45 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8258, 'sec': 98.8, 'ce': 0.6408, 'clst': 1.2446, 'sep': 29.4352, 'art': 0.0159, 'les': 0.3011, 'fa': 608.0438}
+  [Ours+Correia s2] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.8275, 'sec': 98.8, 'ce': 0.6353, 'clst': 1.1547, 'sep': 27.4324, 'art': 0.0138, 'les': 0.2562, 'fa': 569.1542}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8391 at epoch 25 (34.4 min)
+  QUEUE FINISHED for this GPU
+--- 50 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8267, 'sec': 98.8, 'ce': 0.6152, 'clst': 0.9223, 'sep': 26.112, 'art': 0.0113, 'les': 0.2168, 'fa': 514.4065}
+  [Ours+Correia s2] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8449, 'sec': 98.6, 'ce': 0.5837, 'clst': 0.7993, 'sep': 28.1371, 'art': 0.0113, 'les': 0.2102, 'fa': 479.307}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8391 at epoch 25 (34.4 min)
+  QUEUE FINISHED for this GPU
+--- 55 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8537, 'sec': 98.7, 'ce': 0.5685, 'clst': 1.0389, 'sep': 34.1771, 'art': 0.011, 'les': 0.2153, 'fa': 455.8473}
+  [Ours+Correia s2] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8581, 'sec': 98.7, 'ce': 0.5697, 'clst': 1.287, 'sep': 38.1214, 'art': 0.0111, 'les': 0.2182, 'fa': 451.9558}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8391 at epoch 25 (34.4 min)
+  QUEUE FINISHED for this GPU
+--- 60 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8568, 'sec': 98.8, 'ce': 0.5577, 'clst': 1.2112, 'sep': 38.1375, 'art': 0.0109, 'les': 0.2155, 'fa': 455.6998}
+  [Ours+Correia s2] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.86, 'sec': 99.1, 'ce': 0.5537, 'clst': 1.1425, 'sep': 38.1909, 'art': 0.0106, 'les': 0.2135, 'fa': 453.735}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8391 at epoch 25 (34.4 min)
+  QUEUE FINISHED for this GPU
+--- 65 min ---
+[GPU0]
+  [Ours+Correia s2] {'epoch': 22, 'stage': 'last', 'val_auc': 0.8332, 'sec': 39.8, 'ce': 0.8136, 'clst': 0.7733, 'sep': 27.6419}
+  [Ours+Correia s2] {'epoch': 23, 'stage': 'last', 'val_auc': 0.84, 'sec': 39.8, 'ce': 0.6982, 'clst': 0.7871, 'sep': 27.6685}
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8391 at epoch 25 (34.4 min)
+  QUEUE FINISHED for this GPU
+--- 70 min ---
+[GPU0]
+  [Ours+Correia s2] DONE best_val_auc=0.8520 at epoch 25 (32.7 min)
+  QUEUE FINISHED for this GPU
+[GPU1]
+  [Ours+Correia s1] DONE best_val_auc=0.8391 at epoch 25 (34.4 min)
+  QUEUE FINISHED for this GPU
+TRAINING DONE in 70.0 min
+[GPU0] === START Ours+Correia:0 | lam_les=1.0 lam_art=1.0 push=constrained lam_fa=0.001 fa_mode=correia ===
+[GPU0] [Ours+Correia s0] after push val_auc=0.8317 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 20/20
+[GPU0] [Ours+Correia s0] DONE best_val_auc=0.8546 at epoch 25 (33.1 min)
+[GPU0] === START Ours+Correia:2 | lam_les=1.0 lam_art=1.0 push=constrained lam_fa=0.001 fa_mode=correia ===
+[GPU0] [Ours+Correia s2] after push val_auc=0.8245 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 20/20
+[GPU0] [Ours+Correia s2] DONE best_val_auc=0.8520 at epoch 25 (32.7 min)
+[GPU1] === START Ours+Correia:1 | lam_les=1.0 lam_art=1.0 push=constrained lam_fa=0.001 fa_mode=correia ===
+[GPU1] [Ours+Correia s1] after push val_auc=0.8089 | protos on artifact cells(>0.5): 0/20 | on lesion cells(>=0.5): 20/20
+[GPU1] [Ours+Correia s1] DONE best_val_auc=0.8391 at epoch 25 (34.4 min)
+runs per configuration: {'CNN': 3, 'Ours+Correia': 3, 'Ours-noArt': 3, 'Ours-noLes': 3, 'Ours-stdPush': 3, 'Ours': 3, 'PPN-FA-1e-1': 3, 'PPN-FA-1e-2': 3, 'PPN-FA-Correia': 3, 'PPN-FA-IAIABL': 3, 'PPN-FA': 3, 'PPN-std': 3, 'PPN': 3}
+data: /kaggle/input/notebooks/yousefamovahed/nb01-selfcontained/prep | device: cuda | new runs: 3 | manual labels: 2594
+counterfactual sets: {'add_dark_corners': 2318, 'add_ruler': 2063} | helpers ready
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys;import papermill as pm;pm.execute_notebook("__notebook__.ipynb","__notebook__.ipynb",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)
+                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [8]":
+---------------------------------------------------------------------------
+AssertionError                            Traceback (most recent call last)
+/tmp/ipykernel_23/1504327108.py in <cell line: 0>()
+     30         _, a_chk = sims_from_z(Zte[:64], model.prototypes.data)
+     31         a_ref = ek.forward(model, IM, MS, TEST[:64], dev)['act']
+---> 32         assert np.abs(a_chk - a_ref).max() < 1e-2, 'cached similarities differ from the model'
+     33         variants = VARIANTS if cfgname == 'Ours-stdPush' else [('trained with the constraint (Ours)', None, 0.5, 0.05)]
+     34         for name, constrained, lmin, amax in variants:
+
+AssertionError: cached similarities differ from the model
+
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 118344 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 858992 bytes to __results__.html
