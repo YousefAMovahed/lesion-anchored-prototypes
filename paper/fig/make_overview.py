@@ -47,7 +47,8 @@ adm = (ML >= 0.5) & (MA <= 0.05)
 print('cells with lesion >= 0.5:', int((ML >= 0.5).sum()), '| admissible:', int(adm.sum()), '| cells with artifact > 0.05:', int((MA > 0.05).sum()))
 
 plt.rcParams.update({'font.family': 'serif', 'font.serif': ['Times New Roman', 'DejaVu Serif'], 'mathtext.fontset': 'stix',
-                     'font.size': 7, 'axes.linewidth': 0.4})
+                     'font.size': 7, 'axes.linewidth': 0.4,
+                     'pdf.fonttype': 42})                       # embed TrueType fonts (IEEE PDF eXpress rejects Type 3)
 W = 3.45
 lx, gap = 0.13, 0.011                                           # left margin for the panel labels, gap between tiles
 tw = (W - lx - 5 * gap) / 6                                     # tile width (in)
