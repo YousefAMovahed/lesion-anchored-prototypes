@@ -1,0 +1,428 @@
+[{"stream_name":"stderr","time":7.667498665,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.667546691,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":8.75269303,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.75272843,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.752738354,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.752741513,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.464880829,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.464918668,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.464923342,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.464926258,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":10.807795941,"data":"Writing artproto.py\n"}
+,{"stream_name":"stdout","time":10.828577311,"data":"Writing evalkit.py\n"}
+,{"stream_name":"stdout","time":10.841926015,"data":"Writing train12.py\n"}
+,{"stream_name":"stdout","time":19.289902948,"data":"GPUs: 2 | queue: ['Ours-tau0.25:0', 'Ours-tau1:0', 'Ours-les0.3:0', 'Ours-les3:0', 'Ours-ppc5:0', 'Ours-ppc20:0', 'Ours-tau0.25:1', 'Ours-tau1:1', 'Ours-les0.3:1', 'Ours-les3:1', 'Ours-ppc5:1', 'Ours-ppc20:1']\n"}
+,{"stream_name":"stdout","time":319.293866181,"data":"--- 5 min ---\n"}
+,{"stream_name":"stdout","time":319.294827675,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":319.29485015,"data":"  /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stdout","time":319.294861931,"data":"    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),\n"}
+,{"stream_name":"stdout","time":319.295715191,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":319.295733041,"data":"  /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stdout","time":319.295741693,"data":"    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),\n"}
+,{"stream_name":"stdout","time":619.299118967,"data":"--- 10 min ---\n"}
+,{"stream_name":"stdout","time":619.300167011,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":619.300182776,"data":"  /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stdout","time":619.300327573,"data":"    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),\n"}
+,{"stream_name":"stdout","time":619.301438053,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":619.301460978,"data":"  /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stdout","time":619.301469344,"data":"    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),\n"}
+,{"stream_name":"stdout","time":919.301190885,"data":"--- 15 min ---\n"}
+,{"stream_name":"stdout","time":919.30211935,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":919.30213528,"data":"  /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stdout","time":919.302156883,"data":"    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),\n"}
+,{"stream_name":"stdout","time":919.302851351,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":919.302862071,"data":"  /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stdout","time":919.302873811,"data":"    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),\n"}
+,{"stream_name":"stdout","time":1219.306850919,"data":"--- 20 min ---\n"}
+,{"stream_name":"stdout","time":1219.308149237,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":1219.308171296,"data":"  [Ours-tau1 s0] {'epoch': 1, 'stage': 'warm', 'val_auc': 0.7826, 'sec': 1133.4, 'ce': 0.6491, 'clst': 0.4557, 'sep': 1.8046, 'art': 0.038, 'les': 1.011}\n"}
+,{"stream_name":"stdout","time":1219.308177428,"data":"  [Ours-tau1 s0] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7681, 'sec': 42.5, 'ce': 0.6386, 'clst': 0.1761, 'sep': 1.4429, 'art': 0.033, 'les': 0.7601}\n"}
+,{"stream_name":"stdout","time":1219.308182943,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":1219.308187609,"data":"  [Ours-tau0.25 s0] {'epoch': 1, 'stage': 'warm', 'val_auc': 0.7712, 'sec': 1133.4, 'ce': 0.6469, 'clst': 0.5139, 'sep': 2.0685, 'art': 0.025, 'les': 0.6577}\n"}
+,{"stream_name":"stdout","time":1219.30819311,"data":"  [Ours-tau0.25 s0] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7922, 'sec': 44.2, 'ce': 0.6144, 'clst': 0.3203, 'sep': 2.4762, 'art': 0.0191, 'les': 0.459}\n"}
+,{"stream_name":"stdout","time":1519.310686705,"data":"--- 25 min ---\n"}
+,{"stream_name":"stdout","time":1519.311029182,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":1519.311043011,"data":"  [Ours-tau1 s0] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.799, 'sec': 42.0, 'ce': 0.6228, 'clst': 0.1561, 'sep': 3.5755, 'art': 0.0293, 'les': 0.5451}\n"}
+,{"stream_name":"stdout","time":1519.31104715,"data":"  [Ours-tau1 s0] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.8266, 'sec': 99.1, 'ce': 0.6163, 'clst': 0.2018, 'sep': 5.6977, 'art': 0.0287, 'les': 0.4679}\n"}
+,{"stream_name":"stdout","time":1519.312288007,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":1519.312301846,"data":"  [Ours-tau0.25 s0] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.813, 'sec': 43.3, 'ce': 0.6002, 'clst': 0.5216, 'sep': 8.5307, 'art': 0.0181, 'les': 0.3536}\n"}
+,{"stream_name":"stdout","time":1519.31230607,"data":"  [Ours-tau0.25 s0] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.7612, 'sec': 101.1, 'ce': 0.6111, 'clst': 0.7844, 'sep': 14.2306, 'art': 0.0194, 'les': 0.3328}\n"}
+,{"stream_name":"stdout","time":1819.318914689,"data":"--- 30 min ---\n"}
+,{"stream_name":"stdout","time":1819.31898868,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":1819.318997036,"data":"  [Ours-tau1 s0] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.8479, 'sec': 93.2, 'ce': 0.5925, 'clst': 0.3664, 'sep': 12.1042, 'art': 0.0278, 'les': 0.3984}\n"}
+,{"stream_name":"stdout","time":1819.319002821,"data":"  [Ours-tau1 s0] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8437, 'sec': 93.6, 'ce': 0.6011, 'clst': 0.4733, 'sep': 16.3746, 'art': 0.0286, 'les': 0.4211}\n"}
+,{"stream_name":"stdout","time":1819.319008573,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":1819.319013435,"data":"  [Ours-tau0.25 s0] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8316, 'sec': 96.5, 'ce': 0.611, 'clst': 1.7047, 'sep': 36.9893, 'art': 0.0208, 'les': 0.2753}\n"}
+,{"stream_name":"stdout","time":1819.319018994,"data":"  [Ours-tau0.25 s0] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.828, 'sec': 96.4, 'ce': 0.6036, 'clst': 2.1747, 'sep': 43.2934, 'art': 0.0209, 'les': 0.2589}\n"}
+,{"stream_name":"stdout","time":2119.319974247,"data":"--- 35 min ---\n"}
+,{"stream_name":"stdout","time":2119.321006944,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":2119.32102468,"data":"  [Ours-tau1 s0] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8582, 'sec': 93.5, 'ce': 0.5768, 'clst': 0.7328, 'sep': 23.0653, 'art': 0.0275, 'les': 0.3712}\n"}
+,{"stream_name":"stdout","time":2119.321030759,"data":"  [Ours-tau1 s0] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8525, 'sec': 93.7, 'ce': 0.5861, 'clst': 0.9635, 'sep': 26.9017, 'art': 0.0275, 'les': 0.37}\n"}
+,{"stream_name":"stdout","time":2119.322233694,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":2119.322270147,"data":"  [Ours-tau0.25 s0] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8305, 'sec': 96.4, 'ce': 0.5934, 'clst': 2.4538, 'sep': 50.3344, 'art': 0.0159, 'les': 0.2418}\n"}
+,{"stream_name":"stdout","time":2119.322276199,"data":"  [Ours-tau0.25 s0] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8348, 'sec': 96.8, 'ce': 0.5785, 'clst': 2.479, 'sep': 52.931, 'art': 0.0162, 'les': 0.2311}\n"}
+,{"stream_name":"stdout","time":2419.325034458,"data":"--- 40 min ---\n"}
+,{"stream_name":"stdout","time":2419.326282766,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":2419.326302463,"data":"  [Ours-tau1 s0] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8619, 'sec': 94.0, 'ce': 0.5717, 'clst': 0.9123, 'sep': 28.7285, 'art': 0.0266, 'les': 0.3707}\n"}
+,{"stream_name":"stdout","time":2419.326308548,"data":"  [Ours-tau1 s0] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8619, 'sec': 93.7, 'ce': 0.5571, 'clst': 0.9613, 'sep': 30.8452, 'art': 0.0264, 'les': 0.3735}\n"}
+,{"stream_name":"stdout","time":2419.327223827,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":2419.327235358,"data":"  [Ours-tau0.25 s0] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8504, 'sec': 96.5, 'ce': 0.5447, 'clst': 1.982, 'sep': 51.5313, 'art': 0.0146, 'les': 0.2143}\n"}
+,{"stream_name":"stdout","time":2419.327251847,"data":"  [Ours-tau0.25 s0] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8512, 'sec': 96.6, 'ce': 0.5527, 'clst': 2.4488, 'sep': 56.0696, 'art': 0.014, 'les': 0.2082}\n"}
+,{"stream_name":"stdout","time":2719.328906711,"data":"--- 45 min ---\n"}
+,{"stream_name":"stdout","time":2719.329992074,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":2719.330010127,"data":"  [Ours-tau1 s0] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8635, 'sec': 93.8, 'ce': 0.5573, 'clst': 0.9278, 'sep': 31.4984, 'art': 0.0263, 'les': 0.371}\n"}
+,{"stream_name":"stdout","time":2719.330016068,"data":"  [Ours-tau1 s0] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.863, 'sec': 94.1, 'ce': 0.5567, 'clst': 0.9606, 'sep': 32.158, 'art': 0.0265, 'les': 0.3738}\n"}
+,{"stream_name":"stdout","time":2719.330874425,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":2719.330892497,"data":"  [Ours-tau0.25 s0] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8519, 'sec': 96.6, 'ce': 0.5561, 'clst': 2.4974, 'sep': 56.757, 'art': 0.0142, 'les': 0.2072}\n"}
+,{"stream_name":"stdout","time":2719.330898363,"data":"  [Ours-tau0.25 s0] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.8525, 'sec': 96.7, 'ce': 0.5483, 'clst': 2.4523, 'sep': 56.8599, 'art': 0.0144, 'les': 0.21}\n"}
+,{"stream_name":"stdout","time":3019.332903888,"data":"--- 50 min ---\n"}
+,{"stream_name":"stdout","time":3019.333067816,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":3019.333089574,"data":"  /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stdout","time":3019.333112482,"data":"    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),\n"}
+,{"stream_name":"stdout","time":3019.334270559,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":3019.334316602,"data":"  [Ours-tau0.25 s0] {'epoch': 23, 'stage': 'last', 'val_auc': 0.8254, 'sec': 42.5, 'ce': 1.0696, 'clst': 1.4821, 'sep': 42.3597}\n"}
+,{"stream_name":"stdout","time":3019.334324025,"data":"  [Ours-tau0.25 s0] {'epoch': 24, 'stage': 'last', 'val_auc': 0.8267, 'sec': 42.5, 'ce': 0.9661, 'clst': 1.64, 'sep': 42.4962}\n"}
+,{"stream_name":"stdout","time":3319.341909751,"data":"--- 55 min ---\n"}
+,{"stream_name":"stdout","time":3319.342424264,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":3319.342436841,"data":"  [Ours-les0.3 s0] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.7941, 'sec': 42.2, 'ce': 0.6305, 'clst': 1.5151, 'sep': 28.3162, 'art': 0.0306, 'les': 0.8204}\n"}
+,{"stream_name":"stdout","time":3319.342442509,"data":"  [Ours-les0.3 s0] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.7477, 'sec': 94.0, 'ce': 0.6357, 'clst': 1.8832, 'sep': 36.5665, 'art': 0.0297, 'les': 0.8613}\n"}
+,{"stream_name":"stdout","time":3319.343542398,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":3319.343553549,"data":"  [Ours-les3 s0] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.7874, 'sec': 43.4, 'ce': 0.6558, 'clst': 0.1052, 'sep': 0.4924, 'art': 0.0166, 'les': 0.3144}\n"}
+,{"stream_name":"stdout","time":3319.343558722,"data":"  [Ours-les3 s0] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.804, 'sec': 43.4, 'ce': 0.625, 'clst': 0.0426, 'sep': 0.0498, 'art': 0.0104, 'les': 0.2386}\n"}
+,{"stream_name":"stdout","time":3619.34590148,"data":"--- 60 min ---\n"}
+,{"stream_name":"stdout","time":3619.347013436,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":3619.34703024,"data":"  [Ours-les0.3 s0] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.7977, 'sec': 94.1, 'ce': 0.6431, 'clst': 2.5487, 'sep': 45.5129, 'art': 0.0309, 'les': 0.8343}\n"}
+,{"stream_name":"stdout","time":3619.347034953,"data":"  [Ours-les0.3 s0] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.7982, 'sec': 93.6, 'ce': 0.6316, 'clst': 2.1015, 'sep': 44.4812, 'art': 0.0282, 'les': 0.6844}\n"}
+,{"stream_name":"stdout","time":3619.347979493,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":3619.347995671,"data":"  [Ours-les3 s0] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8671, 'sec': 96.8, 'ce': 0.5411, 'clst': 0.0243, 'sep': 0.0214, 'art': 0.0044, 'les': 0.1093}\n"}
+,{"stream_name":"stdout","time":3619.348000521,"data":"  [Ours-les3 s0] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8724, 'sec': 96.7, 'ce': 0.5283, 'clst': 0.0237, 'sep': 0.0235, 'art': 0.0037, 'les': 0.096}\n"}
+,{"stream_name":"stdout","time":3919.352931237,"data":"--- 65 min ---\n"}
+,{"stream_name":"stdout","time":3919.3529756,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":3919.352981458,"data":"  [Ours-les0.3 s0] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8104, 'sec': 93.7, 'ce': 0.6128, 'clst': 3.1256, 'sep': 62.4327, 'art': 0.027, 'les': 0.6101}\n"}
+,{"stream_name":"stdout","time":3919.352987138,"data":"  [Ours-les0.3 s0] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8152, 'sec': 94.5, 'ce': 0.6061, 'clst': 2.9254, 'sep': 61.4788, 'art': 0.0262, 'les': 0.6139}\n"}
+,{"stream_name":"stdout","time":3919.353256755,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":3919.353268876,"data":"  [Ours-les3 s0] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8788, 'sec': 96.7, 'ce': 0.4684, 'clst': 0.0192, 'sep': 0.023, 'art': 0.0028, 'les': 0.0735}\n"}
+,{"stream_name":"stdout","time":3919.353274672,"data":"  [Ours-les3 s0] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8885, 'sec': 97.3, 'ce': 0.3856, 'clst': 0.0091, 'sep': 0.0115, 'art': 0.0019, 'les': 0.0558}\n"}
+,{"stream_name":"stdout","time":4219.354906564,"data":"--- 70 min ---\n"}
+,{"stream_name":"stdout","time":4219.355290172,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":4219.355303224,"data":"  [Ours-les0.3 s0] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8232, 'sec': 95.1, 'ce': 0.5946, 'clst': 2.7948, 'sep': 63.3041, 'art': 0.0254, 'les': 0.5776}\n"}
+,{"stream_name":"stdout","time":4219.355309348,"data":"  [Ours-les0.3 s0] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8322, 'sec': 95.1, 'ce': 0.5917, 'clst': 2.9327, 'sep': 65.0424, 'art': 0.0246, 'les': 0.5501}\n"}
+,{"stream_name":"stdout","time":4219.356316155,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":4219.35632728,"data":"  [Ours-les3 s0] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.892, 'sec': 97.4, 'ce': 0.3545, 'clst': 0.0056, 'sep': 0.0074, 'art': 0.0015, 'les': 0.0491}\n"}
+,{"stream_name":"stdout","time":4219.356338502,"data":"  [Ours-les3 s0] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8973, 'sec': 97.4, 'ce': 0.345, 'clst': 0.0055, 'sep': 0.0074, 'art': 0.0016, 'les': 0.0471}\n"}
+,{"stream_name":"stdout","time":4519.358957137,"data":"--- 75 min ---\n"}
+,{"stream_name":"stdout","time":4519.359925402,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":4519.359945463,"data":"  [Ours-les0.3 s0] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8352, 'sec': 94.8, 'ce': 0.5951, 'clst': 3.1571, 'sep': 68.2702, 'art': 0.025, 'les': 0.5229}\n"}
+,{"stream_name":"stdout","time":4519.359951528,"data":"  [Ours-les0.3 s0] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8356, 'sec': 94.8, 'ce': 0.5851, 'clst': 3.1286, 'sep': 67.8038, 'art': 0.025, 'les': 0.522}\n"}
+,{"stream_name":"stdout","time":4519.36102699,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":4519.361044146,"data":"  [Ours-les3 s0] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8938, 'sec': 97.5, 'ce': 0.3157, 'clst': 0.0059, 'sep': 0.0078, 'art': 0.0015, 'les': 0.047}\n"}
+,{"stream_name":"stdout","time":4519.36106345,"data":"  [Ours-les3 s0] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8937, 'sec': 97.4, 'ce': 0.3105, 'clst': 0.0055, 'sep': 0.0074, 'art': 0.0015, 'les': 0.0468}\n"}
+,{"stream_name":"stdout","time":4819.361919085,"data":"--- 80 min ---\n"}
+,{"stream_name":"stdout","time":4819.362848639,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":4819.362869429,"data":"  [Ours-les0.3 s0] {'epoch': 23, 'stage': 'last', 'val_auc': 0.8156, 'sec': 40.0, 'ce': 1.2782, 'clst': 1.8603, 'sep': 48.1615}\n"}
+,{"stream_name":"stdout","time":4819.362875054,"data":"  [Ours-les0.3 s0] {'epoch': 24, 'stage': 'last', 'val_auc': 0.8138, 'sec': 39.9, 'ce': 1.111, 'clst': 1.8112, 'sep': 48.3282}\n"}
+,{"stream_name":"stdout","time":4819.363746261,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":4819.363789026,"data":"  [Ours-les3 s0] after push val_auc=0.8887 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":4819.363795471,"data":"  [Ours-les3 s0] {'epoch': 21, 'stage': 'last', 'val_auc': 0.8919, 'sec': 42.5, 'ce': 0.5346, 'clst': 0.001, 'sep': 0.0015}\n"}
+,{"stream_name":"stdout","time":5119.374956435,"data":"--- 85 min ---\n"}
+,{"stream_name":"stdout","time":5119.377786312,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":5119.377810519,"data":"  [Ours-ppc5 s0] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.7906, 'sec': 42.1, 'ce': 0.5912, 'clst': 0.096, 'sep': 0.45, 'art': 0.0157, 'les': 0.3251}\n"}
+,{"stream_name":"stdout","time":5119.377817575,"data":"  [Ours-ppc5 s0] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.8187, 'sec': 42.2, 'ce': 0.5805, 'clst': 0.0695, 'sep': 0.2563, 'art': 0.0137, 'les': 0.3292}\n"}
+,{"stream_name":"stdout","time":5119.377856209,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":5119.377870103,"data":"  [Ours-ppc20 s0] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7928, 'sec': 43.7, 'ce': 0.6249, 'clst': 0.2295, 'sep': 1.836, 'art': 0.0284, 'les': 0.6986}\n"}
+,{"stream_name":"stdout","time":5119.377876446,"data":"  [Ours-ppc20 s0] {'epoch': 3, 'stage': 'warm', 'val_auc': 0.7929, 'sec': 43.6, 'ce': 0.609, 'clst': 0.2314, 'sep': 2.3569, 'art': 0.0264, 'les': 0.5883}\n"}
+,{"stream_name":"stdout","time":5419.375912458,"data":"--- 90 min ---\n"}
+,{"stream_name":"stdout","time":5419.37699132,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":5419.377005226,"data":"  [Ours-ppc5 s0] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8603, 'sec': 94.0, 'ce': 0.5188, 'clst': 0.0342, 'sep': 0.0441, 'art': 0.0076, 'les': 0.1739}\n"}
+,{"stream_name":"stdout","time":5419.377011056,"data":"  [Ours-ppc5 s0] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8573, 'sec': 93.8, 'ce': 0.5002, 'clst': 0.0356, 'sep': 0.0454, 'art': 0.0071, 'les': 0.1683}\n"}
+,{"stream_name":"stdout","time":5419.377808865,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":5419.377819378,"data":"  [Ours-ppc20 s0] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.7805, 'sec': 97.4, 'ce': 0.6059, 'clst': 0.3856, 'sep': 7.2039, 'art': 0.0231, 'les': 0.4024}\n"}
+,{"stream_name":"stdout","time":5419.377824736,"data":"  [Ours-ppc20 s0] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8036, 'sec': 97.6, 'ce': 0.6062, 'clst': 0.5616, 'sep': 12.3053, 'art': 0.0222, 'les': 0.3344}\n"}
+,{"stream_name":"stdout","time":5719.386197751,"data":"--- 95 min ---\n"}
+,{"stream_name":"stdout","time":5719.386231461,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":5719.386236829,"data":"  [Ours-ppc5 s0] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8889, 'sec': 93.6, 'ce': 0.4582, 'clst': 0.0251, 'sep': 0.0304, 'art': 0.0046, 'les': 0.1043}\n"}
+,{"stream_name":"stdout","time":5719.386241974,"data":"  [Ours-ppc5 s0] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8983, 'sec': 93.6, 'ce': 0.3787, 'clst': 0.014, 'sep': 0.0179, 'art': 0.0031, 'les': 0.0796}\n"}
+,{"stream_name":"stdout","time":5719.386274208,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":5719.386278457,"data":"  [Ours-ppc20 s0] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.7455, 'sec': 97.3, 'ce': 0.6313, 'clst': 1.2027, 'sep': 24.8103, 'art': 0.0239, 'les': 0.3675}\n"}
+,{"stream_name":"stdout","time":5719.386282383,"data":"  [Ours-ppc20 s0] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.797, 'sec': 97.3, 'ce': 0.6369, 'clst': 1.5701, 'sep': 33.1873, 'art': 0.0246, 'les': 0.3506}\n"}
+,{"stream_name":"stdout","time":6019.386972106,"data":"--- 100 min ---\n"}
+,{"stream_name":"stdout","time":6019.387006036,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":6019.387011996,"data":"  [Ours-ppc5 s0] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.9011, 'sec': 93.8, 'ce': 0.3414, 'clst': 0.0097, 'sep': 0.0132, 'art': 0.0023, 'les': 0.0621}\n"}
+,{"stream_name":"stdout","time":6019.387017662,"data":"  [Ours-ppc5 s0] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8971, 'sec': 93.6, 'ce': 0.3368, 'clst': 0.0099, 'sep': 0.0136, 'art': 0.0023, 'les': 0.0607}\n"}
+,{"stream_name":"stdout","time":6019.387806351,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":6019.387827102,"data":"  [Ours-ppc20 s0] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8295, 'sec': 97.0, 'ce': 0.5963, 'clst': 1.4356, 'sep': 34.965, 'art': 0.0231, 'les': 0.2872}\n"}
+,{"stream_name":"stdout","time":6019.387834103,"data":"  [Ours-ppc20 s0] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8415, 'sec': 97.0, 'ce': 0.5778, 'clst': 1.4417, 'sep': 38.6633, 'art': 0.0227, 'les': 0.2791}\n"}
+,{"stream_name":"stdout","time":6319.395939828,"data":"--- 105 min ---\n"}
+,{"stream_name":"stdout","time":6319.396967961,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":6319.396991635,"data":"  [Ours-ppc5 s0] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8944, 'sec': 93.5, 'ce': 0.3105, 'clst': 0.0087, 'sep': 0.0128, 'art': 0.0022, 'les': 0.0565}\n"}
+,{"stream_name":"stdout","time":6319.396998424,"data":"  [Ours-ppc5 s0] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8929, 'sec': 94.0, 'ce': 0.3156, 'clst': 0.0082, 'sep': 0.0122, 'art': 0.0021, 'les': 0.0562}\n"}
+,{"stream_name":"stdout","time":6319.398024416,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":6319.398040484,"data":"  [Ours-ppc20 s0] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8538, 'sec': 96.9, 'ce': 0.5714, 'clst': 1.5234, 'sep': 40.4329, 'art': 0.021, 'les': 0.2682}\n"}
+,{"stream_name":"stdout","time":6319.398046416,"data":"  [Ours-ppc20 s0] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8535, 'sec': 97.2, 'ce': 0.5558, 'clst': 1.6001, 'sep': 43.3266, 'art': 0.02, 'les': 0.2653}\n"}
+,{"stream_name":"stdout","time":6619.39938108,"data":"--- 110 min ---\n"}
+,{"stream_name":"stdout","time":6619.401041398,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":6619.401074355,"data":"  [Ours-ppc5 s0] {'epoch': 21, 'stage': 'last', 'val_auc': 0.8865, 'sec': 40.0, 'ce': 0.3986, 'clst': 0.0022, 'sep': 0.0042}\n"}
+,{"stream_name":"stdout","time":6619.401081538,"data":"  [Ours-ppc5 s0] {'epoch': 22, 'stage': 'last', 'val_auc': 0.887, 'sec': 39.9, 'ce': 0.3826, 'clst': 0.0023, 'sep': 0.0043}\n"}
+,{"stream_name":"stdout","time":6619.402444974,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":6619.402466371,"data":"  [Ours-ppc20 s0] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8525, 'sec': 97.7, 'ce': 0.5588, 'clst': 1.6524, 'sep': 44.8639, 'art': 0.0195, 'les': 0.2639}\n"}
+,{"stream_name":"stdout","time":6619.402472494,"data":"  [Ours-ppc20 s0] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.8541, 'sec': 98.4, 'ce': 0.5631, 'clst': 1.7638, 'sep': 46.092, 'art': 0.0193, 'les': 0.2634}\n"}
+,{"stream_name":"stdout","time":6919.405195214,"data":"--- 115 min ---\n"}
+,{"stream_name":"stdout","time":6919.406910189,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":6919.406940324,"data":"  [Ours-tau0.25 s1] {'epoch': 3, 'stage': 'warm', 'val_auc': 0.8019, 'sec': 42.3, 'ce': 0.603, 'clst': 0.2875, 'sep': 2.408, 'art': 0.0186, 'les': 0.3901}\n"}
+,{"stream_name":"stdout","time":6919.406947255,"data":"  [Ours-tau0.25 s1] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.8154, 'sec': 42.3, 'ce': 0.5898, 'clst': 0.2718, 'sep': 2.8649, 'art': 0.0175, 'les': 0.354}\n"}
+,{"stream_name":"stdout","time":6919.408515663,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":6919.408542358,"data":"  [Ours-ppc20 s0] {'epoch': 23, 'stage': 'last', 'val_auc': 0.7738, 'sec': 42.7, 'ce': 2.4374, 'clst': 0.9294, 'sep': 29.3604}\n"}
+,{"stream_name":"stdout","time":6919.408548815,"data":"  [Ours-ppc20 s0] {'epoch': 24, 'stage': 'last', 'val_auc': 0.7822, 'sec': 42.9, 'ce': 2.0838, 'clst': 0.9109, 'sep': 29.2648}\n"}
+,{"stream_name":"stdout","time":7219.409964473,"data":"--- 120 min ---\n"}
+,{"stream_name":"stdout","time":7219.410001193,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":7219.410007419,"data":"  [Ours-tau0.25 s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.83, 'sec': 93.9, 'ce': 0.5962, 'clst': 1.0753, 'sep': 21.7769, 'art': 0.0164, 'les': 0.2596}\n"}
+,{"stream_name":"stdout","time":7219.410013098,"data":"  [Ours-tau0.25 s1] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8214, 'sec': 93.5, 'ce': 0.6098, 'clst': 1.6975, 'sep': 33.4947, 'art': 0.0167, 'les': 0.2688}\n"}
+,{"stream_name":"stdout","time":7219.41069564,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":7219.410711171,"data":"  [Ours-tau1 s1] {'epoch': 4, 'stage': 'warm', 'val_auc': 0.7924, 'sec': 43.5, 'ce': 0.6377, 'clst': 0.2019, 'sep': 4.808, 'art': 0.0308, 'les': 0.6092}\n"}
+,{"stream_name":"stdout","time":7219.410717061,"data":"  [Ours-tau1 s1] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.796, 'sec': 43.5, 'ce': 0.6329, 'clst': 0.2758, 'sep': 7.4421, 'art': 0.031, 'les': 0.6057}\n"}
+,{"stream_name":"stdout","time":7519.415816268,"data":"--- 125 min ---\n"}
+,{"stream_name":"stdout","time":7519.415865064,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":7519.415872226,"data":"  [Ours-tau0.25 s1] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8282, 'sec': 93.7, 'ce': 0.6199, 'clst': 1.9524, 'sep': 35.9327, 'art': 0.0149, 'les': 0.227}\n"}
+,{"stream_name":"stdout","time":7519.415878046,"data":"  [Ours-tau0.25 s1] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8312, 'sec': 93.8, 'ce': 0.5902, 'clst': 1.8553, 'sep': 40.9721, 'art': 0.0139, 'les': 0.2167}\n"}
+,{"stream_name":"stdout","time":7519.415883453,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":7519.415888271,"data":"  [Ours-tau1 s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8248, 'sec': 97.5, 'ce': 0.6294, 'clst': 0.6354, 'sep': 16.8075, 'art': 0.0314, 'les': 0.5048}\n"}
+,{"stream_name":"stdout","time":7519.415893626,"data":"  [Ours-tau1 s1] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8248, 'sec': 97.6, 'ce': 0.6727, 'clst': 1.36, 'sep': 28.5312, 'art': 0.0287, 'les': 0.546}\n"}
+,{"stream_name":"stdout","time":7819.419910026,"data":"--- 130 min ---\n"}
+,{"stream_name":"stdout","time":7819.421050641,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":7819.421066574,"data":"  [Ours-tau0.25 s1] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8359, 'sec': 93.5, 'ce': 0.5674, 'clst': 1.9923, 'sep': 44.959, 'art': 0.0147, 'les': 0.2096}\n"}
+,{"stream_name":"stdout","time":7819.421072565,"data":"  [Ours-tau0.25 s1] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8457, 'sec': 93.5, 'ce': 0.5572, 'clst': 2.0032, 'sep': 45.7374, 'art': 0.0144, 'les': 0.2079}\n"}
+,{"stream_name":"stdout","time":7819.422172057,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":7819.422188841,"data":"  [Ours-tau1 s1] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8244, 'sec': 97.3, 'ce': 0.6756, 'clst': 1.6909, 'sep': 36.496, 'art': 0.0318, 'les': 0.548}\n"}
+,{"stream_name":"stdout","time":7819.422231465,"data":"  [Ours-tau1 s1] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8312, 'sec': 97.2, 'ce': 0.6141, 'clst': 1.1622, 'sep': 36.6236, 'art': 0.0294, 'les': 0.4522}\n"}
+,{"stream_name":"stdout","time":8119.424106866,"data":"--- 135 min ---\n"}
+,{"stream_name":"stdout","time":8119.425144114,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":8119.425159317,"data":"  [Ours-tau0.25 s1] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8495, 'sec': 93.3, 'ce': 0.5411, 'clst': 1.8039, 'sep': 46.2949, 'art': 0.0139, 'les': 0.2031}\n"}
+,{"stream_name":"stdout","time":8119.425164959,"data":"  [Ours-tau0.25 s1] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8501, 'sec': 93.3, 'ce': 0.5365, 'clst': 1.7586, 'sep': 46.6316, 'art': 0.0138, 'les': 0.2}\n"}
+,{"stream_name":"stdout","time":8119.425962853,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":8119.425973239,"data":"  [Ours-tau1 s1] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8448, 'sec': 97.2, 'ce': 0.6375, 'clst': 1.6403, 'sep': 43.8198, 'art': 0.0277, 'les': 0.3888}\n"}
+,{"stream_name":"stdout","time":8119.425978541,"data":"  [Ours-tau1 s1] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.842, 'sec': 97.2, 'ce': 0.6145, 'clst': 1.4441, 'sep': 44.1607, 'art': 0.0276, 'les': 0.3814}\n"}
+,{"stream_name":"stdout","time":8419.442024291,"data":"--- 140 min ---\n"}
+,{"stream_name":"stdout","time":8419.442069431,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":8419.442076282,"data":"  [Ours-tau0.25 s1] after push val_auc=0.7117 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":8419.442081711,"data":"  [Ours-tau0.25 s1] {'epoch': 21, 'stage': 'last', 'val_auc': 0.7317, 'sec': 39.9, 'ce': 12.1888, 'clst': 0.953, 'sep': 34.3766}\n"}
+,{"stream_name":"stdout","time":8419.443189673,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":8419.443215605,"data":"  [Ours-tau1 s1] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8549, 'sec': 97.0, 'ce': 0.6158, 'clst': 1.6219, 'sep': 45.4998, 'art': 0.0278, 'les': 0.3747}\n"}
+,{"stream_name":"stdout","time":8419.443221219,"data":"  [Ours-tau1 s1] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8523, 'sec': 97.5, 'ce': 0.6028, 'clst': 1.5985, 'sep': 45.7573, 'art': 0.0277, 'les': 0.3727}\n"}
+,{"stream_name":"stdout","time":8719.441984951,"data":"--- 145 min ---\n"}
+,{"stream_name":"stdout","time":8719.442020497,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":8719.442026757,"data":"  [Ours-les0.3 s1] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7963, 'sec': 42.0, 'ce': 0.6193, 'clst': 0.2995, 'sep': 3.0006, 'art': 0.0287, 'les': 0.8436}\n"}
+,{"stream_name":"stdout","time":8719.442054364,"data":"  [Ours-les0.3 s1] {'epoch': 3, 'stage': 'warm', 'val_auc': 0.8071, 'sec': 42.0, 'ce': 0.6084, 'clst': 0.3586, 'sep': 5.7038, 'art': 0.0285, 'les': 0.7517}\n"}
+,{"stream_name":"stdout","time":8719.443458445,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":8719.443476345,"data":"  [Ours-tau1 s1] after push val_auc=0.6681 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":8719.44348301,"data":"  [Ours-tau1 s1] {'epoch': 21, 'stage': 'last', 'val_auc': 0.6841, 'sec': 42.8, 'ce': 15.2408, 'clst': 0.8715, 'sep': 33.5911}\n"}
+,{"stream_name":"stdout","time":9019.444893699,"data":"--- 150 min ---\n"}
+,{"stream_name":"stdout","time":9019.445367177,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":9019.445379827,"data":"  [Ours-les0.3 s1] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.7701, 'sec': 93.2, 'ce': 0.6313, 'clst': 1.6199, 'sep': 34.3167, 'art': 0.03, 'les': 0.8184}\n"}
+,{"stream_name":"stdout","time":9019.445395424,"data":"  [Ours-les0.3 s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8039, 'sec': 93.3, 'ce': 0.6283, 'clst': 3.0355, 'sep': 53.9513, 'art': 0.0307, 'les': 0.8636}\n"}
+,{"stream_name":"stdout","time":9019.446221617,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":9019.446232124,"data":"  [Ours-les3 s1] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.7708, 'sec': 43.5, 'ce': 0.6501, 'clst': 0.2121, 'sep': 1.433, 'art': 0.0222, 'les': 0.4122}\n"}
+,{"stream_name":"stdout","time":9019.446236439,"data":"  [Ours-les3 s1] {'epoch': 3, 'stage': 'warm', 'val_auc': 0.7834, 'sec': 43.5, 'ce': 0.6468, 'clst': 0.1524, 'sep': 0.9138, 'art': 0.0209, 'les': 0.3934}\n"}
+,{"stream_name":"stdout","time":9319.450203781,"data":"--- 155 min ---\n"}
+,{"stream_name":"stdout","time":9319.451429527,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":9319.451465236,"data":"  [Ours-les0.3 s1] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.8343, 'sec': 93.1, 'ce': 0.6397, 'clst': 2.1802, 'sep': 41.5087, 'art': 0.0284, 'les': 0.5342}\n"}
+,{"stream_name":"stdout","time":9319.451471378,"data":"  [Ours-les0.3 s1] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8258, 'sec': 93.0, 'ce': 0.6376, 'clst': 1.8003, 'sep': 42.1367, 'art': 0.0289, 'les': 0.5597}\n"}
+,{"stream_name":"stdout","time":9319.452580701,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":9319.452599093,"data":"  [Ours-les3 s1] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.8565, 'sec': 97.1, 'ce': 0.6059, 'clst': 0.0339, 'sep': 0.0344, 'art': 0.0052, 'les': 0.1194}\n"}
+,{"stream_name":"stdout","time":9319.452605332,"data":"  [Ours-les3 s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8807, 'sec': 97.1, 'ce': 0.5533, 'clst': 0.0252, 'sep': 0.0254, 'art': 0.0039, 'les': 0.0898}\n"}
+,{"stream_name":"stdout","time":9619.456978676,"data":"--- 160 min ---\n"}
+,{"stream_name":"stdout","time":9619.457012418,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":9619.457017822,"data":"  [Ours-les0.3 s1] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.837, 'sec': 92.9, 'ce': 0.6038, 'clst': 2.3451, 'sep': 54.4567, 'art': 0.0271, 'les': 0.4527}\n"}
+,{"stream_name":"stdout","time":9619.45704049,"data":"  [Ours-les0.3 s1] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.842, 'sec': 93.3, 'ce': 0.6009, 'clst': 2.4878, 'sep': 58.5699, 'art': 0.026, 'les': 0.4194}\n"}
+,{"stream_name":"stdout","time":9619.457046041,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":9619.4570505,"data":"  [Ours-les3 s1] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.8875, 'sec': 97.1, 'ce': 0.4906, 'clst': 0.0216, 'sep': 0.0224, 'art': 0.0032, 'les': 0.0725}\n"}
+,{"stream_name":"stdout","time":9619.457055534,"data":"  [Ours-les3 s1] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.87, 'sec': 97.2, 'ce': 0.5283, 'clst': 0.0251, 'sep': 0.0273, 'art': 0.0034, 'les': 0.0718}\n"}
+,{"stream_name":"stdout","time":9919.460922734,"data":"--- 165 min ---\n"}
+,{"stream_name":"stdout","time":9919.461672684,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":9919.461691772,"data":"  [Ours-les0.3 s1] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8572, 'sec': 93.1, 'ce': 0.5976, 'clst': 2.8412, 'sep': 65.2703, 'art': 0.0216, 'les': 0.395}\n"}
+,{"stream_name":"stdout","time":9919.461698014,"data":"  [Ours-les0.3 s1] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8578, 'sec': 93.2, 'ce': 0.596, 'clst': 2.8712, 'sep': 65.2231, 'art': 0.0219, 'les': 0.3912}\n"}
+,{"stream_name":"stdout","time":9919.462777102,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":9919.46279373,"data":"  [Ours-les3 s1] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8825, 'sec': 97.1, 'ce': 0.3724, 'clst': 0.0121, 'sep': 0.0135, 'art': 0.0021, 'les': 0.0558}\n"}
+,{"stream_name":"stdout","time":9919.462799347,"data":"  [Ours-les3 s1] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8885, 'sec': 97.0, 'ce': 0.3603, 'clst': 0.0106, 'sep': 0.0124, 'art': 0.0019, 'les': 0.0535}\n"}
+,{"stream_name":"stdout","time":10219.462931248,"data":"--- 170 min ---\n"}
+,{"stream_name":"stdout","time":10219.463724709,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":10219.463744401,"data":"    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),\n"}
+,{"stream_name":"stdout","time":10219.463792108,"data":"  [Ours-les0.3 s1] after push val_auc=0.7140 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":10219.464644217,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":10219.464653983,"data":"  [Ours-les3 s1] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8876, 'sec': 96.9, 'ce': 0.337, 'clst': 0.009, 'sep': 0.0106, 'art': 0.0019, 'les': 0.0527}\n"}
+,{"stream_name":"stdout","time":10219.464659668,"data":"  [Ours-les3 s1] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8885, 'sec': 96.9, 'ce': 0.3176, 'clst': 0.0089, 'sep': 0.0105, 'art': 0.0018, 'les': 0.0513}\n"}
+,{"stream_name":"stdout","time":10519.467730574,"data":"--- 175 min ---\n"}
+,{"stream_name":"stdout","time":10519.469841412,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":10519.469865429,"data":"  [Ours-ppc5 s1] {'epoch': 1, 'stage': 'warm', 'val_auc': 0.7572, 'sec': 42.0, 'ce': 0.6556, 'clst': 0.4387, 'sep': 1.3538, 'art': 0.0289, 'les': 0.7298}\n"}
+,{"stream_name":"stdout","time":10519.469871659,"data":"  [Ours-ppc5 s1] {'epoch': 2, 'stage': 'warm', 'val_auc': 0.792, 'sec': 41.8, 'ce': 0.6285, 'clst': 0.1938, 'sep': 0.9945, 'art': 0.0218, 'les': 0.4977}\n"}
+,{"stream_name":"stdout","time":10519.469877238,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":10519.469882203,"data":"  [Ours-les3 s1] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8887, 'sec': 97.6, 'ce': 0.3136, 'clst': 0.0083, 'sep': 0.01, 'art': 0.0018, 'les': 0.051}\n"}
+,{"stream_name":"stdout","time":10519.469887442,"data":"  [Ours-les3 s1] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.8877, 'sec': 97.4, 'ce': 0.3146, 'clst': 0.0082, 'sep': 0.0099, 'art': 0.0017, 'les': 0.051}\n"}
+,{"stream_name":"stdout","time":10819.474904786,"data":"--- 180 min ---\n"}
+,{"stream_name":"stdout","time":10819.475346354,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":10819.475362458,"data":"  [Ours-ppc5 s1] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.8628, 'sec': 94.5, 'ce': 0.5549, 'clst': 0.0881, 'sep': 0.3915, 'art': 0.0181, 'les': 0.3959}\n"}
+,{"stream_name":"stdout","time":10819.475368457,"data":"  [Ours-ppc5 s1] {'epoch': 7, 'stage': 'joint', 'val_auc': 0.8813, 'sec': 94.6, 'ce': 0.5082, 'clst': 0.0469, 'sep': 0.13, 'art': 0.0093, 'les': 0.192}\n"}
+,{"stream_name":"stdout","time":10819.476529291,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":10819.476548279,"data":"  /kaggle/working/artproto.py:383: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)\n"}
+,{"stream_name":"stdout","time":10819.476557501,"data":"    return (torch.from_numpy(np.ascontiguousarray(self.imgs[i])),\n"}
+,{"stream_name":"stdout","time":11119.480938188,"data":"--- 185 min ---\n"}
+,{"stream_name":"stdout","time":11119.482375209,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":11119.482395653,"data":"  [Ours-ppc5 s1] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.8761, 'sec': 94.5, 'ce': 0.4557, 'clst': 0.0288, 'sep': 0.0506, 'art': 0.0051, 'les': 0.1157}\n"}
+,{"stream_name":"stdout","time":11119.482402355,"data":"  [Ours-ppc5 s1] {'epoch': 10, 'stage': 'joint', 'val_auc': 0.8676, 'sec': 94.2, 'ce': 0.4551, 'clst': 0.0301, 'sep': 0.047, 'art': 0.0046, 'les': 0.1014}\n"}
+,{"stream_name":"stdout","time":11119.483463749,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":11119.483476942,"data":"  [Ours-ppc20 s1] {'epoch': 5, 'stage': 'warm', 'val_auc': 0.8174, 'sec': 43.6, 'ce': 0.595, 'clst': 0.2671, 'sep': 4.7202, 'art': 0.0245, 'les': 0.4701}\n"}
+,{"stream_name":"stdout","time":11119.483481512,"data":"  [Ours-ppc20 s1] {'epoch': 6, 'stage': 'joint', 'val_auc': 0.8246, 'sec': 97.5, 'ce': 0.6086, 'clst': 0.3684, 'sep': 7.4583, 'art': 0.0243, 'les': 0.4034}\n"}
+,{"stream_name":"stdout","time":11419.485922059,"data":"--- 190 min ---\n"}
+,{"stream_name":"stdout","time":11419.486378817,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":11419.486396779,"data":"  [Ours-ppc5 s1] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8815, 'sec': 93.5, 'ce': 0.3434, 'clst': 0.014, 'sep': 0.0296, 'art': 0.0029, 'les': 0.0727}\n"}
+,{"stream_name":"stdout","time":11419.486402875,"data":"  [Ours-ppc5 s1] {'epoch': 13, 'stage': 'joint', 'val_auc': 0.8842, 'sec': 93.5, 'ce': 0.3317, 'clst': 0.0111, 'sep': 0.0259, 'art': 0.0027, 'les': 0.0685}\n"}
+,{"stream_name":"stdout","time":11419.487422089,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":11419.487441694,"data":"  [Ours-ppc20 s1] {'epoch': 8, 'stage': 'joint', 'val_auc': 0.8043, 'sec': 97.3, 'ce': 0.5986, 'clst': 0.6959, 'sep': 17.4737, 'art': 0.0234, 'les': 0.3475}\n"}
+,{"stream_name":"stdout","time":11419.487449094,"data":"  [Ours-ppc20 s1] {'epoch': 9, 'stage': 'joint', 'val_auc': 0.7947, 'sec': 96.8, 'ce': 0.6661, 'clst': 1.8951, 'sep': 33.0958, 'art': 0.0251, 'les': 0.389}\n"}
+,{"stream_name":"stdout","time":11719.490930347,"data":"--- 195 min ---\n"}
+,{"stream_name":"stdout","time":11719.491807815,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":11719.491824296,"data":"  [Ours-ppc5 s1] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8792, 'sec': 93.3, 'ce': 0.3091, 'clst': 0.0092, 'sep': 0.0227, 'art': 0.0027, 'les': 0.0634}\n"}
+,{"stream_name":"stdout","time":11719.49183036,"data":"  [Ours-ppc5 s1] {'epoch': 16, 'stage': 'joint', 'val_auc': 0.8808, 'sec': 93.4, 'ce': 0.2992, 'clst': 0.0085, 'sep': 0.0213, 'art': 0.0024, 'les': 0.0627}\n"}
+,{"stream_name":"stdout","time":11719.492855903,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":11719.492874621,"data":"  [Ours-ppc20 s1] {'epoch': 11, 'stage': 'joint', 'val_auc': 0.8287, 'sec': 97.1, 'ce': 0.6062, 'clst': 1.2262, 'sep': 30.853, 'art': 0.023, 'les': 0.3118}\n"}
+,{"stream_name":"stdout","time":11719.492884878,"data":"  [Ours-ppc20 s1] {'epoch': 12, 'stage': 'joint', 'val_auc': 0.8297, 'sec': 97.1, 'ce': 0.5976, 'clst': 1.1537, 'sep': 31.8612, 'art': 0.0227, 'les': 0.2875}\n"}
+,{"stream_name":"stdout","time":12019.494602851,"data":"--- 200 min ---\n"}
+,{"stream_name":"stdout","time":12019.495853854,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":12019.495876253,"data":"  [Ours-ppc5 s1] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8808, 'sec': 94.3, 'ce': 0.2907, 'clst': 0.0084, 'sep': 0.0215, 'art': 0.0024, 'les': 0.0604}\n"}
+,{"stream_name":"stdout","time":12019.495882247,"data":"  [Ours-ppc5 s1] {'epoch': 19, 'stage': 'joint', 'val_auc': 0.8795, 'sec': 94.0, 'ce': 0.2923, 'clst': 0.0084, 'sep': 0.0214, 'art': 0.0023, 'les': 0.061}\n"}
+,{"stream_name":"stdout","time":12019.496781989,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":12019.496796095,"data":"  [Ours-ppc20 s1] {'epoch': 14, 'stage': 'joint', 'val_auc': 0.8265, 'sec': 97.7, 'ce': 0.5977, 'clst': 1.5813, 'sep': 38.9943, 'art': 0.0223, 'les': 0.2799}\n"}
+,{"stream_name":"stdout","time":12019.496801387,"data":"  [Ours-ppc20 s1] {'epoch': 15, 'stage': 'joint', 'val_auc': 0.8325, 'sec': 97.6, 'ce': 0.5978, 'clst': 1.6259, 'sep': 38.8187, 'art': 0.0212, 'les': 0.2775}\n"}
+,{"stream_name":"stdout","time":12319.497505057,"data":"--- 205 min ---\n"}
+,{"stream_name":"stdout","time":12319.498486359,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":12319.498501005,"data":"  [Ours-ppc5 s1] DONE best_val_auc=0.8885 at epoch 25 (31.0 min)\n"}
+,{"stream_name":"stdout","time":12319.498506493,"data":"  QUEUE FINISHED for this GPU\n"}
+,{"stream_name":"stdout","time":12319.499394227,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":12319.49940808,"data":"  [Ours-ppc20 s1] {'epoch': 17, 'stage': 'joint', 'val_auc': 0.8331, 'sec': 98.3, 'ce': 0.5892, 'clst': 1.6631, 'sep': 41.1625, 'art': 0.0198, 'les': 0.272}\n"}
+,{"stream_name":"stdout","time":12319.499414586,"data":"  [Ours-ppc20 s1] {'epoch': 18, 'stage': 'joint', 'val_auc': 0.8331, 'sec': 98.5, 'ce': 0.577, 'clst': 1.6655, 'sep': 41.6056, 'art': 0.0201, 'les': 0.2764}\n"}
+,{"stream_name":"stdout","time":12619.502079613,"data":"--- 210 min ---\n"}
+,{"stream_name":"stdout","time":12619.50302799,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":12619.503050817,"data":"  [Ours-ppc5 s1] DONE best_val_auc=0.8885 at epoch 25 (31.0 min)\n"}
+,{"stream_name":"stdout","time":12619.503056657,"data":"  QUEUE FINISHED for this GPU\n"}
+,{"stream_name":"stdout","time":12619.503807779,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":12619.503838129,"data":"  [Ours-ppc20 s1] {'epoch': 21, 'stage': 'last', 'val_auc': 0.7684, 'sec': 42.5, 'ce': 8.4106, 'clst': 0.8092, 'sep': 25.2689}\n"}
+,{"stream_name":"stdout","time":12619.503844069,"data":"  [Ours-ppc20 s1] {'epoch': 22, 'stage': 'last', 'val_auc': 0.7742, 'sec': 42.4, 'ce': 2.5088, 'clst': 0.7526, 'sep': 24.9698}\n"}
+,{"stream_name":"stdout","time":12919.5076734,"data":"--- 215 min ---\n"}
+,{"stream_name":"stdout","time":12919.508717693,"data":"[GPU0]\n"}
+,{"stream_name":"stdout","time":12919.508739755,"data":"  [Ours-ppc5 s1] DONE best_val_auc=0.8885 at epoch 25 (31.0 min)\n"}
+,{"stream_name":"stdout","time":12919.508762838,"data":"  QUEUE FINISHED for this GPU\n"}
+,{"stream_name":"stdout","time":12919.509942226,"data":"[GPU1]\n"}
+,{"stream_name":"stdout","time":12919.50996084,"data":"  [Ours-ppc20 s1] DONE best_val_auc=0.7885 at epoch 25 (32.3 min)\n"}
+,{"stream_name":"stdout","time":12919.509967079,"data":"  QUEUE FINISHED for this GPU\n"}
+,{"stream_name":"stdout","time":12919.510853834,"data":"TRAINING DONE in 215.0 min\n"}
+,{"stream_name":"stdout","time":12919.510871478,"data":"[GPU0] === START Ours-tau1:0 | lam_les=1.0 lam_art=1.0 tau=1.0 ppc=10 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.510877552,"data":"[GPU0] [Ours-tau1 s0] after push val_auc=0.6981 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":12919.510883936,"data":"[GPU0] [Ours-tau1 s0] DONE best_val_auc=0.8412 at epoch 25 (49.2 min)\n"}
+,{"stream_name":"stdout","time":12919.510889191,"data":"[GPU0] === START Ours-les0.3:0 | lam_les=0.3 lam_art=1.0 tau=0.5 ppc=10 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.510894161,"data":"[GPU0] [Ours-les0.3 s0] after push val_auc=0.7169 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":12919.510899462,"data":"[GPU0] [Ours-les0.3 s0] DONE best_val_auc=0.8165 at epoch 22 (31.1 min)\n"}
+,{"stream_name":"stdout","time":12919.510904734,"data":"[GPU0] === START Ours-ppc5:0 | lam_les=1.0 lam_art=1.0 tau=0.5 ppc=5 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.510909661,"data":"[GPU0] [Ours-ppc5 s0] after push val_auc=0.8854 | protos on artifact cells(\u003e0.5): 0/10 | on lesion cells(\u003e=0.5): 10/10\n"}
+,{"stream_name":"stdout","time":12919.51091513,"data":"[GPU0] [Ours-ppc5 s0] DONE best_val_auc=0.8889 at epoch 25 (31.0 min)\n"}
+,{"stream_name":"stdout","time":12919.510932752,"data":"[GPU0] === START Ours-tau0.25:1 | lam_les=1.0 lam_art=1.0 tau=0.25 ppc=10 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.510939006,"data":"[GPU0] [Ours-tau0.25 s1] after push val_auc=0.7117 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":12919.51094331,"data":"[GPU0] [Ours-tau0.25 s1] DONE best_val_auc=0.8091 at epoch 25 (30.9 min)\n"}
+,{"stream_name":"stdout","time":12919.510947217,"data":"[GPU0] === START Ours-les0.3:1 | lam_les=0.3 lam_art=1.0 tau=0.5 ppc=10 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.510951386,"data":"[GPU0] [Ours-les0.3 s1] after push val_auc=0.7140 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":12919.510955983,"data":"[GPU0] [Ours-les0.3 s1] DONE best_val_auc=0.8268 at epoch 22 (30.8 min)\n"}
+,{"stream_name":"stdout","time":12919.510959752,"data":"[GPU0] === START Ours-ppc5:1 | lam_les=1.0 lam_art=1.0 tau=0.5 ppc=5 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.510963502,"data":"[GPU0] [Ours-ppc5 s1] after push val_auc=0.8799 | protos on artifact cells(\u003e0.5): 0/10 | on lesion cells(\u003e=0.5): 10/10\n"}
+,{"stream_name":"stdout","time":12919.510967711,"data":"[GPU0] [Ours-ppc5 s1] DONE best_val_auc=0.8885 at epoch 25 (31.0 min)\n"}
+,{"stream_name":"stdout","time":12919.510971735,"data":"[GPU1] === START Ours-tau0.25:0 | lam_les=1.0 lam_art=1.0 tau=0.25 ppc=10 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.510975974,"data":"[GPU1] [Ours-tau0.25 s0] after push val_auc=0.7258 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":12919.510980281,"data":"[GPU1] [Ours-tau0.25 s0] DONE best_val_auc=0.8283 at epoch 25 (50.3 min)\n"}
+,{"stream_name":"stdout","time":12919.510985269,"data":"[GPU1] === START Ours-les3:0 | lam_les=3.0 lam_art=1.0 tau=0.5 ppc=10 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.510989436,"data":"[GPU1] [Ours-les3 s0] after push val_auc=0.8887 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":12919.510993478,"data":"[GPU1] [Ours-les3 s0] DONE best_val_auc=0.8939 at epoch 25 (32.2 min)\n"}
+,{"stream_name":"stdout","time":12919.510997284,"data":"[GPU1] === START Ours-ppc20:0 | lam_les=1.0 lam_art=1.0 tau=0.5 ppc=20 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.511001314,"data":"[GPU1] [Ours-ppc20 s0] after push val_auc=0.7190 | protos on artifact cells(\u003e0.5): 0/40 | on lesion cells(\u003e=0.5): 40/40\n"}
+,{"stream_name":"stdout","time":12919.511005619,"data":"[GPU1] [Ours-ppc20 s0] DONE best_val_auc=0.7919 at epoch 25 (32.3 min)\n"}
+,{"stream_name":"stdout","time":12919.5110098,"data":"[GPU1] === START Ours-tau1:1 | lam_les=1.0 lam_art=1.0 tau=1.0 ppc=10 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.511013386,"data":"[GPU1] [Ours-tau1 s1] after push val_auc=0.6681 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":12919.511017573,"data":"[GPU1] [Ours-tau1 s1] DONE best_val_auc=0.8170 at epoch 25 (32.2 min)\n"}
+,{"stream_name":"stdout","time":12919.511021741,"data":"[GPU1] === START Ours-les3:1 | lam_les=3.0 lam_art=1.0 tau=0.5 ppc=10 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.511025378,"data":"[GPU1] [Ours-les3 s1] after push val_auc=0.8716 | protos on artifact cells(\u003e0.5): 0/20 | on lesion cells(\u003e=0.5): 20/20\n"}
+,{"stream_name":"stdout","time":12919.511029829,"data":"[GPU1] [Ours-les3 s1] DONE best_val_auc=0.8730 at epoch 23 (32.2 min)\n"}
+,{"stream_name":"stdout","time":12919.511033691,"data":"[GPU1] === START Ours-ppc20:1 | lam_les=1.0 lam_art=1.0 tau=0.5 ppc=20 push=constrained ===\n"}
+,{"stream_name":"stdout","time":12919.511042394,"data":"[GPU1] [Ours-ppc20 s1] after push val_auc=0.6853 | protos on artifact cells(\u003e0.5): 0/40 | on lesion cells(\u003e=0.5): 40/40\n"}
+,{"stream_name":"stdout","time":12919.511046466,"data":"[GPU1] [Ours-ppc20 s1] DONE best_val_auc=0.7885 at epoch 25 (32.3 min)\n"}
+,{"stream_name":"stdout","time":12921.118633306,"data":"runs: {'Ours-indep': 4, 'Ours': 3, 'Ours-les3': 2, 'Ours-les0.3': 2, 'Ours-ppc20': 2, 'Ours-ppc5': 2, 'Ours-tau0.25': 2, 'Ours-tau1': 2}\n"}
+,{"stream_name":"stdout","time":13079.319382133,"data":"Ours-indep_s3        val AUC 0.8716 | test AUC 0.8802 | flip DC 5.2% | 67s\n"}
+,{"stream_name":"stdout","time":13144.363626954,"data":"Ours-indep_s4        val AUC 0.8485 | test AUC 0.8642 | flip DC 5.1% | 65s\n"}
+,{"stream_name":"stdout","time":13210.793443425,"data":"Ours-indep_s5        val AUC 0.8464 | test AUC 0.8582 | flip DC 7.1% | 66s\n"}
+,{"stream_name":"stdout","time":13277.722094291,"data":"Ours-indep_s6        val AUC 0.8385 | test AUC 0.8419 | flip DC 7.3% | 67s\n"}
+,{"stream_name":"stdout","time":13342.432591056,"data":"Ours-les0.3_s0       val AUC 0.8348 | test AUC 0.8477 | flip DC 5.3% | 65s\n"}
+,{"stream_name":"stdout","time":13407.335540133,"data":"Ours-les0.3_s1       val AUC 0.8494 | test AUC 0.8469 | flip DC 10.6% | 65s\n"}
+,{"stream_name":"stdout","time":13472.15249643,"data":"Ours-les3_s0         val AUC 0.8944 | test AUC 0.8941 | flip DC 4.4% | 65s\n"}
+,{"stream_name":"stdout","time":13536.913357905,"data":"Ours-les3_s1         val AUC 0.8844 | test AUC 0.9020 | flip DC 4.7% | 65s\n"}
+,{"stream_name":"stdout","time":13601.727286679,"data":"Ours-ppc20_s0        val AUC 0.8606 | test AUC 0.8701 | flip DC 8.2% | 65s\n"}
+,{"stream_name":"stdout","time":13666.559911517,"data":"Ours-ppc20_s1        val AUC 0.8305 | test AUC 0.8531 | flip DC 10.7% | 65s\n"}
+,{"stream_name":"stdout","time":13731.389630259,"data":"Ours-ppc5_s0         val AUC 0.8943 | test AUC 0.8968 | flip DC 6.8% | 65s\n"}
+,{"stream_name":"stdout","time":13796.196362652,"data":"Ours-ppc5_s1         val AUC 0.8848 | test AUC 0.9039 | flip DC 5.1% | 65s\n"}
+,{"stream_name":"stdout","time":13860.791490054,"data":"Ours-tau0.25_s0      val AUC 0.8551 | test AUC 0.8628 | flip DC 4.8% | 65s\n"}
+,{"stream_name":"stdout","time":13925.414363295,"data":"Ours-tau0.25_s1      val AUC 0.8535 | test AUC 0.8649 | flip DC 5.0% | 65s\n"}
+,{"stream_name":"stdout","time":13990.001993725,"data":"Ours-tau1_s0         val AUC 0.8603 | test AUC 0.8630 | flip DC 9.4% | 65s\n"}
+,{"stream_name":"stdout","time":14054.758300598,"data":"Ours-tau1_s1         val AUC 0.8499 | test AUC 0.8479 | flip DC 9.8% | 65s\n"}
+,{"stream_name":"stdout","time":14122.440966009,"data":"Ours_s0              val AUC 0.8373 | test AUC 0.8592 | flip DC 7.5% | 68s\n"}
+,{"stream_name":"stdout","time":14189.330071827,"data":"Ours_s1              val AUC 0.8624 | test AUC 0.8714 | flip DC 3.3% | 67s\n"}
+,{"stream_name":"stdout","time":14256.152736879,"data":"Ours_s2              val AUC 0.8522 | test AUC 0.8650 | flip DC 5.0% | 67s\n"}
+,{"stream_name":"stdout","time":14256.24393989,"data":"Main model, 7 runs (seeds 0-6): mean [min, max]\n"}
+,{"stream_name":"stdout","time":14256.243970108,"data":"                     mean     min     max\n"}
+,{"stream_name":"stdout","time":14256.243977221,"data":"val_auc            0.8510  0.8373  0.8716\n"}
+,{"stream_name":"stdout","time":14256.243983229,"data":"auc                0.8629  0.8419  0.8802\n"}
+,{"stream_name":"stdout","time":14256.243989068,"data":"spec_at_sens90     0.6340  0.5793  0.6648\n"}
+,{"stream_name":"stdout","time":14256.243994586,"data":"lesion_share       0.5764  0.4950  0.6945\n"}
+,{"stream_name":"stdout","time":14256.244013182,"data":"artifact_share     0.0504  0.0305  0.0888\n"}
+,{"stream_name":"stdout","time":14256.244018385,"data":"flip dark_corners  0.0578  0.0328  0.0746\n"}
+,{"stream_name":"stdout","time":14256.244023159,"data":"flip ruler         0.0381  0.0170  0.0562\n"}
+,{"stream_name":"stdout","time":14256.24402743,"data":"flip hair          0.0991  0.0630  0.1347\n"}
+,{"stream_name":"stdout","time":14256.244031807,"data":"flip ink           0.0624  0.0439  0.0821\n"}
+,{"stream_name":"stdout","time":14256.244036157,"data":"\n"}
+,{"stream_name":"stdout","time":14256.244040437,"data":"Variations (mean of two seeds):\n"}
+,{"stream_name":"stdout","time":14256.244045039,"data":"   variation  seeds  val_auc    auc  spec_at_sens90  lesion_share  artifact_share  flip dark_corners  flip ruler  flip hair  flip ink  AUC within main range  DC flips within main range lesion protos\n"}
+,{"stream_name":"stdout","time":14256.244051771,"data":"Ours-tau0.25      2   0.8543 0.8638          0.6158        0.6502          0.0648             0.0492      0.0397     0.0924    0.0678                   True                        True  20/20, 20/20\n"}
+,{"stream_name":"stdout","time":14256.244056635,"data":"   Ours-tau1      2   0.8551 0.8555          0.5912        0.3870          0.1928             0.0962      0.0395     0.1010    0.0665                   True                       False  20/20, 20/20\n"}
+,{"stream_name":"stdout","time":14256.244062339,"data":" Ours-les0.3      2   0.8421 0.8473          0.5756        0.7790          0.0757             0.0792      0.0756     0.1703    0.1132                   True                       False  20/20, 20/20\n"}
+,{"stream_name":"stdout","time":14256.244067496,"data":"   Ours-les3      2   0.8894 0.8981          0.6824        0.9554          0.0009             0.0457      0.0330     0.0937    0.0593                  False                        True  20/20, 20/20\n"}
+,{"stream_name":"stdout","time":14256.244072463,"data":"   Ours-ppc5      2   0.8896 0.9004          0.7005        0.9525          0.0008             0.0593      0.0448     0.1211    0.0806                  False                        True  10/10, 10/10\n"}
+,{"stream_name":"stdout","time":14256.24407728,"data":"  Ours-ppc20      2   0.8456 0.8616          0.6179        0.5639          0.1236             0.0949      0.0436     0.1194    0.0626                   True                       False  40/40, 40/40\n"}
+,{"stream_name":"stdout","time":14256.244082339,"data":"\n"}
+,{"stream_name":"stdout","time":14256.244087313,"data":"per run:\n"}
+,{"stream_name":"stdout","time":14256.244091731,"data":"            run  val_auc    auc  spec_at_sens90  lesion_share  artifact_share  flip dark_corners  flip ruler  flip hair  flip ink lesion_protos\n"}
+,{"stream_name":"stdout","time":14256.244098093,"data":"  Ours-indep_s3   0.8716 0.8802          0.6648        0.5556          0.0394             0.0522      0.0281     0.0661    0.0500         20/20\n"}
+,{"stream_name":"stdout","time":14256.244103927,"data":"  Ours-indep_s4   0.8485 0.8642          0.6212        0.4950          0.0427             0.0509      0.0339     0.0989    0.0674         20/20\n"}
+,{"stream_name":"stdout","time":14256.244108788,"data":"  Ours-indep_s5   0.8464 0.8582          0.6295        0.5223          0.0383             0.0712      0.0456     0.1347    0.0704         20/20\n"}
+,{"stream_name":"stdout","time":14256.24411374,"data":"  Ours-indep_s6   0.8385 0.8419          0.5793        0.6945          0.0888             0.0733      0.0514     0.1166    0.0821         20/20\n"}
+,{"stream_name":"stdout","time":14256.244119529,"data":" Ours-les0.3_s0   0.8348 0.8477          0.5684        0.7909          0.1162             0.0526      0.0548     0.1982    0.1126         20/20\n"}
+,{"stream_name":"stdout","time":14256.24412458,"data":" Ours-les0.3_s1   0.8494 0.8469          0.5829        0.7670          0.0352             0.1057      0.0965     0.1425    0.1139         20/20\n"}
+,{"stream_name":"stdout","time":14256.244134898,"data":"   Ours-les3_s0   0.8944 0.8941          0.6772        0.9546          0.0011             0.0444      0.0276     0.1002    0.0565         20/20\n"}
+,{"stream_name":"stdout","time":14256.244140145,"data":"   Ours-les3_s1   0.8844 0.9020          0.6876        0.9562          0.0007             0.0470      0.0383     0.0872    0.0621         20/20\n"}
+,{"stream_name":"stdout","time":14256.24414496,"data":"  Ours-ppc20_s0   0.8606 0.8701          0.6399        0.5979          0.1177             0.0824      0.0441     0.0993    0.0582         40/40\n"}
+,{"stream_name":"stdout","time":14256.244149515,"data":"  Ours-ppc20_s1   0.8305 0.8531          0.5959        0.5298          0.1296             0.1074      0.0431     0.1395    0.0669         40/40\n"}
+,{"stream_name":"stdout","time":14256.244154922,"data":"   Ours-ppc5_s0   0.8943 0.8968          0.6891        0.9559          0.0007             0.0677      0.0596     0.1520    0.0952         10/10\n"}
+,{"stream_name":"stdout","time":14256.244159783,"data":"   Ours-ppc5_s1   0.8848 0.9039          0.7119        0.9491          0.0009             0.0509      0.0301     0.0902    0.0661         10/10\n"}
+,{"stream_name":"stdout","time":14256.244164423,"data":"Ours-tau0.25_s0   0.8551 0.8628          0.6347        0.6689          0.0527             0.0483      0.0402     0.0889    0.0648         20/20\n"}
+,{"stream_name":"stdout","time":14256.24416894,"data":"Ours-tau0.25_s1   0.8535 0.8649          0.5969        0.6314          0.0768             0.0500      0.0393     0.0959    0.0708         20/20\n"}
+,{"stream_name":"stdout","time":14256.244175359,"data":"   Ours-tau1_s0   0.8603 0.8630          0.6104        0.3721          0.1253             0.0940      0.0373     0.0997    0.0600         20/20\n"}
+,{"stream_name":"stdout","time":14256.244180481,"data":"   Ours-tau1_s1   0.8499 0.8479          0.5720        0.4018          0.2603             0.0984      0.0417     0.1023    0.0730         20/20\n"}
+,{"stream_name":"stdout","time":14256.244185547,"data":"        Ours_s0   0.8373 0.8592          0.6383        0.5620          0.0305             0.0746      0.0562     0.1265    0.0665         20/20\n"}
+,{"stream_name":"stdout","time":14256.244190073,"data":"        Ours_s1   0.8624 0.8714          0.6560        0.6349          0.0556             0.0328      0.0170     0.0630    0.0439         20/20\n"}
+,{"stream_name":"stdout","time":14256.244194513,"data":"        Ours_s2   0.8522 0.8650          0.6487        0.5706          0.0572             0.0496      0.0344     0.0877    0.0565         20/20\n"}
+,{"stream_name":"stdout","time":14256.244199079,"data":"\n"}
+,{"stream_name":"stdout","time":14256.244202868,"data":"all 12 variation runs: AUC 0.8469-0.9039, DC flips 4.4-10.7% (main model: AUC 0.8419-0.8802, DC flips 3.3-7.5%)\n"}
+,{"stream_name":"stdout","time":14256.244209355,"data":"PPN (paper, seeds 0-2): AUC 0.825, DC flips 10.9%\n"}
+,{"stream_name":"stdout","time":14256.244219686,"data":"NB12 finished in 22.3 min\n"}
+,{"stream_name":"stdout","time":14256.244223514,"data":"NB12 FINISHED\n"}
+,{"stream_name":"stderr","time":14261.432086481,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":14261.432121762,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":14261.622666258,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":14261.622694154,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":14262.511113697,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":14262.627561838,"data":"[NbConvertApp] Writing 121836 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":14265.395823288,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":14266.278131757,"data":"[NbConvertApp] Writing 742867 bytes to __results__.html\n"}
+]

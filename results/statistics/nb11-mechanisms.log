@@ -1,0 +1,297 @@
+[{"stream_name":"stderr","time":5.452184259,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":5.452233233,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":6.226753886,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.226780912,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.226786336,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.226790581,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.784494496,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.784523455,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.784527197,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.784529644,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":7.84731839,"data":"Writing artproto.py\n"}
+,{"stream_name":"stdout","time":7.865496834,"data":"Writing evalkit.py\n"}
+,{"stream_name":"stdout","time":9.53885296,"data":"python 3.13.15 | Linux-6.18.55+-x86_64-with-glibc2.39\n"}
+,{"stream_name":"stdout","time":13.412913075,"data":"torch        2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":18.812462035,"data":"torchvision  0.26.0+cu128\n"}
+,{"stream_name":"stdout","time":18.812494945,"data":"numpy        2.1.3\n"}
+,{"stream_name":"stdout","time":18.812498635,"data":"scipy        1.16.3\n"}
+,{"stream_name":"stdout","time":20.57918465,"data":"sklearn      1.6.1\n"}
+,{"stream_name":"stdout","time":20.579219707,"data":"pandas       2.3.3\n"}
+,{"stream_name":"stdout","time":20.852047277,"data":"cv2          4.14.0\n"}
+,{"stream_name":"stdout","time":20.852064179,"data":"statsmodels  0.15.0\n"}
+,{"stream_name":"stdout","time":20.852068704,"data":"PIL          12.3.0\n"}
+,{"stream_name":"stdout","time":20.852072315,"data":"matplotlib   3.10.0\n"}
+,{"stream_name":"stdout","time":21.319661564,"data":"openpyxl     3.1.5\n"}
+,{"stream_name":"stdout","time":21.364520118,"data":"cuda 12.8 | cudnn 91900\n"}
+,{"stream_name":"stdout","time":26.369303514,"data":"runs per configuration: {'Correia-indep': 4, 'Ours-indep': 4, 'PPN-indep': 4, 'Ours-noArt': 3, 'Ours-noLes': 3, 'Ours-stdPush': 3, 'CNN': 3, 'Ours': 3, 'PPN-FA-1e-1': 3, 'PPN-FA-Correia': 3, 'PPN-FA-1e-2': 3, 'PPN-FA-IAIABL': 3, 'PPN-FA': 3, 'PPN-std': 3, 'PPN': 3}\n"}
+,{"stream_name":"stdout","time":26.815194575,"data":"data: /kaggle/input/notebooks/yousefamovahed/nb01-selfcontained/prep | runs evaluated: 42 | device: cuda\n"}
+,{"stream_name":"stdout","time":27.452265219,"data":"pigment_network        {'absent': 400, 'typical': 381, 'atypical': 230}\n"}
+,{"stream_name":"stdout","time":27.452296755,"data":"streaks                {'absent': 653, 'irregular': 251, 'regular': 107}\n"}
+,{"stream_name":"stdout","time":27.452300608,"data":"pigmentation           {'absent': 588, 'diffuse irregular': 265, 'diffuse regular': 115, 'localized irregular': 40, 'localized regular': 3}\n"}
+,{"stream_name":"stdout","time":27.452314248,"data":"regression_structures  {'absent': 758, 'blue areas': 116, 'combinations': 99, 'white areas': 38}\n"}
+,{"stream_name":"stdout","time":27.452317091,"data":"dots_and_globules      {'irregular': 448, 'regular': 334, 'absent': 229}\n"}
+,{"stream_name":"stdout","time":27.452319698,"data":"blue_whitish_veil      {'absent': 816, 'present': 195}\n"}
+,{"stream_name":"stdout","time":27.452322209,"data":"vascular_structures    {'absent': 823, 'dotted': 53, 'within regression': 46, 'arborizing': 31, 'comma': 23, 'linear irregular': 18, 'hairpin': 15, 'wreath': 2}\n"}
+,{"stream_name":"stdout","time":27.452324818,"data":"\n"}
+,{"stream_name":"stdout","time":27.452327117,"data":"prevalence of each criterion (present) by diagnosis:\n"}
+,{"stream_name":"stdout","time":27.452329496,"data":"label                    0          1      \n"}
+,{"stream_name":"stdout","time":27.452331924,"data":"                       sum count  sum count\n"}
+,{"stream_name":"stdout","time":27.452334238,"data":"pigment_network        440   759  171   252\n"}
+,{"stream_name":"stdout","time":27.452343467,"data":"streaks                200   759  158   252\n"}
+,{"stream_name":"stdout","time":27.452345851,"data":"pigmentation           279   759  144   252\n"}
+,{"stream_name":"stdout","time":27.452348221,"data":"regression_structures  143   759  110   252\n"}
+,{"stream_name":"stdout","time":27.452350609,"data":"dots_and_globules      551   759  231   252\n"}
+,{"stream_name":"stdout","time":27.452353,"data":"blue_whitish_veil       75   759  120   252\n"}
+,{"stream_name":"stdout","time":27.452355346,"data":"vascular_structures    108   759   80   252\n"}
+,{"stream_name":"stdout","time":546.001449786,"data":"counterfactual sets: {'add_dark_corners': 2318, 'add_ruler': 2063, 'add_hair': 2316, 'add_ink': 2301, 'null_inpaint': 533} | lesion/background images: 2320 | dilated lesion area: median 0.30, \u003e 0.6 of the image: 15.3%\n"}
+,{"stream_name":"stdout","time":838.933423696,"data":"CNN_s0               AUC 0.9077 | bg 0.671 | lesion-only 0.875 | flip DC 8.2% | 293s\n"}
+,{"stream_name":"stdout","time":875.604802754,"data":"CNN_s1               AUC 0.8970 | bg 0.664 | lesion-only 0.878 | flip DC 5.1% | 37s\n"}
+,{"stream_name":"stdout","time":910.873034656,"data":"CNN_s2               AUC 0.9000 | bg 0.634 | lesion-only 0.879 | flip DC 5.1% | 35s\n"}
+,{"stream_name":"stdout","time":1288.163340485,"data":"Correia-indep_s3     AUC 0.8691 | bg 0.614 | lesion-only 0.865 | flip DC 4.3% | resp DC  0 | aligned 19 | 377s\n"}
+,{"stream_name":"stdout","time":1364.993526459,"data":"Correia-indep_s4     AUC 0.8578 | bg 0.612 | lesion-only 0.854 | flip DC 6.6% | resp DC  0 | aligned 19 | 77s\n"}
+,{"stream_name":"stdout","time":1441.790398894,"data":"Correia-indep_s5     AUC 0.8507 | bg 0.589 | lesion-only 0.852 | flip DC 6.9% | resp DC  0 | aligned 19 | 77s\n"}
+,{"stream_name":"stdout","time":1518.810680239,"data":"Correia-indep_s6     AUC 0.8617 | bg 0.625 | lesion-only 0.865 | flip DC 6.8% | resp DC  0 | aligned 19 | 77s\n"}
+,{"stream_name":"stdout","time":1595.589046718,"data":"Ours-indep_s3        AUC 0.8802 | bg 0.636 | lesion-only 0.857 | flip DC 5.2% | resp DC  0 | aligned 18 | 77s\n"}
+,{"stream_name":"stdout","time":1672.217899274,"data":"Ours-indep_s4        AUC 0.8642 | bg 0.615 | lesion-only 0.862 | flip DC 5.1% | resp DC  1 | aligned 16 | 77s\n"}
+,{"stream_name":"stdout","time":1749.136557724,"data":"Ours-indep_s5        AUC 0.8582 | bg 0.668 | lesion-only 0.855 | flip DC 7.1% | resp DC  0 | aligned 13 | 77s\n"}
+,{"stream_name":"stdout","time":1825.54887364,"data":"Ours-indep_s6        AUC 0.8419 | bg 0.610 | lesion-only 0.845 | flip DC 7.3% | resp DC  0 | aligned  6 | 76s\n"}
+,{"stream_name":"stdout","time":1903.496445204,"data":"Ours-noArt_s0        AUC 0.8521 | bg 0.529 | lesion-only 0.849 | flip DC 3.5% | resp DC  0 | aligned  9 | 78s\n"}
+,{"stream_name":"stdout","time":1980.944633146,"data":"Ours-noArt_s1        AUC 0.8517 | bg 0.644 | lesion-only 0.852 | flip DC 6.1% | resp DC  0 | aligned 11 | 77s\n"}
+,{"stream_name":"stdout","time":2057.896275154,"data":"Ours-noArt_s2        AUC 0.8717 | bg 0.632 | lesion-only 0.858 | flip DC 6.6% | resp DC  0 | aligned 16 | 77s\n"}
+,{"stream_name":"stdout","time":2135.218266331,"data":"Ours-noLes_s0        AUC 0.8391 | bg 0.647 | lesion-only 0.829 | flip DC 7.1% | resp DC  0 | aligned  9 | 77s\n"}
+,{"stream_name":"stdout","time":2212.519442023,"data":"Ours-noLes_s1        AUC 0.8386 | bg 0.661 | lesion-only 0.839 | flip DC 11.8% | resp DC  0 | aligned 13 | 77s\n"}
+,{"stream_name":"stdout","time":2289.379252725,"data":"Ours-noLes_s2        AUC 0.8131 | bg 0.497 | lesion-only 0.809 | flip DC 11.7% | resp DC  0 | aligned 14 | 77s\n"}
+,{"stream_name":"stdout","time":2367.060589435,"data":"Ours-stdPush_s0      AUC 0.8571 | bg 0.578 | lesion-only 0.851 | flip DC 5.7% | resp DC  0 | aligned  7 | 78s\n"}
+,{"stream_name":"stdout","time":2444.306870661,"data":"Ours-stdPush_s1      AUC 0.8665 | bg 0.636 | lesion-only 0.870 | flip DC 2.8% | resp DC  0 | aligned 13 | 77s\n"}
+,{"stream_name":"stdout","time":2521.539228629,"data":"Ours-stdPush_s2      AUC 0.8656 | bg 0.576 | lesion-only 0.857 | flip DC 5.0% | resp DC  0 | aligned 17 | 77s\n"}
+,{"stream_name":"stdout","time":2599.073604288,"data":"Ours_s0              AUC 0.8592 | bg 0.576 | lesion-only 0.853 | flip DC 7.5% | resp DC  0 | aligned  9 | 78s\n"}
+,{"stream_name":"stdout","time":2676.071732583,"data":"Ours_s1              AUC 0.8714 | bg 0.674 | lesion-only 0.865 | flip DC 3.3% | resp DC  0 | aligned 14 | 77s\n"}
+,{"stream_name":"stdout","time":2752.905871904,"data":"Ours_s2              AUC 0.8650 | bg 0.580 | lesion-only 0.857 | flip DC 5.0% | resp DC  0 | aligned 17 | 77s\n"}
+,{"stream_name":"stdout","time":2830.324057967,"data":"PPN-FA-Correia_s0    AUC 0.8685 | bg 0.602 | lesion-only 0.869 | flip DC 6.4% | resp DC  0 | aligned 19 | 77s\n"}
+,{"stream_name":"stdout","time":2907.593023442,"data":"PPN-FA-Correia_s1    AUC 0.8783 | bg 0.605 | lesion-only 0.873 | flip DC 8.4% | resp DC  0 | aligned 19 | 77s\n"}
+,{"stream_name":"stdout","time":2984.475385502,"data":"PPN-FA-Correia_s2    AUC 0.8554 | bg 0.613 | lesion-only 0.852 | flip DC 4.5% | resp DC  0 | aligned 19 | 77s\n"}
+,{"stream_name":"stdout","time":3061.516229623,"data":"PPN-FA-IAIABL_s0     AUC 0.8486 | bg 0.597 | lesion-only 0.852 | flip DC 4.5% | resp DC  0 | aligned 19 | 77s\n"}
+,{"stream_name":"stdout","time":3138.756238443,"data":"PPN-FA-IAIABL_s1     AUC 0.8525 | bg 0.657 | lesion-only 0.824 | flip DC 7.3% | resp DC  0 | aligned 19 | 77s\n"}
+,{"stream_name":"stdout","time":3215.525528678,"data":"PPN-FA-IAIABL_s2     AUC 0.8324 | bg 0.585 | lesion-only 0.830 | flip DC 6.6% | resp DC  0 | aligned  1 | 77s\n"}
+,{"stream_name":"stdout","time":3292.457450505,"data":"PPN-FA_s0            AUC 0.8376 | bg 0.688 | lesion-only 0.818 | flip DC 12.6% | resp DC  0 | aligned  3 | 77s\n"}
+,{"stream_name":"stdout","time":3369.953359522,"data":"PPN-FA_s1            AUC 0.8430 | bg 0.596 | lesion-only 0.835 | flip DC 8.2% | resp DC  0 | aligned 19 | 77s\n"}
+,{"stream_name":"stdout","time":3447.194632663,"data":"PPN-FA_s2            AUC 0.8526 | bg 0.583 | lesion-only 0.832 | flip DC 11.0% | resp DC  0 | aligned  4 | 77s\n"}
+,{"stream_name":"stdout","time":3524.185912714,"data":"PPN-indep_s3         AUC 0.8448 | bg 0.507 | lesion-only 0.842 | flip DC 13.3% | resp DC  0 | aligned  0 | 77s\n"}
+,{"stream_name":"stdout","time":3601.23047929,"data":"PPN-indep_s4         AUC 0.7596 | bg 0.444 | lesion-only 0.775 | flip DC 2.3% | resp DC  0 | aligned  0 | 77s\n"}
+,{"stream_name":"stdout","time":3678.136760054,"data":"PPN-indep_s5         AUC 0.8455 | bg 0.451 | lesion-only 0.842 | flip DC 12.7% | resp DC  0 | aligned 15 | 77s\n"}
+,{"stream_name":"stdout","time":3755.296100474,"data":"PPN-indep_s6         AUC 0.8308 | bg 0.466 | lesion-only 0.798 | flip DC 13.6% | resp DC  0 | aligned  3 | 77s\n"}
+,{"stream_name":"stdout","time":3832.480346712,"data":"PPN-std_s0           AUC 0.8211 | bg 0.556 | lesion-only 0.828 | flip DC 12.2% | resp DC  0 | aligned 15 | 77s\n"}
+,{"stream_name":"stdout","time":3909.797894242,"data":"PPN-std_s1           AUC 0.8371 | bg 0.487 | lesion-only 0.822 | flip DC 11.0% | resp DC  0 | aligned  0 | 77s\n"}
+,{"stream_name":"stdout","time":3987.092001641,"data":"PPN-std_s2           AUC 0.8474 | bg 0.629 | lesion-only 0.834 | flip DC 9.4% | resp DC  0 | aligned 12 | 77s\n"}
+,{"stream_name":"stdout","time":4064.291328013,"data":"PPN_s0               AUC 0.7781 | bg 0.435 | lesion-only 0.801 | flip DC 7.6% | resp DC  0 | aligned 18 | 77s\n"}
+,{"stream_name":"stdout","time":4141.916242456,"data":"PPN_s1               AUC 0.8450 | bg 0.655 | lesion-only 0.845 | flip DC 9.7% | resp DC  0 | aligned 18 | 78s\n"}
+,{"stream_name":"stdout","time":4219.009633941,"data":"PPN_s2               AUC 0.8506 | bg 0.524 | lesion-only 0.826 | flip DC 15.4% | resp DC  0 | aligned 17 | 77s\n"}
+,{"stream_name":"stdout","time":4219.075052637,"data":"REPRODUCES the paper: max |AUC diff| = 0.0005 (\u003c= 0.002: True); max |DC flip diff| = 0.04 pts (\u003c= 0.2: True)\n"}
+,{"stream_name":"stdout","time":4219.075079994,"data":"seeds 3-6 (AUC): {'Correia-indep_s3': 0.8691, 'Correia-indep_s4': 0.8578, 'Correia-indep_s5': 0.8507, 'Correia-indep_s6': 0.8617, 'Ours-indep_s3': 0.8802, 'Ours-indep_s4': 0.8642, 'Ours-indep_s5': 0.8582, 'Ours-indep_s6': 0.8419, 'PPN-indep_s3': 0.8448, 'PPN-indep_s4': 0.7596, 'PPN-indep_s5': 0.8455, 'PPN-indep_s6': 0.8308}\n"}
+,{"stream_name":"stdout","time":4219.242853183,"data":"Mean ± std over seeds (seeds 0-2; *-indep: seeds 3-6):\n"}
+,{"stream_name":"stdout","time":4219.24287795,"data":"config                                   CNN       PPN-std           PPN        PPN-FA          Ours    Ours-noLes    Ours-noArt  Ours-stdPush PPN-FA-Correia  PPN-FA-IAIABL     PPN-indep Correia-indep    Ours-indep\n"}
+,{"stream_name":"stdout","time":4219.242885239,"data":"auc                              0.902±0.005   0.835±0.013   0.825±0.040   0.844±0.008   0.865±0.006   0.830±0.015   0.859±0.011   0.863±0.005    0.867±0.011    0.845±0.011   0.820±0.041   0.860±0.008   0.861±0.016\n"}
+,{"stream_name":"stdout","time":4219.242891154,"data":"auc_bg                           0.656±0.019   0.557±0.071   0.538±0.111   0.622±0.057   0.610±0.056   0.601±0.091   0.602±0.063   0.597±0.034    0.606±0.006    0.613±0.039   0.467±0.028   0.610±0.015   0.632±0.027\n"}
+,{"stream_name":"stdout","time":4219.242896836,"data":"auc_lo                           0.878±0.002   0.828±0.006   0.824±0.022   0.829±0.009   0.858±0.006   0.826±0.015   0.853±0.005   0.859±0.009    0.865±0.011    0.835±0.014   0.814±0.033   0.859±0.007   0.855±0.007\n"}
+,{"stream_name":"stdout","time":4219.242902178,"data":"auc_bg_small                     0.655±0.012   0.541±0.102   0.579±0.067   0.636±0.030   0.583±0.052   0.602±0.080   0.581±0.028   0.562±0.028    0.546±0.014    0.589±0.026   0.492±0.039   0.578±0.033   0.597±0.019\n"}
+,{"stream_name":"stdout","time":4219.242907832,"data":"auc_lo_small                     0.838±0.005   0.795±0.009   0.801±0.010   0.797±0.016   0.832±0.011   0.797±0.048   0.829±0.011   0.836±0.020    0.831±0.021    0.787±0.039   0.789±0.037   0.819±0.014   0.832±0.021\n"}
+,{"stream_name":"stdout","time":4219.242913688,"data":"lesion_protos                        nan±nan  12.000±3.464  14.333±0.577  10.000±2.646  20.000±0.000  20.000±0.000  20.000±0.000   7.667±0.577   13.000±1.000   18.000±1.732  12.250±3.594  16.000±3.162  20.000±0.000\n"}
+,{"stream_name":"stdout","time":4219.24293004,"data":"resp dark_corners                    nan±nan   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000    0.000±0.000    0.000±0.000   0.000±0.000   0.000±0.000   0.250±0.500\n"}
+,{"stream_name":"stdout","time":4219.242936003,"data":"resp ruler                           nan±nan   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000    0.000±0.000    0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000\n"}
+,{"stream_name":"stdout","time":4219.242940681,"data":"resp hair                            nan±nan   0.000±0.000   0.000±0.000   0.000±0.000   0.333±0.577   0.000±0.000   0.000±0.000   0.000±0.000    0.000±0.000    0.000±0.000   0.000±0.000   0.000±0.000   0.750±0.500\n"}
+,{"stream_name":"stdout","time":4219.24294491,"data":"resp ink                             nan±nan   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000    0.000±0.000    0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000\n"}
+,{"stream_name":"stdout","time":4219.242949107,"data":"resp null_inpaint                    nan±nan   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000    0.000±0.000    0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000\n"}
+,{"stream_name":"stdout","time":4219.242953559,"data":"resp_weight dark_corners             nan±nan   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000    0.000±0.000    0.000±0.000   0.000±0.000   0.000±0.000   0.012±0.023\n"}
+,{"stream_name":"stdout","time":4219.242957921,"data":"resp_nonlesion_src dark_corners      nan±nan   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000    0.000±0.000    0.000±0.000   0.000±0.000   0.000±0.000   0.000±0.000\n"}
+,{"stream_name":"stdout","time":4219.242962347,"data":"aligned                              nan±nan   9.000±7.937  17.667±0.577   8.667±8.963  13.333±4.041  12.000±2.646  12.000±3.606  12.333±5.033   19.000±0.000  13.000±10.392   4.500±7.141  19.000±0.000  13.250±5.252\n"}
+,{"stream_name":"stdout","time":4219.242966701,"data":"aligned_lesion_src                   nan±nan   5.333±5.033  13.333±1.155   4.000±6.083  13.333±4.041  12.000±2.646  12.000±3.606   5.333±2.082   12.000±1.000   11.333±9.074   3.250±6.500  15.000±3.162  13.250±5.252\n"}
+,{"stream_name":"stdout","time":4219.242970834,"data":"mean_best_auc_proto                  nan±nan   0.591±0.018   0.621±0.010   0.600±0.028   0.612±0.014   0.598±0.005   0.608±0.007   0.605±0.016    0.636±0.019    0.617±0.036   0.583±0.015   0.629±0.019   0.605±0.019\n"}
+,{"stream_name":"stdout","time":4219.242975499,"data":"mean_best_auc_crit                   nan±nan   0.566±0.007   0.588±0.021   0.587±0.029   0.602±0.011   0.579±0.003   0.587±0.013   0.591±0.010    0.594±0.012    0.577±0.021   0.573±0.011   0.585±0.010   0.591±0.008\n"}
+,{"stream_name":"stdout","time":4219.242980014,"data":"crit pigment_network                 nan±nan   0.596±0.034   0.605±0.025   0.609±0.079   0.635±0.034   0.602±0.014   0.631±0.026   0.645±0.032    0.616±0.003    0.614±0.044   0.581±0.013   0.619±0.038   0.621±0.034\n"}
+,{"stream_name":"stdout","time":4219.242984381,"data":"crit streaks                         nan±nan   0.542±0.010   0.562±0.052   0.572±0.025   0.552±0.018   0.547±0.010   0.555±0.012   0.565±0.009    0.546±0.036    0.517±0.011   0.582±0.006   0.529±0.015   0.551±0.014\n"}
+,{"stream_name":"stdout","time":4219.242993599,"data":"crit pigmentation                    nan±nan   0.521±0.010   0.548±0.047   0.558±0.044   0.534±0.005   0.535±0.017   0.525±0.008   0.529±0.012    0.533±0.041    0.508±0.001   0.535±0.008   0.529±0.013   0.534±0.020\n"}
+,{"stream_name":"stdout","time":4219.242998877,"data":"crit regression_structures           nan±nan   0.592±0.031   0.631±0.027   0.628±0.045   0.634±0.021   0.604±0.005   0.621±0.015   0.615±0.008    0.657±0.022    0.656±0.040   0.589±0.017   0.645±0.022   0.657±0.031\n"}
+,{"stream_name":"stdout","time":4219.243003812,"data":"crit dots_and_globules               nan±nan   0.615±0.025   0.642±0.033   0.637±0.057   0.655±0.012   0.626±0.015   0.653±0.012   0.643±0.017    0.657±0.021    0.641±0.021   0.606±0.027   0.646±0.021   0.636±0.035\n"}
+,{"stream_name":"stdout","time":4219.243028797,"data":"crit blue_whitish_veil               nan±nan   0.563±0.015   0.606±0.032   0.591±0.030   0.596±0.012   0.602±0.025   0.600±0.028   0.591±0.017    0.607±0.026    0.557±0.030   0.587±0.021   0.587±0.026   0.578±0.025\n"}
+,{"stream_name":"stdout","time":4219.243033483,"data":"crit vascular_structures             nan±nan   0.534±0.025   0.524±0.016   0.511±0.042   0.611±0.017   0.537±0.013   0.526±0.018   0.549±0.042    0.544±0.024    0.544±0.031   0.529±0.006   0.541±0.052   0.558±0.021\n"}
+,{"stream_name":"stdout","time":4219.27565266,"data":"\n"}
+,{"stream_name":"stdout","time":4219.27567239,"data":"Across training runs (Ours: seven runs; PPN and Correia: seven; others: three), exact Mann-Whitney:\n"}
+,{"stream_name":"stdout","time":4219.275677718,"data":"            metric better                       versus                         Ours                         other  separated   p_runs\n"}
+,{"stream_name":"stdout","time":4219.275682113,"data":" resp dark_corners  lower                      PPN-std   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4219.275697501,"data":" resp dark_corners  lower                          PPN   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 0.391366\n"}
+,{"stream_name":"stdout","time":4219.275701737,"data":" resp dark_corners  lower                       PPN-FA   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4219.275705655,"data":" resp dark_corners  lower                      Correia   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 0.391366\n"}
+,{"stream_name":"stdout","time":4219.275709408,"data":" resp dark_corners  lower                PPN-FA-IAIABL   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4219.275713249,"data":" resp dark_corners  lower                 Ours-stdPush   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4219.275717016,"data":" resp dark_corners  lower                   Ours-noLes   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4219.275720935,"data":" resp dark_corners  lower PPN-std+PPN+PPN-FA (13 runs)                  0.143 (n=7)   0.000 [0.000, 0.000] (n=13)      False 0.208413\n"}
+,{"stream_name":"stdout","time":4219.275724667,"data":"           aligned higher                      PPN-std 13.286 [6.000, 18.000] (n=7)   9.000 [0.000, 15.000] (n=3)      False 0.383333\n"}
+,{"stream_name":"stdout","time":4219.275728707,"data":"           aligned higher                          PPN 13.286 [6.000, 18.000] (n=7)  10.143 [0.000, 18.000] (n=7)      False 0.847006\n"}
+,{"stream_name":"stdout","time":4219.275732592,"data":"           aligned higher                       PPN-FA 13.286 [6.000, 18.000] (n=7)   8.667 [3.000, 19.000] (n=3)      False 0.516667\n"}
+,{"stream_name":"stdout","time":4219.275745499,"data":"           aligned higher                      Correia 13.286 [6.000, 18.000] (n=7) 19.000 [19.000, 19.000] (n=7)      False 0.001058\n"}
+,{"stream_name":"stdout","time":4219.275749899,"data":"           aligned higher                PPN-FA-IAIABL 13.286 [6.000, 18.000] (n=7)  13.000 [1.000, 19.000] (n=3)      False 0.492811\n"}
+,{"stream_name":"stdout","time":4219.27575475,"data":"           aligned higher                 Ours-stdPush 13.286 [6.000, 18.000] (n=7)  12.333 [7.000, 17.000] (n=3)      False 0.818624\n"}
+,{"stream_name":"stdout","time":4219.275758681,"data":"           aligned higher                   Ours-noLes 13.286 [6.000, 18.000] (n=7)  12.000 [9.000, 14.000] (n=3)      False 0.565254\n"}
+,{"stream_name":"stdout","time":4219.275762557,"data":"           aligned higher PPN-std+PPN+PPN-FA (13 runs)                 13.286 (n=7)  9.538 [0.000, 19.000] (n=13)      False 0.449685\n"}
+,{"stream_name":"stdout","time":4219.275766366,"data":"            auc_bg  lower                      PPN-std   0.623 [0.576, 0.674] (n=7)    0.557 [0.487, 0.629] (n=3)      False 0.183333\n"}
+,{"stream_name":"stdout","time":4219.275770323,"data":"            auc_bg  lower                          PPN   0.623 [0.576, 0.674] (n=7)    0.498 [0.435, 0.655] (n=7)      False 0.011072\n"}
+,{"stream_name":"stdout","time":4219.275774162,"data":"            auc_bg  lower                       PPN-FA   0.623 [0.576, 0.674] (n=7)    0.622 [0.583, 0.688] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275778114,"data":"            auc_bg  lower                      Correia   0.623 [0.576, 0.674] (n=7)    0.608 [0.589, 0.625] (n=7)      False 0.534965\n"}
+,{"stream_name":"stdout","time":4219.275782132,"data":"            auc_bg  lower                PPN-FA-IAIABL   0.623 [0.576, 0.674] (n=7)    0.613 [0.585, 0.657] (n=3)      False 0.833333\n"}
+,{"stream_name":"stdout","time":4219.27578591,"data":"            auc_bg  lower                          CNN   0.623 [0.576, 0.674] (n=7)    0.656 [0.634, 0.671] (n=3)      False 0.383333\n"}
+,{"stream_name":"stdout","time":4219.275789844,"data":"            auc_bg  lower                 Ours-stdPush   0.623 [0.576, 0.674] (n=7)    0.597 [0.576, 0.636] (n=3)      False 0.383333\n"}
+,{"stream_name":"stdout","time":4219.2757935,"data":"            auc_bg  lower                   Ours-noLes   0.623 [0.576, 0.674] (n=7)    0.601 [0.497, 0.661] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.27579717,"data":"            auc_bg  lower PPN-std+PPN+PPN-FA (13 runs)                  0.623 (n=7)   0.540 [0.435, 0.688] (n=13)      False 0.045562\n"}
+,{"stream_name":"stdout","time":4219.275801115,"data":"            auc_lo higher                      PPN-std   0.856 [0.845, 0.865] (n=7)    0.828 [0.822, 0.834] (n=3)       True 0.016667\n"}
+,{"stream_name":"stdout","time":4219.275805153,"data":"            auc_lo higher                          PPN   0.856 [0.845, 0.865] (n=7)    0.818 [0.775, 0.845] (n=7)       True 0.000583\n"}
+,{"stream_name":"stdout","time":4219.275809392,"data":"            auc_lo higher                       PPN-FA   0.856 [0.845, 0.865] (n=7)    0.829 [0.818, 0.835] (n=3)       True 0.016667\n"}
+,{"stream_name":"stdout","time":4219.275813657,"data":"            auc_lo higher                      Correia   0.856 [0.845, 0.865] (n=7)    0.861 [0.852, 0.873] (n=7)      False 0.382867\n"}
+,{"stream_name":"stdout","time":4219.275817367,"data":"            auc_lo higher                PPN-FA-IAIABL   0.856 [0.845, 0.865] (n=7)    0.835 [0.824, 0.852] (n=3)      False 0.033333\n"}
+,{"stream_name":"stdout","time":4219.275821129,"data":"            auc_lo higher                          CNN   0.856 [0.845, 0.865] (n=7)    0.878 [0.875, 0.879] (n=3)      False 0.016667\n"}
+,{"stream_name":"stdout","time":4219.275829907,"data":"            auc_lo higher                 Ours-stdPush   0.856 [0.845, 0.865] (n=7)    0.859 [0.851, 0.870] (n=3)      False 0.833333\n"}
+,{"stream_name":"stdout","time":4219.275833984,"data":"            auc_lo higher                   Ours-noLes   0.856 [0.845, 0.865] (n=7)    0.826 [0.809, 0.839] (n=3)       True 0.016667\n"}
+,{"stream_name":"stdout","time":4219.275837888,"data":"            auc_lo higher PPN-std+PPN+PPN-FA (13 runs)                  0.856 (n=7)   0.823 [0.775, 0.845] (n=13)       True 0.000026\n"}
+,{"stream_name":"stdout","time":4219.275841945,"data":"        resp ruler  lower                      PPN-std   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275845772,"data":"        resp ruler  lower                          PPN   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275849619,"data":"        resp ruler  lower                       PPN-FA   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.27585356,"data":"        resp ruler  lower                      Correia   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275857628,"data":"        resp ruler  lower                PPN-FA-IAIABL   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275861553,"data":"        resp ruler  lower                 Ours-stdPush   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275865657,"data":"        resp ruler  lower                   Ours-noLes   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275869601,"data":"        resp ruler  lower PPN-std+PPN+PPN-FA (13 runs)                  0.000 (n=7)   0.000 [0.000, 0.000] (n=13)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275873482,"data":"         resp hair  lower                      PPN-std   0.571 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.141579\n"}
+,{"stream_name":"stdout","time":4219.275877279,"data":"         resp hair  lower                          PPN   0.571 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 0.027884\n"}
+,{"stream_name":"stdout","time":4219.275881977,"data":"         resp hair  lower                       PPN-FA   0.571 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.141579\n"}
+,{"stream_name":"stdout","time":4219.275886048,"data":"         resp hair  lower                      Correia   0.571 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 0.027884\n"}
+,{"stream_name":"stdout","time":4219.27588995,"data":"         resp hair  lower                PPN-FA-IAIABL   0.571 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.141579\n"}
+,{"stream_name":"stdout","time":4219.275893952,"data":"         resp hair  lower                 Ours-stdPush   0.571 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.141579\n"}
+,{"stream_name":"stdout","time":4219.275897901,"data":"         resp hair  lower                   Ours-noLes   0.571 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.141579\n"}
+,{"stream_name":"stdout","time":4219.275901785,"data":"         resp hair  lower PPN-std+PPN+PPN-FA (13 runs)                  0.571 (n=7)   0.000 [0.000, 0.000] (n=13)      False 0.003580\n"}
+,{"stream_name":"stdout","time":4219.275905655,"data":"          resp ink  lower                      PPN-std   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275913435,"data":"          resp ink  lower                          PPN   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275917447,"data":"          resp ink  lower                       PPN-FA   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275921504,"data":"          resp ink  lower                      Correia   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275925398,"data":"          resp ink  lower                PPN-FA-IAIABL   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.27592926,"data":"          resp ink  lower                 Ours-stdPush   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.27593327,"data":"          resp ink  lower                   Ours-noLes   0.000 [0.000, 0.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275937275,"data":"          resp ink  lower PPN-std+PPN+PPN-FA (13 runs)                  0.000 (n=7)   0.000 [0.000, 0.000] (n=13)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4219.275941582,"data":"mean_best_auc_crit higher                      PPN-std   0.596 [0.580, 0.610] (n=7)    0.566 [0.558, 0.571] (n=3)       True 0.016667\n"}
+,{"stream_name":"stdout","time":4219.275946041,"data":"mean_best_auc_crit higher                          PPN   0.596 [0.580, 0.610] (n=7)    0.579 [0.563, 0.604] (n=7)      False 0.072844\n"}
+,{"stream_name":"stdout","time":4219.275950005,"data":"mean_best_auc_crit higher                       PPN-FA   0.596 [0.580, 0.610] (n=7)    0.587 [0.559, 0.617] (n=3)      False 0.666667\n"}
+,{"stream_name":"stdout","time":4219.275953899,"data":"mean_best_auc_crit higher                      Correia   0.596 [0.580, 0.610] (n=7)    0.589 [0.572, 0.607] (n=7)      False 0.317599\n"}
+,{"stream_name":"stdout","time":4219.275957795,"data":"mean_best_auc_crit higher                PPN-FA-IAIABL   0.596 [0.580, 0.610] (n=7)    0.577 [0.552, 0.590] (n=3)      False 0.066667\n"}
+,{"stream_name":"stdout","time":4219.275961739,"data":"mean_best_auc_crit higher                 Ours-stdPush   0.596 [0.580, 0.610] (n=7)    0.591 [0.579, 0.600] (n=3)      False 0.833333\n"}
+,{"stream_name":"stdout","time":4219.275965672,"data":"mean_best_auc_crit higher                   Ours-noLes   0.596 [0.580, 0.610] (n=7)    0.579 [0.576, 0.583] (n=3)      False 0.033333\n"}
+,{"stream_name":"stdout","time":4219.275969722,"data":"mean_best_auc_crit higher PPN-std+PPN+PPN-FA (13 runs)                  0.596 (n=7)   0.578 [0.558, 0.617] (n=13)      False 0.029696\n"}
+,{"stream_name":"stdout","time":4260.723304431,"data":"\n"}
+,{"stream_name":"stdout","time":4260.723335717,"data":"Seed-ensemble AUC on edited test images (Ours minus other; paired bootstrap over lesion groups):\n"}
+,{"stream_name":"stdout","time":4260.723341997,"data":"         images         versus  AUC_Ours  AUC_other       CI95_diff     p\n"}
+,{"stream_name":"stdout","time":4260.723348262,"data":"background only            CNN    0.6349     0.6666 [-0.078, 0.010] 0.152\n"}
+,{"stream_name":"stdout","time":4260.72335419,"data":"background only        PPN-std    0.6349     0.6229 [-0.034, 0.055] 0.596\n"}
+,{"stream_name":"stdout","time":4260.72335923,"data":"background only            PPN    0.6349     0.6144 [-0.030, 0.066] 0.428\n"}
+,{"stream_name":"stdout","time":4260.72336404,"data":"background only         PPN-FA    0.6349     0.6168 [-0.028, 0.061] 0.437\n"}
+,{"stream_name":"stdout","time":4260.723369566,"data":"background only PPN-FA-Correia    0.6349     0.6359 [-0.039, 0.033] 0.958\n"}
+,{"stream_name":"stdout","time":4260.723383578,"data":"background only  PPN-FA-IAIABL    0.6349     0.6420 [-0.048, 0.030] 0.709\n"}
+,{"stream_name":"stdout","time":4260.723387404,"data":"background only     Ours-noLes    0.6349     0.6527 [-0.059, 0.022] 0.389\n"}
+,{"stream_name":"stdout","time":4260.723391224,"data":"background only   Ours-stdPush    0.6349     0.6220 [-0.009, 0.035] 0.244\n"}
+,{"stream_name":"stdout","time":4260.723395024,"data":"    lesion only            CNN    0.8744     0.8882 [-0.038, 0.011] 0.265\n"}
+,{"stream_name":"stdout","time":4260.72339879,"data":"    lesion only        PPN-std    0.8744     0.8504  [0.012, 0.035] 0.000\n"}
+,{"stream_name":"stdout","time":4260.723402581,"data":"    lesion only            PPN    0.8744     0.8589  [0.003, 0.029] 0.015\n"}
+,{"stream_name":"stdout","time":4260.723407168,"data":"    lesion only         PPN-FA    0.8744     0.8575  [0.002, 0.031] 0.030\n"}
+,{"stream_name":"stdout","time":4260.723411367,"data":"    lesion only PPN-FA-Correia    0.8744     0.8782 [-0.016, 0.008] 0.530\n"}
+,{"stream_name":"stdout","time":4260.723414953,"data":"    lesion only  PPN-FA-IAIABL    0.8744     0.8588  [0.001, 0.031] 0.030\n"}
+,{"stream_name":"stdout","time":4260.723418903,"data":"    lesion only     Ours-noLes    0.8744     0.8599 [-0.001, 0.029] 0.086\n"}
+,{"stream_name":"stdout","time":4260.723422828,"data":"    lesion only   Ours-stdPush    0.8744     0.8784 [-0.011, 0.002] 0.226\n"}
+,{"stream_name":"stdout","time":4260.723427044,"data":"\n"}
+,{"stream_name":"stdout","time":4260.723430767,"data":"seed-ensemble AUC on the same (unedited) images: {'CNN': np.float64(0.9121), 'PPN-std': np.float64(0.8613), 'PPN': np.float64(0.8657), 'PPN-FA': np.float64(0.8663), 'Ours': np.float64(0.8836), 'Ours-noLes': np.float64(0.8561), 'Ours-noArt': np.float64(0.8768), 'Ours-stdPush': np.float64(0.8841), 'PPN-FA-Correia': np.float64(0.8847), 'PPN-FA-IAIABL': np.float64(0.8719)}\n"}
+,{"stream_name":"stdout","time":4260.723435793,"data":"\n"}
+,{"stream_name":"stdout","time":4260.72343939,"data":"Prototypes responding to inserted dark corners (d \u003e 0.5), by source cell (pooled over runs):\n"}
+,{"stream_name":"stdout","time":4260.723443736,"data":"                              sum  count\n"}
+,{"stream_name":"stdout","time":4260.723447392,"data":"config         lesion_source            \n"}
+,{"stream_name":"stdout","time":4260.723450826,"data":"Correia-indep  False            0     16\n"}
+,{"stream_name":"stdout","time":4260.723455004,"data":"               True             0     64\n"}
+,{"stream_name":"stdout","time":4260.723459136,"data":"Ours           True             0     60\n"}
+,{"stream_name":"stdout","time":4260.723464168,"data":"Ours-indep     True             1     80\n"}
+,{"stream_name":"stdout","time":4260.723468394,"data":"Ours-noArt     True             0     60\n"}
+,{"stream_name":"stdout","time":4260.723472122,"data":"Ours-noLes     True             0     60\n"}
+,{"stream_name":"stdout","time":4260.723476039,"data":"Ours-stdPush   False            0     37\n"}
+,{"stream_name":"stdout","time":4260.723479426,"data":"               True             0     23\n"}
+,{"stream_name":"stdout","time":4260.723483037,"data":"PPN            False            0     17\n"}
+,{"stream_name":"stdout","time":4260.723486535,"data":"               True             0     43\n"}
+,{"stream_name":"stdout","time":4260.72349028,"data":"PPN-FA         False            0     30\n"}
+,{"stream_name":"stdout","time":4260.723493873,"data":"               True             0     30\n"}
+,{"stream_name":"stdout","time":4260.72349751,"data":"PPN-FA-Correia False            0     21\n"}
+,{"stream_name":"stdout","time":4260.723506388,"data":"               True             0     39\n"}
+,{"stream_name":"stdout","time":4260.723510357,"data":"PPN-FA-IAIABL  False            0      6\n"}
+,{"stream_name":"stdout","time":4260.723514693,"data":"               True             0     54\n"}
+,{"stream_name":"stdout","time":4260.723518524,"data":"PPN-indep      False            0     31\n"}
+,{"stream_name":"stdout","time":4260.723522878,"data":"               True             0     49\n"}
+,{"stream_name":"stdout","time":4260.723527038,"data":"PPN-std        False            0     24\n"}
+,{"stream_name":"stdout","time":4260.723530862,"data":"               True             0     36\n"}
+,{"stream_name":"stdout","time":4260.757768384,"data":"NB11 finished in 70.7 min\n"}
+,{"stream_name":"stdout","time":4260.757807701,"data":"\n"}
+,{"stream_name":"stdout","time":4260.757813331,"data":"=== primary outcomes (mean over runs) ===\n"}
+,{"stream_name":"stdout","time":4260.757825362,"data":"                resp dark_corners  aligned  auc_bg  auc_lo     auc\n"}
+,{"stream_name":"stdout","time":4260.757829475,"data":"config                                                            \n"}
+,{"stream_name":"stdout","time":4260.757833094,"data":"CNN                           NaN      NaN  0.6565  0.8776  0.9016\n"}
+,{"stream_name":"stdout","time":4260.757836462,"data":"PPN-std                      0.00   9.0000  0.5574  0.8281  0.8352\n"}
+,{"stream_name":"stdout","time":4260.757839737,"data":"PPN                          0.00  17.6667  0.5383  0.8239  0.8246\n"}
+,{"stream_name":"stdout","time":4260.757843109,"data":"PPN-FA                       0.00   8.6667  0.6223  0.8287  0.8444\n"}
+,{"stream_name":"stdout","time":4260.757846502,"data":"Ours                         0.00  13.3333  0.6099  0.8582  0.8652\n"}
+,{"stream_name":"stdout","time":4260.757849859,"data":"Ours-noLes                   0.00  12.0000  0.6013  0.8258  0.8303\n"}
+,{"stream_name":"stdout","time":4260.757853264,"data":"Ours-noArt                   0.00  12.0000  0.6015  0.8529  0.8585\n"}
+,{"stream_name":"stdout","time":4260.757856562,"data":"Ours-stdPush                 0.00  12.3333  0.5966  0.8592  0.8631\n"}
+,{"stream_name":"stdout","time":4260.757859876,"data":"PPN-FA-Correia               0.00  19.0000  0.6063  0.8647  0.8674\n"}
+,{"stream_name":"stdout","time":4260.75786316,"data":"PPN-FA-IAIABL                0.00  13.0000  0.6131  0.8353  0.8445\n"}
+,{"stream_name":"stdout","time":4260.757866435,"data":"PPN-indep                    0.00   4.5000  0.4671  0.8143  0.8202\n"}
+,{"stream_name":"stdout","time":4260.757869682,"data":"Correia-indep                0.00  19.0000  0.6097  0.8590  0.8598\n"}
+,{"stream_name":"stdout","time":4260.757873104,"data":"Ours-indep                   0.25  13.2500  0.6323  0.8550  0.8611\n"}
+,{"stream_name":"stdout","time":4260.757880831,"data":"\n"}
+,{"stream_name":"stdout","time":4260.757883956,"data":"=== tests across runs, primary metrics ===\n"}
+,{"stream_name":"stdout","time":4260.757886331,"data":"           metric better                       versus                         Ours                         other  separated   p_runs\n"}
+,{"stream_name":"stdout","time":4260.757888724,"data":"resp dark_corners  lower                      PPN-std   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4260.757891677,"data":"resp dark_corners  lower                          PPN   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 0.391366\n"}
+,{"stream_name":"stdout","time":4260.757907065,"data":"resp dark_corners  lower                       PPN-FA   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4260.757920791,"data":"resp dark_corners  lower                      Correia   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=7)      False 0.391366\n"}
+,{"stream_name":"stdout","time":4260.757925279,"data":"resp dark_corners  lower                PPN-FA-IAIABL   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4260.757930209,"data":"resp dark_corners  lower                 Ours-stdPush   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4260.757933779,"data":"resp dark_corners  lower                   Ours-noLes   0.143 [0.000, 1.000] (n=7)    0.000 [0.000, 0.000] (n=3)      False 0.662521\n"}
+,{"stream_name":"stdout","time":4260.757937239,"data":"resp dark_corners  lower PPN-std+PPN+PPN-FA (13 runs)                  0.143 (n=7)   0.000 [0.000, 0.000] (n=13)      False 0.208413\n"}
+,{"stream_name":"stdout","time":4260.757940699,"data":"          aligned higher                      PPN-std 13.286 [6.000, 18.000] (n=7)   9.000 [0.000, 15.000] (n=3)      False 0.383333\n"}
+,{"stream_name":"stdout","time":4260.757944157,"data":"          aligned higher                          PPN 13.286 [6.000, 18.000] (n=7)  10.143 [0.000, 18.000] (n=7)      False 0.847006\n"}
+,{"stream_name":"stdout","time":4260.757947626,"data":"          aligned higher                       PPN-FA 13.286 [6.000, 18.000] (n=7)   8.667 [3.000, 19.000] (n=3)      False 0.516667\n"}
+,{"stream_name":"stdout","time":4260.757951065,"data":"          aligned higher                      Correia 13.286 [6.000, 18.000] (n=7) 19.000 [19.000, 19.000] (n=7)      False 0.001058\n"}
+,{"stream_name":"stdout","time":4260.757954627,"data":"          aligned higher                PPN-FA-IAIABL 13.286 [6.000, 18.000] (n=7)  13.000 [1.000, 19.000] (n=3)      False 0.492811\n"}
+,{"stream_name":"stdout","time":4260.75795812,"data":"          aligned higher                 Ours-stdPush 13.286 [6.000, 18.000] (n=7)  12.333 [7.000, 17.000] (n=3)      False 0.818624\n"}
+,{"stream_name":"stdout","time":4260.757961703,"data":"          aligned higher                   Ours-noLes 13.286 [6.000, 18.000] (n=7)  12.000 [9.000, 14.000] (n=3)      False 0.565254\n"}
+,{"stream_name":"stdout","time":4260.757965183,"data":"          aligned higher PPN-std+PPN+PPN-FA (13 runs)                 13.286 (n=7)  9.538 [0.000, 19.000] (n=13)      False 0.449685\n"}
+,{"stream_name":"stdout","time":4260.757968986,"data":"           auc_bg  lower                      PPN-std   0.623 [0.576, 0.674] (n=7)    0.557 [0.487, 0.629] (n=3)      False 0.183333\n"}
+,{"stream_name":"stdout","time":4260.757972454,"data":"           auc_bg  lower                          PPN   0.623 [0.576, 0.674] (n=7)    0.498 [0.435, 0.655] (n=7)      False 0.011072\n"}
+,{"stream_name":"stdout","time":4260.757976007,"data":"           auc_bg  lower                       PPN-FA   0.623 [0.576, 0.674] (n=7)    0.622 [0.583, 0.688] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4260.757981324,"data":"           auc_bg  lower                      Correia   0.623 [0.576, 0.674] (n=7)    0.608 [0.589, 0.625] (n=7)      False 0.534965\n"}
+,{"stream_name":"stdout","time":4260.757988166,"data":"           auc_bg  lower                PPN-FA-IAIABL   0.623 [0.576, 0.674] (n=7)    0.613 [0.585, 0.657] (n=3)      False 0.833333\n"}
+,{"stream_name":"stdout","time":4260.758003297,"data":"           auc_bg  lower                          CNN   0.623 [0.576, 0.674] (n=7)    0.656 [0.634, 0.671] (n=3)      False 0.383333\n"}
+,{"stream_name":"stdout","time":4260.758007537,"data":"           auc_bg  lower                 Ours-stdPush   0.623 [0.576, 0.674] (n=7)    0.597 [0.576, 0.636] (n=3)      False 0.383333\n"}
+,{"stream_name":"stdout","time":4260.758011696,"data":"           auc_bg  lower                   Ours-noLes   0.623 [0.576, 0.674] (n=7)    0.601 [0.497, 0.661] (n=3)      False 1.000000\n"}
+,{"stream_name":"stdout","time":4260.758034647,"data":"           auc_bg  lower PPN-std+PPN+PPN-FA (13 runs)                  0.623 (n=7)   0.540 [0.435, 0.688] (n=13)      False 0.045562\n"}
+,{"stream_name":"stdout","time":4260.758038651,"data":"\n"}
+,{"stream_name":"stdout","time":4260.758041824,"data":"=== background-only ensembles ===\n"}
+,{"stream_name":"stdout","time":4260.758045179,"data":"         images         versus  AUC_Ours  AUC_other       CI95_diff     p\n"}
+,{"stream_name":"stdout","time":4260.758048474,"data":"background only            CNN    0.6349     0.6666 [-0.078, 0.010] 0.152\n"}
+,{"stream_name":"stdout","time":4260.758051862,"data":"background only        PPN-std    0.6349     0.6229 [-0.034, 0.055] 0.596\n"}
+,{"stream_name":"stdout","time":4260.75805525,"data":"background only            PPN    0.6349     0.6144 [-0.030, 0.066] 0.428\n"}
+,{"stream_name":"stdout","time":4260.75805861,"data":"background only         PPN-FA    0.6349     0.6168 [-0.028, 0.061] 0.437\n"}
+,{"stream_name":"stdout","time":4260.758061981,"data":"background only PPN-FA-Correia    0.6349     0.6359 [-0.039, 0.033] 0.958\n"}
+,{"stream_name":"stdout","time":4260.758065388,"data":"background only  PPN-FA-IAIABL    0.6349     0.6420 [-0.048, 0.030] 0.709\n"}
+,{"stream_name":"stdout","time":4260.758068781,"data":"background only     Ours-noLes    0.6349     0.6527 [-0.059, 0.022] 0.389\n"}
+,{"stream_name":"stdout","time":4260.758072149,"data":"background only   Ours-stdPush    0.6349     0.6220 [-0.009, 0.035] 0.244\n"}
+,{"stream_name":"stdout","time":4260.758075592,"data":"NB11 FINISHED\n"}
+,{"stream_name":"stderr","time":4265.891286327,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4265.89131471,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4266.035570555,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4266.03560476,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4266.756173724,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":4266.843983009,"data":"[NbConvertApp] Writing 123413 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":4269.227491739,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4270.012921574,"data":"[NbConvertApp] Writing 771661 bytes to __results__.html\n"}
+]

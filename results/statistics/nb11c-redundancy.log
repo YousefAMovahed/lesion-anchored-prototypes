@@ -1,0 +1,208 @@
+[{"stream_name":"stderr","time":6.9282293710000005,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.928271211,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.881259364,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.881291174,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.88129867,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.881306586,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.515250556,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.515325665,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.515332111,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.515337237,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.686404525,"data":"Writing artproto.py\n"}
+,{"stream_name":"stdout","time":9.708511455,"data":"Writing evalkit.py\n"}
+,{"stream_name":"stdout","time":12.174662571,"data":"python 3.13.15 | Linux-6.18.55+-x86_64-with-glibc2.39\n"}
+,{"stream_name":"stdout","time":17.242422427,"data":"torch        2.11.0+cu128\n"}
+,{"stream_name":"stdout","time":23.610720514,"data":"torchvision  0.26.0+cu128\n"}
+,{"stream_name":"stdout","time":23.610750887000002,"data":"numpy        2.1.3\n"}
+,{"stream_name":"stdout","time":23.61075594,"data":"scipy        1.16.3\n"}
+,{"stream_name":"stdout","time":26.062647113,"data":"sklearn      1.6.1\n"}
+,{"stream_name":"stdout","time":26.062685628,"data":"pandas       2.3.3\n"}
+,{"stream_name":"stdout","time":26.352064033,"data":"cv2          4.14.0\n"}
+,{"stream_name":"stdout","time":26.352087094,"data":"statsmodels  0.15.0\n"}
+,{"stream_name":"stdout","time":26.352092246,"data":"PIL          12.3.0\n"}
+,{"stream_name":"stdout","time":26.35209664,"data":"matplotlib   3.10.0\n"}
+,{"stream_name":"stdout","time":26.913674628,"data":"openpyxl     3.1.5\n"}
+,{"stream_name":"stdout","time":26.962133777,"data":"cuda 12.8 | cudnn 91900\n"}
+,{"stream_name":"stdout","time":28.235111524,"data":"runs per configuration: {'Correia-indep': 4, 'Ours-indep': 4, 'PPN-indep': 4, 'Ours-noArt': 3, 'Ours-noLes': 3, 'Ours-stdPush': 3, 'CNN': 3, 'Ours': 3, 'PPN-FA-1e-1': 3, 'PPN-FA-Correia': 3, 'PPN-FA-1e-2': 3, 'PPN-FA-IAIABL': 3, 'PPN-FA': 3, 'PPN-std': 3, 'PPN': 3}\n"}
+,{"stream_name":"stdout","time":28.235152929,"data":"data: /kaggle/input/notebooks/yousefamovahed/nb01-selfcontained/prep | runs evaluated: 42 | device: cuda\n"}
+,{"stream_name":"stdout","time":28.356498337,"data":"pigment_network        {'absent': 400, 'typical': 381, 'atypical': 230}\n"}
+,{"stream_name":"stdout","time":28.356525445,"data":"streaks                {'absent': 653, 'irregular': 251, 'regular': 107}\n"}
+,{"stream_name":"stdout","time":28.356530563,"data":"pigmentation           {'absent': 588, 'diffuse irregular': 265, 'diffuse regular': 115, 'localized irregular': 40, 'localized regular': 3}\n"}
+,{"stream_name":"stdout","time":28.356547188,"data":"regression_structures  {'absent': 758, 'blue areas': 116, 'combinations': 99, 'white areas': 38}\n"}
+,{"stream_name":"stdout","time":28.356552836,"data":"dots_and_globules      {'irregular': 448, 'regular': 334, 'absent': 229}\n"}
+,{"stream_name":"stdout","time":28.356557368,"data":"blue_whitish_veil      {'absent': 816, 'present': 195}\n"}
+,{"stream_name":"stdout","time":28.356561162,"data":"vascular_structures    {'absent': 823, 'dotted': 53, 'within regression': 46, 'arborizing': 31, 'comma': 23, 'linear irregular': 18, 'hairpin': 15, 'wreath': 2}\n"}
+,{"stream_name":"stdout","time":28.356565475,"data":"\n"}
+,{"stream_name":"stdout","time":28.356569267,"data":"prevalence of each criterion (present) by diagnosis:\n"}
+,{"stream_name":"stdout","time":28.356572833,"data":"label                    0          1      \n"}
+,{"stream_name":"stdout","time":28.356580915,"data":"                       sum count  sum count\n"}
+,{"stream_name":"stdout","time":28.356584703,"data":"pigment_network        440   759  171   252\n"}
+,{"stream_name":"stdout","time":28.356588327,"data":"streaks                200   759  158   252\n"}
+,{"stream_name":"stdout","time":28.356592005,"data":"pigmentation           279   759  144   252\n"}
+,{"stream_name":"stdout","time":28.356595651,"data":"regression_structures  143   759  110   252\n"}
+,{"stream_name":"stdout","time":28.356599427,"data":"dots_and_globules      551   759  231   252\n"}
+,{"stream_name":"stdout","time":28.356603374,"data":"blue_whitish_veil       75   759  120   252\n"}
+,{"stream_name":"stdout","time":28.356607237,"data":"vascular_structures    108   759   80   252\n"}
+,{"stream_name":"stdout","time":61.236328915,"data":"Correia-indep_s3     aligned 19 (NB11 19) | distinct  6 | criteria 3 | eff_n test 1.36 D7 1.86 | |r| 0.84 | dead 0 | {'dots_and': np.int64(18), 'regressi': np.int64(1)} | 33s\n"}
+,{"stream_name":"stdout","time":67.236562553,"data":"Correia-indep_s4     aligned 19 (NB11 19) | distinct  5 | criteria 3 | eff_n test 1.18 D7 1.52 | |r| 0.90 | dead 0 | {'regressi': np.int64(9), 'dots_and': np.int64(6), 'pigment_': np.int64(4)} | 6s\n"}
+,{"stream_name":"stdout","time":73.310578841,"data":"Correia-indep_s5     aligned 19 (NB11 19) | distinct  4 | criteria 4 | eff_n test 1.24 D7 1.28 | |r| 0.88 | dead 0 | {'regressi': np.int64(19)} | 6s\n"}
+,{"stream_name":"stdout","time":79.475969467,"data":"Correia-indep_s6     aligned 19 (NB11 19) | distinct  2 | criteria 3 | eff_n test 1.11 D7 1.16 | |r| 0.94 | dead 0 | {'pigment_': np.int64(19)} | 6s\n"}
+,{"stream_name":"stdout","time":85.635211591,"data":"Ours-indep_s3        aligned 18 (NB11 18) | distinct 11 | criteria 3 | eff_n test 1.63 D7 2.09 | |r| 0.75 | dead 0 | {'regressi': np.int64(15), 'dots_and': np.int64(3)} | 6s\n"}
+,{"stream_name":"stdout","time":91.83789946,"data":"Ours-indep_s4        aligned 16 (NB11 16) | distinct  7 | criteria 3 | eff_n test 1.64 D7 3.14 | |r| 0.76 | dead 0 | {'dots_and': np.int64(8), 'regressi': np.int64(8)} | 6s\n"}
+,{"stream_name":"stdout","time":98.184352021,"data":"Ours-indep_s5        aligned 13 (NB11 13) | distinct  9 | criteria 3 | eff_n test 1.84 D7 3.00 | |r| 0.69 | dead 0 | {'regressi': np.int64(10), 'dots_and': np.int64(3)} | 6s\n"}
+,{"stream_name":"stdout","time":104.524345816,"data":"Ours-indep_s6        aligned  6 (NB11  6) | distinct  3 | criteria 2 | eff_n test 1.81 D7 5.51 | |r| 0.70 | dead 0 | {'regressi': np.int64(5), 'pigment_': np.int64(1)} | 6s\n"}
+,{"stream_name":"stdout","time":110.816584793,"data":"Ours-noArt_s0        aligned  9 (NB11  9) | distinct  7 | criteria 3 | eff_n test 1.58 D7 3.80 | |r| 0.74 | dead 0 | {'dots_and': np.int64(5), 'pigment_': np.int64(3), 'regressi': np.int64(1)} | 6s\n"}
+,{"stream_name":"stdout","time":117.146936896,"data":"Ours-noArt_s1        aligned 11 (NB11 11) | distinct  7 | criteria 3 | eff_n test 1.62 D7 3.64 | |r| 0.76 | dead 0 | {'dots_and': np.int64(11)} | 6s\n"}
+,{"stream_name":"stdout","time":124.056972023,"data":"Ours-noArt_s2        aligned 16 (NB11 16) | distinct 13 | criteria 4 | eff_n test 1.91 D7 3.40 | |r| 0.67 | dead 0 | {'dots_and': np.int64(11), 'regressi': np.int64(3), 'blue_whi': np.int64(2)} | 7s\n"}
+,{"stream_name":"stdout","time":130.51360942,"data":"Ours-noLes_s0        aligned  9 (NB11  9) | distinct  3 | criteria 2 | eff_n test 1.39 D7 2.91 | |r| 0.83 | dead 0 | {'dots_and': np.int64(6), 'regressi': np.int64(3)} | 6s\n"}
+,{"stream_name":"stdout","time":136.819530543,"data":"Ours-noLes_s1        aligned 13 (NB11 13) | distinct  3 | criteria 2 | eff_n test 1.39 D7 2.37 | |r| 0.83 | dead 0 | {'dots_and': np.int64(13)} | 6s\n"}
+,{"stream_name":"stdout","time":143.281077464,"data":"Ours-noLes_s2        aligned 14 (NB11 14) | distinct  7 | criteria 3 | eff_n test 1.46 D7 2.36 | |r| 0.78 | dead 0 | {'blue_whi': np.int64(12), 'regressi': np.int64(1), 'dots_and': np.int64(1)} | 6s\n"}
+,{"stream_name":"stdout","time":149.910993033,"data":"Ours-stdPush_s0      aligned  7 (NB11  7) | distinct  6 | criteria 3 | eff_n test 1.81 D7 4.54 | |r| 0.68 | dead 0 | {'dots_and': np.int64(6), 'regressi': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":156.634552442,"data":"Ours-stdPush_s1      aligned 13 (NB11 13) | distinct  9 | criteria 3 | eff_n test 1.72 D7 4.15 | |r| 0.72 | dead 0 | {'dots_and': np.int64(7), 'pigment_': np.int64(6)} | 7s\n"}
+,{"stream_name":"stdout","time":163.394809426,"data":"Ours-stdPush_s2      aligned 17 (NB11 17) | distinct 14 | criteria 4 | eff_n test 1.83 D7 3.27 | |r| 0.70 | dead 0 | {'dots_and': np.int64(11), 'pigment_': np.int64(6)} | 7s\n"}
+,{"stream_name":"stdout","time":169.908536814,"data":"Ours_s0              aligned  9 (NB11  9) | distinct  8 | criteria 3 | eff_n test 1.95 D7 5.13 | |r| 0.66 | dead 0 | {'dots_and': np.int64(8), 'regressi': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":176.712023127,"data":"Ours_s1              aligned 14 (NB11 14) | distinct 14 | criteria 4 | eff_n test 1.97 D7 5.64 | |r| 0.66 | dead 0 | {'dots_and': np.int64(12), 'regressi': np.int64(1), 'vascular': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":183.216128765,"data":"Ours_s2              aligned 17 (NB11 17) | distinct 14 | criteria 5 | eff_n test 1.71 D7 2.92 | |r| 0.73 | dead 0 | {'dots_and': np.int64(10), 'pigment_': np.int64(6), 'vascular': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":189.77194821,"data":"PPN-FA-Correia_s0    aligned 19 (NB11 19) | distinct  3 | criteria 4 | eff_n test 1.17 D7 1.60 | |r| 0.91 | dead 0 | {'dots_and': np.int64(18), 'regressi': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":196.350447373,"data":"PPN-FA-Correia_s1    aligned 19 (NB11 19) | distinct 11 | criteria 4 | eff_n test 1.62 D7 3.24 | |r| 0.76 | dead 0 | {'regressi': np.int64(9), 'blue_whi': np.int64(4), 'dots_and': np.int64(4), 'pigment_': np.int64(2)} | 7s\n"}
+,{"stream_name":"stdout","time":202.891088033,"data":"PPN-FA-Correia_s2    aligned 19 (NB11 19) | distinct  6 | criteria 3 | eff_n test 1.26 D7 1.85 | |r| 0.88 | dead 0 | {'regressi': np.int64(10), 'dots_and': np.int64(9)} | 7s\n"}
+,{"stream_name":"stdout","time":209.575696014,"data":"PPN-FA-IAIABL_s0     aligned 19 (NB11 19) | distinct  7 | criteria 3 | eff_n test 1.26 D7 1.68 | |r| 0.88 | dead 0 | {'regressi': np.int64(14), 'dots_and': np.int64(4), 'pigment_': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":216.19218944,"data":"PPN-FA-IAIABL_s1     aligned 19 (NB11 19) | distinct  8 | criteria 3 | eff_n test 1.30 D7 1.70 | |r| 0.86 | dead 0 | {'regressi': np.int64(16), 'dots_and': np.int64(2), 'pigment_': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":223.139032761,"data":"PPN-FA-IAIABL_s2     aligned  1 (NB11  1) | distinct  1 | criteria 2 | eff_n test 1.18 D7 1.57 | |r| 0.91 | dead 0 | {'dots_and': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":229.852008113,"data":"PPN-FA_s0            aligned  3 (NB11  3) | distinct  1 | criteria 1 | eff_n test 1.37 D7 2.15 | |r| 0.84 | dead 0 | {'blue_whi': np.int64(3)} | 7s\n"}
+,{"stream_name":"stdout","time":236.418600751,"data":"PPN-FA_s1            aligned 19 (NB11 19) | distinct  8 | criteria 4 | eff_n test 1.46 D7 2.52 | |r| 0.80 | dead 0 | {'pigment_': np.int64(9), 'dots_and': np.int64(8), 'pigmenta': np.int64(2)} | 7s\n"}
+,{"stream_name":"stdout","time":242.896697344,"data":"PPN-FA_s2            aligned  4 (NB11  4) | distinct  4 | criteria 2 | eff_n test 1.29 D7 2.05 | |r| 0.86 | dead 0 | {'regressi': np.int64(2), 'dots_and': np.int64(2)} | 6s\n"}
+,{"stream_name":"stdout","time":249.531252171,"data":"PPN-indep_s3         aligned  0 (NB11  0) | distinct  0 | criteria 0 | eff_n test 1.42 D7 2.71 | |r| 0.80 | dead 0 | {} | 7s\n"}
+,{"stream_name":"stdout","time":256.053377816,"data":"PPN-indep_s4         aligned  0 (NB11  0) | distinct  0 | criteria 0 | eff_n test 1.33 D7 2.15 | |r| 0.85 | dead 0 | {} | 7s\n"}
+,{"stream_name":"stdout","time":263.06132757,"data":"PPN-indep_s5         aligned 15 (NB11 15) | distinct  4 | criteria 3 | eff_n test 1.36 D7 2.30 | |r| 0.81 | dead 0 | {'dots_and': np.int64(15)} | 7s\n"}
+,{"stream_name":"stdout","time":270.097846394,"data":"PPN-indep_s6         aligned  3 (NB11  3) | distinct  3 | criteria 1 | eff_n test 1.30 D7 2.19 | |r| 0.86 | dead 0 | {'dots_and': np.int64(3)} | 7s\n"}
+,{"stream_name":"stdout","time":276.675688185,"data":"PPN-std_s0           aligned 15 (NB11 15) | distinct  5 | criteria 2 | eff_n test 1.26 D7 1.86 | |r| 0.86 | dead 0 | {'dots_and': np.int64(14), 'regressi': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":283.155881484,"data":"PPN-std_s1           aligned  0 (NB11  0) | distinct  0 | criteria 0 | eff_n test 1.35 D7 2.36 | |r| 0.82 | dead 0 | {} | 6s\n"}
+,{"stream_name":"stdout","time":289.546078461,"data":"PPN-std_s2           aligned 12 (NB11 12) | distinct  5 | criteria 3 | eff_n test 1.31 D7 2.79 | |r| 0.86 | dead 0 | {'pigment_': np.int64(10), 'dots_and': np.int64(2)} | 6s\n"}
+,{"stream_name":"stdout","time":296.07151597,"data":"PPN_s0               aligned 18 (NB11 18) | distinct  7 | criteria 2 | eff_n test 1.29 D7 2.26 | |r| 0.87 | dead 0 | {'dots_and': np.int64(18)} | 7s\n"}
+,{"stream_name":"stdout","time":302.525951789,"data":"PPN_s1               aligned 18 (NB11 18) | distinct  5 | criteria 5 | eff_n test 1.38 D7 1.65 | |r| 0.83 | dead 0 | {'pigment_': np.int64(9), 'regressi': np.int64(6), 'blue_whi': np.int64(3)} | 6s\n"}
+,{"stream_name":"stdout","time":309.100781765,"data":"PPN_s2               aligned 17 (NB11 17) | distinct  8 | criteria 5 | eff_n test 1.36 D7 2.35 | |r| 0.83 | dead 0 | {'dots_and': np.int64(12), 'regressi': np.int64(4), 'streaks': np.int64(1)} | 7s\n"}
+,{"stream_name":"stdout","time":309.109496502,"data":"NB11 aligned counts reproduced: True | mismatches: []\n"}
+,{"stream_name":"stdout","time":309.294869368,"data":"fam                      Ours  Ours-noArt  Ours-noLes  Ours-stdPush     PPN  PPN-FA  PPN-FA-Correia  PPN-FA-IAIABL  PPN-std\n"}
+,{"stream_name":"stdout","time":309.294895824,"data":"aligned          mean  13.286      12.000      12.000        12.333  10.143   8.667          19.000         13.000    9.000\n"}
+,{"stream_name":"stdout","time":309.294901477,"data":"                 min    6.000       9.000       9.000         7.000   0.000   3.000          19.000          1.000    0.000\n"}
+,{"stream_name":"stdout","time":309.294906093,"data":"                 max   18.000      16.000      14.000        17.000  18.000  19.000          19.000         19.000   15.000\n"}
+,{"stream_name":"stdout","time":309.294921869,"data":"distinct_aligned mean   9.429       9.000       4.333         9.667   3.857   4.333           5.286          5.333    3.333\n"}
+,{"stream_name":"stdout","time":309.29492975,"data":"                 min    3.000       7.000       3.000         6.000   0.000   1.000           2.000          1.000    0.000\n"}
+,{"stream_name":"stdout","time":309.294932478,"data":"                 max   14.000      13.000       7.000        14.000   8.000   8.000          11.000          8.000    5.000\n"}
+,{"stream_name":"stdout","time":309.294935048,"data":"crit_covered     mean   3.286       3.333       2.333         3.333   2.286   2.333           3.429          2.667    1.667\n"}
+,{"stream_name":"stdout","time":309.294937397,"data":"                 min    2.000       3.000       2.000         3.000   0.000   1.000           3.000          2.000    0.000\n"}
+,{"stream_name":"stdout","time":309.294940136,"data":"                 max    5.000       4.000       3.000         4.000   5.000   4.000           4.000          3.000    3.000\n"}
+,{"stream_name":"stdout","time":309.294942472,"data":"eff_n_te         mean   1.792       1.703       1.413         1.786   1.351   1.377           1.276          1.245    1.309\n"}
+,{"stream_name":"stdout","time":309.294944886,"data":"                 min    1.629       1.585       1.388         1.718   1.295   1.291           1.112          1.181    1.261\n"}
+,{"stream_name":"stdout","time":309.294947219,"data":"                 max    1.969       1.905       1.460         1.828   1.422   1.465           1.615          1.299    1.350\n"}
+,{"stream_name":"stdout","time":309.294949649,"data":"eff_n_d7         mean   3.918       3.614       2.548         3.985   2.229   2.238           1.786          1.650    2.335\n"}
+,{"stream_name":"stdout","time":309.294951976,"data":"                 min    2.090       3.404       2.361         3.269   1.649   2.046           1.162          1.575    1.855\n"}
+,{"stream_name":"stdout","time":309.294954327,"data":"                 max    5.643       3.801       2.912         4.538   2.705   2.520           3.240          1.695    2.788\n"}
+,{"stream_name":"stdout","time":309.294957899,"data":"mean_abs_r_te    mean   0.708       0.722       0.815         0.699   0.838   0.834           0.873          0.884    0.846\n"}
+,{"stream_name":"stdout","time":309.294974274,"data":"                 min    0.657       0.669       0.781         0.681   0.803   0.804           0.763          0.863    0.819\n"}
+,{"stream_name":"stdout","time":309.294978316,"data":"                 max    0.757       0.757       0.831         0.721   0.867   0.862           0.940          0.909    0.861\n"}
+,{"stream_name":"stdout","time":309.294982397,"data":"mean_abs_r_d7    mean   0.459       0.456       0.540         0.427   0.602   0.605           0.744          0.738    0.592\n"}
+,{"stream_name":"stdout","time":309.294986365,"data":"                 min    0.297       0.427       0.527         0.373   0.500   0.563           0.496          0.726    0.513\n"}
+,{"stream_name":"stdout","time":309.294990489,"data":"                 max    0.655       0.487       0.567         0.495   0.752   0.636           0.918          0.760    0.695\n"}
+,{"stream_name":"stdout","time":309.294994396,"data":"dead_te          mean   0.000       0.000       0.000         0.000   0.000   0.000           0.000          0.000    0.000\n"}
+,{"stream_name":"stdout","time":309.294997934,"data":"                 min    0.000       0.000       0.000         0.000   0.000   0.000           0.000          0.000    0.000\n"}
+,{"stream_name":"stdout","time":309.295001411,"data":"                 max    0.000       0.000       0.000         0.000   0.000   0.000           0.000          0.000    0.000\n"}
+,{"stream_name":"stdout","time":309.295005017,"data":"eff_n_te_benign  mean   2.075       1.817       1.602         2.072   1.526   1.431           1.287          1.357    1.436\n"}
+,{"stream_name":"stdout","time":309.295012441,"data":"                 min    1.659       1.395       1.477         1.884   1.372   1.330           1.117          1.257    1.409\n"}
+,{"stream_name":"stdout","time":309.295016146,"data":"                 max    2.497       2.534       1.735         2.354   1.621   1.537           1.589          1.442    1.487\n"}
+,{"stream_name":"stdout","time":309.295019633,"data":"eff_n_te_mel     mean   1.239       1.266       1.093         1.234   1.023   1.054           1.229          1.069    1.015\n"}
+,{"stream_name":"stdout","time":309.295023154,"data":"                 min    1.154       1.155       1.003         1.216   1.005   1.003           1.096          1.057    1.003\n"}
+,{"stream_name":"stdout","time":309.295026642,"data":"                 max    1.399       1.355       1.140         1.255   1.053   1.153           1.512          1.088    1.032\n"}
+,{"stream_name":"stdout","time":309.29503022,"data":"          metric         versus    ours   other       n      p\n"}
+,{"stream_name":"stdout","time":309.295033544,"data":"         aligned            PPN 13.2857 10.1429  (7, 7) 0.8470\n"}
+,{"stream_name":"stdout","time":309.295036987,"data":"         aligned PPN-FA-Correia 13.2857 19.0000  (7, 7) 0.0011\n"}
+,{"stream_name":"stdout","time":309.295041824,"data":"         aligned        PPN-std 13.2857  9.0000  (7, 3) 0.3833\n"}
+,{"stream_name":"stdout","time":309.295048357,"data":"         aligned         PPN-FA 13.2857  8.6667  (7, 3) 0.5167\n"}
+,{"stream_name":"stdout","time":309.295050635,"data":"         aligned  PPN-FA-IAIABL 13.2857 13.0000  (7, 3) 0.4928\n"}
+,{"stream_name":"stdout","time":309.29505292,"data":"         aligned   Ours-stdPush 13.2857 12.3333  (7, 3) 0.8186\n"}
+,{"stream_name":"stdout","time":309.295055127,"data":"         aligned     Ours-noLes 13.2857 12.0000  (7, 3) 0.5653\n"}
+,{"stream_name":"stdout","time":309.295057455,"data":"         aligned         POOL13 13.2857  9.5385 (7, 13) 0.4497\n"}
+,{"stream_name":"stdout","time":309.295071917,"data":"distinct_aligned            PPN  9.4286  3.8571  (7, 7) 0.0245\n"}
+,{"stream_name":"stdout","time":309.295075735,"data":"distinct_aligned PPN-FA-Correia  9.4286  5.2857  (7, 7) 0.0542\n"}
+,{"stream_name":"stdout","time":309.29507957,"data":"distinct_aligned        PPN-std  9.4286  3.3333  (7, 3) 0.0666\n"}
+,{"stream_name":"stdout","time":309.295083435,"data":"distinct_aligned         PPN-FA  9.4286  4.3333  (7, 3) 0.1361\n"}
+,{"stream_name":"stdout","time":309.295087376,"data":"distinct_aligned  PPN-FA-IAIABL  9.4286  5.3333  (7, 3) 0.1675\n"}
+,{"stream_name":"stdout","time":309.295091174,"data":"distinct_aligned   Ours-stdPush  9.4286  9.6667  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":309.295094423,"data":"distinct_aligned     Ours-noLes  9.4286  4.3333  (7, 3) 0.0816\n"}
+,{"stream_name":"stdout","time":309.295097674,"data":"distinct_aligned         POOL13  9.4286  3.8462 (7, 13) 0.0085\n"}
+,{"stream_name":"stdout","time":309.295100888,"data":"    crit_covered            PPN  3.2857  2.2857  (7, 7) 0.3237\n"}
+,{"stream_name":"stdout","time":309.295104159,"data":"    crit_covered PPN-FA-Correia  3.2857  3.4286  (7, 7) 0.6156\n"}
+,{"stream_name":"stdout","time":309.295107396,"data":"    crit_covered        PPN-std  3.2857  1.6667  (7, 3) 0.1128\n"}
+,{"stream_name":"stdout","time":309.295110609,"data":"    crit_covered         PPN-FA  3.2857  2.3333  (7, 3) 0.3438\n"}
+,{"stream_name":"stdout","time":309.29511381,"data":"    crit_covered  PPN-FA-IAIABL  3.2857  2.6667  (7, 3) 0.3670\n"}
+,{"stream_name":"stdout","time":309.295117119,"data":"    crit_covered   Ours-stdPush  3.2857  3.3333  (7, 3) 0.8974\n"}
+,{"stream_name":"stdout","time":309.295123545,"data":"    crit_covered     Ours-noLes  3.2857  2.3333  (7, 3) 0.1390\n"}
+,{"stream_name":"stdout","time":309.295126899,"data":"    crit_covered         POOL13  3.2857  2.1538 (7, 13) 0.1241\n"}
+,{"stream_name":"stdout","time":309.295130214,"data":"        eff_n_te            PPN  1.7922  1.3510  (7, 7) 0.0006\n"}
+,{"stream_name":"stdout","time":309.295133438,"data":"        eff_n_te PPN-FA-Correia  1.7922  1.2764  (7, 7) 0.0006\n"}
+,{"stream_name":"stdout","time":309.295136687,"data":"        eff_n_te        PPN-std  1.7922  1.3085  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295139981,"data":"        eff_n_te         PPN-FA  1.7922  1.3767  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295143314,"data":"        eff_n_te  PPN-FA-IAIABL  1.7922  1.2455  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295148244,"data":"        eff_n_te   Ours-stdPush  1.7922  1.7855  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":309.295154881,"data":"        eff_n_te     Ours-noLes  1.7922  1.4126  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295169654,"data":"        eff_n_te         POOL13  1.7922  1.3471 (7, 13) 0.0000\n"}
+,{"stream_name":"stdout","time":309.295173732,"data":"        eff_n_d7            PPN  3.9179  2.2286  (7, 7) 0.0175\n"}
+,{"stream_name":"stdout","time":309.295177624,"data":"        eff_n_d7 PPN-FA-Correia  3.9179  1.7865  (7, 7) 0.0070\n"}
+,{"stream_name":"stdout","time":309.295181818,"data":"        eff_n_d7        PPN-std  3.9179  2.3345  (7, 3) 0.0667\n"}
+,{"stream_name":"stdout","time":309.295186278,"data":"        eff_n_d7         PPN-FA  3.9179  2.2376  (7, 3) 0.0667\n"}
+,{"stream_name":"stdout","time":309.295189673,"data":"        eff_n_d7  PPN-FA-IAIABL  3.9179  1.6496  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.29519286,"data":"        eff_n_d7   Ours-stdPush  3.9179  3.9851  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":309.295196072,"data":"        eff_n_d7     Ours-noLes  3.9179  2.5483  (7, 3) 0.1167\n"}
+,{"stream_name":"stdout","time":309.295199248,"data":"        eff_n_d7         POOL13  3.9179  2.2551 (7, 13) 0.0034\n"}
+,{"stream_name":"stdout","time":309.295202439,"data":"   mean_abs_r_te            PPN  0.7082  0.8376  (7, 7) 0.0006\n"}
+,{"stream_name":"stdout","time":309.295205648,"data":"   mean_abs_r_te PPN-FA-Correia  0.7082  0.8735  (7, 7) 0.0006\n"}
+,{"stream_name":"stdout","time":309.295208884,"data":"   mean_abs_r_te        PPN-std  0.7082  0.8461  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295212117,"data":"   mean_abs_r_te         PPN-FA  0.7082  0.8342  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295215327,"data":"   mean_abs_r_te  PPN-FA-IAIABL  0.7082  0.8839  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295218544,"data":"   mean_abs_r_te   Ours-stdPush  0.7082  0.6993  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":309.295221767,"data":"   mean_abs_r_te     Ours-noLes  0.7082  0.8145  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295224982,"data":"   mean_abs_r_te         POOL13  0.7082  0.8388 (7, 13) 0.0000\n"}
+,{"stream_name":"stdout","time":309.295228219,"data":"   mean_abs_r_d7            PPN  0.4593  0.6022  (7, 7) 0.0379\n"}
+,{"stream_name":"stdout","time":309.295231462,"data":"   mean_abs_r_d7 PPN-FA-Correia  0.4593  0.7443  (7, 7) 0.0070\n"}
+,{"stream_name":"stdout","time":309.295234732,"data":"   mean_abs_r_d7        PPN-std  0.4593  0.5924  (7, 3) 0.1833\n"}
+,{"stream_name":"stdout","time":309.29523797,"data":"   mean_abs_r_d7         PPN-FA  0.4593  0.6055  (7, 3) 0.1167\n"}
+,{"stream_name":"stdout","time":309.295251104,"data":"   mean_abs_r_d7  PPN-FA-IAIABL  0.4593  0.7382  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295265457,"data":"   mean_abs_r_d7   Ours-stdPush  0.4593  0.4273  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":309.295269437,"data":"   mean_abs_r_d7     Ours-noLes  0.4593  0.5403  (7, 3) 0.2667\n"}
+,{"stream_name":"stdout","time":309.295273474,"data":"   mean_abs_r_d7         POOL13  0.4593  0.6007 (7, 13) 0.0145\n"}
+,{"stream_name":"stdout","time":309.295277311,"data":"         dead_te            PPN  0.0000  0.0000  (7, 7) 1.0000\n"}
+,{"stream_name":"stdout","time":309.295281133,"data":"         dead_te PPN-FA-Correia  0.0000  0.0000  (7, 7) 1.0000\n"}
+,{"stream_name":"stdout","time":309.29528447,"data":"         dead_te        PPN-std  0.0000  0.0000  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":309.295287726,"data":"         dead_te         PPN-FA  0.0000  0.0000  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":309.295290985,"data":"         dead_te  PPN-FA-IAIABL  0.0000  0.0000  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":309.295294202,"data":"         dead_te   Ours-stdPush  0.0000  0.0000  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":309.295297374,"data":"         dead_te     Ours-noLes  0.0000  0.0000  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":309.295300603,"data":"         dead_te         POOL13  0.0000  0.0000 (7, 13) 1.0000\n"}
+,{"stream_name":"stdout","time":309.29530385,"data":" eff_n_te_benign            PPN  2.0754  1.5261  (7, 7) 0.0006\n"}
+,{"stream_name":"stdout","time":309.295307075,"data":" eff_n_te_benign PPN-FA-Correia  2.0754  1.2872  (7, 7) 0.0006\n"}
+,{"stream_name":"stdout","time":309.295310304,"data":" eff_n_te_benign        PPN-std  2.0754  1.4357  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295313473,"data":" eff_n_te_benign         PPN-FA  2.0754  1.4307  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295317162,"data":" eff_n_te_benign  PPN-FA-IAIABL  2.0754  1.3573  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295320605,"data":" eff_n_te_benign   Ours-stdPush  2.0754  2.0719  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":309.295323821,"data":" eff_n_te_benign     Ours-noLes  2.0754  1.6021  (7, 3) 0.0333\n"}
+,{"stream_name":"stdout","time":309.295326889,"data":" eff_n_te_benign         POOL13  2.0754  1.4832 (7, 13) 0.0000\n"}
+,{"stream_name":"stdout","time":309.29533015,"data":"    eff_n_te_mel            PPN  1.2392  1.0235  (7, 7) 0.0006\n"}
+,{"stream_name":"stdout","time":309.295333416,"data":"    eff_n_te_mel PPN-FA-Correia  1.2392  1.2290  (7, 7) 0.3176\n"}
+,{"stream_name":"stdout","time":309.29533639,"data":"    eff_n_te_mel        PPN-std  1.2392  1.0154  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295355877,"data":"    eff_n_te_mel         PPN-FA  1.2392  1.0540  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295359917,"data":"    eff_n_te_mel  PPN-FA-IAIABL  1.2392  1.0687  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295363646,"data":"    eff_n_te_mel   Ours-stdPush  1.2392  1.2345  (7, 3) 0.6667\n"}
+,{"stream_name":"stdout","time":309.295367671,"data":"    eff_n_te_mel     Ours-noLes  1.2392  1.0927  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":309.295371753,"data":"    eff_n_te_mel         POOL13  1.2392  1.0287 (7, 13) 0.0000\n"}
+,{"stream_name":"stdout","time":309.295375592,"data":"NB11c finished in 4.7 min\n"}
+,{"stream_name":"stdout","time":309.295378795,"data":"NB11c FINISHED\n"}
+,{"stream_name":"stderr","time":315.352786885,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":315.352814307,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":315.515917374,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":315.515942511,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":316.30224837,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":316.391777224,"data":"[NbConvertApp] Writing 100512 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":318.956147502,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":319.760878071,"data":"[NbConvertApp] Writing 709372 bytes to __results__.html\n"}
+]

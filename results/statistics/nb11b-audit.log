@@ -1,0 +1,427 @@
+[{"stream_name":"stderr","time":11.518684649,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.51874616,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.518752633,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.51875685,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.314586772,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.314614566,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.314619858,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.314624098,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":17.980005522,"data":"['/kaggle/input/nb11-mechanisms/nb11/per_prototype_shift.csv']\n"}
+,{"stream_name":"stdout","time":18.41661763,"data":"              run    auc  auc_keep  auc_bg  auc_lo  flip dark_corners  flip ruler  flip hair  flip ink  flip null_inpaint  dmax dark_corners  dmax ruler  dmax hair  dmax ink  dmax null_inpaint  lesion_protos  aligned  mean_best_auc_crit\n"}
+,{"stream_name":"stdout","time":18.416658658,"data":"           CNN_s0 0.9077    0.9077  0.6708  0.8754             0.0824      0.0538     0.1317    0.0839             0.0113                NaN         NaN        NaN       NaN                NaN            NaN      NaN                 NaN\n"}
+,{"stream_name":"stdout","time":18.416663110000002,"data":"           CNN_s1 0.8970    0.8970  0.6643  0.8781             0.0509      0.0519     0.1015    0.0791             0.0094                NaN         NaN        NaN       NaN                NaN            NaN      NaN                 NaN\n"}
+,{"stream_name":"stdout","time":18.416665855,"data":"           CNN_s2 0.9000    0.9000  0.6344  0.8794             0.0509      0.0616     0.1412    0.1295             0.0094                NaN         NaN        NaN       NaN                NaN            NaN      NaN                 NaN\n"}
+,{"stream_name":"stdout","time":18.41666864,"data":" Correia-indep_s3 0.8691    0.8691  0.6140  0.8653             0.0427      0.0301     0.1036    0.0704             0.0094             0.0343      0.0514    -0.0629    0.0138             0.0102           17.0     19.0              0.5960\n"}
+,{"stream_name":"stdout","time":18.416671253,"data":" Correia-indep_s4 0.8578    0.8578  0.6117  0.8536             0.0664      0.0470     0.1054    0.0656             0.0244             0.1232      0.0814     0.0855    0.0666             0.0254           14.0     19.0              0.5842\n"}
+,{"stream_name":"stdout","time":18.416673885,"data":" Correia-indep_s5 0.8507    0.8507  0.5885  0.8518             0.0690      0.0247     0.0941    0.0587             0.0094             0.2169      0.0169     0.1166    0.0198             0.0127           20.0     19.0              0.5881\n"}
+,{"stream_name":"stdout","time":18.416676378,"data":" Correia-indep_s6 0.8617    0.8617  0.6246  0.8654             0.0682      0.0373     0.1088    0.0782             0.0169             0.0916      0.0422    -0.0713   -0.0457             0.0372           13.0     19.0              0.5723\n"}
+,{"stream_name":"stdout","time":18.416679894,"data":"    Ours-indep_s3 0.8802    0.8802  0.6360  0.8568             0.0522      0.0281     0.0661    0.0500             0.0113             0.1527      0.0707     0.5282    0.2647             0.0127           20.0     18.0              0.5908\n"}
+,{"stream_name":"stdout","time":18.416682463,"data":"    Ours-indep_s4 0.8642    0.8642  0.6149  0.8625             0.0509      0.0339     0.0989    0.0674             0.0113             0.5140      0.0333    -0.0367    0.0222             0.0385           20.0     16.0              0.5997\n"}
+,{"stream_name":"stdout","time":18.416696333,"data":"    Ours-indep_s5 0.8582    0.8582  0.6684  0.8554             0.0712      0.0456     0.1347    0.0704             0.0188             0.2367      0.1117     0.7640    0.1713             0.0179           20.0     13.0              0.5931\n"}
+,{"stream_name":"stdout","time":18.416699036,"data":"    Ours-indep_s6 0.8419    0.8419  0.6099  0.8453             0.0733      0.0514     0.1166    0.0821             0.0225             0.0733      0.1641     0.8403    0.4455             0.0213           20.0      6.0              0.5796\n"}
+,{"stream_name":"stdout","time":18.416701599,"data":"    Ours-noArt_s0 0.8521    0.8521  0.5292  0.8487             0.0349      0.0276     0.0902    0.0561             0.0131             0.1290      0.0271    -0.0099    0.0248             0.0443           20.0      9.0              0.5797\n"}
+,{"stream_name":"stdout","time":18.416704092,"data":"    Ours-noArt_s1 0.8517    0.8517  0.6438  0.8518             0.0608      0.0378     0.1041    0.0769             0.0094             0.0428      0.0496     0.1343    0.1128             0.0562           20.0     11.0              0.5805\n"}
+,{"stream_name":"stdout","time":18.416706709,"data":"    Ours-noArt_s2 0.8717    0.8717  0.6316  0.8581             0.0660      0.0383     0.0678    0.0513             0.0075             0.4403      0.0476     0.2875    0.0845             0.0185           20.0     16.0              0.6019\n"}
+,{"stream_name":"stdout","time":18.416709735,"data":"    Ours-noLes_s0 0.8391    0.8391  0.6470  0.8288             0.0708      0.0635     0.1110    0.0687             0.0413             0.0659      0.0699     0.1592    0.0453             0.0255           20.0      9.0              0.5784\n"}
+,{"stream_name":"stdout","time":18.416712249,"data":"    Ours-noLes_s1 0.8386    0.8386  0.6605  0.8393             0.1178      0.0989     0.1718    0.1069             0.0432             0.1757      0.2790     0.1449    0.1360             0.0441           20.0     13.0              0.5759\n"}
+,{"stream_name":"stdout","time":18.416714993,"data":"    Ours-noLes_s2 0.8131    0.8131  0.4965  0.8093             0.1173      0.0974     0.1472    0.1260             0.0319             0.2240      0.0206    -0.0766   -0.0077             0.0219           20.0     14.0              0.5828\n"}
+,{"stream_name":"stdout","time":18.416717602,"data":"  Ours-stdPush_s0 0.8571    0.8571  0.5783  0.8510             0.0569      0.0567     0.1287    0.0621             0.0206             0.1392      0.0731     0.4089    0.0832             0.0366            7.0      7.0              0.5931\n"}
+,{"stream_name":"stdout","time":18.416720087,"data":"  Ours-stdPush_s1 0.8665    0.8665  0.6360  0.8695             0.0276      0.0349     0.0803    0.0504             0.0169             0.3786      0.0849     0.0117    0.0340             0.0459            8.0     13.0              0.5795\n"}
+,{"stream_name":"stdout","time":18.416722565,"data":"  Ours-stdPush_s2 0.8656    0.8656  0.5756  0.8572             0.0500      0.0301     0.0782    0.0608             0.0206             0.2605      0.0767    -0.0366    0.0236             0.0517            8.0     17.0              0.5998\n"}
+,{"stream_name":"stdout","time":18.416725062,"data":"          Ours_s0 0.8592    0.8592  0.5758  0.8526             0.0746      0.0562     0.1265    0.0665             0.0188             0.1445      0.0725     0.3352    0.0513             0.0345           20.0      9.0              0.5900\n"}
+,{"stream_name":"stdout","time":18.416727622,"data":"          Ours_s1 0.8714    0.8714  0.6740  0.8648             0.0328      0.0170     0.0630    0.0439             0.0169             0.0633      0.0443     0.2275    0.1767             0.0226           20.0     14.0              0.6070\n"}
+,{"stream_name":"stdout","time":18.416732502,"data":"          Ours_s2 0.8650    0.8650  0.5798  0.8573             0.0496      0.0344     0.0877    0.0565             0.0113             0.1070      0.0915     0.5458    0.0903             0.0133           20.0     17.0              0.6103\n"}
+,{"stream_name":"stdout","time":18.416735163,"data":"PPN-FA-Correia_s0 0.8685    0.8685  0.6016  0.8694             0.0643      0.0460     0.0877    0.0795             0.0169             0.1375      0.0346     0.0247    0.0314             0.0192           12.0     19.0              0.5835\n"}
+,{"stream_name":"stdout","time":18.416738080000002,"data":"PPN-FA-Correia_s1 0.8783    0.8783  0.6046  0.8731             0.0841      0.0441     0.0868    0.0652             0.0150             0.1955      0.0820     0.1139    0.0746             0.0229           14.0     19.0              0.6071\n"}
+,{"stream_name":"stdout","time":18.416740702,"data":"PPN-FA-Correia_s2 0.8554    0.8554  0.6127  0.8517             0.0453      0.0189     0.0933    0.0526             0.0113             0.1338      0.0222    -0.1325    0.0302             0.0110           13.0     19.0              0.5928\n"}
+,{"stream_name":"stdout","time":18.416743183,"data":" PPN-FA-IAIABL_s0 0.8486    0.8486  0.5973  0.8515             0.0453      0.0383     0.1006    0.0639             0.0075             0.0652      0.0495     0.0516    0.0121             0.0228           16.0     19.0              0.5897\n"}
+,{"stream_name":"stdout","time":18.416745659,"data":" PPN-FA-IAIABL_s1 0.8525    0.8525  0.6572  0.8244             0.0733      0.0480     0.1101    0.0860             0.0225             0.1187      0.0262     0.0056    0.0201             0.0347           19.0     19.0              0.5883\n"}
+,{"stream_name":"stdout","time":18.416748141,"data":" PPN-FA-IAIABL_s2 0.8324    0.8324  0.5847  0.8300             0.0660      0.0422     0.1282    0.0891             0.0281             0.1104      0.0447     0.0593    0.0661             0.0360           19.0      1.0              0.5524\n"}
+,{"stream_name":"stdout","time":18.416750695,"data":"        PPN-FA_s0 0.8376    0.8376  0.6881  0.8185             0.1255      0.0819     0.1662    0.1117             0.0356             0.1027      0.0018    -0.0643   -0.0154             0.0241            7.0      3.0              0.5589\n"}
+,{"stream_name":"stdout","time":18.416753182,"data":"        PPN-FA_s1 0.8430    0.8430  0.5959  0.8352             0.0815      0.0504     0.1200    0.0808             0.0263             0.0777      0.1039     0.1086    0.1064             0.0108           12.0     19.0              0.6172\n"}
+,{"stream_name":"stdout","time":18.41675566,"data":"        PPN-FA_s2 0.8526    0.8526  0.5828  0.8324             0.1096      0.0620     0.1680    0.0808             0.0338             0.1375      0.0476     0.0290    0.1759             0.0466           11.0      4.0              0.5839\n"}
+,{"stream_name":"stdout","time":18.416758135,"data":"     PPN-indep_s3 0.8448    0.8448  0.5074  0.8424             0.1329      0.0994     0.1459    0.0973             0.0488             0.1498      0.1014     0.0079    0.0749             0.0470           13.0      0.0              0.5641\n"}
+,{"stream_name":"stdout","time":18.41676086,"data":"     PPN-indep_s4 0.7596    0.7596  0.4442  0.7753             0.0229      0.0252     0.1360    0.0639             0.0150             0.1548      0.0357    -0.1576   -0.0391             0.0524           10.0      0.0              0.5625\n"}
+,{"stream_name":"stdout","time":18.416763357,"data":"     PPN-indep_s5 0.8455    0.8455  0.4509  0.8417             0.1268      0.0674     0.1554    0.0934             0.0356             0.1654      0.0515     0.0376    0.0134             0.0188           17.0     15.0              0.5851\n"}
+,{"stream_name":"stdout","time":18.416767733,"data":"     PPN-indep_s6 0.8308    0.8308  0.4660  0.7979             0.1359      0.0824     0.1684    0.1113             0.0394             0.1658      0.0734    -0.0641    0.0157             0.0311            9.0      3.0              0.5786\n"}
+,{"stream_name":"stdout","time":18.416770334,"data":"       PPN-std_s0 0.8211    0.8211  0.5559  0.8275             0.1217      0.0877     0.1464    0.1095             0.0638             0.2612      0.1108    -0.0180    0.0271             0.0117           14.0     15.0              0.5712\n"}
+,{"stream_name":"stdout","time":18.416772825,"data":"       PPN-std_s1 0.8371    0.8371  0.4868  0.8224             0.1104      0.0858     0.1801    0.1065             0.0394             0.0696      0.0764     0.1942    0.0307             0.0185           14.0      0.0              0.5580\n"}
+,{"stream_name":"stdout","time":18.416775313,"data":"       PPN-std_s2 0.8474    0.8474  0.6294  0.8343             0.0936      0.0742     0.1209    0.0813             0.0263             0.2240      0.1374     0.1332   -0.0104             0.0520            8.0     12.0              0.5693\n"}
+,{"stream_name":"stdout","time":18.416777812,"data":"           PPN_s0 0.7781    0.7781  0.4354  0.8006             0.0764      0.0858     0.1369    0.0978             0.0394             0.0796      0.0608    -0.1339   -0.0462             0.0377           14.0     18.0              0.5639\n"}
+,{"stream_name":"stdout","time":18.416780291,"data":"           PPN_s1 0.8450    0.8450  0.6552  0.8449             0.0971      0.0606     0.1127    0.0804             0.0281             0.1397      0.0777     0.0899    0.0933             0.0526           15.0     18.0              0.5972\n"}
+,{"stream_name":"stdout","time":18.416782816,"data":"           PPN_s2 0.8506    0.8506  0.5243  0.8262             0.1544      0.0780     0.1688    0.1065             0.0394             0.1523      0.0423    -0.1035    0.0318             0.0267           14.0     17.0              0.6038\n"}
+,{"stream_name":"stderr","time":18.789603522,"data":"/tmp/ipykernel_23/1301896932.py:18: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.\n"}
+,{"stream_name":"stderr","time":18.789635251,"data":"  S = PR.groupby(['run', 'fam', 'kind']).apply(shift).reset_index(); S['mel_minus_ben'] = S.mel - S.ben\n"}
+,{"stream_name":"stderr","time":18.789640735,"data":"\n"}
+,{"stream_name":"stderr","time":18.789644183,"data":"/tmp/ipykernel_23/1301896932.py:18: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.\n"}
+,{"stream_name":"stderr","time":18.789648534,"data":"  S = PR.groupby(['run', 'fam', 'kind']).apply(shift).reset_index(); S['mel_minus_ben'] = S.mel - S.ben\n"}
+,{"stream_name":"stdout","time":18.800900389,"data":"\n"}
+,{"stream_name":"stdout","time":18.800923433,"data":"per run and insertion (d = mean activation change / between-image SD):\n"}
+,{"stream_name":"stdout","time":18.800928526,"data":"              run            fam         kind    mel    ben   dmax   dmin  n025    q90  absmean  mel_minus_ben\n"}
+,{"stream_name":"stdout","time":18.800934433,"data":" Correia-indep_s3 PPN-FA-Correia dark_corners  0.023 -0.033  0.034 -0.082   0.0  0.030    0.020          0.056\n"}
+,{"stream_name":"stdout","time":18.800942002,"data":" Correia-indep_s3 PPN-FA-Correia         hair -0.207 -0.150 -0.063 -0.308   0.0 -0.120    0.203         -0.057\n"}
+,{"stream_name":"stdout","time":18.800954957,"data":" Correia-indep_s3 PPN-FA-Correia          ink -0.094 -0.057  0.014 -0.154   0.0 -0.057    0.095         -0.037\n"}
+,{"stream_name":"stdout","time":18.800957660999998,"data":" Correia-indep_s3 PPN-FA-Correia null_inpaint  0.004  0.001  0.010 -0.003   0.0  0.008    0.004          0.003\n"}
+,{"stream_name":"stdout","time":18.800960093,"data":" Correia-indep_s3 PPN-FA-Correia        ruler  0.033  0.019  0.051 -0.011   0.0  0.046    0.029          0.014\n"}
+,{"stream_name":"stdout","time":18.800962541,"data":" Correia-indep_s4 PPN-FA-Correia dark_corners  0.075  0.048  0.123 -0.072   0.0  0.099    0.078          0.027\n"}
+,{"stream_name":"stdout","time":18.800965032,"data":" Correia-indep_s4 PPN-FA-Correia         hair -0.063 -0.008  0.085 -0.094   0.0 -0.018    0.049         -0.055\n"}
+,{"stream_name":"stdout","time":18.800967466,"data":" Correia-indep_s4 PPN-FA-Correia          ink -0.009  0.017  0.067 -0.030   0.0  0.027    0.017         -0.026\n"}
+,{"stream_name":"stdout","time":18.800969904,"data":" Correia-indep_s4 PPN-FA-Correia null_inpaint  0.012  0.009  0.025 -0.006   0.0  0.022    0.012          0.003\n"}
+,{"stream_name":"stdout","time":18.800972322,"data":" Correia-indep_s4 PPN-FA-Correia        ruler  0.058  0.038  0.081 -0.051   0.0  0.072    0.059          0.021\n"}
+,{"stream_name":"stdout","time":18.800974829,"data":" Correia-indep_s5 PPN-FA-Correia dark_corners  0.185  0.053  0.217 -0.123   0.0  0.149    0.088          0.132\n"}
+,{"stream_name":"stdout","time":18.800977262,"data":" Correia-indep_s5 PPN-FA-Correia         hair  0.086  0.041  0.117 -0.074   0.0  0.068    0.031          0.045\n"}
+,{"stream_name":"stdout","time":18.800979675,"data":" Correia-indep_s5 PPN-FA-Correia          ink -0.005 -0.006  0.020 -0.022   0.0  0.004    0.005          0.001\n"}
+,{"stream_name":"stdout","time":18.800982181,"data":" Correia-indep_s5 PPN-FA-Correia null_inpaint -0.003 -0.004  0.013 -0.016   0.0  0.011    0.010          0.001\n"}
+,{"stream_name":"stdout","time":18.800984902,"data":" Correia-indep_s5 PPN-FA-Correia        ruler  0.014 -0.001  0.017 -0.019   0.0  0.015    0.013          0.015\n"}
+,{"stream_name":"stdout","time":18.800987321,"data":" Correia-indep_s6 PPN-FA-Correia dark_corners  0.075  0.046  0.092 -0.093   0.0  0.087    0.078          0.029\n"}
+,{"stream_name":"stdout","time":18.800990775,"data":" Correia-indep_s6 PPN-FA-Correia         hair -0.113 -0.115 -0.071 -0.159   0.0 -0.075    0.113          0.002\n"}
+,{"stream_name":"stdout","time":18.800993317,"data":" Correia-indep_s6 PPN-FA-Correia          ink -0.112 -0.100 -0.046 -0.133   0.0 -0.086    0.107         -0.012\n"}
+,{"stream_name":"stdout","time":18.800995827,"data":" Correia-indep_s6 PPN-FA-Correia null_inpaint  0.025  0.024  0.037  0.002   0.0  0.034    0.024          0.001\n"}
+,{"stream_name":"stdout","time":18.800998229,"data":" Correia-indep_s6 PPN-FA-Correia        ruler  0.028  0.016  0.042 -0.049   0.0  0.040    0.030          0.012\n"}
+,{"stream_name":"stdout","time":18.801000725,"data":"    Ours-indep_s3           Ours dark_corners  0.108  0.007  0.153 -0.105   0.0  0.119    0.092          0.101\n"}
+,{"stream_name":"stdout","time":18.801003255,"data":"    Ours-indep_s3           Ours         hair -0.091 -0.031  0.528 -0.218   1.0 -0.059    0.131         -0.059\n"}
+,{"stream_name":"stdout","time":18.801005635,"data":"    Ours-indep_s3           Ours          ink -0.055 -0.064  0.265 -0.163   1.0 -0.039    0.087          0.009\n"}
+,{"stream_name":"stdout","time":18.801008044,"data":"    Ours-indep_s3           Ours null_inpaint  0.004 -0.006  0.013 -0.026   0.0  0.009    0.008          0.010\n"}
+,{"stream_name":"stdout","time":18.80101277,"data":"    Ours-indep_s3           Ours        ruler  0.041 -0.008  0.071 -0.067   0.0  0.054    0.035          0.049\n"}
+,{"stream_name":"stdout","time":18.80101536,"data":"    Ours-indep_s4           Ours dark_corners  0.039  0.145  0.514 -0.041   4.0  0.440    0.138         -0.106\n"}
+,{"stream_name":"stdout","time":18.801017802,"data":"    Ours-indep_s4           Ours         hair -0.141 -0.119 -0.037 -0.233   0.0 -0.110    0.135         -0.022\n"}
+,{"stream_name":"stdout","time":18.801020217,"data":"    Ours-indep_s4           Ours          ink -0.045 -0.025  0.022 -0.093   0.0 -0.011    0.039         -0.019\n"}
+,{"stream_name":"stdout","time":18.801022621,"data":"    Ours-indep_s4           Ours null_inpaint  0.009 -0.001  0.039 -0.042   0.0  0.025    0.013          0.010\n"}
+,{"stream_name":"stdout","time":18.801025025,"data":"    Ours-indep_s4           Ours        ruler  0.012  0.005  0.033 -0.042   0.0  0.018    0.014          0.006\n"}
+,{"stream_name":"stdout","time":18.801027433,"data":"    Ours-indep_s5           Ours dark_corners  0.016 -0.010  0.237 -0.278   0.0  0.051    0.061          0.026\n"}
+,{"stream_name":"stdout","time":18.801029825,"data":"    Ours-indep_s5           Ours         hair -0.063  0.112  0.764 -0.326   2.0  0.098    0.126         -0.175\n"}
+,{"stream_name":"stdout","time":18.801032239,"data":"    Ours-indep_s5           Ours          ink -0.055  0.006  0.171 -0.087   0.0  0.100    0.062         -0.062\n"}
+,{"stream_name":"stdout","time":18.801034899,"data":"    Ours-indep_s5           Ours null_inpaint  0.008 -0.009  0.018 -0.024   0.0  0.013    0.011          0.017\n"}
+,{"stream_name":"stdout","time":18.801037463,"data":"    Ours-indep_s5           Ours        ruler  0.031  0.056  0.112 -0.084   0.0  0.097    0.047         -0.025\n"}
+,{"stream_name":"stdout","time":18.801040231,"data":"    Ours-indep_s6           Ours dark_corners  0.008 -0.001  0.073 -0.128   0.0  0.042    0.027          0.009\n"}
+,{"stream_name":"stdout","time":18.801042788,"data":"    Ours-indep_s6           Ours         hair -0.088 -0.088  0.840 -0.263   1.0 -0.053    0.150         -0.000\n"}
+,{"stream_name":"stdout","time":18.801045222,"data":"    Ours-indep_s6           Ours          ink -0.015 -0.005  0.445 -0.124   1.0  0.016    0.051         -0.010\n"}
+,{"stream_name":"stdout","time":18.801047626,"data":"    Ours-indep_s6           Ours null_inpaint  0.007 -0.017  0.021 -0.047   0.0  0.011    0.013          0.024\n"}
+,{"stream_name":"stdout","time":18.801050046,"data":"    Ours-indep_s6           Ours        ruler  0.007  0.011  0.164 -0.036   0.0  0.037    0.021         -0.005\n"}
+,{"stream_name":"stdout","time":18.801052533,"data":"    Ours-noArt_s0     Ours-noArt dark_corners  0.013  0.013  0.129 -0.018   0.0  0.049    0.029          0.000\n"}
+,{"stream_name":"stdout","time":18.801054922,"data":"    Ours-noArt_s0     Ours-noArt         hair -0.045 -0.065 -0.010 -0.156   0.0 -0.026    0.069          0.020\n"}
+,{"stream_name":"stdout","time":18.801057337,"data":"    Ours-noArt_s0     Ours-noArt          ink -0.004 -0.038  0.025 -0.070   0.0  0.009    0.024          0.034\n"}
+,{"stream_name":"stdout","time":18.801059766,"data":"    Ours-noArt_s0     Ours-noArt null_inpaint  0.004 -0.002  0.044 -0.059   0.0  0.010    0.010          0.006\n"}
+,{"stream_name":"stdout","time":18.801062249,"data":"    Ours-noArt_s0     Ours-noArt        ruler -0.003 -0.006  0.027 -0.018   0.0  0.019    0.009          0.003\n"}
+,{"stream_name":"stdout","time":18.801064667,"data":"    Ours-noArt_s1     Ours-noArt dark_corners  0.009  0.007  0.043 -0.079   0.0  0.019    0.024          0.002\n"}
+,{"stream_name":"stdout","time":18.801067085,"data":"    Ours-noArt_s1     Ours-noArt         hair  0.008 -0.036  0.134 -0.075   0.0  0.041    0.041          0.044\n"}
+,{"stream_name":"stdout","time":18.801075776,"data":"    Ours-noArt_s1     Ours-noArt          ink  0.008 -0.022  0.113 -0.067   0.0  0.012    0.032          0.030\n"}
+,{"stream_name":"stdout","time":18.8010784,"data":"    Ours-noArt_s1     Ours-noArt null_inpaint  0.007 -0.007  0.056 -0.023   0.0  0.032    0.015          0.013\n"}
+,{"stream_name":"stdout","time":18.801080817,"data":"    Ours-noArt_s1     Ours-noArt        ruler  0.012  0.005  0.050 -0.020   0.0  0.016    0.014          0.006\n"}
+,{"stream_name":"stdout","time":18.801083239,"data":"    Ours-noArt_s2     Ours-noArt dark_corners  0.094  0.076  0.440 -0.309   1.0  0.202    0.135          0.018\n"}
+,{"stream_name":"stdout","time":18.801085634,"data":"    Ours-noArt_s2     Ours-noArt         hair  0.023 -0.007  0.288 -0.208   1.0  0.059    0.073          0.031\n"}
+,{"stream_name":"stdout","time":18.801088033,"data":"    Ours-noArt_s2     Ours-noArt          ink  0.062  0.004  0.085 -0.071   0.0  0.074    0.043          0.058\n"}
+,{"stream_name":"stdout","time":18.801090713,"data":"    Ours-noArt_s2     Ours-noArt null_inpaint  0.009  0.006  0.018 -0.006   0.0  0.017    0.008          0.003\n"}
+,{"stream_name":"stdout","time":18.80109317,"data":"    Ours-noArt_s2     Ours-noArt        ruler  0.039  0.020  0.048 -0.031   0.0  0.043    0.033          0.019\n"}
+,{"stream_name":"stdout","time":18.801095581,"data":"    Ours-noLes_s0     Ours-noLes dark_corners  0.061 -0.035  0.066 -0.207   0.0  0.066    0.053          0.096\n"}
+,{"stream_name":"stdout","time":18.801098185,"data":"    Ours-noLes_s0     Ours-noLes         hair -0.021 -0.059  0.159 -0.171   0.0  0.005    0.063          0.038\n"}
+,{"stream_name":"stdout","time":18.80110057,"data":"    Ours-noLes_s0     Ours-noLes          ink  0.032 -0.022  0.045 -0.073   0.0  0.040    0.034          0.054\n"}
+,{"stream_name":"stdout","time":18.801102983,"data":"    Ours-noLes_s0     Ours-noLes null_inpaint  0.005 -0.006  0.025 -0.032   0.0  0.006    0.008          0.012\n"}
+,{"stream_name":"stdout","time":18.801105406,"data":"    Ours-noLes_s0     Ours-noLes        ruler  0.030  0.005  0.070 -0.042   0.0  0.036    0.028          0.025\n"}
+,{"stream_name":"stdout","time":18.801107807,"data":"    Ours-noLes_s1     Ours-noLes dark_corners  0.034 -0.008  0.176 -0.291   0.0  0.160    0.082          0.042\n"}
+,{"stream_name":"stdout","time":18.801110209,"data":"    Ours-noLes_s1     Ours-noLes         hair -0.039 -0.046  0.145 -0.156   0.0 -0.012    0.058          0.007\n"}
+,{"stream_name":"stdout","time":18.801112635,"data":"    Ours-noLes_s1     Ours-noLes          ink -0.043 -0.040  0.136 -0.093   0.0 -0.026    0.053         -0.003\n"}
+,{"stream_name":"stdout","time":18.801115042,"data":"    Ours-noLes_s1     Ours-noLes null_inpaint  0.007  0.004  0.044 -0.016   0.0  0.016    0.011          0.003\n"}
+,{"stream_name":"stdout","time":18.801117451,"data":"    Ours-noLes_s1     Ours-noLes        ruler  0.040  0.024  0.279 -0.096   1.0  0.097    0.067          0.016\n"}
+,{"stream_name":"stdout","time":18.80111987,"data":"    Ours-noLes_s2     Ours-noLes dark_corners  0.099  0.076  0.224 -0.093   0.0  0.121    0.105          0.023\n"}
+,{"stream_name":"stdout","time":18.801122275,"data":"    Ours-noLes_s2     Ours-noLes         hair -0.127 -0.193 -0.077 -0.410   0.0 -0.101    0.143          0.066\n"}
+,{"stream_name":"stdout","time":18.801124697,"data":"    Ours-noLes_s2     Ours-noLes          ink -0.045 -0.056 -0.008 -0.124   0.0 -0.009    0.044          0.011\n"}
+,{"stream_name":"stdout","time":18.801127126,"data":"    Ours-noLes_s2     Ours-noLes null_inpaint  0.012 -0.001  0.022 -0.028   0.0  0.017    0.010          0.013\n"}
+,{"stream_name":"stdout","time":18.801129559,"data":"    Ours-noLes_s2     Ours-noLes        ruler  0.001 -0.014  0.021 -0.060   0.0  0.010    0.011          0.016\n"}
+,{"stream_name":"stdout","time":18.801134182,"data":"  Ours-stdPush_s0   Ours-stdPush dark_corners  0.043  0.018  0.139 -0.082   0.0  0.079    0.053          0.025\n"}
+,{"stream_name":"stdout","time":18.801136721,"data":"  Ours-stdPush_s0   Ours-stdPush         hair -0.228 -0.222  0.409 -0.287   1.0 -0.153    0.237         -0.007\n"}
+,{"stream_name":"stdout","time":18.801139377,"data":"  Ours-stdPush_s0   Ours-stdPush          ink -0.009 -0.008  0.083 -0.093   0.0  0.020    0.036         -0.001\n"}
+,{"stream_name":"stdout","time":18.801141837,"data":"  Ours-stdPush_s0   Ours-stdPush null_inpaint  0.025  0.005  0.037 -0.021   0.0  0.034    0.019          0.020\n"}
+,{"stream_name":"stdout","time":18.801144267,"data":"  Ours-stdPush_s0   Ours-stdPush        ruler  0.042 -0.030  0.073 -0.055   0.0  0.048    0.036          0.072\n"}
+,{"stream_name":"stdout","time":18.80114667,"data":"  Ours-stdPush_s1   Ours-stdPush dark_corners  0.023  0.027  0.379 -0.031   1.0  0.032    0.040         -0.003\n"}
+,{"stream_name":"stdout","time":18.801149076,"data":"  Ours-stdPush_s1   Ours-stdPush         hair -0.031 -0.042  0.012 -0.346   0.0 -0.002    0.054          0.011\n"}
+,{"stream_name":"stdout","time":18.801151505,"data":"  Ours-stdPush_s1   Ours-stdPush          ink -0.010 -0.017  0.034 -0.097   0.0  0.012    0.029          0.007\n"}
+,{"stream_name":"stdout","time":18.801153914,"data":"  Ours-stdPush_s1   Ours-stdPush null_inpaint  0.006 -0.002  0.046 -0.015   0.0  0.020    0.010          0.008\n"}
+,{"stream_name":"stdout","time":18.801156321,"data":"  Ours-stdPush_s1   Ours-stdPush        ruler  0.045  0.008  0.085 -0.079   0.0  0.074    0.046          0.038\n"}
+,{"stream_name":"stdout","time":18.801158729,"data":"  Ours-stdPush_s2   Ours-stdPush dark_corners  0.049  0.018  0.260 -0.043   1.0  0.080    0.051          0.030\n"}
+,{"stream_name":"stdout","time":18.801161121,"data":"  Ours-stdPush_s2   Ours-stdPush         hair -0.126 -0.137 -0.037 -0.288   0.0 -0.093    0.148          0.011\n"}
+,{"stream_name":"stdout","time":18.80116353,"data":"  Ours-stdPush_s2   Ours-stdPush          ink -0.070 -0.053  0.024 -0.113   0.0  0.003    0.068         -0.017\n"}
+,{"stream_name":"stdout","time":18.801165957,"data":"  Ours-stdPush_s2   Ours-stdPush null_inpaint  0.006 -0.001  0.052 -0.022   0.0  0.014    0.010          0.008\n"}
+,{"stream_name":"stdout","time":18.801168368,"data":"  Ours-stdPush_s2   Ours-stdPush        ruler  0.021  0.008  0.077 -0.162   0.0  0.041    0.033          0.013\n"}
+,{"stream_name":"stdout","time":18.801170786,"data":"          Ours_s0           Ours dark_corners  0.044  0.028  0.145 -0.081   0.0  0.133    0.061          0.016\n"}
+,{"stream_name":"stdout","time":18.801173196,"data":"          Ours_s0           Ours         hair -0.229 -0.213  0.335 -0.303   1.0 -0.106    0.214         -0.015\n"}
+,{"stream_name":"stdout","time":18.801175597,"data":"          Ours_s0           Ours          ink -0.008 -0.040  0.051 -0.086   0.0  0.022    0.030          0.032\n"}
+,{"stream_name":"stdout","time":18.801178163,"data":"          Ours_s0           Ours null_inpaint  0.025 -0.001  0.034 -0.016   0.0  0.027    0.019          0.026\n"}
+,{"stream_name":"stdout","time":18.801180598,"data":"          Ours_s0           Ours        ruler  0.042 -0.007  0.073 -0.055   0.0  0.050    0.038          0.050\n"}
+,{"stream_name":"stdout","time":18.801183231,"data":"          Ours_s1           Ours dark_corners  0.026  0.006  0.063 -0.143   0.0  0.052    0.039          0.019\n"}
+,{"stream_name":"stdout","time":18.801185654,"data":"          Ours_s1           Ours         hair -0.120 -0.007  0.228 -0.205   0.0  0.036    0.124         -0.113\n"}
+,{"stream_name":"stdout","time":18.801190011,"data":"          Ours_s1           Ours          ink -0.060  0.013  0.177 -0.137   0.0  0.051    0.071         -0.073\n"}
+,{"stream_name":"stdout","time":18.801192544,"data":"          Ours_s1           Ours null_inpaint  0.007  0.004  0.023 -0.027   0.0  0.012    0.008          0.003\n"}
+,{"stream_name":"stdout","time":18.801194973,"data":"          Ours_s1           Ours        ruler  0.003  0.010  0.044 -0.011   0.0  0.020    0.012         -0.007\n"}
+,{"stream_name":"stdout","time":18.801197398,"data":"          Ours_s2           Ours dark_corners  0.049 -0.021  0.107 -0.244   0.0  0.081    0.061          0.070\n"}
+,{"stream_name":"stdout","time":18.801199793,"data":"          Ours_s2           Ours         hair -0.127 -0.018  0.546 -0.213   2.0  0.013    0.171         -0.108\n"}
+,{"stream_name":"stdout","time":18.801202272,"data":"          Ours_s2           Ours          ink -0.070 -0.033  0.090 -0.105   0.0  0.023    0.065         -0.037\n"}
+,{"stream_name":"stdout","time":18.801204715,"data":"          Ours_s2           Ours null_inpaint  0.006 -0.004  0.013 -0.037   0.0  0.011    0.010          0.010\n"}
+,{"stream_name":"stdout","time":18.801207151,"data":"          Ours_s2           Ours        ruler  0.020  0.000  0.092 -0.161   0.0  0.047    0.040          0.020\n"}
+,{"stream_name":"stdout","time":18.801209563,"data":"PPN-FA-Correia_s0 PPN-FA-Correia dark_corners  0.099  0.061  0.138 -0.081   0.0  0.125    0.071          0.039\n"}
+,{"stream_name":"stdout","time":18.801211989,"data":"PPN-FA-Correia_s0 PPN-FA-Correia         hair -0.132 -0.108  0.025 -0.166   0.0 -0.087    0.138         -0.024\n"}
+,{"stream_name":"stdout","time":18.801214385,"data":"PPN-FA-Correia_s0 PPN-FA-Correia          ink -0.061 -0.054  0.031 -0.117   0.0 -0.037    0.086         -0.007\n"}
+,{"stream_name":"stdout","time":18.801216815,"data":"PPN-FA-Correia_s0 PPN-FA-Correia null_inpaint  0.009  0.007  0.019 -0.004   0.0  0.017    0.010          0.002\n"}
+,{"stream_name":"stdout","time":18.801219263,"data":"PPN-FA-Correia_s0 PPN-FA-Correia        ruler  0.001 -0.003  0.035 -0.050   0.0  0.020    0.024          0.004\n"}
+,{"stream_name":"stdout","time":18.801221671,"data":"PPN-FA-Correia_s1 PPN-FA-Correia dark_corners  0.035 -0.010  0.196 -0.188   0.0  0.166    0.097          0.044\n"}
+,{"stream_name":"stdout","time":18.801224081,"data":"PPN-FA-Correia_s1 PPN-FA-Correia         hair  0.086  0.041  0.114 -0.091   0.0  0.107    0.045          0.045\n"}
+,{"stream_name":"stdout","time":18.801226499,"data":"PPN-FA-Correia_s1 PPN-FA-Correia          ink  0.020 -0.017  0.075 -0.085   0.0  0.031    0.024          0.037\n"}
+,{"stream_name":"stdout","time":18.801228906,"data":"PPN-FA-Correia_s1 PPN-FA-Correia null_inpaint  0.008  0.004  0.023 -0.003   0.0  0.019    0.009          0.005\n"}
+,{"stream_name":"stdout","time":18.801231566,"data":"PPN-FA-Correia_s1 PPN-FA-Correia        ruler  0.024  0.009  0.082 -0.042   0.0  0.062    0.037          0.014\n"}
+,{"stream_name":"stdout","time":18.801234036,"data":"PPN-FA-Correia_s2 PPN-FA-Correia dark_corners  0.073  0.058  0.134 -0.011   0.0  0.126    0.083          0.016\n"}
+,{"stream_name":"stdout","time":18.801236457,"data":"PPN-FA-Correia_s2 PPN-FA-Correia         hair -0.220 -0.208 -0.133 -0.310   0.0 -0.136    0.238         -0.011\n"}
+,{"stream_name":"stdout","time":18.801238857,"data":"PPN-FA-Correia_s2 PPN-FA-Correia          ink -0.085 -0.049  0.030 -0.113   0.0 -0.065    0.088         -0.036\n"}
+,{"stream_name":"stdout","time":18.801241275,"data":"PPN-FA-Correia_s2 PPN-FA-Correia null_inpaint  0.007  0.000  0.011 -0.010   0.0  0.010    0.007          0.006\n"}
+,{"stream_name":"stdout","time":18.801243721,"data":"PPN-FA-Correia_s2 PPN-FA-Correia        ruler  0.000 -0.004  0.022 -0.011   0.0  0.011    0.008          0.004\n"}
+,{"stream_name":"stdout","time":18.801247987,"data":" PPN-FA-IAIABL_s0  PPN-FA-IAIABL dark_corners  0.031  0.006  0.065 -0.076   0.0  0.047    0.034          0.025\n"}
+,{"stream_name":"stdout","time":18.801250542,"data":" PPN-FA-IAIABL_s0  PPN-FA-IAIABL         hair  0.008 -0.026  0.052 -0.139   0.0  0.038    0.026          0.034\n"}
+,{"stream_name":"stdout","time":18.801252957,"data":" PPN-FA-IAIABL_s0  PPN-FA-IAIABL          ink -0.034 -0.028  0.012 -0.054   0.0 -0.004    0.028         -0.006\n"}
+,{"stream_name":"stdout","time":18.80125538,"data":" PPN-FA-IAIABL_s0  PPN-FA-IAIABL null_inpaint  0.012  0.008  0.023 -0.009   0.0  0.016    0.011          0.004\n"}
+,{"stream_name":"stdout","time":18.80125777,"data":" PPN-FA-IAIABL_s0  PPN-FA-IAIABL        ruler  0.018  0.011  0.050 -0.018   0.0  0.031    0.021          0.006\n"}
+,{"stream_name":"stdout","time":18.801260241,"data":" PPN-FA-IAIABL_s1  PPN-FA-IAIABL dark_corners  0.062  0.059  0.119 -0.060   0.0  0.092    0.071          0.003\n"}
+,{"stream_name":"stdout","time":18.801262757,"data":" PPN-FA-IAIABL_s1  PPN-FA-IAIABL         hair -0.046 -0.009  0.006 -0.056   0.0 -0.003    0.031         -0.036\n"}
+,{"stream_name":"stdout","time":18.801265171,"data":" PPN-FA-IAIABL_s1  PPN-FA-IAIABL          ink -0.041 -0.024  0.020 -0.056   0.0 -0.015    0.027         -0.017\n"}
+,{"stream_name":"stdout","time":18.801267591,"data":" PPN-FA-IAIABL_s1  PPN-FA-IAIABL null_inpaint  0.017  0.005  0.035 -0.017   0.0  0.030    0.017          0.012\n"}
+,{"stream_name":"stdout","time":18.801270016,"data":" PPN-FA-IAIABL_s1  PPN-FA-IAIABL        ruler  0.011  0.017  0.026 -0.021   0.0  0.022    0.014         -0.006\n"}
+,{"stream_name":"stdout","time":18.801272412,"data":" PPN-FA-IAIABL_s2  PPN-FA-IAIABL dark_corners  0.066  0.058  0.110 -0.052   0.0  0.104    0.072          0.009\n"}
+,{"stream_name":"stdout","time":18.801274822,"data":" PPN-FA-IAIABL_s2  PPN-FA-IAIABL         hair -0.054 -0.014  0.059 -0.136   0.0  0.000    0.040         -0.040\n"}
+,{"stream_name":"stdout","time":18.801277548,"data":" PPN-FA-IAIABL_s2  PPN-FA-IAIABL          ink  0.000  0.020  0.066 -0.049   0.0  0.052    0.026         -0.020\n"}
+,{"stream_name":"stdout","time":18.801280043,"data":" PPN-FA-IAIABL_s2  PPN-FA-IAIABL null_inpaint -0.005  0.003  0.036 -0.025   0.0  0.013    0.011         -0.008\n"}
+,{"stream_name":"stdout","time":18.801282453,"data":" PPN-FA-IAIABL_s2  PPN-FA-IAIABL        ruler  0.021  0.018  0.045 -0.017   0.0  0.031    0.023          0.003\n"}
+,{"stream_name":"stdout","time":18.801284871,"data":"        PPN-FA_s0         PPN-FA dark_corners -0.003 -0.053  0.103 -0.223   0.0  0.057    0.036          0.050\n"}
+,{"stream_name":"stdout","time":18.801287287,"data":"        PPN-FA_s0         PPN-FA         hair -0.147 -0.164 -0.064 -0.220   0.0 -0.066    0.141          0.017\n"}
+,{"stream_name":"stdout","time":18.801289679,"data":"        PPN-FA_s0         PPN-FA          ink -0.089 -0.096 -0.015 -0.145   0.0 -0.027    0.079          0.007\n"}
+,{"stream_name":"stdout","time":18.801292096,"data":"        PPN-FA_s0         PPN-FA null_inpaint  0.001  0.001  0.024 -0.008   0.0  0.013    0.006         -0.000\n"}
+,{"stream_name":"stdout","time":18.801294503,"data":"        PPN-FA_s0         PPN-FA        ruler -0.016 -0.032  0.002 -0.059   0.0 -0.016    0.021          0.016\n"}
+,{"stream_name":"stdout","time":18.801296911,"data":"        PPN-FA_s1         PPN-FA dark_corners  0.021 -0.002  0.078 -0.324   0.0  0.073    0.055          0.023\n"}
+,{"stream_name":"stdout","time":18.801299331,"data":"        PPN-FA_s1         PPN-FA         hair -0.084 -0.012  0.109 -0.355   0.0  0.108    0.102         -0.072\n"}
+,{"stream_name":"stdout","time":18.801304184,"data":"        PPN-FA_s1         PPN-FA          ink -0.046  0.029  0.106 -0.076   0.0  0.090    0.060         -0.075\n"}
+,{"stream_name":"stdout","time":18.801306707,"data":"        PPN-FA_s1         PPN-FA null_inpaint  0.006 -0.001  0.011 -0.006   0.0  0.007    0.005          0.008\n"}
+,{"stream_name":"stdout","time":18.801309123,"data":"        PPN-FA_s1         PPN-FA        ruler  0.059  0.009  0.104 -0.093   0.0  0.095    0.054          0.050\n"}
+,{"stream_name":"stdout","time":18.801311542,"data":"        PPN-FA_s2         PPN-FA dark_corners  0.034  0.017  0.137 -0.314   0.0  0.126    0.074          0.018\n"}
+,{"stream_name":"stdout","time":18.801313932,"data":"        PPN-FA_s2         PPN-FA         hair -0.196 -0.241  0.029 -0.292   0.0 -0.164    0.205          0.045\n"}
+,{"stream_name":"stdout","time":18.801316337,"data":"        PPN-FA_s2         PPN-FA          ink -0.035 -0.017  0.176 -0.172   0.0  0.075    0.052         -0.019\n"}
+,{"stream_name":"stdout","time":18.801318757,"data":"        PPN-FA_s2         PPN-FA null_inpaint  0.009  0.001  0.047 -0.007   0.0  0.012    0.010          0.008\n"}
+,{"stream_name":"stdout","time":18.801327734,"data":"        PPN-FA_s2         PPN-FA        ruler  0.019  0.024  0.048 -0.043   0.0  0.047    0.026         -0.004\n"}
+,{"stream_name":"stdout","time":18.801330417,"data":"     PPN-indep_s3            PPN dark_corners  0.075  0.024  0.150 -0.397   0.0  0.101    0.088          0.051\n"}
+,{"stream_name":"stdout","time":18.801332906,"data":"     PPN-indep_s3            PPN         hair -0.208 -0.084  0.008 -0.243   0.0 -0.062    0.169         -0.124\n"}
+,{"stream_name":"stdout","time":18.801335309,"data":"     PPN-indep_s3            PPN          ink -0.022 -0.014  0.075 -0.142   0.0  0.044    0.043         -0.008\n"}
+,{"stream_name":"stdout","time":18.801337735,"data":"     PPN-indep_s3            PPN null_inpaint  0.008 -0.000  0.047 -0.041   0.0  0.008    0.012          0.008\n"}
+,{"stream_name":"stdout","time":18.801340131,"data":"     PPN-indep_s3            PPN        ruler  0.062  0.057  0.101 -0.023   0.0  0.080    0.060          0.006\n"}
+,{"stream_name":"stdout","time":18.801342609,"data":"     PPN-indep_s4            PPN dark_corners  0.014  0.041  0.155 -0.008   0.0  0.053    0.026         -0.027\n"}
+,{"stream_name":"stdout","time":18.801344996,"data":"     PPN-indep_s4            PPN         hair -0.276 -0.261 -0.158 -0.342   0.0 -0.216    0.262         -0.015\n"}
+,{"stream_name":"stdout","time":18.801347392,"data":"     PPN-indep_s4            PPN          ink -0.106 -0.091 -0.039 -0.110   0.0 -0.073    0.096         -0.015\n"}
+,{"stream_name":"stdout","time":18.801349788,"data":"     PPN-indep_s4            PPN null_inpaint  0.015  0.011  0.052 -0.005   0.0  0.017    0.015          0.004\n"}
+,{"stream_name":"stdout","time":18.801352163,"data":"     PPN-indep_s4            PPN        ruler  0.003  0.005  0.036 -0.029   0.0  0.033    0.010         -0.002\n"}
+,{"stream_name":"stdout","time":18.801354547,"data":"     PPN-indep_s5            PPN dark_corners  0.023  0.015  0.165 -0.269   0.0  0.120    0.068          0.008\n"}
+,{"stream_name":"stdout","time":18.801356945,"data":"     PPN-indep_s5            PPN         hair -0.071 -0.041  0.038 -0.204   0.0  0.031    0.072         -0.030\n"}
+,{"stream_name":"stdout","time":18.801359359,"data":"     PPN-indep_s5            PPN          ink -0.050 -0.022  0.013 -0.089   0.0 -0.005    0.041         -0.028\n"}
+,{"stream_name":"stdout","time":18.801364365,"data":"     PPN-indep_s5            PPN null_inpaint  0.012  0.006  0.019 -0.014   0.0  0.013    0.011          0.007\n"}
+,{"stream_name":"stdout","time":18.801366901,"data":"     PPN-indep_s5            PPN        ruler  0.020  0.011  0.051 -0.076   0.0  0.042    0.027          0.008\n"}
+,{"stream_name":"stdout","time":18.801371537,"data":"     PPN-indep_s6            PPN dark_corners  0.031 -0.008  0.166 -0.245   0.0  0.132    0.073          0.039\n"}
+,{"stream_name":"stdout","time":18.801374167,"data":"     PPN-indep_s6            PPN         hair -0.208 -0.181 -0.064 -0.305   0.0 -0.126    0.206         -0.027\n"}
+,{"stream_name":"stdout","time":18.801376664,"data":"     PPN-indep_s6            PPN          ink -0.063 -0.064  0.016 -0.105   0.0 -0.048    0.065          0.001\n"}
+,{"stream_name":"stdout","time":18.801379079,"data":"     PPN-indep_s6            PPN null_inpaint  0.007  0.000  0.031 -0.037   0.0  0.009    0.012          0.007\n"}
+,{"stream_name":"stdout","time":18.80138175,"data":"     PPN-indep_s6            PPN        ruler  0.014  0.009  0.073 -0.067   0.0  0.052    0.027          0.005\n"}
+,{"stream_name":"stdout","time":18.801384183,"data":"       PPN-std_s0        PPN-std dark_corners  0.154  0.144  0.261  0.020   1.0  0.180    0.149          0.010\n"}
+,{"stream_name":"stdout","time":18.801386679,"data":"       PPN-std_s0        PPN-std         hair -0.156 -0.057 -0.018 -0.156   0.0 -0.029    0.108         -0.098\n"}
+,{"stream_name":"stdout","time":18.801389093,"data":"       PPN-std_s0        PPN-std          ink -0.105 -0.058  0.027 -0.115   0.0 -0.036    0.088         -0.046\n"}
+,{"stream_name":"stdout","time":18.801391493,"data":"       PPN-std_s0        PPN-std null_inpaint  0.009 -0.003  0.012 -0.032   0.0  0.009    0.009          0.012\n"}
+,{"stream_name":"stdout","time":18.801393895,"data":"       PPN-std_s0        PPN-std        ruler  0.030  0.033  0.111 -0.039   0.0  0.064    0.039         -0.004\n"}
+,{"stream_name":"stdout","time":18.801396331,"data":"       PPN-std_s1        PPN-std dark_corners  0.021 -0.015  0.070 -0.120   0.0  0.044    0.035          0.036\n"}
+,{"stream_name":"stdout","time":18.801398743,"data":"       PPN-std_s1        PPN-std         hair -0.211 -0.092  0.194 -0.294   0.0 -0.163    0.214         -0.119\n"}
+,{"stream_name":"stdout","time":18.801401138,"data":"       PPN-std_s1        PPN-std          ink -0.137 -0.055  0.031 -0.182   0.0 -0.064    0.124         -0.082\n"}
+,{"stream_name":"stdout","time":18.801403569,"data":"       PPN-std_s1        PPN-std null_inpaint  0.009  0.004  0.019 -0.025   0.0  0.009    0.008          0.005\n"}
+,{"stream_name":"stdout","time":18.801405969,"data":"       PPN-std_s1        PPN-std        ruler  0.024  0.046  0.076 -0.002   0.0  0.065    0.037         -0.022\n"}
+,{"stream_name":"stdout","time":18.801408384,"data":"       PPN-std_s2        PPN-std dark_corners  0.140  0.090  0.224 -0.284   0.0  0.168    0.143          0.050\n"}
+,{"stream_name":"stdout","time":18.801410801,"data":"       PPN-std_s2        PPN-std         hair -0.016  0.050  0.133 -0.075   0.0  0.025    0.035         -0.066\n"}
+,{"stream_name":"stdout","time":18.801413211,"data":"       PPN-std_s2        PPN-std          ink -0.128 -0.104 -0.010 -0.143   0.0 -0.065    0.114         -0.024\n"}
+,{"stream_name":"stdout","time":18.801415626,"data":"       PPN-std_s2        PPN-std null_inpaint  0.017  0.030  0.052 -0.008   0.0  0.033    0.020         -0.013\n"}
+,{"stream_name":"stdout","time":18.801418054,"data":"       PPN-std_s2        PPN-std        ruler  0.123  0.065  0.137 -0.156   0.0  0.132    0.109          0.057\n"}
+,{"stream_name":"stdout","time":18.801420448000002,"data":"           PPN_s0            PPN dark_corners  0.049  0.047  0.080 -0.004   0.0  0.050    0.043          0.001\n"}
+,{"stream_name":"stdout","time":18.801422943,"data":"           PPN_s0            PPN         hair -0.157 -0.181 -0.134 -0.305   0.0 -0.156    0.171          0.024\n"}
+,{"stream_name":"stdout","time":18.801425565,"data":"           PPN_s0            PPN          ink -0.051 -0.069 -0.046 -0.116   0.0 -0.050    0.063          0.017\n"}
+,{"stream_name":"stdout","time":18.801429867,"data":"           PPN_s0            PPN null_inpaint  0.002  0.006  0.038 -0.009   0.0  0.026    0.009         -0.004\n"}
+,{"stream_name":"stdout","time":18.801432403,"data":"           PPN_s0            PPN        ruler  0.043  0.039  0.061  0.003   0.0  0.047    0.039          0.005\n"}
+,{"stream_name":"stdout","time":18.80143481,"data":"           PPN_s1            PPN dark_corners  0.088 -0.002  0.140 -0.270   0.0  0.130    0.088          0.090\n"}
+,{"stream_name":"stdout","time":18.801437235,"data":"           PPN_s1            PPN         hair -0.088 -0.107  0.090 -0.491   0.0 -0.008    0.112          0.020\n"}
+,{"stream_name":"stdout","time":18.801439657,"data":"           PPN_s1            PPN          ink -0.029 -0.039  0.093 -0.295   0.0  0.059    0.062          0.010\n"}
+,{"stream_name":"stdout","time":18.801442077,"data":"           PPN_s1            PPN null_inpaint  0.014  0.017  0.053  0.000   0.0  0.035    0.017         -0.003\n"}
+,{"stream_name":"stdout","time":18.801444481,"data":"           PPN_s1            PPN        ruler  0.062  0.011  0.078 -0.136   0.0  0.063    0.052          0.051\n"}
+,{"stream_name":"stdout","time":18.801447003,"data":"           PPN_s2            PPN dark_corners  0.117 -0.014  0.152 -0.465   0.0  0.141    0.131          0.131\n"}
+,{"stream_name":"stdout","time":18.801449435,"data":"           PPN_s2            PPN         hair -0.186 -0.247 -0.104 -0.579   0.0 -0.161    0.206          0.061\n"}
+,{"stream_name":"stdout","time":18.801451866,"data":"           PPN_s2            PPN          ink -0.082 -0.055  0.032 -0.139   0.0 -0.034    0.082         -0.027\n"}
+,{"stream_name":"stdout","time":18.801454258,"data":"           PPN_s2            PPN null_inpaint  0.008 -0.011  0.027 -0.039   0.0  0.016    0.012          0.019\n"}
+,{"stream_name":"stdout","time":18.801456673,"data":"           PPN_s2            PPN        ruler  0.041 -0.000  0.042 -0.088   0.0  0.041    0.033          0.041\n"}
+,{"stream_name":"stdout","time":18.801459087,"data":"\n"}
+,{"stream_name":"stdout","time":18.801461294,"data":"mean over runs by family:\n"}
+,{"stream_name":"stdout","time":18.80146363,"data":"                               mel    ben  mel_minus_ben   dmax   dmin   n025    q90  absmean\n"}
+,{"stream_name":"stdout","time":18.801466043,"data":"kind         fam                                                                             \n"}
+,{"stream_name":"stdout","time":18.801468409,"data":"dark_corners Ours            0.041  0.022          0.019  0.184 -0.146  0.571  0.131    0.069\n"}
+,{"stream_name":"stdout","time":18.801470779,"data":"             Ours-noArt      0.039  0.032          0.007  0.204 -0.135  0.333  0.090    0.063\n"}
+,{"stream_name":"stdout","time":18.801473145,"data":"             Ours-noLes      0.064  0.011          0.054  0.155 -0.197  0.000  0.116    0.080\n"}
+,{"stream_name":"stdout","time":18.801475503,"data":"             Ours-stdPush    0.039  0.021          0.017  0.259 -0.052  0.667  0.064    0.048\n"}
+,{"stream_name":"stdout","time":18.80147788,"data":"             PPN             0.057  0.015          0.042  0.144 -0.237  0.000  0.104    0.074\n"}
+,{"stream_name":"stdout","time":18.801480501,"data":"             PPN-FA          0.017 -0.013          0.030  0.106 -0.287  0.000  0.085    0.055\n"}
+,{"stream_name":"stdout","time":18.801482917,"data":"             PPN-FA-Correia  0.081  0.032          0.049  0.133 -0.093  0.000  0.112    0.074\n"}
+,{"stream_name":"stdout","time":18.801485279,"data":"             PPN-FA-IAIABL   0.053  0.041          0.012  0.098 -0.063  0.000  0.081    0.059\n"}
+,{"stream_name":"stdout","time":18.801489537,"data":"             PPN-std         0.105  0.073          0.032  0.185 -0.128  0.333  0.131    0.109\n"}
+,{"stream_name":"stdout","time":18.801492029,"data":"hair         Ours           -0.123 -0.052         -0.070  0.458 -0.252  1.000 -0.026    0.150\n"}
+,{"stream_name":"stdout","time":18.801494415,"data":"             Ours-noArt     -0.004 -0.036          0.032  0.137 -0.147  0.333  0.025    0.061\n"}
+,{"stream_name":"stdout","time":18.801496816,"data":"             Ours-noLes     -0.062 -0.099          0.037  0.076 -0.246  0.000 -0.036    0.088\n"}
+,{"stream_name":"stdout","time":18.801499169,"data":"             Ours-stdPush   -0.128 -0.134          0.005  0.128 -0.307  0.333 -0.083    0.146\n"}
+,{"stream_name":"stdout","time":18.801501709,"data":"             PPN            -0.170 -0.157         -0.013 -0.046 -0.353  0.000 -0.100    0.171\n"}
+,{"stream_name":"stdout","time":18.801504069,"data":"             PPN-FA         -0.143 -0.139         -0.003  0.024 -0.289  0.000 -0.040    0.149\n"}
+,{"stream_name":"stdout","time":18.801506411,"data":"             PPN-FA-Correia -0.080 -0.072         -0.008  0.011 -0.172  0.000 -0.037    0.117\n"}
+,{"stream_name":"stdout","time":18.801508791,"data":"             PPN-FA-IAIABL  -0.030 -0.016         -0.014  0.039 -0.110  0.000  0.012    0.032\n"}
+,{"stream_name":"stdout","time":18.801511143,"data":"             PPN-std        -0.128 -0.033         -0.094  0.103 -0.175  0.000 -0.056    0.119\n"}
+,{"stream_name":"stdout","time":18.801513508,"data":"ink          Ours           -0.044 -0.021         -0.023  0.175 -0.114  0.286  0.023    0.058\n"}
+,{"stream_name":"stdout","time":18.801515877,"data":"             Ours-noArt      0.022 -0.019          0.041  0.074 -0.069  0.000  0.031    0.033\n"}
+,{"stream_name":"stdout","time":18.801518233,"data":"             Ours-noLes     -0.019 -0.039          0.021  0.058 -0.097  0.000  0.002    0.043\n"}
+,{"stream_name":"stdout","time":18.801520793,"data":"             Ours-stdPush   -0.030 -0.026         -0.003  0.047 -0.101  0.000  0.012    0.044\n"}
+,{"stream_name":"stdout","time":18.801523164,"data":"             PPN            -0.058 -0.050         -0.007  0.021 -0.142  0.000 -0.015    0.064\n"}
+,{"stream_name":"stdout","time":18.801525928,"data":"             PPN-FA         -0.057 -0.028         -0.029  0.089 -0.131  0.000  0.046    0.064\n"}
+,{"stream_name":"stdout","time":18.801528279,"data":"             PPN-FA-Correia -0.049 -0.038         -0.011  0.027 -0.094  0.000 -0.026    0.060\n"}
+,{"stream_name":"stdout","time":18.801530718,"data":"             PPN-FA-IAIABL  -0.025 -0.011         -0.014  0.033 -0.053  0.000  0.011    0.027\n"}
+,{"stream_name":"stdout","time":18.801533441,"data":"             PPN-std        -0.123 -0.072         -0.051  0.016 -0.147  0.000 -0.055    0.109\n"}
+,{"stream_name":"stdout","time":18.801535935,"data":"null_inpaint Ours            0.009 -0.005          0.014  0.023 -0.031  0.000  0.015    0.012\n"}
+,{"stream_name":"stdout","time":18.801538321,"data":"             Ours-noArt      0.007 -0.001          0.007  0.040 -0.029  0.000  0.020    0.011\n"}
+,{"stream_name":"stdout","time":18.801540771,"data":"             Ours-noLes      0.008 -0.001          0.009  0.030 -0.025  0.000  0.013    0.010\n"}
+,{"stream_name":"stdout","time":18.801543127,"data":"             Ours-stdPush    0.012  0.000          0.012  0.045 -0.019  0.000  0.022    0.013\n"}
+,{"stream_name":"stdout","time":18.801545501,"data":"             PPN             0.009  0.004          0.005  0.038 -0.021  0.000  0.018    0.012\n"}
+,{"stream_name":"stdout","time":18.801547873,"data":"             PPN-FA          0.005  0.000          0.005  0.027 -0.007  0.000  0.011    0.007\n"}
+,{"stream_name":"stdout","time":18.801552193,"data":"             PPN-FA-Correia  0.009  0.006          0.003  0.020 -0.006  0.000  0.017    0.011\n"}
+,{"stream_name":"stdout","time":18.801554696,"data":"             PPN-FA-IAIABL   0.008  0.005          0.003  0.031 -0.017  0.000  0.020    0.013\n"}
+,{"stream_name":"stdout","time":18.801557069,"data":"             PPN-std         0.012  0.010          0.001  0.027 -0.022  0.000  0.017    0.012\n"}
+,{"stream_name":"stdout","time":18.801559455,"data":"ruler        Ours            0.022  0.010          0.012  0.084 -0.065  0.000  0.046    0.030\n"}
+,{"stream_name":"stdout","time":18.801561803,"data":"             Ours-noArt      0.016  0.006          0.009  0.041 -0.023  0.000  0.026    0.018\n"}
+,{"stream_name":"stdout","time":18.801564233,"data":"             Ours-noLes      0.024  0.005          0.019  0.123 -0.066  0.333  0.048    0.035\n"}
+,{"stream_name":"stdout","time":18.801566607,"data":"             Ours-stdPush    0.036 -0.005          0.041  0.078 -0.099  0.000  0.054    0.038\n"}
+,{"stream_name":"stdout","time":18.801568953,"data":"             PPN             0.035  0.019          0.016  0.063 -0.059  0.000  0.051    0.036\n"}
+,{"stream_name":"stdout","time":18.801571322,"data":"             PPN-FA          0.021  0.000          0.021  0.051 -0.065  0.000  0.042    0.034\n"}
+,{"stream_name":"stdout","time":18.8015737,"data":"             PPN-FA-Correia  0.023  0.010          0.012  0.047 -0.033  0.000  0.038    0.029\n"}
+,{"stream_name":"stdout","time":18.801576049,"data":"             PPN-FA-IAIABL   0.017  0.015          0.001  0.040 -0.019  0.000  0.028    0.019\n"}
+,{"stream_name":"stdout","time":18.801578422,"data":"             PPN-std         0.059  0.048          0.011  0.108 -0.066  0.000  0.087    0.062\n"}
+,{"stream_name":"stdout","time":18.822177286,"data":"\n"}
+,{"stream_name":"stdout","time":18.822198349,"data":"Ours (7 runs) versus others across runs, exact Mann-Whitney:\n"}
+,{"stream_name":"stdout","time":18.822204241,"data":"        kind        metric         versus    ours   other       n      p\n"}
+,{"stream_name":"stdout","time":18.822208203,"data":"dark_corners mel_minus_ben            PPN  0.0193  0.0419  (7, 7) 0.9015\n"}
+,{"stream_name":"stdout","time":18.822212632,"data":"dark_corners mel_minus_ben PPN-FA-Correia  0.0193  0.0489  (7, 7) 0.2593\n"}
+,{"stream_name":"stdout","time":18.822216831,"data":"dark_corners mel_minus_ben        PPN-std  0.0193  0.0318  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":18.822221122,"data":"dark_corners mel_minus_ben         PPN-FA  0.0193  0.0303  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":18.822225051,"data":"dark_corners mel_minus_ben     Ours-noLes  0.0193  0.0536  (7, 3) 0.3833\n"}
+,{"stream_name":"stdout","time":18.822229252,"data":"dark_corners mel_minus_ben   Ours-stdPush  0.0193  0.0173  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822233453,"data":"dark_corners mel_minus_ben         POOL13  0.0193  0.0369 (7, 13) 0.7573\n"}
+,{"stream_name":"stdout","time":18.822237051,"data":"dark_corners          dmax            PPN  0.1845  0.1439  (7, 7) 0.7104\n"}
+,{"stream_name":"stdout","time":18.822240562,"data":"dark_corners          dmax PPN-FA-Correia  0.1845  0.1333  (7, 7) 0.7104\n"}
+,{"stream_name":"stdout","time":18.822244185,"data":"dark_corners          dmax        PPN-std  0.1845  0.1849  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":18.822247857,"data":"dark_corners          dmax         PPN-FA  0.1845  0.1060  (7, 3) 0.5167\n"}
+,{"stream_name":"stdout","time":18.822251389,"data":"dark_corners          dmax     Ours-noLes  0.1845  0.1552  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822256609,"data":"dark_corners          dmax   Ours-stdPush  0.1845  0.2595  (7, 3) 0.3833\n"}
+,{"stream_name":"stdout","time":18.822274135,"data":"dark_corners          dmax         POOL13  0.1845  0.1446 (7, 13) 0.9385\n"}
+,{"stream_name":"stdout","time":18.822277051,"data":"dark_corners       absmean            PPN  0.0685  0.0740  (7, 7) 0.7104\n"}
+,{"stream_name":"stdout","time":18.822282418,"data":"dark_corners       absmean PPN-FA-Correia  0.0685  0.0736  (7, 7) 0.4557\n"}
+,{"stream_name":"stdout","time":18.822284989,"data":"dark_corners       absmean        PPN-std  0.0685  0.1089  (7, 3) 0.3833\n"}
+,{"stream_name":"stdout","time":18.822314682,"data":"dark_corners       absmean         PPN-FA  0.0685  0.0552  (7, 3) 0.6667\n"}
+,{"stream_name":"stdout","time":18.822319129,"data":"dark_corners       absmean     Ours-noLes  0.0685  0.0798  (7, 3) 0.6667\n"}
+,{"stream_name":"stdout","time":18.822323345,"data":"dark_corners       absmean   Ours-stdPush  0.0685  0.0480  (7, 3) 0.3833\n"}
+,{"stream_name":"stdout","time":18.822327455,"data":"dark_corners       absmean         POOL13  0.0685  0.0777 (7, 13) 0.6992\n"}
+,{"stream_name":"stdout","time":18.822331425,"data":"        hair mel_minus_ben            PPN -0.0705 -0.0130  (7, 7) 0.1649\n"}
+,{"stream_name":"stdout","time":18.822335375,"data":"        hair mel_minus_ben PPN-FA-Correia -0.0705 -0.0079  (7, 7) 0.0728\n"}
+,{"stream_name":"stdout","time":18.822338989,"data":"        hair mel_minus_ben        PPN-std -0.0705 -0.0945  (7, 3) 0.5167\n"}
+,{"stream_name":"stdout","time":18.822342707,"data":"        hair mel_minus_ben         PPN-FA -0.0705 -0.0033  (7, 3) 0.1833\n"}
+,{"stream_name":"stdout","time":18.822346396,"data":"        hair mel_minus_ben     Ours-noLes -0.0705  0.0372  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":18.822351668,"data":"        hair mel_minus_ben   Ours-stdPush -0.0705  0.0053  (7, 3) 0.0333\n"}
+,{"stream_name":"stdout","time":18.822355343,"data":"        hair mel_minus_ben         POOL13 -0.0705 -0.0296 (7, 13) 0.2749\n"}
+,{"stream_name":"stdout","time":18.822360782,"data":"        hair          dmax            PPN  0.4577 -0.0463  (7, 7) 0.0041\n"}
+,{"stream_name":"stdout","time":18.822364399,"data":"        hair          dmax PPN-FA-Correia  0.4577  0.0106  (7, 7) 0.0070\n"}
+,{"stream_name":"stdout","time":18.822369938,"data":"        hair          dmax        PPN-std  0.4577  0.1032  (7, 3) 0.1167\n"}
+,{"stream_name":"stdout","time":18.82237367,"data":"        hair          dmax         PPN-FA  0.4577  0.0244  (7, 3) 0.0667\n"}
+,{"stream_name":"stdout","time":18.82237788,"data":"        hair          dmax     Ours-noLes  0.4577  0.0758  (7, 3) 0.0667\n"}
+,{"stream_name":"stdout","time":18.82238208,"data":"        hair          dmax   Ours-stdPush  0.4577  0.1280  (7, 3) 0.2667\n"}
+,{"stream_name":"stdout","time":18.822386105,"data":"        hair          dmax         POOL13  0.4577  0.0045 (7, 13) 0.0017\n"}
+,{"stream_name":"stdout","time":18.822389582,"data":"        hair       absmean            PPN  0.1503  0.1712  (7, 7) 0.6200\n"}
+,{"stream_name":"stdout","time":18.822392875,"data":"        hair       absmean PPN-FA-Correia  0.1503  0.1167  (7, 7) 0.3829\n"}
+,{"stream_name":"stdout","time":18.82239677,"data":"        hair       absmean        PPN-std  0.1503  0.1188  (7, 3) 0.3833\n"}
+,{"stream_name":"stdout","time":18.822400403,"data":"        hair       absmean         PPN-FA  0.1503  0.1492  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822403778,"data":"        hair       absmean     Ours-noLes  0.1503  0.0881  (7, 3) 0.1833\n"}
+,{"stream_name":"stdout","time":18.822407422,"data":"        hair       absmean   Ours-stdPush  0.1503  0.1462  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822411137,"data":"        hair       absmean         POOL13  0.1503  0.1540 (7, 13) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822420139,"data":"         ink mel_minus_ben            PPN -0.0228 -0.0073  (7, 7) 0.3829\n"}
+,{"stream_name":"stdout","time":18.822424284,"data":"         ink mel_minus_ben PPN-FA-Correia -0.0228 -0.0115  (7, 7) 0.6200\n"}
+,{"stream_name":"stdout","time":18.82242863,"data":"         ink mel_minus_ben        PPN-std -0.0228 -0.0508  (7, 3) 0.2667\n"}
+,{"stream_name":"stdout","time":18.822432245999998,"data":"         ink mel_minus_ben         PPN-FA -0.0228 -0.0292  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":18.822435835,"data":"         ink mel_minus_ben     Ours-noLes -0.0228  0.0206  (7, 3) 0.1167\n"}
+,{"stream_name":"stdout","time":18.822439545,"data":"         ink mel_minus_ben   Ours-stdPush -0.0228 -0.0034  (7, 3) 0.5167\n"}
+,{"stream_name":"stdout","time":18.822443204,"data":"         ink mel_minus_ben         POOL13 -0.0228 -0.0224 (7, 13) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822446613,"data":"         ink          dmax            PPN  0.1746  0.0205  (7, 7) 0.0175\n"}
+,{"stream_name":"stdout","time":18.82245084,"data":"         ink          dmax PPN-FA-Correia  0.1746  0.0272  (7, 7) 0.0175\n"}
+,{"stream_name":"stdout","time":18.822454834,"data":"         ink          dmax        PPN-std  0.1746  0.0158  (7, 3) 0.0667\n"}
+,{"stream_name":"stdout","time":18.822459025,"data":"         ink          dmax         PPN-FA  0.1746  0.0890  (7, 3) 0.5167\n"}
+,{"stream_name":"stdout","time":18.822462797,"data":"         ink          dmax     Ours-noLes  0.1746  0.0579  (7, 3) 0.1833\n"}
+,{"stream_name":"stdout","time":18.822467025999998,"data":"         ink          dmax   Ours-stdPush  0.1746  0.0469  (7, 3) 0.1833\n"}
+,{"stream_name":"stdout","time":18.822470755,"data":"         ink          dmax         POOL13  0.1746  0.0352 (7, 13) 0.0145\n"}
+,{"stream_name":"stdout","time":18.822474369,"data":"         ink       absmean            PPN  0.0577  0.0645  (7, 7) 0.6200\n"}
+,{"stream_name":"stdout","time":18.822489843,"data":"         ink       absmean PPN-FA-Correia  0.0577  0.0602  (7, 7) 0.8048\n"}
+,{"stream_name":"stdout","time":18.822493177,"data":"         ink       absmean        PPN-std  0.0577  0.1086  (7, 3) 0.0167\n"}
+,{"stream_name":"stdout","time":18.822496578,"data":"         ink       absmean         PPN-FA  0.0577  0.0637  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":18.822499905,"data":"         ink       absmean     Ours-noLes  0.0577  0.0434  (7, 3) 0.3833\n"}
+,{"stream_name":"stdout","time":18.822504905,"data":"         ink       absmean   Ours-stdPush  0.0577  0.0445  (7, 3) 0.3833\n"}
+,{"stream_name":"stdout","time":18.822513185,"data":"         ink       absmean         POOL13  0.0577  0.0745 (7, 13) 0.2106\n"}
+,{"stream_name":"stdout","time":18.822515731,"data":"null_inpaint mel_minus_ben            PPN  0.0142  0.0054  (7, 7) 0.0530\n"}
+,{"stream_name":"stdout","time":18.82251793,"data":"null_inpaint mel_minus_ben PPN-FA-Correia  0.0142  0.0030  (7, 7) 0.0041\n"}
+,{"stream_name":"stdout","time":18.822520198,"data":"null_inpaint mel_minus_ben        PPN-std  0.0142  0.0014  (7, 3) 0.2667\n"}
+,{"stream_name":"stdout","time":18.822522385,"data":"null_inpaint mel_minus_ben         PPN-FA  0.0142  0.0052  (7, 3) 0.0667\n"}
+,{"stream_name":"stdout","time":18.822524654,"data":"null_inpaint mel_minus_ben     Ours-noLes  0.0142  0.0089  (7, 3) 0.6667\n"}
+,{"stream_name":"stdout","time":18.82252684,"data":"null_inpaint mel_minus_ben   Ours-stdPush  0.0142  0.0117  (7, 3) 0.5167\n"}
+,{"stream_name":"stdout","time":18.82252903,"data":"null_inpaint mel_minus_ben         POOL13  0.0142  0.0044 (7, 13) 0.0186\n"}
+,{"stream_name":"stdout","time":18.822534419,"data":"null_inpaint          dmax            PPN  0.0230  0.0381  (7, 7) 0.0530\n"}
+,{"stream_name":"stdout","time":18.822536708,"data":"null_inpaint          dmax PPN-FA-Correia  0.0230  0.0198  (7, 7) 0.5350\n"}
+,{"stream_name":"stdout","time":18.822539198,"data":"null_inpaint          dmax        PPN-std  0.0230  0.0274  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822541853,"data":"null_inpaint          dmax         PPN-FA  0.0230  0.0272  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":18.822559526,"data":"null_inpaint          dmax     Ours-noLes  0.0230  0.0305  (7, 3) 0.2667\n"}
+,{"stream_name":"stdout","time":18.822563391,"data":"null_inpaint          dmax   Ours-stdPush  0.0230  0.0447  (7, 3) 0.0333\n"}
+,{"stream_name":"stdout","time":18.822567165,"data":"null_inpaint          dmax         POOL13  0.0230  0.0331 (7, 13) 0.2106\n"}
+,{"stream_name":"stdout","time":18.822571001,"data":"null_inpaint       absmean            PPN  0.0116  0.0124  (7, 7) 0.5350\n"}
+,{"stream_name":"stdout","time":18.822574318,"data":"null_inpaint       absmean PPN-FA-Correia  0.0116  0.0109  (7, 7) 0.5350\n"}
+,{"stream_name":"stdout","time":18.822577719999998,"data":"null_inpaint       absmean        PPN-std  0.0116  0.0123  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822580973,"data":"null_inpaint       absmean         PPN-FA  0.0116  0.0070  (7, 3) 0.1167\n"}
+,{"stream_name":"stdout","time":18.822584344,"data":"null_inpaint       absmean     Ours-noLes  0.0116  0.0096  (7, 3) 0.5167\n"}
+,{"stream_name":"stdout","time":18.822588456,"data":"null_inpaint       absmean   Ours-stdPush  0.0116  0.0132  (7, 3) 0.6667\n"}
+,{"stream_name":"stdout","time":18.822591795,"data":"null_inpaint       absmean         POOL13  0.0116  0.0111 (7, 13) 0.8773\n"}
+,{"stream_name":"stdout","time":18.822595167,"data":"       ruler mel_minus_ben            PPN  0.0125  0.0162  (7, 7) 0.7104\n"}
+,{"stream_name":"stdout","time":18.822598415,"data":"       ruler mel_minus_ben PPN-FA-Correia  0.0125  0.0122  (7, 7) 0.8048\n"}
+,{"stream_name":"stdout","time":18.822601757,"data":"       ruler mel_minus_ben        PPN-std  0.0125  0.0107  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822605791,"data":"       ruler mel_minus_ben         PPN-FA  0.0125  0.0206  (7, 3) 0.5167\n"}
+,{"stream_name":"stdout","time":18.822609895,"data":"       ruler mel_minus_ben     Ours-noLes  0.0125  0.0189  (7, 3) 0.6667\n"}
+,{"stream_name":"stdout","time":18.822613924,"data":"       ruler mel_minus_ben   Ours-stdPush  0.0125  0.0410  (7, 3) 0.2667\n"}
+,{"stream_name":"stdout","time":18.822617194,"data":"       ruler mel_minus_ben         POOL13  0.0125  0.0159 (7, 13) 0.5880\n"}
+,{"stream_name":"stdout","time":18.822620455,"data":"       ruler          dmax            PPN  0.0840  0.0633  (7, 7) 0.5350\n"}
+,{"stream_name":"stdout","time":18.822623681,"data":"       ruler          dmax PPN-FA-Correia  0.0840  0.0472  (7, 7) 0.1282\n"}
+,{"stream_name":"stdout","time":18.822627085,"data":"       ruler          dmax        PPN-std  0.0840  0.1082  (7, 3) 0.3833\n"}
+,{"stream_name":"stdout","time":18.822631588,"data":"       ruler          dmax         PPN-FA  0.0840  0.0511  (7, 3) 0.5167\n"}
+,{"stream_name":"stdout","time":18.822635928,"data":"       ruler          dmax     Ours-noLes  0.0840  0.1232  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":18.822639703,"data":"       ruler          dmax   Ours-stdPush  0.0840  0.0782  (7, 3) 0.8333\n"}
+,{"stream_name":"stdout","time":18.822642985,"data":"       ruler          dmax         POOL13  0.0840  0.0708 (7, 13) 0.7573\n"}
+,{"stream_name":"stdout","time":18.822646394,"data":"       ruler       absmean            PPN  0.0297  0.0356  (7, 7) 0.7104\n"}
+,{"stream_name":"stdout","time":18.822653602,"data":"       ruler       absmean PPN-FA-Correia  0.0297  0.0287  (7, 7) 0.7104\n"}
+,{"stream_name":"stdout","time":18.822657036,"data":"       ruler       absmean        PPN-std  0.0297  0.0616  (7, 3) 0.2667\n"}
+,{"stream_name":"stdout","time":18.822660233,"data":"       ruler       absmean         PPN-FA  0.0297  0.0337  (7, 3) 0.6667\n"}
+,{"stream_name":"stdout","time":18.82266354,"data":"       ruler       absmean     Ours-noLes  0.0297  0.0353  (7, 3) 1.0000\n"}
+,{"stream_name":"stdout","time":18.822666799,"data":"       ruler       absmean   Ours-stdPush  0.0297  0.0384  (7, 3) 0.6667\n"}
+,{"stream_name":"stdout","time":18.82267078,"data":"       ruler       absmean         POOL13  0.0297  0.0412 (7, 13) 0.3929\n"}
+,{"stream_name":"stdout","time":18.82267513,"data":"dark_corners Spearman(mel_minus_ben, flip) over 39 runs: [0.3056 0.0585]\n"}
+,{"stream_name":"stdout","time":18.822678257,"data":"hair Spearman(mel_minus_ben, flip) over 39 runs: [-0.0315  0.8491]\n"}
+,{"stream_name":"stdout","time":18.822681305,"data":"ink Spearman(mel_minus_ben, flip) over 39 runs: [-0.1327  0.4206]\n"}
+,{"stream_name":"stdout","time":18.82268451,"data":"null_inpaint Spearman(mel_minus_ben, flip) over 39 runs: [0.0498 0.7634]\n"}
+,{"stream_name":"stdout","time":18.82268769,"data":"ruler Spearman(mel_minus_ben, flip) over 39 runs: [0.1033 0.5316]\n"}
+,{"stream_name":"stdout","time":18.822690966,"data":"NB11b FINISHED\n"}
+,{"stream_name":"stderr","time":21.626626593,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":21.626657318,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":21.817080286,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":21.817104479,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":22.612554153,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":22.68412318,"data":"[NbConvertApp] Writing 54695 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":25.083917967,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":25.597523923,"data":"[NbConvertApp] Writing 339367 bytes to __results__.html\n"}
+]
